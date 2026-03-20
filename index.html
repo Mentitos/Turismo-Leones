@@ -781,7 +781,7 @@
             overflow: hidden;
             width: 100%;
             padding: 10px 0;
-            margin: -10px 0; /* compense tooltip or shadow */
+            margin: -10px 0;
         }
 
         .flyers-track {
@@ -1457,7 +1457,7 @@
                 flex: 1 1 45%;
             }
         }
-    
+
         .audio-btn {
             position: absolute;
             bottom: 12px;
@@ -1489,6 +1489,27 @@
             transform: scale(1.1);
         }
 
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
+            pointer-events: auto;
+            position: relative;
+        }
+
+        .hero-arrow {
+            z-index: 9999 !important;
+            cursor: pointer !important;
+        }
     </style>
     <script src="data/paquetes.js"></script>
 </head>
@@ -1522,15 +1543,48 @@
         <div class="hero-cell">
             <div class="ph img-bariloche">🏔️</div>
         </div>
-        <div class="hero-center hero-cell" style="position:relative">
-            <div class="hero-center-bg">
-                <div class="hero-tagline">
-                    Reserva tu viaje<br>
-                    <span>y paga en cómodas cuotas</span>
+        <div class="hero-center hero-cell" style="position:relative; overflow:hidden;">
+            <div class="hero-slide active">
+                <div class="hero-center-bg">
+                    <div class="hero-tagline">
+                        Reserva tu viaje<br>
+                        <span>y paga en cómodas cuotas</span>
+                    </div>
                 </div>
             </div>
-            <button class="hero-arrow left">&#8249;</button>
-            <button class="hero-arrow right">&#8250;</button>
+
+            <div class="hero-slide">
+                <div class="hero-center-bg"
+                    style="background: linear-gradient(135deg, #d32f2f, #f57c00); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px;">
+                    <div class="hero-tagline" style="color:#fff; margin-bottom:15px; margin-top:20px;">
+                        VALIJAS YA 🧳<br>
+                        <span style="font-size: 0.5em; letter-spacing: 1px; color:#ffeb3b">¡MIRA NUESTRAS OFERTAS DE
+                            MARZO!</span>
+                    </div>
+                    <div
+                        style="display:flex; justify-content:center; gap:20px; width:100%; max-width:500px; padding-bottom:10px; z-index:2;">
+                        <img src="Marzo/mar_del_plata_marzo.jpeg"
+                            style="height:120px; width:auto; border-radius:10px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.5); border:2px solid white; transition:transform 0.2s;"
+                            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+                            onclick="openPackage('Mar Del Plata Marzo', 'marzo')" title="Mar Del Plata">
+                        <img src="Marzo/mendoza_marzo.jpeg"
+                            style="height:120px; width:auto; border-radius:10px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.5); border:2px solid white; transition:transform 0.2s;"
+                            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+                            onclick="openPackage('Mendoza Marzo', 'marzo')" title="Mendoza">
+                        <img src="Marzo/tandil_marzo.jpeg"
+                            style="height:120px; width:auto; border-radius:10px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.5); border:2px solid white; transition:transform 0.2s;"
+                            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+                            onclick="openPackage('Tandil Marzo')" title="Tandil">
+                        <img src="Marzo/villa_carlos_paz_marzo.jpeg"
+                            style="height:120px; width:auto; border-radius:10px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.5); border:2px solid white; transition:transform 0.2s;"
+                            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
+                            onclick="openPackage('Villa Carlos Paz Marzo')" title="Villa Carlos Paz">
+                    </div>
+                </div>
+            </div>
+
+            <button class="hero-arrow left" onclick="switchHeroSlide(-1, true)">&#8249;</button>
+            <button class="hero-arrow right" onclick="switchHeroSlide(1, true)">&#8250;</button>
         </div>
         <div class="hero-cell">
             <div class="ph img-mdq">🏖️</div>
@@ -1570,207 +1624,223 @@
                 <span class="promo-2x1">2X1</span>
             </div>
         </div>
-        </div>
+    </div>
     </div>
 
     <div class="season-section" data-section-season="otoño">
         <h2 class="season-title">OTOÑO <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
             <div class="flyers-track">
-            <div class="flyer-card" data-name="campo la herradura otoño" data-season="otoño" data-has-video="false"
-                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Campo La Herradura Otoño', 'otoño')">
-                <img src="Otoño/campo_la_herradura_otoño.jpeg" class="flyer-media flyer-img"
-                    alt="campo_la_herradura_otoño">
-                <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura Otoño</span><span
-                        class="flyer-overlay-badge">💬 Consultar</span></div>
+                <div class="flyer-card" data-name="campo la herradura otoño" data-season="otoño" data-has-video="false"
+                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Campo La Herradura Otoño', 'otoño')">
+                    <img src="Otoño/campo_la_herradura_otoño.jpeg" class="flyer-media flyer-img"
+                        alt="campo_la_herradura_otoño">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura Otoño</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Cataratas Del Iguazu Otoño')">
+                    <img src="Otoño/cataratas_del_iguazu_otoño.jpeg" class="flyer-media flyer-img"
+                        alt="cataratas_del_iguazu_otoño">
+                    <video preload="none" data-src="Otoño/cataratas_del_iguazu_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Gualeguaychu Otoño')">
+                    <img src="Otoño/gualeguaychu_otoño.jpeg" class="flyer-media flyer-img" alt="gualeguaychu_otoño">
+                    <video preload="none" data-src="Otoño/gualeguaychu_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Mar Del Plata Otoño')">
+                    <img src="Otoño/mar_del_plata_otoño.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_otoño">
+                    <video preload="none" data-src="Otoño/mar_del_plata_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Mendoza Otoño')">
+                    <img src="Otoño/mendoza_otoño.jpeg" class="flyer-media flyer-img" alt="mendoza_otoño">
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Mendoza Verano Pero Ponelo Con Otoño')">
+                    <video preload="none" data-src="Otoño/mendoza_verano_pero_ponelo_con_otoño.mp4" muted
+                        class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Puerto Madryn Otoño')">
+                    <img src="Otoño/puerto_madryn_otoño.jpeg" class="flyer-media flyer-img" alt="puerto_madryn_otoño">
+                    <video preload="none" data-src="Otoño/puerto_madryn_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Salta Otoño')">
+                    <img src="Otoño/salta_otoño.jpeg" class="flyer-media flyer-img" alt="salta_otoño">
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('San Pedro Otoño')">
+                    <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="san_pedro_otoño">
+                    <video preload="none" data-src="Otoño/san_pedro_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('San Rafael Otoño')">
+                    <img src="Otoño/san_rafael_otoño.jpeg" class="flyer-media flyer-img" alt="san_rafael_otoño">
+                    <video preload="none" data-src="Otoño/san_rafael_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Tandil Otoño')">
+                    <img src="Otoño/tandil_otoño.jpeg" class="flyer-media flyer-img" alt="tandil_otoño">
+                    <video preload="none" data-src="Otoño/tandil_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Termas De Guaychu Otoño')">
+                    <img src="Otoño/termas_de_guaychu_otoño.jpeg" class="flyer-media flyer-img"
+                        alt="termas_de_guaychu_otoño">
+                    <video preload="none" data-src="Otoño/termas_de_guaychu_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Villa Carlos Paz Otoño')">
+                    <img src="Otoño/villa_carlos_paz_otoño.jpeg" class="flyer-media flyer-img"
+                        alt="villa_carlos_paz_otoño">
+                    <video preload="none" data-src="Otoño/villa_carlos_paz_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Villa De Merlo Otoño')">
+                    <img src="Otoño/villa_de_merlo_otoño.jpeg" class="flyer-media flyer-img" alt="villa_de_merlo_otoño">
+                    <video preload="none" data-src="Otoño/villa_de_merlo_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
             </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Cataratas Del Iguazu Otoño')">
-                <img src="Otoño/cataratas_del_iguazu_otoño.jpeg" class="flyer-media flyer-img"
-                    alt="cataratas_del_iguazu_otoño">
-                <video preload="none" data-src="Otoño/cataratas_del_iguazu_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Gualeguaychu Otoño')">
-                <img src="Otoño/gualeguaychu_otoño.jpeg" class="flyer-media flyer-img" alt="gualeguaychu_otoño">
-                <video preload="none" data-src="Otoño/gualeguaychu_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Mar Del Plata Otoño')">
-                <img src="Otoño/mar_del_plata_otoño.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_otoño">
-                <video preload="none" data-src="Otoño/mar_del_plata_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Mendoza Otoño')">
-                <img src="Otoño/mendoza_otoño.jpeg" class="flyer-media flyer-img" alt="mendoza_otoño">
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Mendoza Verano Pero Ponelo Con Otoño')">
-                <video preload="none" data-src="Otoño/mendoza_verano_pero_ponelo_con_otoño.mp4" muted class="flyer-video" loop
-                    playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Puerto Madryn Otoño')">
-                <img src="Otoño/puerto_madryn_otoño.jpeg" class="flyer-media flyer-img" alt="puerto_madryn_otoño">
-                <video preload="none" data-src="Otoño/puerto_madryn_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Salta Otoño')">
-                <img src="Otoño/salta_otoño.jpeg" class="flyer-media flyer-img" alt="salta_otoño">
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('San Pedro Otoño')">
-                <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="san_pedro_otoño">
-                <video preload="none" data-src="Otoño/san_pedro_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('San Rafael Otoño')">
-                <img src="Otoño/san_rafael_otoño.jpeg" class="flyer-media flyer-img" alt="san_rafael_otoño">
-                <video preload="none" data-src="Otoño/san_rafael_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Tandil Otoño')">
-                <img src="Otoño/tandil_otoño.jpeg" class="flyer-media flyer-img" alt="tandil_otoño">
-                <video preload="none" data-src="Otoño/tandil_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Termas De Guaychu Otoño')">
-                <img src="Otoño/termas_de_guaychu_otoño.jpeg" class="flyer-media flyer-img"
-                    alt="termas_de_guaychu_otoño">
-                <video preload="none" data-src="Otoño/termas_de_guaychu_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Villa Carlos Paz Otoño')">
-                <img src="Otoño/villa_carlos_paz_otoño.jpeg" class="flyer-media flyer-img" alt="villa_carlos_paz_otoño">
-                <video preload="none" data-src="Otoño/villa_carlos_paz_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Villa De Merlo Otoño')">
-                <img src="Otoño/villa_de_merlo_otoño.jpeg" class="flyer-media flyer-img" alt="villa_de_merlo_otoño">
-                <video preload="none" data-src="Otoño/villa_de_merlo_otoño.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-        </div>
         </div>
     </div>
     <div class="season-section" data-section-season="marzo">
         <h2 class="season-title">MARZO <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
             <div class="flyers-track">
-            <div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false"
-                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
-                <img src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo">
-                <div class="flyer-overlay"><span class="flyer-overlay-title">Mar Del Plata Marzo</span><span
-                        class="flyer-overlay-badge">💬 Consultar</span></div>
+                <div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false"
+                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
+                    <img src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mar Del Plata Marzo</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
+                <div class="flyer-card" data-name="mendoza marzo" data-season="marzo" data-has-video="false"
+                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Mendoza Marzo', 'marzo')">
+                    <img src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza Marzo</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Santa Teresita Marzo')">
+                    <img src="Marzo/santa_teresita_marzo.jpeg" class="flyer-media flyer-img" alt="santa_teresita_marzo">
+                    <video preload="none" data-src="Marzo/santa_teresita_marzo.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Tandil Marzo')">
+                    <img src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo">
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Villa Carlos Paz Marzo')">
+                    <img src="Marzo/villa_carlos_paz_marzo.jpeg" class="flyer-media flyer-img"
+                        alt="villa_carlos_paz_marzo">
+                </div>
             </div>
-            <div class="flyer-card" data-name="mendoza marzo" data-season="marzo" data-has-video="false"
-                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Mendoza Marzo', 'marzo')">
-                <img src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo">
-                <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza Marzo</span><span
-                        class="flyer-overlay-badge">💬 Consultar</span></div>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Santa Teresita Marzo')">
-                <img src="Marzo/santa_teresita_marzo.jpeg" class="flyer-media flyer-img" alt="santa_teresita_marzo">
-                <video preload="none" data-src="Marzo/santa_teresita_marzo.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Tandil Marzo')">
-                <img src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo">
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Villa Carlos Paz Marzo')">
-                <img src="Marzo/villa_carlos_paz_marzo.jpeg" class="flyer-media flyer-img" alt="villa_carlos_paz_marzo">
-            </div>
-        </div>
         </div>
     </div>
     <div class="season-section" data-section-season="semana santa">
         <h2 class="season-title">SEMANA SANTA <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
             <div class="flyers-track">
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('San Bernaerdo Semana Santa')">
-                <img src="Semana_Santa/san_bernaerdo_semana_santa.jpeg" class="flyer-media flyer-img"
-                    alt="san_bernaerdo_semana_santa">
-                <video preload="none" data-src="Semana_Santa/san_bernaerdo_semana_santa.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('San Bernaerdo Semana Santa')">
+                    <img src="Semana_Santa/san_bernaerdo_semana_santa.jpeg" class="flyer-media flyer-img"
+                        alt="san_bernaerdo_semana_santa">
+                    <video preload="none" data-src="Semana_Santa/san_bernaerdo_semana_santa.mp4" muted
+                        class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
             </div>
-        </div>
         </div>
     </div>
     <div class="season-section" data-section-season="otros">
         <h2 class="season-title">OTROS <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
             <div class="flyers-track">
-            <div class="flyer-card" data-name="crucero travelero flyer" data-season="otros" data-has-video="false"
-                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Crucero Travelero Flyer', 'otros')">
-                <img src="Otros/crucero_travelero_flyer.jpeg" class="flyer-media flyer-img"
-                    alt="crucero_travelero_flyer">
-                <div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Flyer</span><span
-                        class="flyer-overlay-badge">💬 Consultar</span></div>
+                <div class="flyer-card" data-name="crucero travelero flyer" data-season="otros" data-has-video="false"
+                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Crucero Travelero Flyer', 'otros')">
+                    <img src="Otros/crucero_travelero_flyer.jpeg" class="flyer-media flyer-img"
+                        alt="crucero_travelero_flyer">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Flyer</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
+                <div class="flyer-card" data-name="crucero travelero info" data-season="otros" data-has-video="false"
+                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Crucero Travelero Info', 'otros')">
+                    <img src="Otros/crucero_travelero_info.jpeg" class="flyer-media flyer-img"
+                        alt="crucero_travelero_info">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Info</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Humahuaca')">
+                    <video preload="none" data-src="Otros/Humahuaca.mp4" class="flyer-media flyer-img" muted></video>
+                    <video preload="none" data-src="Otros/Humahuaca.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Majo')">
+                    <video preload="none" data-src="Otros/majo.mp4" class="flyer-media flyer-img" muted></video>
+                    <video preload="none" data-src="Otros/majo.mp4" muted class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Ushuaia')">
+                    <img src="Otros/ushuaia.jpeg" class="flyer-media flyer-img" alt="ushuaia">
+                    <video preload="none" data-src="Otros/ushuaia.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
             </div>
-            <div class="flyer-card" data-name="crucero travelero info" data-season="otros" data-has-video="false"
-                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Crucero Travelero Info', 'otros')">
-                <img src="Otros/crucero_travelero_info.jpeg" class="flyer-media flyer-img" alt="crucero_travelero_info">
-                <div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Info</span><span
-                        class="flyer-overlay-badge">💬 Consultar</span></div>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Humahuaca')">
-                <video preload="none" data-src="Otros/Humahuaca.mp4" class="flyer-media flyer-img" muted></video>
-                <video preload="none" data-src="Otros/Humahuaca.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Majo')">
-                <video preload="none" data-src="Otros/majo.mp4" class="flyer-media flyer-img" muted></video>
-                <video preload="none" data-src="Otros/majo.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                onclick="openPackage('Ushuaia')">
-                <img src="Otros/ushuaia.jpeg" class="flyer-media flyer-img" alt="ushuaia">
-                <video preload="none" data-src="Otros/ushuaia.mp4" muted class="flyer-video" loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-                <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-            </div>
-        </div>
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer>
         <div class="footer-logo">
             <svg width="60" height="60" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1816,7 +1886,6 @@
         </div>
     </footer>
 
-    <!-- WhatsApp FAB -->
     <a href="https://wa.me/5491139470000" class="whatsapp-btn" target="_blank">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
             <path
@@ -1828,7 +1897,6 @@
         </div>
     </a>
 
-    <!-- Modal Element -->
     <div class="modal-overlay" id="infoModal">
         <div class="modal-content">
             <button class="modal-close" onclick="closeModal()">×</button>
@@ -1871,8 +1939,8 @@
 
 
         function toggleAudio(e, btn) {
-            e.stopPropagation(); // Evitar abrir modal del paquete
-            e.preventDefault(); 
+            e.stopPropagation();
+            e.preventDefault();
             const card = btn.closest('.flyer-card');
             const vid = card.querySelector('.flyer-video');
             if (vid) {
@@ -1880,6 +1948,49 @@
                 btn.innerHTML = vid.muted ? '🔇' : '🔊';
             }
         }
+
+
+        let currentHeroSlide = 0;
+        let heroAutoPlayInterval;
+        let userInteractedWithHero = false;
+
+        function switchHeroSlide(dir, fromUser = false) {
+            if (fromUser) {
+                userInteractedWithHero = true;
+                clearInterval(heroAutoPlayInterval);
+            }
+            const slides = document.querySelectorAll('.hero-slide');
+            if (slides.length === 0) return;
+
+            slides[currentHeroSlide].classList.remove('active');
+            slides[currentHeroSlide].style.position = 'absolute';
+
+            currentHeroSlide += dir;
+            if (currentHeroSlide >= slides.length) currentHeroSlide = 0;
+            if (currentHeroSlide < 0) currentHeroSlide = slides.length - 1;
+
+            slides[currentHeroSlide].classList.add('active');
+            slides[currentHeroSlide].style.position = 'relative';
+        }
+
+        function startHeroAutoPlay() {
+            heroAutoPlayInterval = setInterval(() => {
+                if (!userInteractedWithHero) {
+                    switchHeroSlide(1);
+                }
+            }, 5000);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroContainer = document.querySelector('.hero-center.hero-cell');
+            if (heroContainer) {
+                heroContainer.addEventListener('mouseenter', () => {
+                    userInteractedWithHero = true;
+                    clearInterval(heroAutoPlayInterval);
+                });
+            }
+            startHeroAutoPlay();
+        });
 
         function openModal(title, season) {
             const friendlySeason = season ? season.toLowerCase().trim() : '';
@@ -1904,8 +2015,8 @@
         });
 
 
-        
-</script>
+
+    </script>
     <script>
         const videoObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
@@ -1913,7 +2024,7 @@
                     const video = entry.target;
                     if (video.dataset.src) {
                         video.src = video.dataset.src;
-                        video.preload = "auto";  // <-- ESTA ES LA CLAVE
+                        video.preload = "auto";
                         video.removeAttribute('data-src');
                         video.load();
                     }
@@ -1928,35 +2039,34 @@
             }
         });
 
-        // Auto Carousel for Flyers
         document.querySelectorAll('.flyers-track').forEach(track => {
             if (track.children.length > 1) {
                 let interval;
                 let isHovered = false;
-                
+
                 track.addEventListener('mouseenter', () => isHovered = true);
                 track.addEventListener('mouseleave', () => isHovered = false);
 
                 const startCarousel = () => {
                     interval = setInterval(() => {
-                        if (isHovered) return; // Pause on hover
-                        
+                        if (isHovered) return;
+
                         const firstCard = track.children[0];
                         const cardWidth = firstCard.offsetWidth;
-                        const gap = 24; 
+                        const gap = 24;
                         const moveDistance = cardWidth + gap;
-                        
+
                         track.style.transition = 'transform 0.5s ease-in-out';
                         track.style.transform = `translateX(-${moveDistance}px)`;
-                        
+
                         setTimeout(() => {
                             track.style.transition = 'none';
                             track.style.transform = 'translateX(0)';
                             track.appendChild(firstCard);
-                        }, 500); 
+                        }, 500);
                     }, 3000);
                 };
-                
+
                 startCarousel();
             }
         });
