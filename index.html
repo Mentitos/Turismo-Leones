@@ -780,6 +780,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 24px;
+            align-items: start;
         }
 
         .flyer-card {
@@ -789,8 +790,9 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
             background: #000;
-            height: 400px;
             cursor: pointer;
+            display: flex;
+            align-items: center;
         }
 
         .flyer-card:hover {
@@ -800,9 +802,11 @@
 
         .flyer-media {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            max-height: 600px;
+            object-fit: contain;
             transition: opacity 0.3s;
+            display: block;
         }
 
         .flyer-video {
@@ -811,7 +815,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.3s;
@@ -821,9 +825,7 @@
             opacity: 1;
         }
 
-        .flyer-card:hover .flyer-img {
-            opacity: 0;
-        }
+
 
         .video-badge {
             position: absolute;
@@ -840,6 +842,89 @@
             gap: 4px;
             z-index: 2;
         }
+    
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); z-index: 2000;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none; transition: opacity 0.3s;
+        }
+        .modal-overlay.active { opacity: 1; pointer-events: auto; }
+        .modal-content {
+            background: white; border-radius: 8px; width: 90%; max-width: 500px;
+            padding: 30px; position: relative; text-align: center;
+            transform: translateY(20px); transition: transform 0.3s;
+        }
+        .modal-overlay.active .modal-content { transform: translateY(0); }
+        .modal-close {
+            position: absolute; top: 10px; right: 10px; font-size: 24px;
+            cursor: pointer; background: none; border: none; color: #333;
+        }
+        .modal-title { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--navy); margin-bottom: 15px; text-transform: capitalize; }
+        .modal-body { font-size: 15px; color: #555; margin-bottom: 25px; line-height: 1.5; }
+        .modal-btn {
+            background: #25d366; color: white; text-decoration: none; padding: 12px 24px;
+            border-radius: 25px; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); transition: transform 0.2s;
+        }
+        .modal-btn:hover { transform: scale(1.05); }
+        
+        /* Updated Hover Delay */
+        .flyer-card:has(.flyer-video):hover .flyer-media { opacity: 0; transition-delay: 1s; }
+        .flyer-card:hover .flyer-video { opacity: 1; transition-delay: 1s; }
+
+    
+        /* -- NUEVAS MEJORAS CSS -- */
+        /* Barra de búsqueda */
+        .search-bar-container {
+            position: sticky; top: 64px; z-index: 100;
+            background: #f8f9ff; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            padding: 12px 40px; display: flex; align-items: center; justify-content: space-between;
+            gap: 20px; flex-wrap: wrap;
+        }
+        .search-input-wrapper { position: relative; flex: 1; min-width: 250px; max-width: 400px; }
+        .search-input-wrapper svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; fill: #666; }
+        .search-input { width: 100%; border: 1px solid #ccc; border-radius: 20px; padding: 8px 16px 8px 36px; font-family: 'Montserrat', sans-serif; font-size: 14px; outline: none; transition: border-color 0.3s; }
+        .search-input:focus { border-color: var(--blue); }
+        .filters-container { display: flex; gap: 8px; flex-wrap: wrap; }
+        .filter-pill { background: white; border: 1px solid #ddd; border-radius: 20px; padding: 6px 16px; font-size: 13px; font-weight: 600; cursor: pointer; color: #555; transition: all 0.2s; white-space: nowrap; }
+        .filter-pill:hover { background: #f0f0f0; }
+        .filter-pill.active { background: var(--navy); color: white; border-color: var(--navy); }
+        .results-count { font-size: 13px; font-weight: 600; color: #666; white-space: nowrap; }
+
+        /* Overlay Hover en Cards */
+        .flyer-overlay { position: absolute; bottom: 0; left: 0; right: 0; height: 50%; background: linear-gradient(transparent, rgba(0,0,10,0.85)); pointer-events: none; opacity: 0; transition: opacity 0.25s; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; z-index: 3; }
+        .flyer-card:hover .flyer-overlay { opacity: 1; }
+        .flyer-overlay-title { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: white; margin-bottom: 5px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .flyer-overlay-badge { background: #25d366; color: white; font-size: 10px; font-weight: bold; padding: 3px 8px; border-radius: 12px; align-self: flex-start; text-transform: uppercase; }
+
+        /* Modal Mejoras */
+        .modal-overlay { backdrop-filter: blur(6px); }
+        .modal-content { transform: scale(0.97) translateY(20px); transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+        .modal-overlay.active .modal-content { transform: scale(1) translateY(0); }
+        .modal-season-icon { font-size: 24px; display: block; margin-bottom: 5px; }
+
+        /* Botón Volver Arriba */
+        .back-to-top { position: fixed; bottom: 90px; right: 28px; width: 44px; height: 44px; background: var(--navy); color: white; border: none; border-radius: 50%; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s; opacity: 0; pointer-events: none; z-index: 990; }
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { transform: translateY(-3px); background: var(--blue); }
+
+        /* Mejoras Visuales Navbar & Banners & Hero CTA */
+        nav ul li a { position: relative; }
+        nav ul li a::after { content: ''; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0; background: #f5a623; transition: width 0.3s ease; }
+        nav ul li a:hover::after { width: 100%; }
+        
+        .banner { transition: filter 0.25s; }
+        .banner:hover { filter: brightness(1.12); }
+        .banner::before { display: none; } /* quitar efecto viejo hover */
+        
+        .hero-cta { margin-top: 15px; padding: 12px 28px; background: var(--gold); color: var(--navy); font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 30px; text-transform: uppercase; letter-spacing: 1px; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px rgba(245, 166, 35, 0.4); z-index: 2; pointer-events: auto; }
+        .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245, 166, 35, 0.6); }
+        
+        /* Mensaje sin resultados */
+        .no-results { display: none; text-align: center; padding: 60px 20px; font-size: 18px; color: #666; width: 100%; }
+
     </style>
 </head>
 
@@ -922,208 +1007,324 @@
         </div>
     </div>
 
-    <div class="season-section">
-        <h2 class="season-title">OTOÑO</h2>
-        <div class="flyers-grid">
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/campo_la_herradura_otoño.jpeg" class="flyer-media flyer-img"
-                    alt="campo_la_herradura_otoño"></div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/cataratas_del_iguazu_otoño.jpeg" class="flyer-media flyer-img"
-                    alt="cataratas_del_iguazu_otoño"><video src="Otoño/cataratas_del_iguazu_otoño.mp4"
-                    class="flyer-video" muted loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
+    <div class="season-section" data-section-season="otoño"><h2 class="season-title">OTOÑO <span class="section-count"></span></h2><div class="flyers-grid">
+<div class="flyer-card" data-name="campo la herradura otoño" data-season="otoño" data-has-video="false" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Campo La Herradura Otoño', 'otoño')">
+    <img src="Otoño/campo_la_herradura_otoño.jpeg" class="flyer-media flyer-img" alt="campo_la_herradura_otoño">
+<div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura Otoño</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Cataratas Del Iguazu Otoño')">
+    <img src="Otoño/cataratas_del_iguazu_otoño.jpeg" class="flyer-media flyer-img" alt="cataratas_del_iguazu_otoño">
+    <video src="Otoño/cataratas_del_iguazu_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div></div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Gualeguaychu Otoño')">
+    <img src="Otoño/gualeguaychu_otoño.jpeg" class="flyer-media flyer-img" alt="gualeguaychu_otoño">
+    <video src="Otoño/gualeguaychu_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Mar Del Plata Otoño')">
+    <img src="Otoño/mar_del_plata_otoño.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_otoño">
+    <video src="Otoño/mar_del_plata_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Mendoza Otoño')">
+    <img src="Otoño/mendoza_otoño.jpeg" class="flyer-media flyer-img" alt="mendoza_otoño">
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Mendoza Verano Pero Ponelo Con Otoño')">
+    <video src="Otoño/mendoza_verano_pero_ponelo_con_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Puerto Madryn Otoño')">
+    <img src="Otoño/puerto_madryn_otoño.jpeg" class="flyer-media flyer-img" alt="puerto_madryn_otoño">
+    <video src="Otoño/puerto_madryn_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Salta Otoño')">
+    <img src="Otoño/salta_otoño.jpeg" class="flyer-media flyer-img" alt="salta_otoño">
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('San Pedro Otoño')">
+    <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="san_pedro_otoño">
+    <video src="Otoño/san_pedro_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('San Rafael Otoño')">
+    <img src="Otoño/san_rafael_otoño.jpeg" class="flyer-media flyer-img" alt="san_rafael_otoño">
+    <video src="Otoño/san_rafael_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Tandil Otoño')">
+    <img src="Otoño/tandil_otoño.jpeg" class="flyer-media flyer-img" alt="tandil_otoño">
+    <video src="Otoño/tandil_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Termas De Guaychu Otoño')">
+    <img src="Otoño/termas_de_guaychu_otoño.jpeg" class="flyer-media flyer-img" alt="termas_de_guaychu_otoño">
+    <video src="Otoño/termas_de_guaychu_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Villa Carlos Paz Otoño')">
+    <img src="Otoño/villa_carlos_paz_otoño.jpeg" class="flyer-media flyer-img" alt="villa_carlos_paz_otoño">
+    <video src="Otoño/villa_carlos_paz_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Villa De Merlo Otoño')">
+    <img src="Otoño/villa_de_merlo_otoño.jpeg" class="flyer-media flyer-img" alt="villa_de_merlo_otoño">
+    <video src="Otoño/villa_de_merlo_otoño.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+</div></div>
+<div class="season-section" data-section-season="marzo"><h2 class="season-title">MARZO <span class="section-count"></span></h2><div class="flyers-grid">
+<div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Mar Del Plata Marzo', 'marzo')">
+    <img src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo">
+<div class="flyer-overlay"><span class="flyer-overlay-title">Mar Del Plata Marzo</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
+<div class="flyer-card" data-name="mendoza marzo" data-season="marzo" data-has-video="false" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Mendoza Marzo', 'marzo')">
+    <img src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo">
+<div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza Marzo</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Santa Teresita Marzo')">
+    <img src="Marzo/santa_teresita_marzo.jpeg" class="flyer-media flyer-img" alt="santa_teresita_marzo">
+    <video src="Marzo/santa_teresita_marzo.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div></div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Tandil Marzo')">
+    <img src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo">
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Villa Carlos Paz Marzo')">
+    <img src="Marzo/villa_carlos_paz_marzo.jpeg" class="flyer-media flyer-img" alt="villa_carlos_paz_marzo">
+</div>
+</div></div>
+<div class="season-section" data-section-season="semana santa"><h2 class="season-title">SEMANA SANTA <span class="section-count"></span></h2><div class="flyers-grid">
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('San Bernaerdo Semana Santa')">
+    <img src="Semana_Santa/san_bernaerdo_semana_santa.jpeg" class="flyer-media flyer-img" alt="san_bernaerdo_semana_santa">
+    <video src="Semana_Santa/san_bernaerdo_semana_santa.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div></div>
+</div></div>
+<div class="season-section" data-section-season="otros"><h2 class="season-title">OTROS <span class="section-count"></span></h2><div class="flyers-grid">
+<div class="flyer-card" data-name="crucero travelero flyer" data-season="otros" data-has-video="false" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Crucero Travelero Flyer', 'otros')">
+    <img src="Otros/crucero_travelero_flyer.jpeg" class="flyer-media flyer-img" alt="crucero_travelero_flyer">
+<div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Flyer</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
+<div class="flyer-card" data-name="crucero travelero info" data-season="otros" data-has-video="false" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Crucero Travelero Info', 'otros')">
+    <img src="Otros/crucero_travelero_info.jpeg" class="flyer-media flyer-img" alt="crucero_travelero_info">
+<div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Info</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Humahuaca')">
+    <video src="Otros/Humahuaca.mp4" class="flyer-media flyer-img" muted></video>
+    <video src="Otros/Humahuaca.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div></div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Majo')">
+    <video src="Otros/majo.mp4" class="flyer-media flyer-img" muted></video>
+    <video src="Otros/majo.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+<div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)" onclick="openModal('Ushuaia')">
+    <img src="Otros/ushuaia.jpeg" class="flyer-media flyer-img" alt="ushuaia">
+    <video src="Otros/ushuaia.mp4" class="flyer-video" loop playsinline></video>
+    <div class="video-badge">▶ VIDEO</div>
+</div>
+</div></div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <svg width="60" height="60" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22" cy="18" r="12" fill="#f5a623" opacity="0.9" />
+                <circle cx="22" cy="18" r="8" fill="white" opacity="0.2" />
+                <circle cx="22" cy="18" r="4" fill="#f5a623" />
+                <path d="M14 32 Q22 42 30 32" stroke="#f5a623" stroke-width="2.5" fill="none" stroke-linecap="round" />
+            </svg>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones</div>
+            <div style="font-size:9px;color:rgba(255,255,255,0.4);letter-spacing:3px">TURISMO</div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Turismo Leones</h4>
+            <ul>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Oficinas</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Blog de viajes</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Legales</h4>
+            <ul>
+                <li><a href="#">Condiciones de contratación</a></li>
+                <li><a href="#">Documentación para viajar</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+            <h4>Contacto</h4>
+            <p>📞 +54 11 3947-XXXX</p>
+            <p>✉️ info@turismoleones.com.ar</p>
+            <p>📍 Buenos Aires, Argentina</p>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Turismo Leones. Todos los derechos reservados. | Leg. N° XXXXXXXXX
+        </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <a href="https://wa.me/5491139470000" class="whatsapp-btn" target="_blank">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        <div>
+            <span class="whatsapp-tooltip">¿Tenés alguna duda?</span>
+            Chateá con nosotros
+        </div>
+    </a>
+
+    <!-- Modal Element -->
+    <div class="modal-overlay" id="infoModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-title" id="modalTitle">Título del Destino</div>
+            <div class="modal-body">
+                ¡Descubre este increíble destino con Turismo Leones! <br><br>
+                Hacé clic en el siguiente botón para solicitar más información, conocer las fechas disponibles o pedir un presupuesto.
             </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/gualeguaychu_otoño.jpeg" class="flyer-media flyer-img" alt="gualeguaychu_otoño"><video
-                    src="Otoño/gualeguaychu_otoño.mp4" class="flyer-video" muted loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/mar_del_plata_otoño.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_otoño"><video
-                    src="Otoño/mar_del_plata_otoño.mp4" class="flyer-video" muted loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/mendoza_otoño.jpeg" class="flyer-media flyer-img" alt="mendoza_otoño"></div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><video
-                    src="Otoño/mendoza_verano_pero_ponelo_con_otoño.mp4" class="flyer-video" muted loop
-                    playsinline></video>
-                <div class="video-badge">▶ VIDEO</div><video src="Otoño/mendoza_verano_pero_ponelo_con_otoño.mp4"
-                    class="flyer-media flyer-img" muted></video>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/puerto_madryn_otoño.jpeg" class="flyer-media flyer-img" alt="puerto_madryn_otoño"><video
-                    src="Otoño/puerto_madryn_otoño.mp4" class="flyer-video" muted loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/salta_otoño.jpeg" class="flyer-media flyer-img" alt="salta_otoño"></div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="san_pedro_otoño"><video
-                    src="Otoño/san_pedro_otoño.mp4" class="flyer-video" muted loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/san_rafael_otoño.jpeg" class="flyer-media flyer-img" alt="san_rafael_otoño"><video
-                    src="Otoño/san_rafael_otoño.mp4" class="flyer-video" muted loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/tandil_otoño.jpeg" class="flyer-media flyer-img" alt="tandil_otoño"><video
-                    src="Otoño/tandil_otoño.mp4" class="flyer-video" muted loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/termas_de_guaychu_otoño.jpeg" class="flyer-media flyer-img"
-                    alt="termas_de_guaychu_otoño"><video src="Otoño/termas_de_guaychu_otoño.mp4" class="flyer-video"
-                    muted loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/villa_carlos_paz_otoño.jpeg" class="flyer-media flyer-img"
-                    alt="villa_carlos_paz_otoño"><video src="Otoño/villa_carlos_paz_otoño.mp4" class="flyer-video" muted
-                    loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Otoño/villa_de_merlo_otoño.jpeg" class="flyer-media flyer-img"
-                    alt="villa_de_merlo_otoño"><video src="Otoño/villa_de_merlo_otoño.mp4" class="flyer-video" muted
-                    loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
+            <a href="#" class="modal-btn" target="_blank" id="modalWpBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+                Consultar por WhatsApp
+            </a>
         </div>
     </div>
-    <div class="season-section">
-        <h2 class="season-title">MARZO</h2>
-        <div class="flyers-grid">
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo"></div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo"></div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Marzo/santa_teresita_marzo.jpeg" class="flyer-media flyer-img"
-                    alt="santa_teresita_marzo"><video src="Marzo/santa_teresita_marzo.mp4" class="flyer-video" muted
-                    loop playsinline></video>
-                <div class="video-badge">▶ VIDEO</div>
-            </div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo"></div>
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Marzo/villa_carlos_paz_marzo.jpeg" class="flyer-media flyer-img" alt="villa_carlos_paz_marzo">
-            </div>
-        </div>
-    </div>
-    <div class="season-section">
-        <h2 class="season-title">SEMANA SANTA</h2>
-        <div class="flyers-grid">
-            <div class="flyer-card" onmouseover="playVid(this)" onmouseout="pauseVid(this)"><img
-                    src="Semana_Santa/san_bernaerdo_semana_santa.jpeg" class="flyer-media flyer-img"
-                    alt="san_bernaerdo_semana_santa"><video src="Semana_Santa/san_bernaerdo_semana_santa.mp4"
-                    class="flyer-video" muted loop playsinline></video>
-                <div class="video-badge">▶
-                    <svg width="60" height="60" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="22" cy="18" r="12" fill="#f5a623" opacity="0.9" />
-                        <circle cx="22" cy="18" r="8" fill="white" opacity="0.2" />
-                        <circle cx="22" cy="18" r="4" fill="#f5a623" />
-                        <path d="M14 32 Q22 42 30 32" stroke="#f5a623" stroke-width="2.5" fill="none"
-                            stroke-linecap="round" />
-                    </svg>
-                    <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo
-                        Leones</div>
-                    <div style="font-size:9px;color:rgba(255,255,255,0.4);letter-spacing:3px">TURISMO</div>
-                </div>
 
-                <div class="footer-col">
-                    <h4>Turismo Leones</h4>
-                    <ul>
-                        <li><a href="#">Quiénes somos</a></li>
-                        <li><a href="#">Oficinas</a></li>
-                        <li><a href="#">Trabaja con nosotros</a></li>
-                        <li><a href="#">Blog de viajes</a></li>
-                    </ul>
-                </div>
+    <script>
+        function playVid(card) {
+            const vid = card.querySelector('.flyer-video');
+            if (vid) {
+                card.playTimeout = setTimeout(() => {
+                    vid.play();
+                }, 1000);
+            }
+        }
+        function pauseVid(card) {
+            const vid = card.querySelector('.flyer-video');
+            if (card.playTimeout) {
+                clearTimeout(card.playTimeout);
+            }
+            if (vid) {
+                vid.pause();
+                vid.currentTime = 0;
+            }
+        }
+        
+        function openModal(title) {
+            document.getElementById('modalTitle').innerText = title;
+            const wpBtn = document.getElementById('modalWpBtn');
+            wpBtn.href = "https://wa.me/5491139470000?text=Hola,%20quisiera%20más%20información%20sobre%20el%20paquete:%20" + encodeURIComponent(title);
+            document.getElementById('infoModal').classList.add('active');
+        }
+        function closeModal() {
+            document.getElementById('infoModal').classList.remove('active');
+        }
+        
+        
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) backToTop.classList.add('visible');
+            else backToTop.classList.remove('visible');
+        });
 
-                <div class="footer-col">
-                    <h4>Legales</h4>
-                    <ul>
-                        <li><a href="#">Condiciones de contratación</a></li>
-                        <li><a href="#">Documentación para viajar</a></li>
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Términos y condiciones</a></li>
-                    </ul>
-                </div>
+        // Filter Logic
+        const searchInput = document.getElementById('searchInput');
+        const filterPills = document.querySelectorAll('.filter-pill');
+        const allCards = document.querySelectorAll('.flyer-card');
+        const allSections = document.querySelectorAll('.season-section');
+        const resultsCount = document.getElementById('resultsCount');
+        const noResultsMsg = document.getElementById('noResultsMsg');
+        
+        let currentSeasonFilter = 'all';
+        let currentTextFilter = '';
 
-                <div class="footer-col footer-contact">
-                    <h4>Contacto</h4>
-                    <p>📞 +54 11 3947-XXXX</p>
-                    <p>✉️ info@turismoleones.com.ar</p>
-                    <p>📍 Buenos Aires, Argentina</p>
-                </div>
-
-                <div class="footer-bottom">
-                    © 2025 Turismo Leones. Todos los derechos reservados. | Leg. N° XXXXXXXXX
-                </div>
-                </footer>
-
-                <a href="https://wa.me/5491139470000" class="whatsapp-btn" target="_blank">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
-                        <path
-                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                    </svg>
-                    <div>
-                        <span class="whatsapp-tooltip">¿Tenés alguna duda?</span>
-                        Chateá con nosotros
-                    </div>
-                </a>
-
-                <script>
-
-                    function playVid(card) {
-                        const vid = card.querySelector('.flyer-video');
-                        if (vid) vid.play();
+        function applyFilters() {
+            let visibleTotal = 0;
+            
+            allSections.forEach(sec => {
+                let sectionVisibleCount = 0;
+                const secSeason = sec.getAttribute('data-section-season');
+                const cards = sec.querySelectorAll('.flyer-card');
+                
+                cards.forEach(card => {
+                    const name = card.getAttribute('data-name') || '';
+                    const season = card.getAttribute('data-season') || '';
+                    const hasVideo = card.getAttribute('data-has-video') === 'true';
+                    
+                    let matchText = name.includes(currentTextFilter);
+                    let matchSeason = true;
+                    
+                    if (currentSeasonFilter === 'video') {
+                        matchSeason = hasVideo;
+                    } else if (currentSeasonFilter !== 'all') {
+                        matchSeason = season === currentSeasonFilter;
                     }
-                    function pauseVid(card) {
-                        const vid = card.querySelector('.flyer-video');
-                        if (vid) {
-                            vid.pause();
-                            vid.currentTime = 0;
-                        }
+                    
+                    if (matchText && matchSeason) {
+                        card.style.display = 'flex'; // our css uses flex
+                        sectionVisibleCount++;
+                        visibleTotal++;
+                    } else {
+                        card.style.display = 'none';
                     }
+                });
+                
+                // Update section count badge
+                const countBadge = sec.querySelector('.section-count');
+                if(countBadge) countBadge.innerText = sectionVisibleCount > 0 ? `(${sectionVisibleCount})` : '';
+                
+                // Hide section if empty
+                sec.style.display = sectionVisibleCount === 0 ? 'none' : 'block';
+            });
+            
+            resultsCount.innerText = `${visibleTotal} paquete${visibleTotal !== 1 ? 's' : ''}`;
+            if(noResultsMsg) noResultsMsg.style.display = visibleTotal === 0 ? 'block' : 'none';
+        }
 
-                    const track = document.getElementById('destinosTrack');
-                    const prevBtn = document.getElementById('prevBtn');
-                    const nextBtn = document.getElementById('nextBtn');
+        searchInput.addEventListener('input', (e) => {
+            currentTextFilter = e.target.value.toLowerCase();
+            applyFilters();
+        });
 
-                    const CARD_W = 220 + 20;
-                    let currentIndex = 0;
+        filterPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                filterPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                currentSeasonFilter = pill.getAttribute('data-filter');
+                applyFilters();
+            });
+        });
+        
+        // Modal logic updates
+        const seasonIcons = { 'otoño': '🍂', 'marzo': '📅', 'semana santa': '✝️', 'otros': '✨' };
+        
+        function openModal(title, season) {
+            document.getElementById('modalTitle').innerText = title;
+            const icon = seasonIcons[season] || '';
+            const iconEl = document.getElementById('modalSeasonIcon');
+            if(iconEl) iconEl.innerText = icon;
+            
+            const wpBtn = document.getElementById('modalWpBtn');
+            const friendlySeason = season ? season.toUpperCase() : '';
+            wpBtn.href = `https://wa.me/5491139470000?text=Hola,%20quisiera%20más%20información%20sobre%20el%20paquete:%20${encodeURIComponent(title)}%20(${encodeURIComponent(friendlySeason)})`;
+            document.getElementById('infoModal').classList.add('active');
+        }
+        
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+        
+        // Initial filter run
+        applyFilters();
 
-                    function getVisible() {
-                        return Math.floor((track.parentElement.offsetWidth - 80) / CARD_W);
-                    }
-
-                    function maxIndex() {
-                        return track.children.length - getVisible();
-                    }
-
-                    function updateTrack() {
-                        const offset = currentIndex * CARD_W;
-                        track.style.transform = `translateX(-${offset}px)`;
-                        prevBtn.style.opacity = currentIndex === 0 ? '0.3' : '1';
-                        nextBtn.style.opacity = currentIndex >= maxIndex() ? '0.3' : '1';
-                    }
-
-                    prevBtn.addEventListener('click', () => {
-                        if (currentIndex > 0) { currentIndex--; updateTrack(); }
-                    });
-
-                    nextBtn.addEventListener('click', () => {
-                        if (currentIndex < maxIndex()) { currentIndex++; updateTrack(); }
-                    });
-
-                    updateTrack();
-                    window.addEventListener('resize', updateTrack);
-                </script>
+        // Close modal on outside click
+        document.getElementById('infoModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
 </body>
-
 </html>
