@@ -1627,6 +1627,38 @@
     </div>
     </div>
 
+    <div class="season-section" data-section-season="valijas-ya" id="valijas-ya-section"
+        style="display: none; animation: fadeIn 0.5s ease-in-out;">
+        <h2 class="season-title" style="color: #d32f2f;">VALIJAS YA <span class="section-count"></span></h2>
+        <div class="flyers-wrapper">
+            <div class="flyers-track">
+                <div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false"
+                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
+                    <img src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mar Del Plata Marzo</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
+                <div class="flyer-card" data-name="mendoza marzo" data-season="marzo" data-has-video="false"
+                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Mendoza Marzo', 'marzo')">
+                    <img src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza Marzo</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Tandil Marzo')">
+                    <img src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo">
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Villa Carlos Paz Marzo')">
+                    <img src="Marzo/villa_carlos_paz_marzo.jpeg" class="flyer-media flyer-img"
+                        alt="villa_carlos_paz_marzo">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="season-section" data-section-season="otoño">
         <h2 class="season-title">OTOÑO <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
@@ -1971,6 +2003,19 @@
 
             slides[currentHeroSlide].classList.add('active');
             slides[currentHeroSlide].style.position = 'relative';
+
+            const valijasSection = document.getElementById('valijas-ya-section');
+            if (valijasSection) {
+                if (currentHeroSlide === 1) {
+                    valijasSection.style.display = 'block';
+                    const track = valijasSection.querySelector('.flyers-track');
+                    if (track) {
+                        track.style.transform = 'none';
+                    }
+                } else {
+                    valijasSection.style.display = 'none';
+                }
+            }
         }
 
         function startHeroAutoPlay() {
