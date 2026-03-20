@@ -842,152 +842,608 @@
             gap: 4px;
             z-index: 2;
         }
-    
-        /* Modal Styles */
+
         .modal-overlay {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.8); z-index: 2000;
-            display: flex; align-items: center; justify-content: center;
-            opacity: 0; pointer-events: none; transition: opacity 0.3s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
         }
-        .modal-overlay.active { opacity: 1; pointer-events: auto; }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
         .modal-content {
-            background: white; border-radius: 8px; width: 90%; max-width: 500px;
-            padding: 30px; position: relative; text-align: center;
-            transform: translateY(20px); transition: transform 0.3s;
+            background: white;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            position: relative;
+            text-align: center;
+            transform: translateY(20px);
+            transition: transform 0.3s;
         }
-        .modal-overlay.active .modal-content { transform: translateY(0); }
+
+        .modal-overlay.active .modal-content {
+            transform: translateY(0);
+        }
+
         .modal-close {
-            position: absolute; top: 10px; right: 10px; font-size: 24px;
-            cursor: pointer; background: none; border: none; color: #333;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #333;
         }
-        .modal-title { font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--navy); margin-bottom: 15px; text-transform: capitalize; }
-        .modal-body { font-size: 15px; color: #555; margin-bottom: 25px; line-height: 1.5; }
+
+        .modal-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 28px;
+            color: var(--navy);
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+
+        .modal-body {
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+
         .modal-btn {
-            background: #25d366; color: white; text-decoration: none; padding: 12px 24px;
-            border-radius: 25px; font-weight: bold; display: inline-flex; align-items: center; gap: 8px;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); transition: transform 0.2s;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            transition: transform 0.2s;
         }
-        .modal-btn:hover { transform: scale(1.05); }
-        
-        /* Updated Hover Delay */
-        .flyer-card:has(.flyer-video):hover .flyer-media { opacity: 0; transition-delay: 1s; }
-        .flyer-card:hover .flyer-video { opacity: 1; transition-delay: 1s; }
 
-    
-        /* -- NUEVAS MEJORAS CSS -- */
-        /* Barra de búsqueda */
+        .modal-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .flyer-card:has(.flyer-video):hover .flyer-media {
+            opacity: 0;
+            transition-delay: 1s;
+        }
+
+        .flyer-card:hover .flyer-video {
+            opacity: 1;
+            transition-delay: 1s;
+        }
+
+
         .search-bar-container {
-            position: sticky; top: 64px; z-index: 100;
-            background: #f8f9ff; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            padding: 12px 40px; display: flex; align-items: center; justify-content: space-between;
-            gap: 20px; flex-wrap: wrap;
+            position: sticky;
+            top: 64px;
+            z-index: 100;
+            background: #f8f9ff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 12px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .search-input-wrapper { position: relative; flex: 1; min-width: 250px; max-width: 400px; }
-        .search-input-wrapper svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; fill: #666; }
-        .search-input { width: 100%; border: 1px solid #ccc; border-radius: 20px; padding: 8px 16px 8px 36px; font-family: 'Montserrat', sans-serif; font-size: 14px; outline: none; transition: border-color 0.3s; }
-        .search-input:focus { border-color: var(--blue); }
-        .filters-container { display: flex; gap: 8px; flex-wrap: wrap; }
-        .filter-pill { background: white; border: 1px solid #ddd; border-radius: 20px; padding: 6px 16px; font-size: 13px; font-weight: 600; cursor: pointer; color: #555; transition: all 0.2s; white-space: nowrap; }
-        .filter-pill:hover { background: #f0f0f0; }
-        .filter-pill.active { background: var(--navy); color: white; border-color: var(--navy); }
-        .results-count { font-size: 13px; font-weight: 600; color: #666; white-space: nowrap; }
 
-        /* Overlay Hover en Cards */
-        .flyer-overlay { position: absolute; bottom: 0; left: 0; right: 0; height: 50%; background: linear-gradient(transparent, rgba(0,0,10,0.85)); pointer-events: none; opacity: 0; transition: opacity 0.25s; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; z-index: 3; }
-        .flyer-card:hover .flyer-overlay { opacity: 1; }
-        .flyer-overlay-title { font-family: 'Bebas Neue', sans-serif; font-size: 26px; color: white; margin-bottom: 5px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
-        .flyer-overlay-badge { background: #25d366; color: white; font-size: 10px; font-weight: bold; padding: 3px 8px; border-radius: 12px; align-self: flex-start; text-transform: uppercase; }
+        .search-input-wrapper {
+            position: relative;
+            flex: 1;
+            min-width: 250px;
+            max-width: 400px;
+        }
 
-        /* Modal Mejoras */
-        .modal-overlay { backdrop-filter: blur(6px); }
-        .modal-content { transform: scale(0.97) translateY(20px); transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
-        .modal-overlay.active .modal-content { transform: scale(1) translateY(0); }
-        .modal-season-icon { font-size: 24px; display: block; margin-bottom: 5px; }
+        .search-input-wrapper svg {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            fill: #666;
+        }
 
-        /* Botón Volver Arriba */
-        .back-to-top { position: fixed; bottom: 90px; right: 28px; width: 44px; height: 44px; background: var(--navy); color: white; border: none; border-radius: 50%; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: all 0.3s; opacity: 0; pointer-events: none; z-index: 990; }
-        .back-to-top.visible { opacity: 1; pointer-events: auto; }
-        .back-to-top:hover { transform: translateY(-3px); background: var(--blue); }
+        .search-input {
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 8px 16px 8px 36px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
 
-        /* Mejoras Visuales Navbar & Banners & Hero CTA */
-        nav ul li a { position: relative; }
-        nav ul li a::after { content: ''; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0; background: #f5a623; transition: width 0.3s ease; }
-        nav ul li a:hover::after { width: 100%; }
-        
-        .banner { transition: filter 0.25s; }
-        .banner:hover { filter: brightness(1.12); }
-        .banner::before { display: none; } /* quitar efecto viejo hover */
-        
-        .hero-cta { margin-top: 15px; padding: 12px 28px; background: var(--gold); color: var(--navy); font-size: 14px; font-weight: bold; text-decoration: none; border-radius: 30px; text-transform: uppercase; letter-spacing: 1px; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 15px rgba(245, 166, 35, 0.4); z-index: 2; pointer-events: auto; }
-        .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245, 166, 35, 0.6); }
-        
-        /* Mensaje sin resultados */
-        .no-results { display: none; text-align: center; padding: 60px 20px; font-size: 18px; color: #666; width: 100%; }
+        .search-input:focus {
+            border-color: var(--blue);
+        }
 
-    
-        /* -- PACKAGE DETAIL VIEW -- */
+        .filters-container {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-pill {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            color: #555;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+
+        .filter-pill:hover {
+            background: #f0f0f0;
+        }
+
+        .filter-pill.active {
+            background: var(--navy);
+            color: white;
+            border-color: var(--navy);
+        }
+
+        .results-count {
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        .flyer-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(transparent, rgba(0, 0, 10, 0.85));
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.25s;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            z-index: 3;
+        }
+
+        .flyer-card:hover .flyer-overlay {
+            opacity: 1;
+        }
+
+        .flyer-overlay-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 26px;
+            color: white;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .flyer-overlay-badge {
+            background: #25d366;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 12px;
+            align-self: flex-start;
+            text-transform: uppercase;
+        }
+
+        .modal-overlay {
+            backdrop-filter: blur(6px);
+        }
+
+        .modal-content {
+            transform: scale(0.97) translateY(20px);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1) translateY(0);
+        }
+
+        .modal-season-icon {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 90px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            background: var(--navy);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            opacity: 0;
+            pointer-events: none;
+            z-index: 990;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            background: var(--blue);
+        }
+
+        nav ul li a {
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            height: 2px;
+            width: 0;
+            background: #f5a623;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .banner {
+            transition: filter 0.25s;
+        }
+
+        .banner:hover {
+            filter: brightness(1.12);
+        }
+
+        .banner::before {
+            display: none;
+        }
+
+        .hero-cta {
+            margin-top: 15px;
+            padding: 12px 28px;
+            background: var(--gold);
+            color: var(--navy);
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(245, 166, 35, 0.4);
+            z-index: 2;
+            pointer-events: auto;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 166, 35, 0.6);
+        }
+
+        .no-results {
+            display: none;
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 18px;
+            color: #666;
+            width: 100%;
+        }
+
+
         .pkg-view {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: #fff; z-index: 3000; overflow-y: auto; overflow-x: hidden;
-            display: none; flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: 3000;
+            overflow-y: auto;
+            overflow-x: hidden;
+            display: none;
+            flex-direction: column;
         }
-        .pkg-view.active { display: flex; }
-        
+
+        .pkg-view.active {
+            display: flex;
+        }
+
         .pkg-header {
             background: linear-gradient(135deg, #0a1a6b 0%, #1432c8 100%);
-            padding: 15px 40px; color: white; display: flex; align-items: center; justify-content: space-between;
-            position: sticky; top: 0; z-index: 10; font-family: 'Bebas Neue', sans-serif; font-size: 24px;
-        }
-        .pkg-back {
-            cursor: pointer; background: rgba(255,255,255,0.2); border: none;
-            color: white; padding: 8px 16px; border-radius: 4px; font-weight: bold;
-            display: flex; align-items: center; gap: 8px; font-family: 'Montserrat', sans-serif; font-size: 14px;
-            transition: background 0.2s;
-        }
-        .pkg-back:hover { background: rgba(255,255,255,0.4); }
-        
-        .pkg-content { max-width: 1200px; margin: 0 auto; width: 100%; padding: 40px; }
-        .pkg-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-        .pkg-media-box { background: #f0f0f0; border-radius: 12px; overflow: hidden; position: relative; aspect-ratio: 4/5; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
-        .pkg-media-box img, .pkg-media-box video { width: 100%; height: 100%; object-fit: cover; }
-        
-        .pkg-info-box { display: flex; flex-direction: column; }
-        .pkg-title { font-family: 'Bebas Neue', sans-serif; font-size: 48px; color: var(--navy); margin-bottom: 10px; line-height: 1.1; }
-        .pkg-season-pill { display: inline-block; background: var(--blue); color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px; align-self: flex-start; }
-        
-        .pkg-controls { display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 20px; }
-        .pkg-reservar-btn { background: #16a34a; color: white; padding: 15px 40px; font-weight: bold; font-size: 18px; border-radius: 8px; border: none; cursor: pointer; text-decoration: none; box-shadow: 0 4px 15px rgba(22,163,74,0.4); transition: transform 0.2s; }
-        .pkg-reservar-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(22,163,74,0.6); }
-        
-        .pkg-features { list-style: none; margin-bottom: 30px; }
-        .pkg-features li { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; font-size: 15px; font-weight: 600; color: #444; }
-        .pkg-features li span { font-size: 20px; }
-        
-        .pkg-price-bar { background: var(--gold); color: white; font-size: 32px; font-family: 'Bebas Neue', sans-serif; padding: 15px; text-align: center; border-radius: 8px; letter-spacing: 2px; }
-        
-        .pkg-tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
-        .pkg-tab-btn { flex: 1; background: #e2e8f0; border: none; padding: 15px; font-weight: bold; font-family: 'Montserrat', sans-serif; color: #555; text-transform: uppercase; border-radius: 8px; cursor: pointer; transition: 0.2s; min-width: 150px; }
-        .pkg-tab-btn.active { background: var(--blue); color: white; }
-        
-        .pkg-tab-content { display: none; background: #f8FAFC; padding: 30px; border-radius: 8px; border: 1px solid #e2e8f0; line-height: 1.7; color: #444; }
-        .pkg-tab-content.active { display: block; }
-        .pkg-tab-content p, .pkg-tab-content ul { margin-bottom: 15px; }
-        .pkg-tab-content ul { padding-left: 20px; }
-        
-        .pkg-payment { margin-top: 60px; text-align: center; border-top: 1px solid #eee; padding-top: 40px; }
-        .pkg-payment h3 { margin-bottom: 20px; color: var(--navy); }
-        .pkg-payment-logos { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; font-size: 40px; color: var(--blue); }
-        .pkg-payment-item { display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 12px; font-weight: bold; color: var(--navy); }
-        .pkg-payment-item svg { width: 50px; height: 50px; fill: var(--blue); }
-        
-        @media (max-width: 800px) {
-            .pkg-hero { grid-template-columns: 1fr; }
-            .pkg-controls { flex-direction: column; gap: 20px; align-items: stretch; }
-            .pkg-reservar-btn { width: 100%; text-align: center; }
-            .pkg-tab-btn { flex: 1 1 45%; }
+            padding: 15px 40px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 24px;
         }
 
+        .pkg-back {
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .pkg-back:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .pkg-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 40px;
+        }
+
+        .pkg-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .pkg-media-box {
+            background: #f0f0f0;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            aspect-ratio: 4/5;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .pkg-media-box img,
+        .pkg-media-box video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .pkg-info-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pkg-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 48px;
+            color: var(--navy);
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+
+        .pkg-season-pill {
+            display: inline-block;
+            background: var(--blue);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            align-self: flex-start;
+        }
+
+        .pkg-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .pkg-reservar-btn {
+            background: #16a34a;
+            color: white;
+            padding: 15px 40px;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4);
+            transition: transform 0.2s;
+        }
+
+        .pkg-reservar-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(22, 163, 74, 0.6);
+        }
+
+        .pkg-features {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .pkg-features li {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        .pkg-features li span {
+            font-size: 20px;
+        }
+
+        .pkg-price-bar {
+            background: var(--gold);
+            color: white;
+            font-size: 32px;
+            font-family: 'Bebas Neue', sans-serif;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            letter-spacing: 2px;
+        }
+
+        .pkg-tabs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .pkg-tab-btn {
+            flex: 1;
+            background: #e2e8f0;
+            border: none;
+            padding: 15px;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            color: #555;
+            text-transform: uppercase;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.2s;
+            min-width: 150px;
+        }
+
+        .pkg-tab-btn.active {
+            background: var(--blue);
+            color: white;
+        }
+
+        .pkg-tab-content {
+            display: none;
+            background: #f8FAFC;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            line-height: 1.7;
+            color: #444;
+        }
+
+        .pkg-tab-content.active {
+            display: block;
+        }
+
+        .pkg-tab-content p,
+        .pkg-tab-content ul {
+            margin-bottom: 15px;
+        }
+
+        .pkg-tab-content ul {
+            padding-left: 20px;
+        }
+
+        .pkg-payment {
+            margin-top: 60px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .pkg-payment h3 {
+            margin-bottom: 20px;
+            color: var(--navy);
+        }
+
+        .pkg-payment-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            font-size: 40px;
+            color: var(--blue);
+        }
+
+        .pkg-payment-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--navy);
+        }
+
+        .pkg-payment-item svg {
+            width: 50px;
+            height: 50px;
+            fill: var(--blue);
+        }
+
+        @media (max-width: 800px) {
+            .pkg-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .pkg-controls {
+                flex-direction: column;
+                gap: 20px;
+                align-items: stretch;
+            }
+
+            .pkg-reservar-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .pkg-tab-btn {
+                flex: 1 1 45%;
+            }
+        }
     </style>
     <script src="data/paquetes.js"></script>
 </head>
@@ -1071,116 +1527,178 @@
         </div>
     </div>
 
-    <div class="season-section" data-section-season="otoño"><h2 class="season-title">OTOÑO <span class="section-count"></span></h2><div class="flyers-grid">
-<div class="flyer-card" data-name="campo la herradura otoño" data-season="otoño" data-has-video="false" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Campo La Herradura Otoño', 'otoño')">
-    <img src="Otoño/campo_la_herradura_otoño.jpeg" class="flyer-media flyer-img" alt="campo_la_herradura_otoño">
-<div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura Otoño</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Cataratas Del Iguazu Otoño')">
-    <img src="Otoño/cataratas_del_iguazu_otoño.jpeg" class="flyer-media flyer-img" alt="cataratas_del_iguazu_otoño">
-    <video src="Otoño/cataratas_del_iguazu_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div></div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Gualeguaychu Otoño')">
-    <img src="Otoño/gualeguaychu_otoño.jpeg" class="flyer-media flyer-img" alt="gualeguaychu_otoño">
-    <video src="Otoño/gualeguaychu_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Mar Del Plata Otoño')">
-    <img src="Otoño/mar_del_plata_otoño.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_otoño">
-    <video src="Otoño/mar_del_plata_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Mendoza Otoño')">
-    <img src="Otoño/mendoza_otoño.jpeg" class="flyer-media flyer-img" alt="mendoza_otoño">
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Mendoza Verano Pero Ponelo Con Otoño')">
-    <video src="Otoño/mendoza_verano_pero_ponelo_con_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Puerto Madryn Otoño')">
-    <img src="Otoño/puerto_madryn_otoño.jpeg" class="flyer-media flyer-img" alt="puerto_madryn_otoño">
-    <video src="Otoño/puerto_madryn_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Salta Otoño')">
-    <img src="Otoño/salta_otoño.jpeg" class="flyer-media flyer-img" alt="salta_otoño">
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('San Pedro Otoño')">
-    <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="san_pedro_otoño">
-    <video src="Otoño/san_pedro_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('San Rafael Otoño')">
-    <img src="Otoño/san_rafael_otoño.jpeg" class="flyer-media flyer-img" alt="san_rafael_otoño">
-    <video src="Otoño/san_rafael_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Tandil Otoño')">
-    <img src="Otoño/tandil_otoño.jpeg" class="flyer-media flyer-img" alt="tandil_otoño">
-    <video src="Otoño/tandil_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Termas De Guaychu Otoño')">
-    <img src="Otoño/termas_de_guaychu_otoño.jpeg" class="flyer-media flyer-img" alt="termas_de_guaychu_otoño">
-    <video src="Otoño/termas_de_guaychu_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Villa Carlos Paz Otoño')">
-    <img src="Otoño/villa_carlos_paz_otoño.jpeg" class="flyer-media flyer-img" alt="villa_carlos_paz_otoño">
-    <video src="Otoño/villa_carlos_paz_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Villa De Merlo Otoño')">
-    <img src="Otoño/villa_de_merlo_otoño.jpeg" class="flyer-media flyer-img" alt="villa_de_merlo_otoño">
-    <video src="Otoño/villa_de_merlo_otoño.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-</div></div>
-<div class="season-section" data-section-season="marzo"><h2 class="season-title">MARZO <span class="section-count"></span></h2><div class="flyers-grid">
-<div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
-    <img src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo">
-<div class="flyer-overlay"><span class="flyer-overlay-title">Mar Del Plata Marzo</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
-<div class="flyer-card" data-name="mendoza marzo" data-season="marzo" data-has-video="false" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Mendoza Marzo', 'marzo')">
-    <img src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo">
-<div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza Marzo</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Santa Teresita Marzo')">
-    <img src="Marzo/santa_teresita_marzo.jpeg" class="flyer-media flyer-img" alt="santa_teresita_marzo">
-    <video src="Marzo/santa_teresita_marzo.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div></div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Tandil Marzo')">
-    <img src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo">
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Villa Carlos Paz Marzo')">
-    <img src="Marzo/villa_carlos_paz_marzo.jpeg" class="flyer-media flyer-img" alt="villa_carlos_paz_marzo">
-</div>
-</div></div>
-<div class="season-section" data-section-season="semana santa"><h2 class="season-title">SEMANA SANTA <span class="section-count"></span></h2><div class="flyers-grid">
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('San Bernaerdo Semana Santa')">
-    <img src="Semana_Santa/san_bernaerdo_semana_santa.jpeg" class="flyer-media flyer-img" alt="san_bernaerdo_semana_santa">
-    <video src="Semana_Santa/san_bernaerdo_semana_santa.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div></div>
-</div></div>
-<div class="season-section" data-section-season="otros"><h2 class="season-title">OTROS <span class="section-count"></span></h2><div class="flyers-grid">
-<div class="flyer-card" data-name="crucero travelero flyer" data-season="otros" data-has-video="false" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Crucero Travelero Flyer', 'otros')">
-    <img src="Otros/crucero_travelero_flyer.jpeg" class="flyer-media flyer-img" alt="crucero_travelero_flyer">
-<div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Flyer</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
-<div class="flyer-card" data-name="crucero travelero info" data-season="otros" data-has-video="false" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Crucero Travelero Info', 'otros')">
-    <img src="Otros/crucero_travelero_info.jpeg" class="flyer-media flyer-img" alt="crucero_travelero_info">
-<div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Info</span><span class="flyer-overlay-badge">💬 Consultar</span></div></div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Humahuaca')">
-    <video src="Otros/Humahuaca.mp4" class="flyer-media flyer-img" muted></video>
-    <video src="Otros/Humahuaca.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div></div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Majo')">
-    <video src="Otros/majo.mp4" class="flyer-media flyer-img" muted></video>
-    <video src="Otros/majo.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-<div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Ushuaia')">
-    <img src="Otros/ushuaia.jpeg" class="flyer-media flyer-img" alt="ushuaia">
-    <video src="Otros/ushuaia.mp4" class="flyer-video" loop playsinline></video>
-    <div class="video-badge">▶ VIDEO</div>
-</div>
-</div></div>
+    <div class="season-section" data-section-season="otoño">
+        <h2 class="season-title">OTOÑO <span class="section-count"></span></h2>
+        <div class="flyers-grid">
+            <div class="flyer-card" data-name="campo la herradura otoño" data-season="otoño" data-has-video="false"
+                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Campo La Herradura Otoño', 'otoño')">
+                <img src="Otoño/campo_la_herradura_otoño.jpeg" class="flyer-media flyer-img"
+                    alt="campo_la_herradura_otoño">
+                <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura Otoño</span><span
+                        class="flyer-overlay-badge">💬 Consultar</span></div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Cataratas Del Iguazu Otoño')">
+                <img src="Otoño/cataratas_del_iguazu_otoño.jpeg" class="flyer-media flyer-img"
+                    alt="cataratas_del_iguazu_otoño">
+                <video src="Otoño/cataratas_del_iguazu_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Gualeguaychu Otoño')">
+                <img src="Otoño/gualeguaychu_otoño.jpeg" class="flyer-media flyer-img" alt="gualeguaychu_otoño">
+                <video src="Otoño/gualeguaychu_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Mar Del Plata Otoño')">
+                <img src="Otoño/mar_del_plata_otoño.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_otoño">
+                <video src="Otoño/mar_del_plata_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Mendoza Otoño')">
+                <img src="Otoño/mendoza_otoño.jpeg" class="flyer-media flyer-img" alt="mendoza_otoño">
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Mendoza Verano Pero Ponelo Con Otoño')">
+                <video src="Otoño/mendoza_verano_pero_ponelo_con_otoño.mp4" class="flyer-video" loop
+                    playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Puerto Madryn Otoño')">
+                <img src="Otoño/puerto_madryn_otoño.jpeg" class="flyer-media flyer-img" alt="puerto_madryn_otoño">
+                <video src="Otoño/puerto_madryn_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Salta Otoño')">
+                <img src="Otoño/salta_otoño.jpeg" class="flyer-media flyer-img" alt="salta_otoño">
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('San Pedro Otoño')">
+                <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="san_pedro_otoño">
+                <video src="Otoño/san_pedro_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('San Rafael Otoño')">
+                <img src="Otoño/san_rafael_otoño.jpeg" class="flyer-media flyer-img" alt="san_rafael_otoño">
+                <video src="Otoño/san_rafael_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Tandil Otoño')">
+                <img src="Otoño/tandil_otoño.jpeg" class="flyer-media flyer-img" alt="tandil_otoño">
+                <video src="Otoño/tandil_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Termas De Guaychu Otoño')">
+                <img src="Otoño/termas_de_guaychu_otoño.jpeg" class="flyer-media flyer-img"
+                    alt="termas_de_guaychu_otoño">
+                <video src="Otoño/termas_de_guaychu_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Villa Carlos Paz Otoño')">
+                <img src="Otoño/villa_carlos_paz_otoño.jpeg" class="flyer-media flyer-img" alt="villa_carlos_paz_otoño">
+                <video src="Otoño/villa_carlos_paz_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Villa De Merlo Otoño')">
+                <img src="Otoño/villa_de_merlo_otoño.jpeg" class="flyer-media flyer-img" alt="villa_de_merlo_otoño">
+                <video src="Otoño/villa_de_merlo_otoño.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+        </div>
+    </div>
+    <div class="season-section" data-section-season="marzo">
+        <h2 class="season-title">MARZO <span class="section-count"></span></h2>
+        <div class="flyers-grid">
+            <div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false"
+                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
+                <img src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo">
+                <div class="flyer-overlay"><span class="flyer-overlay-title">Mar Del Plata Marzo</span><span
+                        class="flyer-overlay-badge">💬 Consultar</span></div>
+            </div>
+            <div class="flyer-card" data-name="mendoza marzo" data-season="marzo" data-has-video="false"
+                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Mendoza Marzo', 'marzo')">
+                <img src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo">
+                <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza Marzo</span><span
+                        class="flyer-overlay-badge">💬 Consultar</span></div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Santa Teresita Marzo')">
+                <img src="Marzo/santa_teresita_marzo.jpeg" class="flyer-media flyer-img" alt="santa_teresita_marzo">
+                <video src="Marzo/santa_teresita_marzo.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Tandil Marzo')">
+                <img src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo">
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Villa Carlos Paz Marzo')">
+                <img src="Marzo/villa_carlos_paz_marzo.jpeg" class="flyer-media flyer-img" alt="villa_carlos_paz_marzo">
+            </div>
+        </div>
+    </div>
+    <div class="season-section" data-section-season="semana santa">
+        <h2 class="season-title">SEMANA SANTA <span class="section-count"></span></h2>
+        <div class="flyers-grid">
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('San Bernaerdo Semana Santa')">
+                <img src="Semana_Santa/san_bernaerdo_semana_santa.jpeg" class="flyer-media flyer-img"
+                    alt="san_bernaerdo_semana_santa">
+                <video src="Semana_Santa/san_bernaerdo_semana_santa.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+        </div>
+    </div>
+    <div class="season-section" data-section-season="otros">
+        <h2 class="season-title">OTROS <span class="section-count"></span></h2>
+        <div class="flyers-grid">
+            <div class="flyer-card" data-name="crucero travelero flyer" data-season="otros" data-has-video="false"
+                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Crucero Travelero Flyer', 'otros')">
+                <img src="Otros/crucero_travelero_flyer.jpeg" class="flyer-media flyer-img"
+                    alt="crucero_travelero_flyer">
+                <div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Flyer</span><span
+                        class="flyer-overlay-badge">💬 Consultar</span></div>
+            </div>
+            <div class="flyer-card" data-name="crucero travelero info" data-season="otros" data-has-video="false"
+                onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Crucero Travelero Info', 'otros')">
+                <img src="Otros/crucero_travelero_info.jpeg" class="flyer-media flyer-img" alt="crucero_travelero_info">
+                <div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Info</span><span
+                        class="flyer-overlay-badge">💬 Consultar</span></div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Humahuaca')">
+                <video src="Otros/Humahuaca.mp4" class="flyer-media flyer-img" muted></video>
+                <video src="Otros/Humahuaca.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Majo')">
+                <video src="Otros/majo.mp4" class="flyer-media flyer-img" muted></video>
+                <video src="Otros/majo.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+            <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                onclick="openPackage('Ushuaia')">
+                <img src="Otros/ushuaia.jpeg" class="flyer-media flyer-img" alt="ushuaia">
+                <video src="Otros/ushuaia.mp4" class="flyer-video" loop playsinline></video>
+                <div class="video-badge">▶ VIDEO</div>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer>
@@ -1191,7 +1709,8 @@
                 <circle cx="22" cy="18" r="4" fill="#f5a623" />
                 <path d="M14 32 Q22 42 30 32" stroke="#f5a623" stroke-width="2.5" fill="none" stroke-linecap="round" />
             </svg>
-            <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones</div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones
+            </div>
             <div style="font-size:9px;color:rgba(255,255,255,0.4);letter-spacing:3px">TURISMO</div>
         </div>
 
@@ -1230,7 +1749,8 @@
     <!-- WhatsApp FAB -->
     <a href="https://wa.me/5491139470000" class="whatsapp-btn" target="_blank">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
         </svg>
         <div>
             <span class="whatsapp-tooltip">¿Tenés alguna duda?</span>
@@ -1245,10 +1765,14 @@
             <div class="modal-title" id="modalTitle">Título del Destino</div>
             <div class="modal-body">
                 ¡Descubre este increíble destino con Turismo Leones! <br><br>
-                Hacé clic en el siguiente botón para solicitar más información, conocer las fechas disponibles o pedir un presupuesto.
+                Hacé clic en el siguiente botón para solicitar más información, conocer las fechas disponibles o pedir
+                un presupuesto.
             </div>
             <a href="#" class="modal-btn" target="_blank" id="modalWpBtn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+                </svg>
                 Consultar por WhatsApp
             </a>
         </div>
@@ -1273,39 +1797,38 @@
                 vid.currentTime = 0;
             }
         }
-        
+
         function openModal(title, season) {
             const friendlySeason = season ? season.toLowerCase().trim() : '';
             window.location.href = `detalle.html?id=${encodeURIComponent(title)}&season=${encodeURIComponent(friendlySeason)}`;
         }
-        
+
         function openPackage(title, season) {
             openModal(title, season);
         }
-        
-        // Close modal on Escape key
+
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeModal();
         });
-        
-        // Initial filter run
+
         applyFilters();
 
-        
-        // Close modal on outside click
-        document.getElementById('infoModal').addEventListener('click', function(e) {
+
+        document.getElementById('infoModal').addEventListener('click', function (e) {
             if (e.target === this) {
                 closeModal();
             }
         });
     </script>
 
-    <!-- FULL PAGE PACKAGE DETAIL VIEW -->
     <div id="packageDetailView" class="pkg-view">
         <div class="pkg-header">
             <button class="pkg-back" onclick="closePackage()">← Volver al inicio</button>
             <div style="display:flex; align-items:center; gap:10px;">
-                <svg width="24" height="24" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="18" r="12" fill="#f5a623"/><path d="M14 32 Q22 42 30 32" stroke="#f5a623" stroke-width="2.5" fill="none"/></svg>
+                <svg width="24" height="24" viewBox="0 0 44 44" fill="none">
+                    <circle cx="22" cy="18" r="12" fill="#f5a623" />
+                    <path d="M14 32 Q22 42 30 32" stroke="#f5a623" stroke-width="2.5" fill="none" />
+                </svg>
                 Turismo Leones
             </div>
         </div>
@@ -1313,48 +1836,66 @@
             <div class="pkg-hero">
                 <div class="pkg-media-box" id="pkgMediaBox">
                     <img id="pkgImage" src="" alt="">
-                    <!-- Se inyectará video si es necesario -->
                 </div>
                 <div class="pkg-info-box">
                     <div class="pkg-season-pill" id="pkgSeason"></div>
                     <h1 class="pkg-title" id="pkgTitle">Título</h1>
-                    
+
                     <div class="pkg-controls">
-                        <div style="font-weight:600; color:#666;">Seleccionar fecha: <br><select style="margin-top:5px; padding:8px; border-radius:4px; border:1px solid #ccc; width:100%"><option>Elige una opción</option><option>Verano 2026</option></select></div>
+                        <div style="font-weight:600; color:#666;">Seleccionar fecha: <br><select
+                                style="margin-top:5px; padding:8px; border-radius:4px; border:1px solid #ccc; width:100%">
+                                <option>Elige una opción</option>
+                                <option>Verano 2026</option>
+                            </select></div>
                         <a href="#" class="pkg-reservar-btn" id="pkgReservarBtn" target="_blank">RESERVAR</a>
                     </div>
-                    
+
                     <ul class="pkg-features" id="pkgFeatures">
                     </ul>
-                    
+
                     <div class="pkg-price-bar" id="pkgPrice">$ 0.00</div>
                 </div>
             </div>
-            
+
             <div class="pkg-tabs">
                 <button class="pkg-tab-btn active" onclick="switchTab('itinerario')">Itinerario</button>
                 <button class="pkg-tab-btn" onclick="switchTab('notas')">Notas Importantes</button>
                 <button class="pkg-tab-btn" onclick="switchTab('embarque')">Puntos de Embarque</button>
                 <button class="pkg-tab-btn" onclick="switchTab('legales')">Legales</button>
             </div>
-            
+
             <div id="tab-itinerario" class="pkg-tab-content active"></div>
             <div id="tab-notas" class="pkg-tab-content"></div>
             <div id="tab-embarque" class="pkg-tab-content"></div>
             <div id="tab-legales" class="pkg-tab-content"></div>
-            
+
             <div class="pkg-payment">
                 <h3>Medios de Pago</h3>
                 <div class="pkg-payment-logos">
-                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg> TARJETAS</div>
-                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24"><path d="M11 2C6.03 2 2 6.03 2 11h9V2zm2 0v9h9C22 6.03 17.97 2 13 2zm9 11h-9v9c4.97 0 9-4.03 9-9zM2 13v.03C2 17.97 6.03 22 11 22v-9H2z"/></svg> CUOTAS</div>
-                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg> MERCADO PAGO</div>
-                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg> EFECTIVO</div>
-                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24"><path d="M4 10h3v7H4zM10.5 10h3v7h-3zM2 19h20v3H2zM17 10h3v7h-3zM12 1L2 6v2h20V6z"/></svg> TRANSFERENCIA</div>
+                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
+                        </svg> TARJETAS</div>
+                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M11 2C6.03 2 2 6.03 2 11h9V2zm2 0v9h9C22 6.03 17.97 2 13 2zm9 11h-9v9c4.97 0 9-4.03 9-9zM2 13v.03C2 17.97 6.03 22 11 22v-9H2z" />
+                        </svg> CUOTAS</div>
+                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+                        </svg> MERCADO PAGO</div>
+                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                        </svg> EFECTIVO</div>
+                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
+                            <path d="M4 10h3v7H4zM10.5 10h3v7h-3zM2 19h20v3H2zM17 10h3v7h-3zM12 1L2 6v2h20V6z" />
+                        </svg> TRANSFERENCIA</div>
                 </div>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
