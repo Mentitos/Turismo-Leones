@@ -2096,6 +2096,8 @@
                     interval = setInterval(() => {
                         if (isHovered) return;
 
+                        if (track.scrollWidth <= track.parentElement.clientWidth) return;
+
                         const firstCard = track.children[0];
                         const cardWidth = firstCard.offsetWidth;
                         const gap = 24;
