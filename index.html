@@ -1585,6 +1585,239 @@
             z-index: 9999 !important;
             cursor: pointer !important;
         }
+
+        .hero-valijas-previews {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 600px;
+            padding-bottom: 10px;
+            z-index: 2;
+            flex-wrap: wrap;
+        }
+
+        .hero-valijas-previews img {
+            height: 120px;
+            width: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            transition: transform 0.2s;
+        }
+
+        .hero-valijas-previews img:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 600px) {
+            .hero-valijas-previews {
+                gap: 10px;
+            }
+
+            .hero-valijas-previews img {
+                height: 80px;
+            }
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 5px;
+            transition: transform 0.2s;
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                padding: 0 20px;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                width: 100%;
+                background: var(--navy);
+                padding: 20px;
+                gap: 15px;
+                z-index: 1000;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                height: auto;
+                min-height: 350px;
+            }
+
+            .side-cell {
+                display: none;
+            }
+
+            .hero-center {
+                height: 300px;
+                width: 100%;
+                grid-column: 1 / -1;
+            }
+
+            .hero-center-bg {
+                background-size: cover !important;
+                background-position: center !important;
+                width: 100% !important;
+                height: 100% !important;
+            }
+
+            .hero-tagline {
+                width: 100%;
+                text-align: center;
+                padding: 0 20px;
+            }
+
+            .search-bar-container {
+                padding: 12px 20px;
+                top: 0;
+            }
+
+            .banners {
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto;
+                padding: 15px;
+                gap: 12px;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .banner {
+                flex: 0 0 85%;
+                height: 140px;
+                scroll-snap-align: center;
+            }
+
+            .banner-promo svg {
+                transform: scale(0.8);
+            }
+
+            .pkg-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-col {
+                grid-column: span 1;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            .footer-col h4 {
+                font-size: 14px;
+                margin-bottom: 12px;
+            }
+
+            .footer-col ul li a,
+            .footer-contact p {
+                font-size: 11px;
+            }
+
+            .footer-contact p {
+                justify-content: flex-start;
+            }
+
+            .footer-logo {
+                grid-column: 1 / -1;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            footer {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .logo-text .brand {
+                font-size: 20px;
+            }
+
+            .logo-text .sub {
+                font-size: 7px;
+                letter-spacing: 2px;
+            }
+
+            .hero-tagline {
+                font-size: 32px;
+            }
+
+            .hero-tagline span {
+                font-size: 14px;
+            }
+
+            .season-section {
+                padding: 30px 15px;
+            }
+
+            .season-title {
+                font-size: 26px;
+                gap: 8px;
+            }
+
+            .flyers-track .flyer-card {
+                flex: 0 0 44vw;
+                min-width: 44vw;
+            }
+
+            .flyer-overlay-title {
+                font-size: 16px;
+                margin-bottom: 2px;
+            }
+
+            .flyer-overlay-badge {
+                font-size: 8px;
+                padding: 2px 6px;
+            }
+
+            .flyer-carousel-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 18px;
+            }
+
+            .back-to-top {
+                bottom: 80px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .pkg-content {
+                padding: 20px;
+            }
+
+            .pkg-title {
+                font-size: 32px;
+            }
+
+            .pkg-header {
+                padding: 10px 20px;
+            }
+        }
     </style>
     <script src="data/paquetes.js"></script>
 </head>
@@ -1600,12 +1833,13 @@
                 <span class="sub">Viajes</span>
             </div>
         </a>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Paquetes Aéreos</a></li>
-            <li><a href="#">Paquetes Terrestres</a></li>
-            <li><a href="#">Promociones</a></li>
-            <li><a href="#">Destinos</a></li>
+        <button class="nav-toggle" id="navToggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        <ul id="navMenu">
+            <li><a href="#" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="#valijas-ya-section" onclick="toggleMenu()">Promociones</a></li>
+            <li><a href="#" onclick="toggleMenu()">Paquetes</a></li>
+            <li><a href="#" onclick="toggleMenu()">Destinos</a></li>
+            <li><a href="#" onclick="toggleMenu()">Contacto</a></li>
         </ul>
     </nav>
 
@@ -1631,24 +1865,14 @@
                         <span style="font-size: 0.5em; letter-spacing: 1px; color:#ffeb3b">¡MIRA NUESTRAS OFERTAS DE
                             MARZO!</span>
                     </div>
-                    <div
-                        style="display:flex; justify-content:center; gap:20px; width:100%; max-width:500px; padding-bottom:10px; z-index:2;">
-                        <img src="Marzo/mar_del_plata_marzo.jpeg"
-                            style="height:120px; width:auto; border-radius:10px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.5); border:2px solid white; transition:transform 0.2s;"
-                            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
-                            onclick="openPackage('Mar Del Plata Marzo', 'marzo')" title="Mar Del Plata">
-                        <img src="Marzo/mendoza_marzo.jpeg"
-                            style="height:120px; width:auto; border-radius:10px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.5); border:2px solid white; transition:transform 0.2s;"
-                            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
-                            onclick="openPackage('Mendoza Marzo', 'marzo')" title="Mendoza">
-                        <img src="Marzo/tandil_marzo.jpeg"
-                            style="height:120px; width:auto; border-radius:10px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.5); border:2px solid white; transition:transform 0.2s;"
-                            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
-                            onclick="openPackage('Tandil Marzo')" title="Tandil">
-                        <img src="Marzo/villa_carlos_paz_marzo.jpeg"
-                            style="height:120px; width:auto; border-radius:10px; cursor:pointer; box-shadow:0 4px 10px rgba(0,0,0,0.5); border:2px solid white; transition:transform 0.2s;"
-                            onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"
-                            onclick="openPackage('Villa Carlos Paz Marzo')" title="Villa Carlos Paz">
+                    <div class="hero-valijas-previews">
+                        <img src="Marzo/mar_del_plata_marzo.jpeg" onclick="openPackage('Mar Del Plata Marzo', 'marzo')"
+                            title="Mar Del Plata">
+                        <img src="Marzo/mendoza_marzo.jpeg" onclick="openPackage('Mendoza Marzo', 'marzo')"
+                            title="Mendoza">
+                        <img src="Marzo/tandil_marzo.jpeg" onclick="openPackage('Tandil Marzo')" title="Tandil">
+                        <img src="Marzo/villa_carlos_paz_marzo.jpeg" onclick="openPackage('Villa Carlos Paz Marzo')"
+                            title="Villa Carlos Paz">
                     </div>
                 </div>
             </div>
@@ -2163,6 +2387,17 @@
                 closeModal();
             }
         });
+
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            const toggle = document.getElementById('navToggle');
+            if (menu) {
+                menu.classList.toggle('active');
+                if (toggle) {
+                    toggle.innerText = menu.classList.contains('active') ? '✕' : '☰';
+                }
+            }
+        }
 
         function scrollTrack(btn, dir) {
             const wrapper = btn.parentElement;
