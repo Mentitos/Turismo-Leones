@@ -811,6 +811,54 @@
             margin: -10px 0;
         }
 
+        .flyer-carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            background: rgba(10, 26, 107, 0.7);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            pointer-events: auto;
+        }
+
+        .flyers-wrapper:hover .flyer-carousel-btn {
+            opacity: 0;
+            display: none;
+        }
+
+        .flyers-wrapper.has-arrows .flyer-carousel-btn {
+            display: flex;
+        }
+
+        .flyers-wrapper.has-arrows:hover .flyer-carousel-btn {
+            opacity: 1;
+        }
+
+        .flyer-carousel-btn:hover {
+            background: var(--navy);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .flyer-carousel-btn.left {
+            left: 10px;
+        }
+
+        .flyer-carousel-btn.right {
+            right: 10px;
+        }
+
         .flyers-track {
             display: flex;
             gap: 24px;
@@ -1653,6 +1701,8 @@
         style="display: none; animation: fadeIn 0.5s ease-in-out;">
         <h2 class="season-title" style="color: #d32f2f;">VALIJAS YA <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
                 <div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false"
                     onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
@@ -1684,6 +1734,8 @@
     <div class="season-section" data-section-season="otoño">
         <h2 class="season-title">OTOÑO <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
                 <div class="flyer-card" data-name="campo la herradura otoño" data-season="otoño" data-has-video="false"
                     onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
@@ -1797,6 +1849,8 @@
     <div class="season-section" data-section-season="marzo">
         <h2 class="season-title">MARZO <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
                 <div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false"
                     onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
@@ -1835,6 +1889,8 @@
     <div class="season-section" data-section-season="semana santa">
         <h2 class="season-title">SEMANA SANTA <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('San Bernaerdo Semana Santa')">
@@ -1851,6 +1907,8 @@
     <div class="season-section" data-section-season="otros">
         <h2 class="season-title">OTROS <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
                 <div class="flyer-card" data-name="crucero travelero flyer" data-season="otros" data-has-video="false"
                     onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
@@ -2068,6 +2126,22 @@
             startHeroAutoPlay();
         });
 
+        function checkTrackOverflow() {
+            document.querySelectorAll('.flyers-wrapper').forEach(wrapper => {
+                const track = wrapper.querySelector('.flyers-track');
+                if (track) {
+                    if (track.scrollWidth > wrapper.clientWidth + 10) {
+                        wrapper.classList.add('has-arrows');
+                    } else {
+                        wrapper.classList.remove('has-arrows');
+                    }
+                }
+            });
+        }
+
+        window.addEventListener('load', checkTrackOverflow);
+        window.addEventListener('resize', checkTrackOverflow);
+
         function openModal(title, season) {
             const friendlySeason = season ? season.toLowerCase().trim() : '';
             window.location.href = `detalle.html?id=${encodeURIComponent(title)}&season=${encodeURIComponent(friendlySeason)}`;
@@ -2089,6 +2163,37 @@
                 closeModal();
             }
         });
+
+        function scrollTrack(btn, dir) {
+            const wrapper = btn.parentElement;
+            const track = wrapper.querySelector('.flyers-track');
+            if (!track || track.children.length <= 1) return;
+
+            track.style.transition = 'none';
+
+            const firstCard = track.children[0];
+            const cardWidth = firstCard.offsetWidth;
+            const gap = 24;
+            const moveDistance = cardWidth + gap;
+
+            if (dir === 1) {
+                track.style.transition = 'transform 0.4s ease-in-out';
+                track.style.transform = `translateX(-${moveDistance}px)`;
+                setTimeout(() => {
+                    track.style.transition = 'none';
+                    track.style.transform = 'translateX(0)';
+                    track.appendChild(track.children[0]);
+                }, 400);
+            } else {
+                const lastCard = track.children[track.children.length - 1];
+                track.style.transform = `translateX(-${moveDistance}px)`;
+                track.insertBefore(lastCard, track.firstChild);
+                track.offsetHeight;
+
+                track.style.transition = 'transform 0.4s ease-in-out';
+                track.style.transform = 'translateX(0)';
+            }
+        }
 
 
 
@@ -2115,19 +2220,25 @@
             }
         });
 
-        document.querySelectorAll('.flyers-track').forEach(track => {
-            if (track.children.length > 1) {
+        document.querySelectorAll('.flyers-wrapper').forEach(wrapper => {
+            const track = wrapper.querySelector('.flyers-track');
+            if (track && track.children.length > 1) {
                 let interval;
                 let isHovered = false;
 
-                track.addEventListener('mouseenter', () => isHovered = true);
-                track.addEventListener('mouseleave', () => isHovered = false);
+                wrapper.addEventListener('mouseenter', () => isHovered = true);
+                wrapper.addEventListener('mouseleave', () => isHovered = false);
 
                 const startCarousel = () => {
                     interval = setInterval(() => {
                         if (isHovered) return;
 
-                        if (track.scrollWidth <= track.parentElement.clientWidth) return;
+                        if (track.scrollWidth <= track.parentElement.clientWidth) {
+                            wrapper.classList.remove('has-arrows');
+                            return;
+                        } else {
+                            wrapper.classList.add('has-arrows');
+                        }
 
                         const firstCard = track.children[0];
                         const cardWidth = firstCard.offsetWidth;
