@@ -107,7 +107,7 @@
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
             grid-template-rows: 1fr 1fr;
-            height: 340px;
+            height: 280px;
             overflow: hidden;
             position: relative;
         }
@@ -434,7 +434,6 @@
             position: absolute;
             top: 12px;
             right: 12px;
-            background: linear-gradient(135deg, #8b00d6, #5500aa);
             color: white;
             font-size: 9px;
             font-weight: 800;
@@ -446,6 +445,30 @@
             display: flex;
             align-items: center;
             gap: 4px;
+        }
+
+        .status-sold-out {
+            background: #d32f2f !important;
+        }
+
+        .status-almost-gone {
+            background: #f57c00 !important;
+        }
+
+        .status-available {
+            background: #2e7d32 !important;
+        }
+
+        .sold-time {
+            position: absolute;
+            bottom: 45px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 8px;
+            padding: 2px 6px;
+            border-radius: 2px;
+            z-index: 2;
         }
 
         .card-pin {
@@ -1844,7 +1867,7 @@
             <li><a href="#" onclick="toggleMenu()">Inicio</a></li>
             <li><a href="#valijas-ya-section" onclick="toggleMenu()">Promociones</a></li>
             <li><a href="#" onclick="toggleMenu()">Paquetes</a></li>
-            <li><a href="#" onclick="toggleMenu()">Destinos</a></li>
+            <li><a href="galeria.html" onclick="toggleMenu()">Galería</a></li>
             <li><a href="#" onclick="toggleMenu()">Contacto</a></li>
         </ul>
     </nav>
@@ -1854,7 +1877,25 @@
             <div class="ph img-bariloche">🏔️</div>
         </div>
         <div class="hero-center hero-cell" style="position:relative; overflow:hidden;">
+
             <div class="hero-slide active">
+                <div class="hero-center-bg"
+                    style="background: linear-gradient(135deg, #ffd700, #ffae00); padding: 15px;">
+                    <div class="hero-tagline" style="color: var(--navy); text-shadow: none;">
+                        🚢 CRUCERO TRAVELERO<br>
+                        <span style="color: rgba(10, 26, 107, 0.8);">"No gastas ni un mango más"</span>
+                    </div>
+                    <div style="display: flex; gap: 10px; margin-top: 10px; z-index: 2;">
+                        <a href="Otros/CruceroTravelero.pdf" class="hero-cta"
+                            style="background: var(--navy); color: white;" target="_blank">📄 Ver Información</a>
+                        <a href="#" class="hero-cta"
+                            onclick="openPackage('Crucero Travelero', '', 'Otros/crucero_travelero_flyer.jpeg')">Reserva
+                            Ahora</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slide">
                 <div class="hero-center-bg">
                     <div class="hero-tagline">
                         Reserva tu viaje<br>
@@ -1927,36 +1968,64 @@
     </div>
     </div>
 
+    <div class="section-header">
+        <h2>🔥 DESTACADAS</h2>
+    </div>
+
     <div class="season-section" data-section-season="valijas-ya" id="valijas-ya-section"
-        style="display: none; animation: fadeIn 0.5s ease-in-out;">
+        style="animation: fadeIn 0.5s ease-in-out;">
         <h2 class="season-title" style="color: #d32f2f;">VALIJAS YA <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
-                <div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false"
-                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                <div class="flyer-card" data-name="mar del plata marzo"
                     onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
+                    <div class="card-badge status-sold-out">CUPOS LLENOS 🔴</div>
+                    <div class="sold-time">Vendido en 24 horas</div>
                     <img src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mar Del Plata Marzo</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
                 </div>
-                <div class="flyer-card" data-name="mendoza marzo" data-season="marzo" data-has-video="false"
-                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Mendoza Marzo', 'marzo')">
+                <div class="flyer-card" data-name="mendoza marzo" onclick="openPackage('Mendoza Marzo', 'marzo')">
+                    <div class="card-badge status-almost-gone">PRÓXIMO A AGOTARSE 🟡</div>
                     <img src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza Marzo</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
                 </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Tandil Marzo')">
+                <div class="flyer-card" onclick="openPackage('Tandil Marzo')">
+                    <div class="card-badge status-available">DISPONIBLE 🟢</div>
                     <img src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo">
                 </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Villa Carlos Paz Marzo')">
-                    <img src="Marzo/villa_carlos_paz_marzo.jpeg" class="flyer-media flyer-img"
-                        alt="villa_carlos_paz_marzo">
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        <h2>NUESTROS VIAJES</h2>
+    </div>
+
+    <div class="season-section">
+        <h2 class="season-title">ESCAPADITAS</h2>
+        <div class="flyers-wrapper">
+            <div class="flyers-track">
+                <div class="flyer-card" onclick="openPackage('Córdoba')">
+                    <div class="card-badge status-available">PENSIÓN COMPLETA 🏨</div>
+                    <img src="Otros/cordoba.jpeg" class="flyer-media flyer-img" alt="cordoba">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Córdoba Sierras</span></div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="season-section">
+        <h2 class="season-title">FULLDAY HERRADURA</h2>
+        <div class="flyers-wrapper">
+            <div class="flyers-track">
+            </div>
+        </div>
+    </div>
+
+    <div class="season-section">
+        <h2 class="season-title">TERMAS</h2>
+        <div class="flyers-wrapper">
+            <div class="flyers-track">
             </div>
         </div>
     </div>
@@ -2194,36 +2263,44 @@
         <div class="footer-col">
             <h4>Turismo Leones</h4>
             <ul>
-                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Ubicación y el Centro de Jubilados</a></li>
                 <li><a href="#">Oficinas</a></li>
-                <li><a href="#">Trabaja con nosotros</a></li>
-                <li><a href="#">Blog de viajes</a></li>
+                <li><a href="#">Vender turismo también</a></li>
+                <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
         </div>
 
         <div class="footer-col">
-            <h4>Legales</h4>
+            <h4>Medios de Pago</h4>
             <ul>
-                <li><a href="#">Condiciones de contratación</a></li>
-                <li><a href="#">Documentación para viajar</a></li>
-                <li><a href="#">Política de privacidad</a></li>
-                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Efectivo</a></li>
+                <li><a href="#">Transferencia Bancaria</a></li>
+                <li><a href="#">Mercado Pago</a></li>
+                <li><a href="#">3 y 6 cuotas</a></li>
             </ul>
         </div>
 
         <div class="footer-col footer-contact">
             <h4>Contacto</h4>
-            <p>📞 +54 11 3947-XXXX</p>
-            <p>✉️ info@turismoleones.com.ar</p>
-            <p>📍 Buenos Aires, Argentina</p>
+            <p>📞 +54 9 11 5123-3885 (Mario)</p>
+            <p>✉️ BERRUETAMARIO1121@GMAIL.COM</p>
+            <p>📍 Juan Francisco Seguí, B1615 Tortuguitas, Provincia de Buenos Aires</p>
+            <div class="footer-map" style="margin-top: 15px;">
+                <iframe
+                    src="https://maps.google.com/maps?q=Juan%20Francisco%20Segu%C3%AD,%20Tortuguitas,%20Provincia%20de%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
         </div>
 
         <div class="footer-bottom">
+            Turismo Leones se subsidia con Leones de Malvinas – Lo recaudado será destinado al Centro de Jubilados.
+            <br>
             © 2026 Turismo Leones. Todos los derechos reservados. | Leg. N° XXXXXXXXX
         </div>
     </footer>
 
-    <a href="https://wa.me/5491139470000" class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/5491151233885" class="whatsapp-btn" target="_blank">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
             <path
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
@@ -2372,13 +2449,27 @@
         window.addEventListener('load', checkTrackOverflow);
         window.addEventListener('resize', checkTrackOverflow);
 
-        function openModal(title, season) {
+        function openModal(title, season, imageUrl, videoUrl) {
             const friendlySeason = season ? season.toLowerCase().trim() : '';
-            window.location.href = `detalle.html?id=${encodeURIComponent(title)}&season=${encodeURIComponent(friendlySeason)}`;
+            let url = `detalle.html?id=${encodeURIComponent(title)}&season=${encodeURIComponent(friendlySeason)}`;
+            if (imageUrl) url += `&image=${encodeURIComponent(imageUrl)}`;
+            if (videoUrl) url += `&video=${encodeURIComponent(videoUrl)}`;
+            window.location.href = url;
         }
 
-        function openPackage(title, season) {
-            openModal(title, season);
+        function openPackage(title, season, imageUrl, videoUrl) {
+            if (typeof event !== 'undefined' && event.currentTarget) {
+                const target = event.currentTarget;
+                const vid = target.querySelector('video');
+                const img = target.querySelector('img');
+
+                if (!videoUrl && vid) videoUrl = vid.getAttribute('data-src') || vid.getAttribute('src');
+                if (!imageUrl && img) imageUrl = img.getAttribute('src');
+
+                if (!imageUrl && target.tagName === 'IMG') imageUrl = target.getAttribute('src');
+                if (!videoUrl && target.tagName === 'VIDEO') videoUrl = target.getAttribute('data-src') || target.getAttribute('src');
+            }
+            openModal(title, season, imageUrl, videoUrl);
         }
 
         document.addEventListener('keydown', (e) => {
@@ -2551,11 +2642,16 @@
 
             <div class="pkg-payment">
                 <h3>Medios de Pago</h3>
+                <div style="margin-bottom: 20px; font-size: 14px; line-height: 1.6;">
+                    <strong>Condiciones:</strong> 20% de seña para reservar y el saldo restante 7 días antes de viajar.
+                    <br>
+                    <strong>Financiación:</strong> Disponemos de 3 y 6 cuotas.
+                </div>
                 <div class="pkg-payment-logos">
                     <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
                             <path
                                 d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
-                        </svg> TARJETAS</div>
+                        </svg> EFECTIVO</div>
                     <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
                             <path
                                 d="M11 2C6.03 2 2 6.03 2 11h9V2zm2 0v9h9C22 6.03 17.97 2 13 2zm9 11h-9v9c4.97 0 9-4.03 9-9zM2 13v.03C2 17.97 6.03 22 11 22v-9H2z" />
@@ -2567,10 +2663,7 @@
                     <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
                             <path
                                 d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
-                        </svg> EFECTIVO</div>
-                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
-                            <path d="M4 10h3v7H4zM10.5 10h3v7h-3zM2 19h20v3H2zM17 10h3v7h-3zM12 1L2 6v2h20V6z" />
-                        </svg> TRANSFERENCIA</div>
+                        </svg> BANCO</div>
                 </div>
             </div>
         </div>

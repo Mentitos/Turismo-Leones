@@ -1,5 +1,55 @@
 const paquetesData = [
     {
+        id: "crucero-travelero",
+        title: "Crucero Travelero",
+        season: "Todo el año",
+        price: "Consultar",
+        image: "Otros/crucero_travelero_flyer.jpeg",
+        features: [
+            { icon: "🚢", text: "Crucero Full Destacados" },
+            { icon: "💰", text: "No gastas ni un mango más" },
+            { icon: "🍽️", text: "All Inclusive" },
+            { icon: "🎭", text: "Shows y entretenimiento" }
+        ],
+        itinerary: `
+            <p><strong>Día 1:</strong> Embarque y bienvenida a bordo.</p>
+            <p><strong>Días Navegación:</strong> Disfrute de todas las instalaciones, comidas y shows incluidos.</p>
+            <p><strong>Destinos:</strong> Recorrido por las costas más bellas.</p>
+        `,
+        importantNotes: `
+            <p>- Documentación requerida: DNI o Pasaporte vigente.</p>
+            <p>- Incluye todas las tasas e impuestos.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puerto de Buenos Aires</li>
+            </ul>
+        `
+    },
+    {
+        id: "cordoba",
+        title: "Córdoba",
+        season: "Otoño 2026",
+        price: "155.000,00",
+        image: "Otros/cordoba.jpeg",
+        features: [
+            { icon: "🏨", text: "Pensión Completa" },
+            { icon: "🚌", text: "Bus Mix Confort" },
+            { icon: "🌄", text: "Excursiones incluidas" }
+        ],
+        itinerary: `
+            <p>Estadía completa en las sierras cordobesas con todas las comidas incluidas.</p>
+        `,
+        importantNotes: `
+            <p>Pensión completa incluye desayuno, almuerzo y cena.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Liniers, Morón, Pacheco</li>
+            </ul>
+        `
+    },
+    {
         id: "termas-de-guaychu",
         title: "Termas de Guaychú",
         season: "semana santa",
@@ -30,9 +80,6 @@ const paquetesData = [
                 <li>Liniers</li>
                 <li>Morón</li>
             </ul>
-        `,
-        legal: `
-            <p>Tarifas sujetas a modificaciones sin previo aviso y a disponibilidad al momento de realizar la reserva. No incluye nada no especificado en el programa.</p>
         `
     }
 ];
@@ -47,7 +94,7 @@ function getPackageData(title, season) {
             id: cleanId,
             title: title || "Destino Turístico",
             season: season || 'Consultar',
-            price: "99.990,00",
+            price: "Consultar",
             image: "Otoño/gualeguaychu_otoño.jpeg",
             features: [
                 { icon: "📅", text: "Programa Full Day" },
@@ -58,7 +105,7 @@ function getPackageData(title, season) {
             itinerary: paquetesData[0].itinerary,
             importantNotes: paquetesData[0].importantNotes,
             boardingPoints: paquetesData[0].boardingPoints,
-            legal: paquetesData[0].legal
+            legal: ""
         };
     }
 

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Viajeros - Turismo Leones</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦁</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --navy: #0a1a6b;
+            --blue: #1432c8;
+            --gold: #f5a623;
+            --white: #ffffff;
+            --dark: #0d1117;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9ff;
+        }
+
+        nav {
+            background: linear-gradient(135deg, #0a1a6b 0%, #1432c8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            height: 64px;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .hero-mini {
+            background: var(--navy);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero-mini h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 48px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background: white;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 15px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: var(--gold);
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+
+        footer {
+            background: var(--navy);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <span style="font-size: 30px;">🦁</span>
+            <div style="display:flex; flex-direction:column; line-height:1">
+                <span style="font-family:'Bebas Neue'; font-size:22px">Turismo Leones</span>
+                <span style="font-size:8px; letter-spacing:3px">VIAJES</span>
+            </div>
+        </a>
+    </nav>
+
+    <div class="hero-mini">
+        <h1>Nuestra Galería de Viajeros 📸</h1>
+        <p>Porque la mejor publicidad es la felicidad de quienes viajan con nosotros.</p>
+        <a href="index.html" class="back-btn">← Volver al Inicio</a>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-item" onclick="openPackage('Viaje 1')">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80"
+                alt="Viaje 1">
+            <div class="gallery-caption">"Sali en la web de Turismo Leones!"</div>
+        </div>
+        <div class="gallery-item" onclick="openPackage('Aventuras Inolvidables')">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=600&q=80"
+                alt="Viaje 2">
+            <div class="gallery-caption">Aventuras Inolvidables 🏔️</div>
+        </div>
+        <div class="gallery-item" onclick="openPackage('Momentos Mágicos')">
+            <img src="https://images.unsplash.com/photo-1530789253508-fa75142395ee?auto=format&fit=crop&w=600&q=80"
+                alt="Viaje 3">
+            <div class="gallery-caption">Momentos Mágicos ✨</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Turismo Leones. Todos los derechos reservados.</p>
+    </footer>
+    <script src="data/paquetes.js"></script>
+    <script>
+        function openModal(title, season, imageUrl, videoUrl) {
+            const friendlySeason = season ? season.toLowerCase().trim() : '';
+            let url = `detalle.html?id=${encodeURIComponent(title)}&season=${encodeURIComponent(friendlySeason)}`;
+            if (imageUrl) url += `&image=${encodeURIComponent(imageUrl)}`;
+            if (videoUrl) url += `&video=${encodeURIComponent(videoUrl)}`;
+            window.location.href = url;
+        }
+
+        function openPackage(title, season, imageUrl, videoUrl) {
+            if (typeof event !== 'undefined' && event.currentTarget) {
+                const target = event.currentTarget;
+                const vid = target.querySelector('video');
+                const img = target.querySelector('img');
+
+                if (!videoUrl && vid) videoUrl = vid.getAttribute('data-src') || vid.getAttribute('src');
+                if (!imageUrl && img) imageUrl = img.getAttribute('src');
+
+                if (!imageUrl && target.tagName === 'IMG') imageUrl = target.getAttribute('src');
+                if (!videoUrl && target.tagName === 'VIDEO') videoUrl = target.getAttribute('data-src') || target.getAttribute('src');
+            }
+            openModal(title, season, imageUrl, videoUrl);
+        }
+    </script>
+</body>
+
+</html>

@@ -172,6 +172,55 @@
             box-shadow: 0 6px 20px rgba(22, 163, 74, 0.6);
         }
 
+        .pkg-play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.4);
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            z-index: 5;
+            opacity: 0;
+        }
+
+        .pkg-media-box:hover .pkg-play-overlay {
+            opacity: 1;
+        }
+
+        .play-icon-circle {
+            width: 80px;
+            height: 80px;
+            background: var(--navy);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            border: 3px solid white;
+            transition: transform 0.2s;
+        }
+
+        .pkg-play-overlay:hover .play-icon-circle {
+            transform: scale(1.1);
+        }
+
+        .play-hint {
+            position: absolute;
+            bottom: 20px;
+            background: rgba(10, 26, 107, 0.9);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
         .pkg-features {
             list-style: none;
             margin-bottom: 30px;
@@ -368,8 +417,10 @@
                                 <option>Verano 2026</option>
                                 <option>Otoño 2026</option>
                             </select></div>
-                        <a href="https://wa.me/5491139470000?text=Hola,%20quisiera%20averiguar%20por%20un%20paquete"
-                            class="pkg-reservar-btn" id="pkgReservarBtn" target="_blank">RESERVAR</a>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <a href="https://wa.me/5491139470000?text=Hola,%20quisiera%20averiguar%20por%20un%20paquete"
+                                class="pkg-reservar-btn" id="pkgReservarBtn" target="_blank">RESERVAR</a>
+                        </div>
                     </div>
 
                     <ul class="pkg-features" id="pkgFeatures">
@@ -383,21 +434,24 @@
                 <button class="pkg-tab-btn active" onclick="switchTab('itinerario')">Itinerario</button>
                 <button class="pkg-tab-btn" onclick="switchTab('notas')">Notas Importantes</button>
                 <button class="pkg-tab-btn" onclick="switchTab('embarque')">Puntos de Embarque</button>
-                <button class="pkg-tab-btn" onclick="switchTab('legales')">Legales</button>
             </div>
 
             <div id="tab-itinerario" class="pkg-tab-content active"></div>
             <div id="tab-notas" class="pkg-tab-content"></div>
             <div id="tab-embarque" class="pkg-tab-content"></div>
-            <div id="tab-legales" class="pkg-tab-content"></div>
 
             <div class="pkg-payment">
                 <h3>Medios de Pago</h3>
+                <div style="margin-bottom: 20px; font-size: 14px; line-height: 1.6;">
+                    <strong>Condiciones:</strong> 20% de seña para reservar y el saldo restante 7 días antes de viajar.
+                    <br>
+                    <strong>Financiación:</strong> Disponemos de 3 y 6 cuotas.
+                </div>
                 <div class="pkg-payment-logos">
                     <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
                             <path
                                 d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z" />
-                        </svg> TARJETAS</div>
+                        </svg> EFECTIVO</div>
                     <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
                             <path
                                 d="M11 2C6.03 2 2 6.03 2 11h9V2zm2 0v9h9C22 6.03 17.97 2 13 2zm9 11h-9v9c4.97 0 9-4.03 9-9zM2 13v.03C2 17.97 6.03 22 11 22v-9H2z" />
@@ -409,10 +463,7 @@
                     <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
                             <path
                                 d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
-                        </svg> EFECTIVO</div>
-                    <div class="pkg-payment-item"><svg viewBox="0 0 24 24">
-                            <path d="M4 10h3v7H4zM10.5 10h3v7h-3zM2 19h20v3H2zM17 10h3v7h-3zM12 1L2 6v2h20V6z" />
-                        </svg> TRANSFERENCIA</div>
+                        </svg> BANCO</div>
                 </div>
             </div>
         </div>
@@ -428,10 +479,20 @@
             if (target) target.classList.add('active');
         }
 
+        function reproducirVideo() {
+            const videoUrl = new URLSearchParams(window.location.search).get('video');
+            if (videoUrl) {
+                const mediaBox = document.getElementById('pkgMediaBox');
+                mediaBox.innerHTML = `<video id="detailVideo" src="${videoUrl}" controls autoplay style="max-height: 100%; max-width: 100%; width: 100%;"></video>`;
+            }
+        }
+
         window.onload = () => {
             const params = new URLSearchParams(window.location.search);
             const id = params.get('id');
             const season = params.get('season');
+            const urlImage = params.get('image');
+            const urlVideo = params.get('video');
 
             if (!id) {
                 document.getElementById('pkgTitle').textContent = "Paquete no encontrado";
@@ -443,15 +504,31 @@
             document.title = `${data.title} - Turismo Leones`;
             document.getElementById('pkgTitle').textContent = data.title;
             document.getElementById('pkgSeason').textContent = (data.season === 'enviar info' || !data.season) ? 'Consultar' : data.season;
-            document.getElementById('pkgPrice').textContent = data.price ? `$ ${data.price}` : 'Consultar Precio';
+            document.getElementById('pkgPrice').textContent = (data.price && data.price !== 'Consultar') ? `$ ${data.price}` : 'Consultar Precio';
 
-            if (data.image) {
-                document.getElementById('pkgImage').src = data.image;
-                document.getElementById('pkgImage').alt = data.title;
+            const mediaBox = document.getElementById('pkgMediaBox');
+            if (urlImage) {
+                let html = `<img src="${urlImage}" alt="${data.title}" style="cursor: pointer; width: 100%; height: 100%; object-fit: contain;">`;
+
+                if (urlVideo) {
+                    html += `
+                        <div class="pkg-play-overlay" onclick="reproducirVideo()">
+                            <div class="play-icon-circle">▶</div>
+                            <div class="play-hint">TOCA EL FLYER PARA VER VIDEO</div>
+                        </div>
+                    `;
+                }
+                mediaBox.innerHTML = html;
+            } else if (urlVideo) {
+                mediaBox.innerHTML = `<video id="detailVideo" src="${urlVideo}" controls autoplay muted loop style="max-height: 100%; max-width: 100%; width: 100%;"></video>`;
+                document.getElementById('pkgPlayBtn').style.display = 'flex';
+            } else if (data.image) {
+                mediaBox.innerHTML = `<img src="${data.image}" alt="${data.title}">`;
+                document.getElementById('pkgPlayBtn').style.display = 'none';
             }
 
             const wpText = `Hola, quisiera averiguar por el paquete de ${data.title}${data.season ? ' (' + data.season + ')' : ''}`;
-            document.getElementById('pkgReservarBtn').href = `https://wa.me/5491139470000?text=${encodeURIComponent(wpText)}`;
+            document.getElementById('pkgReservarBtn').href = `https://wa.me/5491151233885?text=${encodeURIComponent(wpText)}`;
 
             const featuresList = document.getElementById('pkgFeatures');
             if (data.features && data.features.length) {
