@@ -27,29 +27,6 @@ const paquetesData = [
         `
     },
     {
-        id: "cordoba",
-        title: "Córdoba",
-        season: "Otoño 2026",
-        price: "155.000,00",
-        image: "Otros/cordoba.jpeg",
-        features: [
-            { icon: "🏨", text: "Pensión Completa" },
-            { icon: "🚌", text: "Bus Mix Confort" },
-            { icon: "🌄", text: "Excursiones incluidas" }
-        ],
-        itinerary: `
-            <p>Estadía completa en las sierras cordobesas con todas las comidas incluidas.</p>
-        `,
-        importantNotes: `
-            <p>Pensión completa incluye desayuno, almuerzo y cena.</p>
-        `,
-        boardingPoints: `
-            <ul>
-                <li>Liniers, Morón, Pacheco</li>
-            </ul>
-        `
-    },
-    {
         id: "termas-de-guaychu",
         title: "Termas de Guaychú",
         season: "semana santa",
