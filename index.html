@@ -2052,7 +2052,95 @@
                 padding: 10px 20px;
             }
         }
+
+        .editorial-shadow {
+            box-shadow: 0 30px 60px -12px rgba(6, 54, 105, 0.12);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+
+        nav {
+            display: flex !important;
+        }
     </style>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Manrope:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-low": "#f2f4f6",
+                        "surface-container": "#eceef0",
+                        "background": "#f7f9fb",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#775a19",
+                        "on-surface": "#191c1e",
+                        "tertiary-container": "#005375",
+                        "on-tertiary-fixed-variant": "#004c6b",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "on-tertiary-container": "#6bc8ff",
+                        "inverse-primary": "#a7c8ff",
+                        "outline": "#737784",
+                        "on-primary-container": "#9cc0fb",
+                        "on-error-container": "#93000a",
+                        "surface": "#f7f9fb",
+                        "surface-container-high": "#e6e8ea",
+                        "on-background": "#191c1e",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c3c6d5",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#a7c8ff",
+                        "tertiary-fixed-dim": "#83cfff",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#274e82",
+                        "primary": "#063669",
+                        "secondary-container": "#fed488",
+                        "on-surface-variant": "#434653",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#001b3c",
+                        "on-secondary-fixed": "#261900",
+                        "surface-dim": "#d8dadc",
+                        "secondary-fixed": "#ffdea5",
+                        "tertiary-fixed": "#c6e7ff",
+                        "on-tertiary-fixed": "#001e2d",
+                        "inverse-surface": "#2d3133",
+                        "primary-fixed": "#d5e3ff",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-secondary-container": "#785a1a",
+                        "surface-bright": "#f7f9fb",
+                        "on-primary-fixed-variant": "#1f477b",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#3a5f94",
+                        "tertiary": "#003b54",
+                        "surface-variant": "#e0e3e5"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            }
+        }
+    </script>
     <script src="data/paquetes.js"></script>
 </head>
 
@@ -2078,52 +2166,80 @@
     </nav>
 
     <!-- Banner Especial Crucero Travelero -->
-    <section class="crucero-info-banner">
-        <div class="crucero-container">
-            <div class="crucero-main-layout">
-                <div class="crucero-flyer-box">
-                    <img src="Otros/crucero_travelero_flyer.jpeg" alt="Crucero Travelero Flyer">
-                </div>
-                <div class="crucero-info-content">
-                    <div class="crucero-header">
-                        <h2>🚢 CRUCERO TRAVELERO</h2>
-                    </div>
-                    <div class="crucero-grid">
-                        <div class="crucero-card">
-                            <h3>¿CÓMO RESERVO? 📑</h3>
-                            <ul>
-                                <li>Cantidad de pasajeros con foto de DNI y teléfono.</li>
-                                <li>Tipo de cabina (Interior / Balcón).</li>
-                                <li>Distribución de cabina (Doble matrimonial / Twin / A compartir).</li>
-                            </ul>
+    <!-- SECCIÓN PROMOCIONAL CRUCERO (DISE�    <!-- SECCIÓN PROMOCIONAL CRUCERO (VISTA PREVIA PREMIUM) -->
+    <main class="font-body">
+        <!-- Hero Section -->
+        <section class="relative min-h-[600px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover scale-105 animate-slow-zoom" src="Otros/msc-splendida.webp"
+                    alt="MSC Splendida Cruise Ship" />
+                <div class="absolute inset-0 bg-gradient-to-r from-[#063669]/90 via-[#063669]/40 to-transparent"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="text-[#e9c176] font-bold tracking-[0.3em] uppercase mb-4 block">Experiencia
+                            Exclusiva</span>
+                        <h1
+                            class="text-6xl md:text-7xl font-black font-headline text-white leading-none tracking-tighter mb-6">
+                            CRUCERO <br /> TRAVELERO
+                        </h1>
+                        <div
+                            class="flex items-center gap-4 text-white/90 bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 inline-flex">
+                            <span class="material-symbols-outlined">calendar_today</span>
+                            <p class="font-medium text-xl">Salida 07/03/2027</p>
                         </div>
-                        <div class="crucero-card">
-                            <h3>FORMAS DE PAGO 💳</h3>
-                            <ul>
-                                <li>Aboná en Dólares (Transf/Efect) o Pesos al cambio del día.</li>
-                                <li>Las reservas se toman únicamente con dinero ingresado.</li>
-                                <li>Pago final: 60 días previos al viaje (consultar Plan 12 cuotas).</li>
-                            </ul>
-                        </div>
-                        <div class="crucero-card">
-                            <h3>INFO ADICIONAL ℹ️</h3>
-                            <ul>
-                                <li>Voucher y tarjeta de embarque se envían en el mes del viaje.</li>
-                                <li>Documentación vigente (DNI) obligatoria en tiempo y forma.</li>
-                                <li>Las señas no tienen reintegro.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="crucero-cta-box">
-                        <a href="https://wa.me/5491138456428?text=Hola!%20Me%20interesa%20reservar%20el%20Crucero%20Travelero"
-                            target="_blank" class="crucero-wp-btn">
-                            <span>💬</span> CONSULTAR
-                        </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Preview Itinerary -->
+        <section class="py-20 bg-[#f2f4f6]">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold font-headline text-[#063669] mb-8">El Recorrido</h2>
+                        <div
+                            class="space-y-8 relative before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-0.5 before:bg-[#c3c6d5]">
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute left-0 top-1 w-6 h-6 rounded-full bg-[#775a19] flex items-center justify-center">
+                                    <div class="w-2 h-2 bg-white rounded-full"></div>
+                                </div>
+                                <h4 class="font-bold text-lg text-[#063669]">Buenos Aires • Salida</h4>
+                            </div>
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute left-0 top-1 w-6 h-6 rounded-full bg-[#063669] flex items-center justify-center">
+                                    <div class="w-2 h-2 bg-white rounded-full"></div>
+                                </div>
+                                <h4 class="font-bold text-lg text-[#063669]">Montevideo • Uruguay</h4>
+                            </div>
+                            <div class="relative pl-10">
+                                <div
+                                    class="absolute left-0 top-1 w-6 h-6 rounded-full bg-[#063669] flex items-center justify-center">
+                                    <div class="w-2 h-2 bg-white rounded-full"></div>
+                                </div>
+                                <h4 class="font-bold text-lg text-[#063669]">Camboriú & Itajaí • Brasil</h4>
+                            </div>
+                        </div>
+                        <a href="crucero.html"
+                            class="mt-10 inline-flex items-center gap-2 bg-[#063669] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#1a4b8c] transition-all editorial-shadow">
+                            VER CRUCERO COMPLETO 🚢
+                        </a>
+                    </div>
+                    <div class="hidden lg:block">
+                        <img src="Otros/crucero_travelero_flyer.jpeg"
+                            class="rounded-3xl editorial-shadow w-full h-[450px] object-cover rotate-2" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
     </section>
+    </main>
 
     <div class="hero" style="display: none;">
         <div class="hero-cell side-cell">
@@ -2137,6 +2253,10 @@
                     <div class="hero-tagline" style="color: var(--navy); text-shadow: none;">
                         🚢 CRUCERO TRAVELERO<br>
                         <span style="color: rgba(10, 26, 107, 0.8);">"No gastas ni un mango más"</span>
+                    </div>
+                    <div
+                        style="font-size: 11px; color: var(--navy); margin-top: 5px; max-width: 450px; text-align: center; line-height: 1.4; background: rgba(255,255,255,0.4); padding: 8px 15px; border-radius: 30px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">
+                        📍 RECORRIDO: Puerto BA 🚢 Montevideo 🌊 Camboriu 🏖️ Itajai ✨
                     </div>
                     <div style="display: flex; gap: 10px; margin-top: 10px; z-index: 2;">
                         <a href="Otros/CruceroTravelero.pdf" class="hero-cta"
@@ -2688,6 +2808,12 @@
 
         function openModal(title, season, imageUrl, videoUrl) {
             const friendlySeason = season ? season.toLowerCase().trim() : '';
+
+            if (title.toLowerCase().includes('crucero travelero')) {
+                window.location.href = 'crucero.html';
+                return;
+            }
+
             let url = `detalle.html?id=${encodeURIComponent(title)}&season=${encodeURIComponent(friendlySeason)}`;
             if (imageUrl) url += `&image=${encodeURIComponent(imageUrl)}`;
             if (videoUrl) url += `&video=${encodeURIComponent(videoUrl)}`;

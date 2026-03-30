@@ -156,6 +156,12 @@
     <script>
         function openModal(title, season, imageUrl, videoUrl) {
             const friendlySeason = season ? season.toLowerCase().trim() : '';
+
+            if (title.toLowerCase().includes('crucero travelero')) {
+                window.location.href = 'crucero.html';
+                return;
+            }
+
             let url = `detalle.html?id=${encodeURIComponent(title)}&season=${encodeURIComponent(friendlySeason)}`;
             if (imageUrl) url += `&image=${encodeURIComponent(imageUrl)}`;
             if (videoUrl) url += `&video=${encodeURIComponent(videoUrl)}`;
