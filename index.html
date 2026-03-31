@@ -2433,7 +2433,27 @@
     <div class="season-section">
         <h2 class="season-title">ESCAPADITAS</h2>
         <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('San Pedro Otoño', 'otoño')">
+                    <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="San Pedro">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Pedro Otoño</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Tandil Otoño', 'otoño')">
+                    <img src="Otoño/tandil_otoño.jpeg" class="flyer-media flyer-img" alt="Tandil">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil Otoño</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Santa Teresita Marzo', 'marzo')">
+                    <img src="Marzo/santa_teresita_marzo.jpeg" class="flyer-media flyer-img" alt="Santa Teresita">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Santa Teresita Marzo</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
             </div>
         </div>
     </div>
