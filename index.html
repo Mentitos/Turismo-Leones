@@ -2165,10 +2165,8 @@
         </ul>
     </nav>
 
-    <!-- Banner Especial Crucero Travelero -->
-    <!-- SECCIÓN PROMOCIONAL CRUCERO (DISE�    <!-- SECCIÓN PROMOCIONAL CRUCERO (VISTA PREVIA PREMIUM) -->
     <main class="font-body">
-        <!-- Hero Section -->
+
         <section class="relative min-h-[600px] flex items-center overflow-hidden group">
             <div class="absolute inset-0 z-0">
                 <a href="crucero.html" class="block w-full h-full">
@@ -2198,7 +2196,6 @@
             </div>
         </section>
 
-        <!-- Preview Itinerary -->
         <section class="py-24 bg-[#f2f4f6] overflow-hidden">
             <div class="max-w-7xl mx-auto px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
@@ -2442,17 +2439,50 @@
     </div>
 
     <div class="season-section">
-        <h2 class="season-title">FULLDAY HERRADURA</h2>
+        <h2 class="season-title">FULL DAY</h2>
         <div class="flyers-wrapper">
             <div class="flyers-track">
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Termas De Guaychu Otoño')">
+                    <img src="Otoño/termas_de_guaychu_otoño.jpeg" class="flyer-media flyer-img"
+                        alt="termas_de_guaychu_otoño">
+                    <video preload="none" data-src="Otoño/termas_de_guaychu_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('San Pedro Otoño')">
+                    <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="san_pedro_otoño">
+                    <video preload="none" data-src="Otoño/san_pedro_otoño.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" data-name="campo la herradura otoño" data-season="otoño" data-has-video="false"
+                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Campo La Herradura Otoño', 'otoño')">
+                    <img src="Otoño/campo_la_herradura_otoño.jpeg" class="flyer-media flyer-img"
+                        alt="campo_la_herradura_otoño">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura Otoño</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="season-section">
-        <h2 class="season-title">TERMAS</h2>
+        <h2 class="season-title">PAQUETES AEREOS</h2>
         <div class="flyers-wrapper">
             <div class="flyers-track">
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Ushuaia')">
+                    <img src="Otros/ushuaia.jpeg" class="flyer-media flyer-img" alt="ushuaia">
+                    <video preload="none" data-src="Otros/ushuaia.mp4" muted class="flyer-video" loop
+                        playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
             </div>
         </div>
     </div>
@@ -2633,22 +2663,7 @@
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
-                <div class="flyer-card" data-name="crucero travelero flyer" data-season="otros" data-has-video="false"
-                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Crucero Travelero Flyer', 'otros')">
-                    <img src="Otros/crucero_travelero_flyer.jpeg" class="flyer-media flyer-img"
-                        alt="crucero_travelero_flyer">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Flyer</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
-                </div>
-                <div class="flyer-card" data-name="crucero travelero info" data-season="otros" data-has-video="false"
-                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Crucero Travelero Info', 'otros')">
-                    <img src="Otros/crucero_travelero_info.jpeg" class="flyer-media flyer-img"
-                        alt="crucero_travelero_info">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Crucero Travelero Info</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
-                </div>
+
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Humahuaca')">
                     <video preload="none" data-src="Otros/Humahuaca.mp4" class="flyer-media flyer-img" muted></video>
@@ -2661,14 +2676,6 @@
                     onclick="openPackage('Majo')">
                     <video preload="none" data-src="Otros/majo.mp4" class="flyer-media flyer-img" muted></video>
                     <video preload="none" data-src="Otros/majo.mp4" muted class="flyer-video" loop playsinline></video>
-                    <div class="video-badge">▶ VIDEO</div>
-                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Ushuaia')">
-                    <img src="Otros/ushuaia.jpeg" class="flyer-media flyer-img" alt="ushuaia">
-                    <video preload="none" data-src="Otros/ushuaia.mp4" muted class="flyer-video" loop
-                        playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
                 </div>
