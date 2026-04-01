@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo Leones</title>
+    <title>Turismo Leones – Viajes desde Tortuguitas y zona norte</title>
+    <meta name="description"
+        content="Turismo Leones: paquetes de viaje en grupo desde Tortuguitas y zona norte del GBA. Salidas a Mar del Plata, Mendoza, Cataratas, Crucero y más. Cuotas disponibles. Parte de Leones de Malvinas.">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦁</text></svg>">
     <link
@@ -2157,14 +2159,16 @@
         </a>
         <button class="nav-toggle" id="navToggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
         <ul id="navMenu">
-            <li><a href="#" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="#hero-top" onclick="toggleMenu()">Inicio</a></li>
             <li><a href="#valijas-ya-section" onclick="toggleMenu()">Promociones</a></li>
-            <li><a href="#" onclick="toggleMenu()">Paquetes</a></li>
+            <li><a href="#nuestros-viajes" onclick="toggleMenu()">Paquetes</a></li>
             <li><a href="galeria.html" onclick="toggleMenu()">Galería</a></li>
-            <li><a href="#" onclick="toggleMenu()">Contacto</a></li>
+            <li><a href="nosotros.html" onclick="toggleMenu()">Nosotros</a></li>
+            <li><a href="#footer-contacto" onclick="scrollToContact(); toggleMenu();">Contacto</a></li>
         </ul>
     </nav>
 
+    <div id="hero-top"></div>
     <main class="font-body">
 
         <section class="relative min-h-[600px] flex items-center overflow-hidden group">
@@ -2193,11 +2197,14 @@
                         </div>
                     </div>
                     <div class="hidden lg:block relative text-right">
-                        <div class="absolute -right-10 top-1/2 -translate-y-1/2 w-64 h-64 bg-[#e9c176]/20 blur-3xl rounded-full"></div>
-                        <a href="crucero.html" class="relative inline-block hover:scale-105 transition-all duration-500">
-                            <img src="Otros/crucero_travelero_flyer.jpeg" 
-                                 class="rounded-2xl shadow-2xl border-4 border-white/10 w-full max-w-sm ml-auto"
-                                 alt="Crucero Travelero Flyer" />
+                        <div
+                            class="absolute -right-10 top-1/2 -translate-y-1/2 w-64 h-64 bg-[#e9c176]/20 blur-3xl rounded-full">
+                        </div>
+                        <a href="crucero.html"
+                            class="relative inline-block hover:scale-105 transition-all duration-500">
+                            <img src="Otros/crucero_travelero_flyer.jpeg"
+                                class="rounded-2xl shadow-2xl border-4 border-white/10 w-full max-w-sm ml-auto"
+                                alt="Crucero Travelero Flyer" />
                         </a>
                     </div>
                 </div>
@@ -2434,7 +2441,7 @@
     </div>
 
 
-    <div class="section-header">
+    <div class="section-header" id="nuestros-viajes">
         <h2>NUESTROS VIAJES</h2>
     </div>
 
@@ -2694,24 +2701,28 @@
 
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Humahuaca')">
-                    <video preload="none" data-src="Otros/Humahuaca.mp4" class="flyer-media flyer-img" muted></video>
+                    <div class="ph img-salta" style="width:100%;height:360px;font-size:48px;">🏜️</div>
                     <video preload="none" data-src="Otros/Humahuaca.mp4" muted class="flyer-video" loop
                         playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Humahuaca</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
                 </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Majo')">
-                    <video preload="none" data-src="Otros/majo.mp4" class="flyer-media flyer-img" muted></video>
+                    <div class="ph img-mdq" style="width:100%;height:360px;font-size:48px;">🎭</div>
                     <video preload="none" data-src="Otros/majo.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Majo</span><span
+                            class="flyer-overlay-badge">💬 Consultar</span></div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer>
+    <footer id="footer-contacto">
         <div class="footer-logo">
             <div style="font-size: 48px; margin-bottom: 8px;">🦁</div>
             <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones
@@ -2722,8 +2733,7 @@
         <div class="footer-col">
             <h4>Turismo Leones</h4>
             <ul>
-                <li><a href="#">Ubicación y el Centro de Jubilados</a></li>
-                <li><a href="#">Oficinas</a></li>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
                 <li><a href="#">Vender turismo también</a></li>
                 <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
@@ -2755,7 +2765,7 @@
         <div class="footer-bottom">
             Turismo Leones se subsidia con Leones de Malvinas – Lo recaudado será destinado al Centro de Jubilados.
             <br>
-            © 2026 Turismo Leones. Todos los derechos reservados. | Leg. N° XXXXXXXXX
+            © 2026 Turismo Leones. Todos los derechos reservados.
         </div>
     </footer>
 
@@ -2889,7 +2899,6 @@
                     clearInterval(heroAutoPlayInterval);
                 });
             }
-            // startHeroAutoPlay();
         });
 
         function checkTrackOverflow() {
@@ -2941,7 +2950,13 @@
             if (e.key === 'Escape') closeModal();
         });
 
-        applyFilters();
+        function scrollToContact() {
+            const footer = document.getElementById('footer-contacto');
+            if (footer) footer.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // applyFilters es llamada por detalle.html y otros subpages, no aplica aquí
+        if (typeof applyFilters === 'function') { applyFilters(); }
 
 
         document.getElementById('infoModal').addEventListener('click', function (e) {
@@ -2995,6 +3010,13 @@
 
 
     </script>
+    <style>
+        @media (max-width: 768px) {
+            #quienes-somos>div>div:nth-child(2) {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
     <script>
         const videoObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach(entry => {
