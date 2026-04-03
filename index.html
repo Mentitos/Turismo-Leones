@@ -217,8 +217,8 @@
 
         .banners {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            height: 200px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 280px;
         }
 
         .banner {
@@ -260,6 +260,130 @@
             justify-content: center;
             flex-direction: column;
             gap: 4px;
+        }
+
+        .banner-galeria {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .banner-galeria .bg-slides {
+            position: absolute;
+            inset: 0;
+        }
+
+        .bg-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .bg-slide.active {
+            opacity: 1;
+        }
+
+        .bg-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: kenburns 9s ease-in-out infinite alternate;
+            will-change: transform;
+        }
+
+        .bg-slide:nth-child(even) img {
+            animation-direction: alternate-reverse;
+        }
+
+        .bg-slide-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0a1a6b, #1432c8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            opacity: 0.5;
+        }
+
+        .banner-galeria-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top,
+                    rgba(10, 26, 107, 0.75) 0%,
+                    rgba(10, 26, 107, 0.2) 50%,
+                    transparent 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 24px 30px;
+            transition: background 0.3s;
+        }
+
+        .banner-galeria:hover .banner-galeria-overlay {
+            background: linear-gradient(to top,
+                    rgba(10, 26, 107, 0.88) 0%,
+                    rgba(10, 26, 107, 0.35) 50%,
+                    transparent 100%);
+        }
+
+        .banner-galeria-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 14px;
+            padding: 12px 20px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .banner-galeria:hover .banner-galeria-label {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .bgl-icon {
+            font-size: 26px;
+        }
+
+        .bgl-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+            color: white;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+
+        .bgl-sub {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.65);
+            margin-top: 3px;
+            letter-spacing: 1px;
+        }
+
+        .banner-galeria-dots {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            display: flex;
+            gap: 6px;
+            z-index: 2;
+        }
+
+        .bgl-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.35);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .bgl-dot.active {
+            background: #f5a623;
+            transform: scale(1.35);
         }
 
         .banner-waves {
@@ -848,7 +972,6 @@
             gap: 12px;
         }
 
-        /* Banner especial Crucero Travelero */
         .crucero-info-banner {
             background: linear-gradient(135deg, #0a1a6b 0%, #1a3ab1 50%, #1432c8 100%);
             padding: 60px 40px;
@@ -2068,6 +2191,151 @@
         nav {
             display: flex !important;
         }
+
+        .gallery-slideshow-link {
+            display: block;
+            text-decoration: none;
+            margin: 0;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .gallery-slideshow {
+            position: relative;
+            width: 100%;
+            height: 420px;
+            overflow: hidden;
+            background: #0a1a6b;
+        }
+
+        .gallery-slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        .gallery-slide.active {
+            opacity: 1;
+        }
+
+        .gallery-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: kenburns 8s ease-in-out infinite alternate;
+            will-change: transform;
+        }
+
+        @keyframes kenburns {
+            from {
+                transform: scale(1);
+                transform-origin: 60% 50%;
+            }
+
+            to {
+                transform: scale(1.08);
+                transform-origin: 40% 50%;
+            }
+        }
+
+        .gallery-slide:nth-child(even) img {
+            animation-direction: alternate-reverse;
+        }
+
+        .gallery-slideshow-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right,
+                    rgba(10, 26, 107, 0.55) 0%,
+                    rgba(10, 26, 107, 0.15) 60%,
+                    transparent 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 32px 40px;
+            pointer-events: none;
+            transition: background 0.3s;
+        }
+
+        .gallery-slideshow-link:hover .gallery-slideshow-overlay {
+            background: linear-gradient(to right,
+                    rgba(10, 26, 107, 0.7) 0%,
+                    rgba(10, 26, 107, 0.3) 60%,
+                    transparent 100%);
+        }
+
+        .gallery-slideshow-label {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 14px 22px;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .gallery-slideshow-link:hover .gallery-slideshow-label {
+            background: rgba(255, 255, 255, 0.18);
+            transform: translateY(-3px);
+        }
+
+        .gs-icon {
+            font-size: 28px;
+        }
+
+        .gs-title {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 22px;
+            color: white;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+
+        .gs-sub {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 4px;
+            letter-spacing: 1px;
+        }
+
+        .gallery-slideshow-dots {
+            position: absolute;
+            bottom: 16px;
+            right: 24px;
+            display: flex;
+            gap: 7px;
+        }
+
+        .gs-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            transition: background 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+
+        .gs-dot.active {
+            background: #f5a623;
+            transform: scale(1.3);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-slideshow {
+                height: 260px;
+            }
+
+            .gallery-slideshow-overlay {
+                padding: 20px;
+            }
+
+            .gs-title {
+                font-size: 18px;
+            }
+        }
     </style>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Manrope:wght@400;500;700;800&display=swap"
@@ -2408,6 +2676,23 @@
                 <span class="promo-2x1">2X1</span>
             </div>
         </div>
+        <a href="galeria.html" class="banner banner-galeria" id="galeria-banner" aria-label="Ver galería">
+            <div class="bg-slides" id="bgSlides">
+                <div class="bg-slide active">
+                    <div class="bg-slide-placeholder">📸</div>
+                </div>
+            </div>
+            <div class="banner-galeria-overlay">
+                <div class="banner-galeria-label">
+                    <span class="bgl-icon">📸</span>
+                    <div>
+                        <div class="bgl-title">Galería de Viajeros</div>
+                        <div class="bgl-sub">Ver todas las fotos →</div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-galeria-dots" id="bgDots"></div>
+        </a>
     </div>
     </div>
 
@@ -2917,6 +3202,61 @@
         window.addEventListener('load', checkTrackOverflow);
         window.addEventListener('resize', checkTrackOverflow);
 
+        (function () {
+            const container = document.getElementById('bgSlides');
+            const dotsEl = document.getElementById('bgDots');
+            const banner = document.getElementById('galeria-banner');
+            if (!container || !dotsEl || !banner) return;
+
+            const IMGS = [
+                { src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80', label: 'Playa' },
+                { src: 'https://images.unsplash.com/photo-1539635278303-d4002c07eae3?auto=format&fit=crop&w=1400&q=80', label: 'Ciudad' },
+                { src: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=80', label: 'Viajeros' },
+                { src: 'https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=1400&q=80', label: 'Playa' },
+                { src: 'https://images.unsplash.com/photo-1533130061792-64b345e4a833?auto=format&fit=crop&w=1400&q=80', label: 'Aventura' },
+                { src: 'https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1400&q=80', label: 'Mendoza' },
+                { src: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?auto=format&fit=crop&w=1400&q=80', label: 'Atardecer' },
+                { src: 'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=1400&q=80', label: 'Montaña' },
+            ];
+
+            container.innerHTML = '';
+            dotsEl.innerHTML = '';
+            let current = 0, timer;
+
+            IMGS.forEach(({ src }, i) => {
+                const slide = document.createElement('div');
+                slide.className = 'bg-slide' + (i === 0 ? ' active' : '');
+                const img = document.createElement('img');
+                img.src = src;
+                slide.appendChild(img);
+                container.appendChild(slide);
+
+                const dot = document.createElement('span');
+                dot.className = 'bgl-dot' + (i === 0 ? ' active' : '');
+                dotsEl.appendChild(dot);
+            });
+
+            const slides = container.querySelectorAll('.bg-slide');
+            const dots = dotsEl.querySelectorAll('.bgl-dot');
+
+            function goTo(idx) {
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = (idx + slides.length) % slides.length;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+                const img = slides[current].querySelector('img');
+                img.replaceWith(img.cloneNode(true));
+            }
+
+            function start() { timer = setInterval(() => goTo(current + 1), 4000); }
+            function stop() { clearInterval(timer); }
+
+            start();
+            banner.addEventListener('mouseenter', stop);
+            banner.addEventListener('mouseleave', start);
+        })();
+
         function openModal(title, season, imageUrl, videoUrl) {
             const friendlySeason = season ? season.toLowerCase().trim() : '';
 
@@ -2955,7 +3295,6 @@
             if (footer) footer.scrollIntoView({ behavior: 'smooth' });
         }
 
-        // applyFilters es llamada por detalle.html y otros subpages, no aplica aquí
         if (typeof applyFilters === 'function') { applyFilters(); }
 
 
