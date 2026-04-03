@@ -52,6 +52,9 @@
         }
 
         .logo-icon {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
             font-size: 36px;
             display: flex;
             align-items: center;
@@ -106,6 +109,7 @@
             color: white;
             font-size: 28px;
             cursor: pointer;
+            padding: 5px;
         }
 
         @media (max-width: 900px) {
@@ -129,6 +133,7 @@
                 gap: 15px;
                 z-index: 1000;
                 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
             }
 
             nav ul.active {
@@ -147,6 +152,7 @@
             display: grid;
             grid-template-columns: 180px 1fr 1fr 1fr;
             gap: 40px;
+            text-align: left;
         }
 
         .footer-logo {
@@ -176,22 +182,47 @@
             color: rgba(255, 255, 255, 0.65);
             text-decoration: none;
             font-size: 13px;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--gold);
         }
 
         .footer-contact p {
             font-size: 13px;
             color: rgba(255, 255, 255, 0.65);
             margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-bottom {
+            background: rgba(0, 0, 0, 0.2);
+            margin-top: 32px;
+            padding-top: 16px;
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.35);
+            grid-column: 1 / -1;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         @media (max-width: 900px) {
             footer {
-                grid-template-columns: 1fr;
-                text-align: center;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                padding: 30px 20px;
             }
 
-            .footer-col h4 {
-                border-bottom: none;
+            .footer-col {
+                grid-column: span 1;
+            }
+
+            .footer-logo {
+                grid-column: 1 / -1;
+                text-align: center;
             }
         }
     </style>
@@ -219,7 +250,8 @@
 
     <nav>
         <a href="index.html" class="logo">
-            <span class="logo-icon">🦁</span>
+            <span class="logo-icon"
+                style="font-size: 36px; display: flex; align-items: center; justify-content: center;">🦁</span>
             <div class="logo-text">
                 <span class="brand">Turismo Leones</span>
                 <span class="sub">Viajes</span>
@@ -227,11 +259,12 @@
         </a>
         <button class="nav-toggle" id="navToggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
         <ul id="navMenu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#valijas-ya-section">Promociones</a></li>
-            <li><a href="index.html">Paquetes</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="index.html">Contacto</a></li>
+            <li><a href="index.html" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="index.html#valijas-ya-section" onclick="toggleMenu()">Promociones</a></li>
+            <li><a href="index.html#nuestros-viajes" onclick="toggleMenu()">Paquetes</a></li>
+            <li><a href="galeria.html" onclick="toggleMenu()">Galería</a></li>
+            <li><a href="nosotros.html" onclick="toggleMenu()">Nosotros</a></li>
+            <li><a href="index.html#footer-contacto" onclick="scrollToContact(); toggleMenu();">Contacto</a></li>
         </ul>
     </nav>
     <main>
@@ -580,32 +613,50 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer id="footer-contacto">
         <div class="footer-logo">
             <div style="font-size: 48px; margin-bottom: 8px;">🦁</div>
             <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones
             </div>
             <div style="font-size:9px;color:rgba(255,255,255,0.4);letter-spacing:3px">TURISMO</div>
         </div>
+
         <div class="footer-col">
             <h4>Turismo Leones</h4>
             <ul>
-                <li><a href="index.html">Ubicación</a></li>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="revendedores.html">Sé parte del equipo</a></li>
                 <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
         </div>
+
         <div class="footer-col">
             <h4>Medios de Pago</h4>
             <ul>
-                <li><a href="#">Efectivo / Transferencia</a></li>
+                <li><a href="#">Efectivo</a></li>
+                <li><a href="#">Transferencia Bancaria</a></li>
+                <li><a href="#">Mercado Pago</a></li>
                 <li><a href="#">3 y 6 cuotas</a></li>
             </ul>
         </div>
+
         <div class="footer-col footer-contact">
             <h4>Contacto</h4>
-            <p>📞 +54 9 11 5123-3885</p>
+            <p>📞 +54 9 11 5123-3885 (Mario)</p>
             <p>✉️ BERRUETAMARIO1121@GMAIL.COM</p>
-            <p>📍 Juan Francisco Seguí, Tortuguitas</p>
+            <p>📍 Juan Francisco Seguí, B1615 Tortuguitas, Provincia de Buenos Aires</p>
+            <div class="footer-map" style="margin-top: 15px;">
+                <iframe
+                    src="https://maps.google.com/maps?q=Juan%20Francisco%20Segu%C3%AD,%20Tortuguitas,%20Provincia%20de%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            Turismo Leones se subsidia con Leones de Malvinas – Lo recaudado será destinado al Centro de Jubilados.
+            <br>
+            © 2026 Turismo Leones. Todos los derechos reservados.
         </div>
     </footer>
     <script>
@@ -614,10 +665,13 @@
             const toggle = document.getElementById('navToggle');
             if (menu) {
                 menu.classList.toggle('active');
-                if (toggle) {
-                    toggle.innerText = menu.classList.contains('active') ? '✕' : '☰';
-                }
+                if (toggle) toggle.innerText = menu.classList.contains('active') ? '✕' : '☰';
             }
+        }
+
+        function scrollToContact() {
+            const footer = document.getElementById('footer-contacto');
+            if (footer) footer.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
 </body>

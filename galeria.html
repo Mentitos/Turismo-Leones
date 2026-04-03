@@ -32,7 +32,10 @@
             justify-content: space-between;
             padding: 0 40px;
             height: 64px;
-            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
         }
 
         .logo {
@@ -40,76 +43,168 @@
             align-items: center;
             gap: 10px;
             text-decoration: none;
-            color: white;
         }
 
-        .hero-mini {
-            background: var(--navy);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
+        .logo-icon {
+            width: 44px;
+            height: 44px;
+            object-fit: contain;
         }
 
-        .hero-mini h1 {
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+        }
+
+        .logo-text .brand {
             font-family: 'Bebas Neue', sans-serif;
-            font-size: 48px;
-            margin: 0;
-            letter-spacing: 2px;
+            font-size: 26px;
+            color: var(--white);
+            letter-spacing: 1px;
         }
 
-        .gallery-container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 20px;
+        .logo-text .sub {
+            font-size: 9px;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 4px;
+            text-transform: uppercase;
         }
 
-        .gallery-item {
-            position: relative;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            background: white;
-            transition: transform 0.3s;
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 32px;
         }
 
-        .gallery-item:hover {
-            transform: scale(1.02);
-        }
-
-        .gallery-item img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .gallery-caption {
-            padding: 15px;
-            text-align: center;
-            font-weight: 600;
-            color: var(--navy);
-        }
-
-        .back-btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background: var(--gold);
-            color: var(--navy);
+        nav ul li a {
+            color: rgba(255, 255, 255, 0.9);
             text-decoration: none;
-            font-weight: bold;
-            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: var(--gold);
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 5px;
         }
 
         footer {
             background: var(--navy);
-            color: white;
-            padding: 40px;
+            color: rgba(255, 255, 255, 0.8);
+            padding: 48px 40px 24px;
+            display: grid;
+            grid-template-columns: 180px 1fr 1fr 1fr;
+            gap: 40px;
+            text-align: left;
+        }
+
+        .footer-logo {
+            opacity: 0.9;
+        }
+
+        .footer-col h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 16px;
+            color: var(--white);
+            letter-spacing: 2px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a {
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--gold);
+        }
+
+        .footer-contact p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-bottom {
+            background: rgba(0, 0, 0, 0.2);
+            margin-top: 32px;
+            padding-top: 16px;
             text-align: center;
-            margin-top: 60px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.35);
+            grid-column: 1 / -1;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                padding: 0 20px;
+            }
+
+            .nav-toggle {
+                display: block;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                width: 100%;
+                background: var(--navy);
+                padding: 20px;
+                gap: 15px;
+                z-index: 1000;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            footer {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                padding: 30px 20px;
+            }
+
+            .footer-col {
+                grid-column: span 1;
+            }
+
+            .footer-logo {
+                grid-column: 1 / -1;
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -117,12 +212,22 @@
 <body>
     <nav>
         <a href="index.html" class="logo">
-            <span style="font-size: 30px;">🦁</span>
-            <div style="display:flex; flex-direction:column; line-height:1">
-                <span style="font-family:'Bebas Neue'; font-size:22px">Turismo Leones</span>
-                <span style="font-size:8px; letter-spacing:3px">VIAJES</span>
+            <span class="logo-icon"
+                style="font-size: 36px; display: flex; align-items: center; justify-content: center;">🦁</span>
+            <div class="logo-text">
+                <span class="brand">Turismo Leones</span>
+                <span class="sub">Viajes</span>
             </div>
         </a>
+        <button class="nav-toggle" id="navToggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
+        <ul id="navMenu">
+            <li><a href="index.html" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="index.html#valijas-ya-section" onclick="toggleMenu()">Promociones</a></li>
+            <li><a href="index.html#nuestros-viajes" onclick="toggleMenu()">Paquetes</a></li>
+            <li><a href="galeria.html" onclick="toggleMenu()">Galería</a></li>
+            <li><a href="nosotros.html" onclick="toggleMenu()">Nosotros</a></li>
+            <li><a href="index.html#footer-contacto" onclick="scrollToContact(); toggleMenu();">Contacto</a></li>
+        </ul>
     </nav>
 
     <div class="hero-mini">
@@ -149,39 +254,68 @@
         </div>
     </div>
 
-    <footer>
-        <p>© 2026 Turismo Leones. Todos los derechos reservados.</p>
+    <footer id="footer-contacto">
+        <div class="footer-logo">
+            <div style="font-size: 48px; margin-bottom: 8px;">🦁</div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones
+            </div>
+            <div style="font-size:9px;color:rgba(255,255,255,0.4);letter-spacing:3px">TURISMO</div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Turismo Leones</h4>
+            <ul>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="revendedores.html">Sé parte del equipo</a></li>
+                <li><a href="galeria.html">Galería de fotos</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Medios de Pago</h4>
+            <ul>
+                <li><a href="#">Efectivo</a></li>
+                <li><a href="#">Transferencia Bancaria</a></li>
+                <li><a href="#">Mercado Pago</a></li>
+                <li><a href="#">3 y 6 cuotas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+            <h4>Contacto</h4>
+            <p>📞 +54 9 11 5123-3885 (Mario)</p>
+            <p>✉️ BERRUETAMARIO1121@GMAIL.COM</p>
+            <p>📍 Juan Francisco Seguí, B1615 Tortuguitas, Provincia de Buenos Aires</p>
+            <div class="footer-map" style="margin-top: 15px;">
+                <iframe
+                    src="https://maps.google.com/maps?q=Juan%20Francisco%20Segu%C3%AD,%20Tortuguitas,%20Provincia%20de%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen=""
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            Turismo Leones se subsidia con Leones de Malvinas – Lo recaudado será destinado al Centro de Jubilados.
+            <br>
+            © 2026 Turismo Leones. Todos los derechos reservados.
+        </div>
     </footer>
     <script src="data/paquetes.js"></script>
     <script>
-        function openModal(title, season, imageUrl, videoUrl) {
-            const friendlySeason = season ? season.toLowerCase().trim() : '';
-
-            if (title.toLowerCase().includes('crucero travelero')) {
-                window.location.href = 'crucero.html';
-                return;
+        function toggleMenu() {
+            const menu = document.getElementById('navMenu');
+            const toggle = document.getElementById('navToggle');
+            if (menu) {
+                menu.classList.toggle('active');
+                if (toggle) toggle.innerText = menu.classList.contains('active') ? '✕' : '☰';
             }
-
-            let url = `detalle.html?id=${encodeURIComponent(title)}&season=${encodeURIComponent(friendlySeason)}`;
-            if (imageUrl) url += `&image=${encodeURIComponent(imageUrl)}`;
-            if (videoUrl) url += `&video=${encodeURIComponent(videoUrl)}`;
-            window.location.href = url;
         }
 
-        function openPackage(title, season, imageUrl, videoUrl) {
-            if (typeof event !== 'undefined' && event.currentTarget) {
-                const target = event.currentTarget;
-                const vid = target.querySelector('video');
-                const img = target.querySelector('img');
-
-                if (!videoUrl && vid) videoUrl = vid.getAttribute('data-src') || vid.getAttribute('src');
-                if (!imageUrl && img) imageUrl = img.getAttribute('src');
-
-                if (!imageUrl && target.tagName === 'IMG') imageUrl = target.getAttribute('src');
-                if (!videoUrl && target.tagName === 'VIDEO') videoUrl = target.getAttribute('data-src') || target.getAttribute('src');
-            }
-            openModal(title, season, imageUrl, videoUrl);
+        function scrollToContact() {
+            const footer = document.getElementById('footer-contacto');
+            if (footer) footer.scrollIntoView({ behavior: 'smooth' });
         }
+    </script>
     </script>
 </body>
 
