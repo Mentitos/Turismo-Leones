@@ -2420,7 +2420,7 @@
 <body>
 
     <nav>
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             <span class="logo-icon"
                 style="font-size: 36px; display: flex; align-items: center; justify-content: center;">🦁</span>
             <div class="logo-text">
@@ -2430,7 +2430,7 @@
         </a>
         <button class="nav-toggle" id="navToggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
         <ul id="navMenu">
-            <li><a href="#hero-top" onclick="toggleMenu()">Inicio</a></li>
+            <li><a href="index.html" onclick="toggleMenu()">Inicio</a></li>
             <li id="nav-promociones"><a href="ofertas.html" onclick="toggleMenu()">Promociones</a></li>
             <li><a href="#nuestros-viajes" onclick="toggleMenu()">Paquetes</a></li>
             <li><a href="galeria.html" onclick="toggleMenu()">Galería</a></li>
@@ -2442,40 +2442,67 @@
     <div id="hero-top"></div>
     <main class="font-body">
 
-        <section class="relative min-h-[600px] flex items-center overflow-hidden group">
+        <section class="relative min-h-[700px] flex items-center overflow-hidden group py-20">
             <div class="absolute inset-0 z-0">
                 <a href="#valijas-ya-section" class="block w-full h-full">
-                    <img class="w-full h-full object-cover scale-105 group-hover:scale-110 transition-transform duration-700"
-                        src="Marzo/mendoza_marzo.jpeg" alt="Mendoza Marzo" />
+                    <img class="w-full h-full object-cover scale-105 group-hover:scale-110 transition-transform duration-1000"
+                        src="Otoño/cataratas_del_iguazu_otoño.jpeg" alt="Fondo Cataratas" />
                 </a>
                 <div
-                    class="absolute inset-0 bg-gradient-to-r from-[#d32f2f]/90 via-[#f57c00]/60 to-transparent pointer-events-none">
+                    class="absolute inset-0 bg-gradient-to-b from-[#d32f2f]/90 via-[#f57c00]/80 to-[#0a1a6b]/90 pointer-events-none">
                 </div>
             </div>
-            <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="space-y-8">
-                        <span class="text-[#ffeb3b] font-bold tracking-[0.3em] uppercase mb-4 block">Ofertas de último momento</span>
-                        <h1
-                            class="text-6xl md:text-7xl font-black font-headline text-white leading-none tracking-tighter mb-6">
-                            VALIJAS <br /> YA 🧳
-                        </h1>
-                        <div
-                            class="flex items-center gap-4 text-white/90 bg-white/10 backdrop-blur-md p-4 rounded-xl border border-white/20 inline-flex">
-                            <span class="material-symbols-outlined">luggage</span>
-                            <p class="font-medium text-xl">Salidas Próximas</p>
-                        </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col items-center">
+                <div class="text-center mb-14 max-w-3xl">
+                    <span
+                        class="text-[#ffeb3b] font-bold tracking-[0.4em] uppercase mb-4 block text-sm md:text-base drop-shadow-md">Ofertas
+                        de último momento</span>
+                    <h1
+                        class="text-6xl md:text-8xl font-black font-headline text-white leading-none tracking-tighter mb-8 drop-shadow-2xl">
+                        VALIJAS YA 🧳
+                    </h1>
+                    <div
+                        class="flex items-center justify-center gap-3 text-white bg-black/20 backdrop-blur-md px-6 py-3 rounded-full border border-white/20 inline-flex shadow-lg hover:bg-black/30 transition-all">
+                        <span class="material-symbols-outlined text-2xl">luggage</span>
+                        <p class="font-bold text-lg tracking-wide uppercase">Salidas Próximas</p>
                     </div>
-                    <div class="hidden lg:block relative text-right">
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 relative z-10 w-full max-w-6xl mx-auto">
+                    <div class="relative group/card cursor-pointer perspective"
+                        onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
                         <div
-                            class="absolute -right-10 top-1/2 -translate-y-1/2 w-64 h-64 bg-[#f57c00]/30 blur-3xl rounded-full">
+                            class="absolute -inset-1 bg-gradient-to-r from-red-500 to-yellow-500 rounded-2xl blur opacity-0 group-hover/card:opacity-50 transition duration-500">
                         </div>
-                        <div class="grid grid-cols-2 gap-4 relative z-10 w-full max-w-lg ml-auto">
-                            <img src="Marzo/mar_del_plata_marzo.jpeg" class="rounded-xl shadow-xl border-4 border-white/10 hover:scale-105 transition-transform -rotate-2 h-44 object-cover w-full cursor-pointer" alt="Mar del Plata" onclick="openPackage('Mar Del Plata Marzo', 'marzo')" />
-                            <img src="Marzo/mendoza_marzo.jpeg" class="rounded-xl shadow-xl border-4 border-white/10 hover:scale-105 transition-transform rotate-2 h-44 object-cover w-full cursor-pointer" alt="Mendoza" onclick="openPackage('Mendoza Marzo', 'marzo')" />
-                            <img src="Marzo/tandil_marzo.jpeg" class="rounded-xl shadow-xl border-4 border-white/10 hover:scale-105 transition-transform rotate-1 h-44 object-cover w-full cursor-pointer" alt="Tandil" onclick="openPackage('Tandil Marzo')" />
-                            <img src="Marzo/villa_carlos_paz_marzo.jpeg" class="rounded-xl shadow-xl border-4 border-white/10 hover:scale-105 transition-transform -rotate-1 h-44 object-cover w-full cursor-pointer" alt="Villa Carlos Paz" onclick="openPackage('Villa Carlos Paz Marzo')" />
+                        <img src="Marzo/mar_del_plata_marzo.jpeg"
+                            class="relative rounded-xl shadow-2xl border-4 border-white/15 object-contain w-full h-auto transform group-hover/card:-translate-y-4 group-hover/card:scale-105 transition-all duration-500 z-10 bg-black/10"
+                            alt="Mar del Plata" />
+                    </div>
+                    <div class="relative group/card cursor-pointer perspective"
+                        onclick="openPackage('Mendoza Marzo', 'marzo')">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-green-500 rounded-2xl blur opacity-0 group-hover/card:opacity-50 transition duration-500">
                         </div>
+                        <img src="Marzo/mendoza_marzo.jpeg"
+                            class="relative rounded-xl shadow-2xl border-4 border-white/15 object-contain w-full h-auto transform group-hover/card:-translate-y-4 group-hover/card:scale-105 transition-all duration-500 z-10 bg-black/10"
+                            alt="Mendoza" />
+                    </div>
+                    <div class="relative group/card cursor-pointer perspective" onclick="openPackage('Tandil Marzo')">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-green-500 to-yellow-500 rounded-2xl blur opacity-0 group-hover/card:opacity-50 transition duration-500">
+                        </div>
+                        <img src="Marzo/tandil_marzo.jpeg"
+                            class="relative rounded-xl shadow-2xl border-4 border-white/15 object-contain w-full h-auto transform group-hover/card:-translate-y-4 group-hover/card:scale-105 transition-all duration-500 z-10 bg-black/10"
+                            alt="Tandil" />
+                    </div>
+                    <div class="relative group/card cursor-pointer perspective"
+                        onclick="openPackage('Villa Carlos Paz Marzo')">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-0 group-hover/card:opacity-50 transition duration-500">
+                        </div>
+                        <img src="Marzo/villa_carlos_paz_marzo.jpeg"
+                            class="relative rounded-xl shadow-2xl border-4 border-white/15 object-contain w-full h-auto transform group-hover/card:-translate-y-4 group-hover/card:scale-105 transition-all duration-500 z-10 bg-black/10"
+                            alt="Villa Carlos Paz" />
                     </div>
                 </div>
             </div>
@@ -2485,11 +2512,16 @@
             <div class="max-w-7xl mx-auto px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
                     <div class="lg:col-span-5">
-                        <h2 class="text-6xl font-bold font-headline text-[#0a1a6b] mb-6 tracking-tight">Crucero Travelero</h2>
-                        <h3 class="text-2xl font-bold text-[#f5a623] mb-6 uppercase tracking-widest">Experiencia Exclusiva</h3>
-                        <p class="text-lg text-[#434653] mb-4">Embarcate en la experiencia de tu vida con la seguridad de no gastar un mango extra.</p>
-                        <p class="text-[#434653]">Recorreremos Buenos Aires, Río de Janeiro, Ilhabela, Camboriú y Punta del Este en un viaje donde no tendrás que pensar en nada más que disfrutar de las playas y atardeceres únicos.</p>
-                        
+                        <h2 class="text-6xl font-bold font-headline text-[#0a1a6b] mb-6 tracking-tight">Crucero
+                            Travelero</h2>
+                        <h3 class="text-2xl font-bold text-[#f5a623] mb-6 uppercase tracking-widest">Experiencia
+                            Exclusiva</h3>
+                        <p class="text-lg text-[#434653] mb-4">Embarcate en la experiencia de tu vida con la seguridad
+                            de no gastar un mango màs.</p>
+                        <p class="text-[#434653]">Recorreremos Buenos Aires, Río de Janeiro, Ilhabela, Camboriú y Punta
+                            del Este en un viaje donde no tendrás que pensar en nada más que disfrutar de las playas y
+                            atardeceres únicos.</p>
+
                         <a href="crucero.html"
                             class="mt-8 inline-flex items-center gap-3 bg-[#0a1a6b] text-white px-10 py-5 rounded-2xl font-bold hover:bg-[#1a4b8c] transition-all editorial-shadow uppercase tracking-widest text-sm">
                             VER CRUCERO COMPLETO 🚢
@@ -2498,12 +2530,12 @@
                     <div class="lg:col-span-7 relative group">
                         <a href="crucero.html" class="block overflow-hidden rounded-3xl">
                             <img class="rounded-3xl editorial-shadow w-full aspect-[4/3] object-cover -rotate-2"
-                                data-alt="MSC Splendida Cruise Ship"
-                                src="Otros/msc-splendida.webp" />
+                                data-alt="MSC Splendida Cruise Ship" src="Otros/msc-splendida.webp" />
                         </a>
                         <div
                             class="absolute -bottom-10 -left-10 bg-white p-8 rounded-2xl editorial-shadow max-w-xs rotate-3 hidden md:block z-10">
-                            <p class="italic font-headline text-lg text-[#0a1a6b]">"Diseñamos este viaje para un balance perfecto: aventuras inolvidables y momentos únicos."</p>
+                            <p class="italic font-headline text-lg text-[#0a1a6b]">"Diseñamos este viaje para un balance
+                                perfecto: aventuras inolvidables y momentos únicos."</p>
                         </div>
                     </div>
                 </div>
@@ -2576,21 +2608,27 @@
     </div>
 
     <div class="banners">
-        <div class="banner banner-aereos" onclick="document.getElementById('section-aereos').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">
+        <div class="banner banner-aereos"
+            onclick="document.getElementById('section-aereos').scrollIntoView({behavior:'smooth'})"
+            style="cursor:pointer;">
             <div class="banner-waves"></div>
             <div class="banner-icon">✈️</div>
             <div class="banner-label">PAQUETES<br>AÉREOS</div>
             <div class="banner-route">📍 ✦ ✦ ✦ ✈️</div>
         </div>
 
-        <div class="banner banner-terrestres" onclick="document.getElementById('nuestros-viajes').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;">
+        <div class="banner banner-terrestres"
+            onclick="document.getElementById('nuestros-viajes').scrollIntoView({behavior:'smooth'})"
+            style="cursor:pointer;">
             <div class="banner-waves"></div>
             <div class="banner-icon">🚌</div>
             <div class="banner-label">PAQUETES<br>TERRESTRES</div>
             <div class="banner-route">📍 ✦ ✦ ✦ 🚌</div>
         </div>
 
-        <div class="banner banner-promo">
+        <div class="banner banner-promo"
+            onclick="document.getElementById('hero-top').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;"
+            aria-label="Ver Promociones">
             <div class="banner-waves"></div>
             <div class="promo-super">SUPER SALE TURISMO LEONES</div>
             <div
