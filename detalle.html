@@ -40,10 +40,8 @@
 
         .pkg-view {
             width: 100%;
-            height: 100vh;
+            min-height: calc(100vh - 64px);
             background: #fff;
-            overflow-y: auto;
-            overflow-x: hidden;
             display: flex;
             flex-direction: column;
         }
@@ -596,34 +594,17 @@
                     <h1 class="pkg-title" id="pkgTitle">Cargando...</h1>
 
                     <div class="pkg-controls">
-                        <div style="font-weight:600; color:#666;">Seleccionar fecha: <br><select
-                                style="margin-top:5px; padding:8px; border-radius:4px; border:1px solid #ccc; width:100%">
-                                <option>Elige una opción</option>
-                                <option>Verano 2026</option>
-                                <option>Otoño 2026</option>
-                            </select></div>
-                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
                             <a href="https://wa.me/5491139470000?text=Hola,%20quisiera%20averiguar%20por%20un%20paquete"
-                                class="pkg-reservar-btn" id="pkgReservarBtn" target="_blank">RESERVAR</a>
+                                class="pkg-reservar-btn" id="pkgReservarBtn" target="_blank" style="width: 100%; text-align: center;">RESERVAR</a>
                         </div>
                     </div>
 
                     <ul class="pkg-features" id="pkgFeatures">
                     </ul>
 
-                    <div class="pkg-price-bar" id="pkgPrice">$ 0.00</div>
                 </div>
             </div>
-
-            <div class="pkg-tabs">
-                <button class="pkg-tab-btn active" onclick="switchTab('itinerario')">Itinerario</button>
-                <button class="pkg-tab-btn" onclick="switchTab('notas')">Notas Importantes</button>
-                <button class="pkg-tab-btn" onclick="switchTab('embarque')">Puntos de Embarque</button>
-            </div>
-
-            <div id="tab-itinerario" class="pkg-tab-content active"></div>
-            <div id="tab-notas" class="pkg-tab-content"></div>
-            <div id="tab-embarque" class="pkg-tab-content"></div>
 
             <div class="pkg-payment">
                 <h3>Medios de Pago</h3>
@@ -750,7 +731,6 @@
             document.title = `${data.title} - Turismo Leones`;
             document.getElementById('pkgTitle').textContent = data.title;
             document.getElementById('pkgSeason').textContent = (data.season === 'enviar info' || !data.season) ? 'Consultar' : data.season;
-            document.getElementById('pkgPrice').textContent = (data.price && data.price !== 'Consultar') ? `$ ${data.price}` : 'Consultar Precio';
 
             const mediaBox = document.getElementById('pkgMediaBox');
             if (urlImage) {
@@ -781,10 +761,7 @@
                 featuresList.innerHTML = data.features.map(f => `<li><span>${f.icon}</span> ${f.text}</li>`).join('');
             }
 
-            document.getElementById('tab-itinerario').innerHTML = data.itinerary || '<p>Itinerario a confirmar.</p>';
-            document.getElementById('tab-notas').innerHTML = data.importantNotes || '<p>Consultar notas importantes con la agencia.</p>';
-            document.getElementById('tab-embarque').innerHTML = data.boardingPoints || '<p>Puntos de embarque a confirmar.</p>';
-            document.getElementById('tab-legales').innerHTML = data.legal || '<p>Términos y condiciones aplican.</p>';
+
         };
     </script>
 </body>
