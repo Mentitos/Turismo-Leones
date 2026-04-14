@@ -332,7 +332,51 @@
             </div>
         </section>
 
-        <section class="py-24 bg-surface-container-low overflow-hidden">
+        <section class="relative w-full overflow-hidden" style="height: clamp(320px, 56vw, 700px);" id="video-section">
+            <video
+                id="cruceroVideo"
+                class="absolute inset-0 w-full h-full object-cover"
+                src="ordenar/travelerovideo_compressed.mp4"
+                muted
+                loop
+                playsinline
+                preload="auto">
+            </video>
+            <button id="videoPlayBtn" onclick="toggleVideoPlay()"
+                style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:10;
+                       width:80px; height:80px; border-radius:50%; border:3px solid rgba(255,255,255,0.9);
+                       background:rgba(10,26,107,0.55); backdrop-filter:blur(6px);
+                       color:#fff; font-size:30px; cursor:pointer; display:flex; align-items:center;
+                       justify-content:center; transition:opacity 0.35s, transform 0.2s;
+                       box-shadow:0 8px 32px rgba(0,0,0,0.45);"
+                title="Reproducir video">
+                ▶
+            </button>
+            <div id="videoOverlay" style="position:absolute; inset:0; transition:opacity 0.4s;">
+                <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(10,26,107,0.72) 0%, rgba(10,26,107,0.3) 55%, transparent 100%);"></div>
+                <div class="absolute inset-0 flex items-center">
+                    <div class="max-w-7xl mx-auto px-8 w-full">
+                        <p style="color:#f5a623; font-family:'Bebas Neue',sans-serif; font-size:clamp(13px,1.2vw,16px); letter-spacing:0.35em; margin-bottom:16px; text-transform:uppercase;">🎬 La experiencia en vivo</p>
+                        <h2 style="font-family:'Bebas Neue',sans-serif; font-size:clamp(42px,7vw,96px); color:#fff; line-height:0.95; margin:0 0 20px; text-shadow:0 4px 30px rgba(0,0,0,0.4);">ASÍ SE VIVE<br>EL TRAVELERO</h2>
+                        <p style="color:rgba(255,255,255,0.8); font-size:clamp(14px,1.3vw,18px); font-weight:600; max-width:420px; line-height:1.5; margin-bottom:32px;">9 días, 4 destinos, 1 flota. Todo incluido, sin sorpresas.</p>
+                        <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+                            <a href="https://wa.me/5491151233885?text=Hola!%20Quiero%20info%20del%20Crucero%20Travelero"
+                                target="_blank"
+                                style="background:#25d366; color:#fff; padding:14px 28px; border-radius:50px; font-weight:800; font-size:14px; text-decoration:none; display:flex; align-items:center; gap:8px; letter-spacing:0.5px; box-shadow:0 4px 20px rgba(37,211,102,0.4); transition:transform 0.2s;"
+                                onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">
+                                💬 CONSULTAR AHORA
+                            </a>
+                            <button id="videoAudioBtn"
+                                onclick="toggleVideoAudio()"
+                                style="background:rgba(255,255,255,0.15); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.3); color:#fff; padding:14px 20px; border-radius:50px; font-size:18px; cursor:pointer; transition:background 0.2s;"
+                                title="Activar audio">🔇</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
             <div class="max-w-7xl mx-auto px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
                     <div class="lg:col-span-5">
@@ -725,6 +769,42 @@
         function scrollToContact() {
             const footer = document.getElementById('footer-contacto');
             if (footer) footer.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function toggleVideoPlay() {
+            const vid = document.getElementById('cruceroVideo');
+            const btn = document.getElementById('videoPlayBtn');
+            const overlay = document.getElementById('videoOverlay');
+            if (!vid) return;
+            if (vid.paused) {
+                vid.play();
+                btn.style.opacity = '0';
+                btn.style.pointerEvents = 'none';
+                if (overlay) { overlay.style.opacity = '0'; overlay.style.pointerEvents = 'none'; }
+            } else {
+                vid.pause();
+                btn.innerHTML = '▶';
+                btn.style.opacity = '1';
+                btn.style.pointerEvents = 'auto';
+                if (overlay) { overlay.style.opacity = '1'; overlay.style.pointerEvents = 'auto'; }
+            }
+        }
+
+        const cruceroVid = document.getElementById('cruceroVideo');
+        if (cruceroVid) {
+            cruceroVid.addEventListener('click', toggleVideoPlay);
+            cruceroVid.addEventListener('ended', () => {
+                const btn = document.getElementById('videoPlayBtn');
+                if (btn) { btn.innerHTML = '▶'; btn.style.opacity = '1'; btn.style.pointerEvents = 'auto'; }
+            });
+        }
+
+        function toggleVideoAudio() {
+            const vid = document.getElementById('cruceroVideo');
+            const btn = document.getElementById('videoAudioBtn');
+            if (!vid) return;
+            vid.muted = !vid.muted;
+            btn.textContent = vid.muted ? '🔇' : '🔊';
         }
     </script>
 </body>
