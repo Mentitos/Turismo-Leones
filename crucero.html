@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html class="light" lang="es">
 
@@ -236,6 +236,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            word-break: break-word;
         }
 
         .footer-bottom {
@@ -248,10 +249,55 @@
             grid-column: 1 / -1;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
+        @media (max-width: 768px) {
+            footer {
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+                padding: 36px 20px 20px;
+            }
+            .footer-logo {
+                grid-column: 1 / -1;
+                text-align: center;
+                margin-bottom: 4px;
+            }
+            .footer-col {
+                text-align: left;
+            }
+            .footer-contact p {
+                justify-content: flex-start;
+                text-align: left;
+                word-break: break-word;
+            }
+            .footer-map iframe {
+                width: 100% !important;
+                height: 130px !important;
+            }
+            .footer-bottom {
+                grid-column: 1 / -1;
+                padding: 14px 10px 0;
+                font-size: 11px;
+                margin-top: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 28px 16px 16px;
+            }
+            .footer-logo {
+                grid-column: 1;
+            }
+            .footer-col {
+                border-top: 1px solid rgba(255,255,255,0.08);
+                padding-top: 16px;
+            }
+        }
 
         @media (max-width: 900px) {
             footer {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 gap: 15px;
                 padding: 30px 20px;
             }
@@ -662,11 +708,7 @@
                         <ul class="space-y-4">
                             <li class="flex items-center gap-3 text-[#0a1a6b] font-bold">
                                 <span class="material-symbols-outlined" data-icon="done_all">done_all</span>
-                                Hasta 12 cuotas sin interés
-                            </li>
-                            <li class="flex items-center gap-3 text-[#0a1a6b] font-bold">
-                                <span class="material-symbols-outlined" data-icon="done_all">done_all</span>
-                                Transferencia bancaria (5% OFF)
+                                3, 6, 9 y 12 cuotas con interés
                             </li>
                             <li class="flex items-center gap-3 text-[#0a1a6b] font-bold">
                                 <span class="material-symbols-outlined" data-icon="done_all">done_all</span>
@@ -687,6 +729,8 @@
                                 básica. Consulta por upgrade Premium.</p>
                             <p class="text-sm leading-relaxed"><strong>Política de Cancelación:</strong> Flexibilidad
                                 total hasta 60 días antes de la partida.</p>
+                            <p class="text-sm leading-relaxed" style="color: #0a1a6b; font-weight: 700;">🏥 Cobertura médica incluida en todos los paquetes.</p>
+                            <p class="text-sm leading-relaxed" style="color: #888;">🏪 Ventas a través de <strong>Travelar</strong>, agencia oficial.</p>
                         </div>
                         <a href="Otros/CruceroTravelero.pdf" target="_blank" class="mt-8 flex items-center gap-2 text-[#f5a623] font-bold hover:underline">
                             Más información (PDF)
@@ -711,7 +755,8 @@
             <h4>Turismo Leones</h4>
             <ul>
                 <li><a href="nosotros.html">Quiénes somos</a></li>
-                <li><a href="revendedores.html">Sé parte del equipo</a></li>
+                
+                <li><a href="#" style="color:#f5a623;font-weight:700;">🏪 Ventas: Travelar</a></li>
                 <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
         </div>
@@ -722,18 +767,18 @@
                 <li><a href="#">Efectivo</a></li>
                 <li><a href="#">Transferencia Bancaria</a></li>
                 <li><a href="#">Mercado Pago</a></li>
-                <li><a href="#">3 y 6 cuotas</a></li>
+                <li><a href="#">3, 6, 9 y 12 cuotas con interés</a></li>
             </ul>
         </div>
 
         <div class="footer-col footer-contact">
             <h4>Contacto</h4>
             <p>📞 +54 9 11 5123-3885 (Mario)</p>
-            <p>✉️ BERRUETAMARIO1121@GMAIL.COM</p>
-            <p>📍 Juan Francisco Seguí, B1615 Tortuguitas, Provincia de Buenos Aires</p>
+            <p>✉️ turismoleones2026@gmail.com</p>
+            <p>📍 Francisco Seguí 2894 y Costa Rica, Tierras Altas</p>
             <div class="footer-map" style="margin-top: 15px;">
                 <iframe
-                    src="https://maps.google.com/maps?q=Juan%20Francisco%20Segu%C3%AD,%20Tortuguitas,%20Provincia%20de%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=Francisco+Segu%C3%AD+2894+y+Costa+Rica,+Tierras+Altas,+Buenos+Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen=""
                     loading="lazy"></iframe>
             </div>

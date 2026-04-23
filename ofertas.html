@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -837,6 +837,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            word-break: break-word;
         }
 
         .footer-bottom {
@@ -848,6 +849,51 @@
             color: rgba(255, 255, 255, 0.35);
             grid-column: 1 / -1;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        @media (max-width: 768px) {
+            footer {
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+                padding: 36px 20px 20px;
+            }
+            .footer-logo {
+                grid-column: 1 / -1;
+                text-align: center;
+                margin-bottom: 4px;
+            }
+            .footer-col {
+                text-align: left;
+            }
+            .footer-contact p {
+                justify-content: flex-start;
+                text-align: left;
+                word-break: break-word;
+            }
+            .footer-map iframe {
+                width: 100% !important;
+                height: 130px !important;
+            }
+            .footer-bottom {
+                grid-column: 1 / -1;
+                padding: 14px 10px 0;
+                font-size: 11px;
+                margin-top: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 28px 16px 16px;
+            }
+            .footer-logo {
+                grid-column: 1;
+            }
+            .footer-col {
+                border-top: 1px solid rgba(255,255,255,0.08);
+                padding-top: 16px;
+            }
         }
 
         .whatsapp-btn {
@@ -2101,7 +2147,7 @@
             }
 
             footer {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 gap: 15px;
                 padding: 30px 20px;
             }
@@ -2468,45 +2514,7 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 relative z-10 w-full max-w-6xl mx-auto">
-                    <div class="relative group/card cursor-pointer perspective"
-                        onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
-                        <div
-                            class="absolute -inset-1 bg-gradient-to-r from-red-500 to-yellow-500 rounded-2xl blur opacity-0 group-hover/card:opacity-50 transition duration-500">
-                        </div>
-                        <img src="Marzo/mar_del_plata_marzo.jpeg"
-                            class="relative rounded-xl shadow-2xl border-4 border-white/15 object-contain w-full h-auto transform group-hover/card:-translate-y-4 group-hover/card:scale-105 transition-all duration-500 z-10 bg-black/10"
-                            alt="Mar del Plata" />
-                    </div>
-                    <div class="relative group/card cursor-pointer perspective"
-                        onclick="openPackage('Mendoza Marzo', 'marzo')">
-                        <div
-                            class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-green-500 rounded-2xl blur opacity-0 group-hover/card:opacity-50 transition duration-500">
-                        </div>
-                        <img src="Marzo/mendoza_marzo.jpeg"
-                            class="relative rounded-xl shadow-2xl border-4 border-white/15 object-contain w-full h-auto transform group-hover/card:-translate-y-4 group-hover/card:scale-105 transition-all duration-500 z-10 bg-black/10"
-                            alt="Mendoza" />
-                    </div>
-                    <div class="relative group/card cursor-pointer perspective" onclick="openPackage('Tandil Marzo')">
-                        <div
-                            class="absolute -inset-1 bg-gradient-to-r from-green-500 to-yellow-500 rounded-2xl blur opacity-0 group-hover/card:opacity-50 transition duration-500">
-                        </div>
-                        <img src="Marzo/tandil_marzo.jpeg"
-                            class="relative rounded-xl shadow-2xl border-4 border-white/15 object-contain w-full h-auto transform group-hover/card:-translate-y-4 group-hover/card:scale-105 transition-all duration-500 z-10 bg-black/10"
-                            alt="Tandil" />
-                    </div>
-                    <div class="relative group/card cursor-pointer perspective"
-                        onclick="openPackage('Villa Carlos Paz Marzo')">
-                        <div
-                            class="absolute -inset-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-0 group-hover/card:opacity-50 transition duration-500">
-                        </div>
-                        <img src="Marzo/villa_carlos_paz_marzo.jpeg"
-                            class="relative rounded-xl shadow-2xl border-4 border-white/15 object-contain w-full h-auto transform group-hover/card:-translate-y-4 group-hover/card:scale-105 transition-all duration-500 z-10 bg-black/10"
-                            alt="Villa Carlos Paz" />
-                    </div>
-                </div>
-            </div>
-        </section>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 relative z-10 w-full max-w-6xl mx-auto"></div></div></div></section>
 
         <section class="py-24 bg-[#f2f4f6] overflow-hidden">
             <div class="max-w-7xl mx-auto px-8">
@@ -2573,25 +2581,7 @@
                 </div>
             </div>
 
-            <div class="hero-slide">
-                <div class="hero-center-bg"
-                    style="background: linear-gradient(135deg, #d32f2f, #f57c00); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px;">
-                    <div class="hero-tagline" style="color:#fff; margin-bottom:15px; margin-top:20px;">
-                        VALIJAS YA 🧳<br>
-                        <span style="font-size: 0.5em; letter-spacing: 1px; color:#ffeb3b">¡MIRA NUESTRAS OFERTAS DE
-                            MARZO!</span>
-                    </div>
-                    <div class="hero-valijas-previews">
-                        <img src="Marzo/mar_del_plata_marzo.jpeg" onclick="openPackage('Mar Del Plata Marzo', 'marzo')"
-                            title="Mar Del Plata">
-                        <img src="Marzo/mendoza_marzo.jpeg" onclick="openPackage('Mendoza Marzo', 'marzo')"
-                            title="Mendoza">
-                        <img src="Marzo/tandil_marzo.jpeg" onclick="openPackage('Tandil Marzo')" title="Tandil">
-                        <img src="Marzo/villa_carlos_paz_marzo.jpeg" onclick="openPackage('Villa Carlos Paz Marzo')"
-                            title="Villa Carlos Paz">
-                    </div>
-                </div>
-            </div>
+            
 
             <button class="hero-arrow left" onclick="switchHeroSlide(-1, true)">&#8249;</button>
             <button class="hero-arrow right" onclick="switchHeroSlide(1, true)">&#8250;</button>
@@ -2664,31 +2654,6 @@
         <h2>🔥 DESTACADAS</h2>
     </div>
 
-    <div class="season-section" data-section-season="valijas-ya" id="valijas-ya-section"
-        style="animation: fadeIn 0.5s ease-in-out; display: none;">
-        <h2 class="season-title" style="color: #d32f2f;">VALIJAS YA <span class="section-count"></span></h2>
-        <div class="flyers-wrapper">
-            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
-            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
-            <div class="flyers-track">
-                <div class="flyer-card" data-name="mar del plata marzo"
-                    onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
-                    <div class="card-badge status-sold-out">CUPOS LLENOS 🔴</div>
-                    <div class="sold-time">Vendido en 24 horas</div>
-                    <img src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo">
-                </div>
-                <div class="flyer-card" data-name="mendoza marzo" onclick="openPackage('Mendoza Marzo', 'marzo')">
-                    <div class="card-badge status-almost-gone">PRÓXIMO A AGOTARSE 🟡</div>
-                    <img src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo">
-                </div>
-                <div class="flyer-card" onclick="openPackage('Tandil Marzo')">
-                    <div class="card-badge status-available">DISPONIBLE 🟢</div>
-                    <img src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo">
-                </div>
-            </div>
-        </div>
-    </div>
-
 
 
     <div class="section-header" id="nuestros-viajes">
@@ -2713,11 +2678,6 @@
                     <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil Otoño</span><span
                             class="flyer-overlay-badge">💬 Consultar</span></div>
                 </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Santa Teresita Marzo', 'marzo')">
-                    <img src="Marzo/santa_teresita_marzo.jpeg" class="flyer-media flyer-img" alt="Santa Teresita">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Santa Teresita Marzo</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
                 </div>
             </div>
         </div>
@@ -2883,48 +2843,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="season-section" data-section-season="marzo">
-        <h2 class="season-title">MARZO <span class="section-count"></span></h2>
-        <div class="flyers-wrapper">
-            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
-            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
-            <div class="flyers-track">
-                <div class="flyer-card" data-name="mar del plata marzo" data-season="marzo" data-has-video="false"
-                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Mar Del Plata Marzo', 'marzo')">
-                    <img src="Marzo/mar_del_plata_marzo.jpeg" class="flyer-media flyer-img" alt="mar_del_plata_marzo">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mar Del Plata Marzo</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
-                </div>
-                <div class="flyer-card" data-name="mendoza marzo" data-season="marzo" data-has-video="false"
-                    onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Mendoza Marzo', 'marzo')">
-                    <img src="Marzo/mendoza_marzo.jpeg" class="flyer-media flyer-img" alt="mendoza_marzo">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza Marzo</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
-                </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Santa Teresita Marzo')">
-                    <img src="Marzo/santa_teresita_marzo.jpeg" class="flyer-media flyer-img" alt="santa_teresita_marzo">
-                    <video preload="none" data-src="Marzo/santa_teresita_marzo.mp4" muted class="flyer-video" loop
-                        playsinline></video>
-                    <div class="video-badge">▶ VIDEO</div>
-                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Tandil Marzo')">
-                    <img src="Marzo/tandil_marzo.jpeg" class="flyer-media flyer-img" alt="tandil_marzo">
-                </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Villa Carlos Paz Marzo')">
-                    <img src="Marzo/villa_carlos_paz_marzo.jpeg" class="flyer-media flyer-img"
-                        alt="villa_carlos_paz_marzo">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="season-section" data-section-season="semana santa">
+    </div><div class="season-section" data-section-season="semana santa">
         <h2 class="season-title">SEMANA SANTA <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
@@ -2984,7 +2903,8 @@
             <h4>Turismo Leones</h4>
             <ul>
                 <li><a href="nosotros.html">Quiénes somos</a></li>
-                <li><a href="revendedores.html">Sé parte del equipo</a></li>
+                
+                <li><a href="#" style="color:#f5a623;font-weight:700;">🏪 Ventas: Travelar</a></li>
                 <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
         </div>
@@ -2995,18 +2915,18 @@
                 <li><a href="#">Efectivo</a></li>
                 <li><a href="#">Transferencia Bancaria</a></li>
                 <li><a href="#">Mercado Pago</a></li>
-                <li><a href="#">3 y 6 cuotas</a></li>
+                <li><a href="#">3, 6, 9 y 12 cuotas con interés</a></li>
             </ul>
         </div>
 
         <div class="footer-col footer-contact">
             <h4>Contacto</h4>
             <p>📞 +54 9 11 5123-3885 (Mario)</p>
-            <p>✉️ BERRUETAMARIO1121@GMAIL.COM</p>
-            <p>📍 Juan Francisco Seguí, B1615 Tortuguitas, Provincia de Buenos Aires</p>
+            <p>✉️ turismoleones2026@gmail.com</p>
+            <p>📍 Francisco Seguí 2894 y Costa Rica, Tierras Altas</p>
             <div class="footer-map" style="margin-top: 15px;">
                 <iframe
-                    src="https://maps.google.com/maps?q=Juan%20Francisco%20Segu%C3%AD,%20Tortuguitas,%20Provincia%20de%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=Francisco+Segu%C3%AD+2894+y+Costa+Rica,+Tierras+Altas,+Buenos+Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen=""
                     loading="lazy"></iframe>
             </div>
@@ -3445,7 +3365,7 @@
                 <div style="margin-bottom: 20px; font-size: 14px; line-height: 1.6;">
                     <strong>Condiciones:</strong> 20% de seña para reservar y el saldo restante 7 días antes de viajar.
                     <br>
-                    <strong>Financiación:</strong> Disponemos de 3 y 6 cuotas.
+                    <strong>Financiación:</strong> Disponemos de 3, 6, 9 y 12 cuotas con interés.
                 </div>
                 <div class="pkg-payment-logos">
                     <div class="pkg-payment-item"><svg viewBox="0 0 24 24">

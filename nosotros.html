@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -634,6 +634,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            word-break: break-word;
         }
 
         .footer-bottom {
@@ -645,6 +646,51 @@
             color: rgba(255, 255, 255, 0.35);
             grid-column: 1 / -1;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        @media (max-width: 768px) {
+            footer {
+                grid-template-columns: 1fr 1fr;
+                gap: 28px;
+                padding: 36px 20px 20px;
+            }
+            .footer-logo {
+                grid-column: 1 / -1;
+                text-align: center;
+                margin-bottom: 4px;
+            }
+            .footer-col {
+                text-align: left;
+            }
+            .footer-contact p {
+                justify-content: flex-start;
+                text-align: left;
+                word-break: break-word;
+            }
+            .footer-map iframe {
+                width: 100% !important;
+                height: 130px !important;
+            }
+            .footer-bottom {
+                grid-column: 1 / -1;
+                padding: 14px 10px 0;
+                font-size: 11px;
+                margin-top: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 28px 16px 16px;
+            }
+            .footer-logo {
+                grid-column: 1;
+            }
+            .footer-col {
+                border-top: 1px solid rgba(255,255,255,0.08);
+                padding-top: 16px;
+            }
         }
 
 
@@ -829,6 +875,10 @@
                         class="px-4 py-2 bg-slate-100 rounded-full text-primary font-bold flex items-center gap-2 text-sm">
                         <span>🚢</span> Cruceros
                     </span>
+                                    <span
+                        class="px-4 py-2 bg-amber-50 rounded-full text-amber-700 font-bold flex items-center gap-2 text-sm border border-amber-200">
+                        <span>🏪</span> Ventas: <strong>Travelar</strong>
+                    </span>
                 </div>
             </section>
 
@@ -872,11 +922,9 @@
                             Jubilados vinculado a Leones de Malvinas</strong>. Este centro brinda un espacio de
                         encuentro, recreación y asistencia para los adultos mayores de nuestra comunidad.
                     </p>
-                    <div
-                        class="inline-flex items-center gap-4 bg-white px-6 py-4 rounded-2xl shadow-sm border border-slate-100">
+                    <div class="inline-flex items-center gap-4 bg-white px-6 py-4 rounded-2xl shadow-sm border border-slate-100">
                         <span class="material-symbols-outlined text-amber-500 text-3xl">handshake</span>
-                        <span class="text-lg font-bold text-primary">Tu viaje también es una contribución
-                            solidaria</span>
+                        <span class="text-lg font-bold text-primary">Tu viaje también es una contribución solidaria</span>
                     </div>
                 </div>
                 <div class="flex-1 w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl">
@@ -888,64 +936,52 @@
 
         <section class="mt-32">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-4"
-                    style="background:none; font-family:'Space Grotesk',sans-serif;">¿POR QUÉ VIAJAR CON NOSOTROS?</h2>
-                <p class="text-slate-500 max-w-2xl mx-auto">Excelencia en cada detalle, calidez en el trato y la
-                    confianza de años de trayectoria.</p>
+                <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-4" style="background:none; font-family:'Space Grotesk',sans-serif;">¿POR QUÉ VIAJAR CON NOSOTROS?</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Excelencia en cada detalle, calidez en el trato y la confianza de años de trayectoria.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                     <div class="text-4xl mb-6">📍</div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Salidas locales</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Partimos desde zona norte del GBA. Sin largas
-                        esperas en terminales lejanas.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Partimos desde zona norte del GBA. Sin largas esperas en terminales lejanas.</p>
                 </div>
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                     <div class="text-4xl mb-6">💳</div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Cuotas</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">20% de seña para reservar. Saldo en 3 o 6 cuotas.
-                        Transferencia, efectivo o Mercado Pago.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">20% de seña para reservar. Saldo en 3, 6, 9 o 12 cuotas con interés. Transferencia, efectivo o Mercado Pago.</p>
                 </div>
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                     <div class="text-4xl mb-6">👥</div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Grupos chicos</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Viajes manejables con coordinador en cada salida
-                        para una atención personalizada.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Viajes manejables con coordinador en cada salida para una atención personalizada.</p>
                 </div>
-                <div
-                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                     <div class="text-4xl mb-6">✨</div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Con propósito</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Cada venta apoya directamente al Centro de
-                        Jubilados de Leones de Malvinas.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Cada venta apoya directamente al Centro de Jubilados de Leones de Malvinas.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                    <div class="text-4xl mb-6">🏥</div>
+                    <h3 class="text-xl font-headline font-bold text-primary mb-3">Cobertura Médica</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Todos nuestros paquetes incluyen cobertura médica de viaje. Tu seguridad es nuestra prioridad.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300" style="border-top: 4px solid #f5a623;">
+                    <div class="text-4xl mb-6">🏪</div>
+                    <h3 class="text-xl font-headline font-bold text-primary mb-3">Agencia Oficial</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Vendemos a través de <strong>Travelar</strong>, nuestra agencia de ventas oficial. Reservas garantizadas.</p>
                 </div>
             </div>
         </section>
 
-        <section class="mt-32 text-center bg-primary rounded-3xl p-12 md:p-16 text-white relative overflow-hidden"
-            style="background-color:#000740;">
+        <section class="mt-32 text-center bg-primary rounded-3xl p-12 md:p-16 text-white relative overflow-hidden" style="background-color:#000740;">
             <div class="absolute inset-0 opacity-20 pointer-events-none">
-                <img class="w-full h-full object-cover" alt="Paisaje de montaña"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGb82NBj9VzOXexSGGVL3If_qnpkwz6rl2XL0T5UGZ2b6oGmyVBBfAS1I9yDk2Hm-mzRGdFjzLoXuKPRL3IpgTOdm068dztBLewIm4eiEwJ-jXa-8BelOyny5rrQDXhu39Q910Osogu_IFzYbCpuBaey_So-rUeoQwAPyfrbJ1F-AN7T8FVULXkderhdkMpMo_beqpfhgddQjbvdVcQq3TF-07r18NIuKtWQ80WBrc8bu6OvaH5TOnfJ1Y29jLlZCZ-wM8IKQ-cHY" />
+                <img class="w-full h-full object-cover" alt="Paisaje de montaña" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGb82NBj9VzOXexSGGVL3If_qnpkwz6rl2XL0T5UGZ2b6oGmyVBBfAS1I9yDk2Hm-mzRGdFjzLoXuKPRL3IpgTOdm068dztBLewIm4eiEwJ-jXa-8BelOyny5rrQDXhu39Q910Osogu_IFzYbCpuBaey_So-rUeoQwAPyfrbJ1F-AN7T8FVULXkderhdkMpMo_beqpfhgddQjbvdVcQq3TF-07r18NIuKtWQ80WBrc8bu6OvaH5TOnfJ1Y29jLlZCZ-wM8IKQ-cHY" />
             </div>
             <div class="relative z-10">
-                <h2 class="text-5xl md:text-6xl font-headline font-bold mb-8 tracking-tight"
-                    style="background:none; color:white; font-family:'Space Grotesk',sans-serif;">¿LISTO PARA VIAJAR?
-                </h2>
+                <h2 class="text-5xl md:text-6xl font-headline font-bold mb-8 tracking-tight" style="background:none; color:white; font-family:'Space Grotesk',sans-serif;">¿LISTO PARA VIAJAR?</h2>
                 <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-                    <a href="index.html#nuestros-viajes"
-                        class="bg-tertiary-fixed text-primary px-10 py-4 rounded-full font-bold text-lg transition-all hover:scale-105"
-                        style="text-decoration:none; background-color:#ffb955; color:#000740;">
-                        Ver paquetes disponibles
-                    </a>
-                    <a href="https://wa.me/5491151233885" target="_blank"
-                        class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg transition-all hover:bg-white hover:text-slate-900"
-                        style="text-decoration:none;">
-                        Consultá por WhatsApp
-                    </a>
+                    <a href="index.html#nuestros-viajes" class="bg-tertiary-fixed text-primary px-10 py-4 rounded-full font-bold text-lg transition-all hover:scale-105" style="text-decoration:none; background-color:#ffb955; color:#000740;">Ver paquetes disponibles</a>
+                    <a href="https://wa.me/5491151233885" target="_blank" class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg transition-all hover:bg-white hover:text-slate-900" style="text-decoration:none;">Consultá por WhatsApp</a>
                 </div>
             </div>
         </section>
@@ -954,8 +990,7 @@
     <footer id="footer-contacto">
         <div class="footer-logo">
             <div style="font-size: 48px; margin-bottom: 8px;">🦁</div>
-            <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones
-            </div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones</div>
             <div style="font-size:9px;color:rgba(255,255,255,0.4);letter-spacing:3px">TURISMO</div>
         </div>
 
@@ -964,6 +999,7 @@
             <ul>
                 <li><a href="nosotros.html">Quiénes somos</a></li>
                 <li><a href="revendedores.html">Sé parte del equipo</a></li>
+                <li><a href="#" style="color:#f5a623;font-weight:700;">🏪 Ventas: Travelar</a></li>
                 <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
         </div>
@@ -974,18 +1010,18 @@
                 <li><a href="#">Efectivo</a></li>
                 <li><a href="#">Transferencia Bancaria</a></li>
                 <li><a href="#">Mercado Pago</a></li>
-                <li><a href="#">3 y 6 cuotas</a></li>
+                <li><a href="#">3, 6, 9 y 12 cuotas con interés</a></li>
             </ul>
         </div>
 
         <div class="footer-col footer-contact">
             <h4>Contacto</h4>
             <p>📞 +54 9 11 5123-3885 (Mario)</p>
-            <p>✉️ BERRUETAMARIO1121@GMAIL.COM</p>
-            <p>📍 Juan Francisco Seguí, B1615 Tortuguitas, Provincia de Buenos Aires</p>
+            <p>✉️ turismoleones2026@gmail.com</p>
+            <p>📍 Francisco Seguí 2894 y Costa Rica, Tierras Altas</p>
             <div class="footer-map" style="margin-top: 15px;">
                 <iframe
-                    src="https://maps.google.com/maps?q=Juan%20Francisco%20Segu%C3%AD,%20Tortuguitas,%20Provincia%20de%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    src="https://maps.google.com/maps?q=Francisco+Segu%C3%AD+2894+y+Costa+Rica,+Tierras+Altas,+Buenos+Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
                     width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen=""
                     loading="lazy"></iframe>
             </div>
