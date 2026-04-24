@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -77,6 +77,7 @@
             letter-spacing: 4px;
             text-transform: uppercase;
         }
+
 
         nav ul {
             list-style: none;
@@ -574,14 +575,23 @@
 
 <body>
     <nav>
-        <a href="index.html" class="logo">
-            <span class="logo-icon"
-                style="font-size: 36px; display: flex; align-items: center; justify-content: center;">🦁</span>
-            <div class="logo-text">
-                <span class="brand">Turismo Leones</span>
-                <span class="sub">Viajes</span>
+        <div style="display: flex; align-items: center;">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"
+                    style="font-size: 36px; display: flex; align-items: center; justify-content: center;">🦁</span>
+                <div class="logo-text">
+                    <span class="brand">Turismo Leones</span>
+                    <span class="sub">Viajes</span>
+                </div>
+            </a>
+            <div class="logo" style="margin-left: 20px; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 20px; pointer-events: none;">
+                <img src="logo/logo_sin_fondo_arreglado.png" class="logo-icon" alt="Travelar">
+                <div class="logo-text">
+                    <span class="brand">Travelar</span>
+                    <span class="sub">Ventas</span>
+                </div>
             </div>
-        </a>
+        </div>
         <button class="nav-toggle" id="navToggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
         <ul id="navMenu">
             <li><a href="index.html" onclick="toggleMenu()">Inicio</a></li>
@@ -784,7 +794,7 @@
             <ul>
                 <li><a href="nosotros.html">Quiénes somos</a></li>
                 
-                <li><a href="#" style="color:#f5a623;font-weight:700;">🏪 Ventas: Travelar</a></li>
+                <li><a href="#" style="color:#f5a623;font-weight:700;display:flex;align-items:center;gap:6px;"><img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar" style="height:16px;width:auto;filter:brightness(1.1);"> Ventas: Travelar</a></li>
                 <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
         </div>

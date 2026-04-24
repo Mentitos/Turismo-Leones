@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -158,6 +158,7 @@
             letter-spacing: 4px;
             text-transform: uppercase;
         }
+
 
         nav ul {
             list-style: none;
@@ -859,14 +860,23 @@
 <body>
 
     <nav>
-        <a href="index.html" class="logo">
-            <span class="logo-icon"
-                style="font-size: 36px; display: flex; align-items: center; justify-content: center;">🦁</span>
-            <div class="logo-text">
-                <span class="brand">Turismo Leones</span>
-                <span class="sub">Viajes</span>
+        <div style="display: flex; align-items: center;">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"
+                    style="font-size: 36px; display: flex; align-items: center; justify-content: center;">🦁</span>
+                <div class="logo-text">
+                    <span class="brand">Turismo Leones</span>
+                    <span class="sub">Viajes</span>
+                </div>
+            </a>
+            <div class="logo" style="margin-left: 20px; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 20px; pointer-events: none;">
+                <img src="logo/logo_sin_fondo_arreglado.png" class="logo-icon" alt="Travelar">
+                <div class="logo-text">
+                    <span class="brand">Travelar</span>
+                    <span class="sub">Ventas</span>
+                </div>
             </div>
-        </a>
+        </div>
         <button class="nav-toggle" id="navToggle" onclick="toggleMenu()" aria-label="Toggle navigation">☰</button>
         <ul id="navMenu">
             <li><a href="index.html" onclick="toggleMenu()">Inicio</a></li>
@@ -931,7 +941,7 @@
                     </span>
                                     <span
                         class="px-4 py-2 bg-amber-50 rounded-full text-amber-700 font-bold flex items-center gap-2 text-sm border border-amber-200">
-                        <span>🏪</span> Ventas: <strong>Travelar</strong>
+                        <img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar" style="height:16px;width:auto;"> Ventas: <strong>Travelar</strong>
                     </span>
                 </div>
             </section>
@@ -1029,7 +1039,7 @@
                     <p class="text-slate-500 text-sm leading-relaxed">Todos nuestros paquetes incluyen cobertura médica de viaje. Tu seguridad es nuestra prioridad.</p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300" style="border-top: 4px solid #f5a623;">
-                    <div class="text-4xl mb-6">🏪</div>
+                    <div class="text-4xl mb-6"><img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar" style="height:40px;width:auto;"></div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Agencia Oficial</h3>
                     <p class="text-slate-500 text-sm leading-relaxed">Vendemos a través de <strong>Travelar</strong>, nuestra agencia de ventas oficial. Reservas garantizadas.</p>
                 </div>
@@ -1062,7 +1072,7 @@
             <ul>
                 <li><a href="nosotros.html">Quiénes somos</a></li>
                 <li><a href="revendedores.html">Sé parte del equipo</a></li>
-                <li><a href="#" style="color:#f5a623;font-weight:700;">🏪 Ventas: Travelar</a></li>
+                <li><a href="#" style="color:#f5a623;font-weight:700;display:flex;align-items:center;gap:6px;"><img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar" style="height:16px;width:auto;filter:brightness(1.1);"> Ventas: Travelar</a></li>
                 <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
         </div>
