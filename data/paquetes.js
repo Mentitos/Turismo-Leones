@@ -27,6 +27,108 @@ const paquetesData = [
         `
     },
     {
+        id: "bariloche-aereo",
+        title: "Bariloche Aéreo",
+        season: "invierno",
+        price: "Consultar",
+        image: "",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/BARILOCHE AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "🚌", text: "Traslados in/out" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`
+    },
+    {
+        id: "ushuaia-aereo",
+        title: "Ushuaia Aéreo",
+        season: "invierno",
+        price: "Consultar",
+        image: "Otros/ushuaia.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/USHUAIA AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "🚌", text: "Traslados in/out" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`
+    },
+    {
+        id: "calafate-aereo",
+        title: "Calafate Aéreo",
+        season: "invierno",
+        price: "Consultar",
+        image: "",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Marzo-Abril/EL CALAFATE (vend MAR).pdf",
+        features: [
+            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "🚌", text: "Traslados in/out" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`
+    },
+    {
+        id: "iguazu-aereo",
+        title: "Iguazú Aéreo",
+        season: "invierno",
+        price: "Consultar",
+        image: "",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/CATARATAS DEL IGUAZÚ AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "🚌", text: "Traslados in/out" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`
+    },
+    {
+        id: "mendoza-aereo",
+        title: "Mendoza Aéreo",
+        season: "invierno",
+        price: "Consultar",
+        image: "",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/MENDOZA AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "🚌", text: "Traslados in/out" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`
+    },
+    {
+        id: "puerto-madryn-aereo",
+        title: "Puerto Madryn Aéreo",
+        season: "invierno",
+        price: "Consultar",
+        image: "",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/PUERTO MADRYN VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "🚌", text: "Traslados in/out" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`
+    },
+    {
         id: "tilcara",
         title: "Tilcara",
         season: "invierno",
@@ -507,7 +609,7 @@ const paquetesData = [
 ];
 
 function getPackageData(title, season) {
-    const cleanId = title.toLowerCase().replace(/[^a-z0-9]/g, '-');
+    const cleanId = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
     const seasonId = season ? `${cleanId}-${season.toLowerCase().trim()}` : null;
 
     // Try finding by season-specific ID first, then by clean ID, then by title
