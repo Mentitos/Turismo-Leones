@@ -2917,8 +2917,11 @@
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Tilcara', 'invierno')">
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Tilcara', 'invierno')">
                     <img src="ordenarmas/invierno_aereo_tilcara.jpeg" class="flyer-media flyer-img" alt="Tilcara">
+                    <video preload="none" data-src="ordenarmas/tilcaravideo.mp4" muted class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
                     <div class="flyer-overlay"><span class="flyer-overlay-title">Tilcara</span><span class="flyer-overlay-badge">$739.990</span></div>
                 </div>
             </div>
@@ -3044,8 +3047,11 @@
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
-                <div class="flyer-card" onclick="openPackage('Tilcara', 'invierno')">
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Tilcara', 'invierno')">
                     <img src="ordenarmas/invierno_aereo_tilcara.jpeg" class="flyer-media flyer-img" alt="Tilcara">
+                    <video preload="none" data-src="ordenarmas/tilcaravideo.mp4" muted class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
                     <div class="flyer-overlay"><span class="flyer-overlay-title">Tilcara</span><span class="flyer-overlay-badge">$739.990</span></div>
                 </div>
                 <div class="flyer-card" onclick="openPackage('Aimogasta', 'invierno')">

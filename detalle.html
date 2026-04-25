@@ -857,6 +857,22 @@
                 featuresList.innerHTML = data.features.map(f => `<li><span>${f.icon}</span> ${f.text}</li>`).join('');
             }
 
+            if (data.pdf) {
+                const controls = document.querySelector('.pkg-controls > div');
+                if (controls) {
+                    const pdfBtn = document.createElement('a');
+                    pdfBtn.href = data.pdf;
+                    pdfBtn.className = 'pkg-reservar-btn';
+                    pdfBtn.style.background = 'var(--navy)';
+                    pdfBtn.style.marginTop = '10px';
+                    pdfBtn.style.display = 'block';
+                    pdfBtn.style.textAlign = 'center';
+                    pdfBtn.target = '_blank';
+                    pdfBtn.innerHTML = '📄 VER ITINERARIO (PDF)';
+                    controls.appendChild(pdfBtn);
+                }
+            }
+
 
         };
     </script>
