@@ -181,16 +181,16 @@
         }
 
         .gallery-grid {
-            max-width: 1400px;
+            max-width: 900px;
             margin: 40px auto 80px;
-            padding: 0 40px;
-            columns: 4 280px;
-            column-gap: 20px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
         }
 
         .gallery-card {
-            break-inside: avoid;
-            margin-bottom: 20px;
+            width: 100%;
+            max-width: 800px;
             border-radius: 16px;
             overflow: hidden;
             position: relative;
@@ -608,106 +608,17 @@
         <p>Turismo Leones · Momentos reales</p>
     </section>
 
-    <div class="gallery-filters">
-        <button class="filter-btn active" onclick="filterGallery('all', this)">Todos</button>
-        <button class="filter-btn" onclick="filterGallery('playa', this)">🏖️ Playa</button>
-        <button class="filter-btn" onclick="filterGallery('ciudad', this)">🏙️ Ciudad</button>
-        <button class="filter-btn" onclick="filterGallery('aventura', this)">🏔️ Aventura</button>
-        <button class="filter-btn" onclick="filterGallery('crucero', this)">🚢 Crucero</button>
-    </div>
+
 
     <div class="gallery-grid" id="galleryGrid">
 
-        <div class="gallery-card" data-category="aventura" onclick="openLightbox(this)">
+        <div class="gallery-card" onclick="openLightbox(this)">
             <img src="ordenarmas/galeria.jpeg"
                 alt="Galería">
-            <div class="gallery-card-badge">Aventura</div>
             <div class="gallery-card-overlay">
                 <div class="gallery-card-info">
                     <span class="dest">Viajes Inolvidables</span>
                     <span class="caption">¡Un verano para recordar!</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-card" data-category="ciudad" onclick="openLightbox(this)">
-            <img src="ordenarmas/paquetes_aereos.jpeg"
-                alt="Paquetes Aéreos">
-            <div class="gallery-card-badge">Aéreo</div>
-            <div class="gallery-card-overlay">
-                <div class="gallery-card-info">
-                    <span class="dest">Paquetes Aéreos</span>
-                    <span class="caption">Destinos nacionales e internacionales</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-card" data-category="aventura" onclick="openLightbox(this)">
-            <img src="ordenarmas/puntos_de_embarque_micro.jpeg"
-                alt="Puntos de Embarque">
-            <div class="gallery-card-badge">Terrestre</div>
-            <div class="gallery-card-overlay">
-                <div class="gallery-card-info">
-                    <span class="dest">Puntos de Embarque</span>
-                    <span class="caption">Salidas desde GBA y Capital</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-card" data-category="crucero" onclick="openLightbox(this)">
-            <img src="ordenarmas/actualizada_flyer_crucero_travelero.jpeg"
-                alt="Crucero Travelero">
-            <div class="gallery-card-badge">Crucero</div>
-            <div class="gallery-card-overlay">
-                <div class="gallery-card-info">
-                    <span class="dest">Crucero Travelero</span>
-                    <span class="caption">El océano como horizonte</span>
-                </div>
-            </div>
-        </div>
-        
-        <div class="gallery-card" data-category="aventura" onclick="openLightbox(this)">
-            <img src="ordenarmas/invierno_aereo_tilcara.jpeg"
-                alt="Tilcara">
-            <div class="gallery-card-overlay">
-                <div class="gallery-card-info">
-                    <span class="dest">Tilcara</span>
-                    <span class="caption">Magia en el norte</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-card" data-category="ciudad" onclick="openLightbox(this)">
-            <img src="ordenarmas/invierno_mendoza.jpeg"
-                alt="Mendoza">
-            <div class="gallery-card-overlay">
-                <div class="gallery-card-info">
-                    <span class="dest">Mendoza</span>
-                    <span class="caption">Nieve y viñedos</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-card" data-category="aventura" onclick="openLightbox(this)">
-            <img src="ordenarmas/invierno_puerto_madryn.jpeg"
-                alt="Puerto Madryn">
-            <div class="gallery-card-badge">Aventura</div>
-            <div class="gallery-card-overlay">
-                <div class="gallery-card-info">
-                    <span class="dest">Puerto Madryn</span>
-                    <span class="caption">Temporada de ballenas</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="gallery-card" data-category="playa" onclick="openLightbox(this)">
-            <img src="ordenarmas/invierno_termas_rio_hondo.jpeg"
-                alt="Termas Rio Hondo">
-            <div class="gallery-card-badge">Relax</div>
-            <div class="gallery-card-overlay">
-                <div class="gallery-card-info">
-                    <span class="dest">Termas de Río Hondo</span>
-                    <span class="caption">Descanso y bienestar</span>
                 </div>
             </div>
         </div>
@@ -798,19 +709,7 @@
             if (footer) footer.scrollIntoView({ behavior: 'smooth' });
         }
 
-        function filterGallery(category, btn) {
-            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
 
-            document.querySelectorAll('.gallery-card').forEach(card => {
-                if (category === 'all' || card.dataset.category === category) {
-                    card.style.display = 'block';
-                    card.style.animation = 'fadeIn 0.3s ease';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-        }
 
         function openLightbox(card) {
             const img = card.querySelector('img');
