@@ -2809,6 +2809,21 @@
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
+                <!-- Winter Items -->
+                <div class="flyer-card" onclick="openPackage('Tandil', 'invierno')">
+                    <img src="ordenarmas/invierno_tandil.jpeg" class="flyer-media flyer-img" alt="Tandil">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil</span><span class="flyer-overlay-badge">$209.990</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Villa de Merlo', 'invierno')">
+                    <img src="ordenarmas/invierno_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Villa de Merlo</span><span class="flyer-overlay-badge">$289.990</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Gualeguaychú', 'invierno')">
+                    <img src="ordenarmas/invierno_gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Gualeguaychú</span><span class="flyer-overlay-badge">$189.990</span></div>
+                </div>
+
+                <!-- Existing Items -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('San Pedro Otoño', 'otoño')">
                     <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="San Pedro">
@@ -2829,7 +2844,38 @@
     <div class="season-section">
         <h2 class="season-title">FULL DAY</h2>
         <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
+                <!-- Feriado Items -->
+                <div class="flyer-card" onclick="openPackage('Campo La Herradura', 'feriados')">
+                    <img src="Feriados/feriado_campoherradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura (Feriado)</span><span class="flyer-overlay-badge">$99.990</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('San Pedro', 'feriados')">
+                    <img src="Feriados/feriado_sanpedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Pedro (Feriado)</span><span class="flyer-overlay-badge">$109.990</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Termas de Guaychú', 'feriados')">
+                    <img src="Feriados/feriado_termas_guaychu.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas de Guaychú (Feriado)</span><span class="flyer-overlay-badge">$99.990</span></div>
+                </div>
+
+                <!-- Winter Items -->
+                <div class="flyer-card" onclick="openPackage('Campo La Herradura', 'invierno')">
+                    <img src="ordenarmas/invierno_campo_la_herradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura</span><span class="flyer-overlay-badge">$99.990</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('San Pedro', 'invierno')">
+                    <img src="ordenarmas/invierno_san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Pedro</span><span class="flyer-overlay-badge">$109.990</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Termas de Guaychú', 'invierno')">
+                    <img src="ordenarmas/invierno_termas.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas de Guaychú</span><span class="flyer-overlay-badge">$99.990</span></div>
+                </div>
+
+                <!-- Autumn Items -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Termas De Guaychu Otoño')">
                     <img src="Otoño/termas_de_guaychu_otoño.jpeg" class="flyer-media flyer-img"
@@ -2870,6 +2916,10 @@
                         playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Tilcara', 'invierno')">
+                    <img src="ordenarmas/invierno_aereo_tilcara.jpeg" class="flyer-media flyer-img" alt="Tilcara">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tilcara</span><span class="flyer-overlay-badge">$739.990</span></div>
                 </div>
             </div>
         </div>
@@ -2994,66 +3044,67 @@
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
-                <div class="flyer-card" onclick="openPackage('Tilcara Invierno', 'invierno')">
+                <div class="flyer-card" onclick="openPackage('Tilcara', 'invierno')">
                     <img src="ordenarmas/invierno_aereo_tilcara.jpeg" class="flyer-media flyer-img" alt="Tilcara">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tilcara</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tilcara</span><span class="flyer-overlay-badge">$739.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Aimogasta Invierno', 'invierno')">
+                <div class="flyer-card" onclick="openPackage('Aimogasta', 'invierno')">
                     <img src="ordenarmas/invierno_aimogasta.jpeg" class="flyer-media flyer-img" alt="Aimogasta">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Aimogasta</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Aimogasta</span><span class="flyer-overlay-badge">$399.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Campo La Herradura Invierno', 'invierno')">
+                <div class="flyer-card" onclick="openPackage('Campo La Herradura', 'invierno')">
                     <img src="ordenarmas/invierno_campo_la_herradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura</span><span class="flyer-overlay-badge">$99.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Carlos Paz Invierno', 'invierno')">
-                    <img src="ordenarmas/invierno_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Carlos Paz">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Carlos Paz</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                <div class="flyer-card" onclick="openPackage('Villa Carlos Paz', 'invierno')">
+                    <img src="ordenarmas/invierno_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Villa Carlos Paz</span><span class="flyer-overlay-badge">$299.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Gualeguaychu Invierno', 'invierno')">
-                    <img src="ordenarmas/invierno_gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychu">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Gualeguaychu</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                <div class="flyer-card" onclick="openPackage('Gualeguaychú', 'invierno')">
+                    <img src="ordenarmas/invierno_gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Gualeguaychú</span><span class="flyer-overlay-badge">$189.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('La Rioja Invierno', 'invierno')">
+                <div class="flyer-card" onclick="openPackage('La Rioja', 'invierno')">
                     <img src="ordenarmas/invierno_la_rioja.jpeg" class="flyer-media flyer-img" alt="La Rioja">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">La Rioja</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">La Rioja</span><span class="flyer-overlay-badge">$319.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Mendoza Invierno', 'invierno')">
+                <div class="flyer-card" onclick="openPackage('Mendoza', 'invierno')">
                     <img src="ordenarmas/invierno_mendoza.jpeg" class="flyer-media flyer-img" alt="Mendoza">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza</span><span class="flyer-overlay-badge">$299.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Merlo Invierno', 'invierno')">
-                    <img src="ordenarmas/invierno_merlo.jpeg" class="flyer-media flyer-img" alt="Merlo">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Merlo</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                <div class="flyer-card" onclick="openPackage('Villa de Merlo', 'invierno')">
+                    <img src="ordenarmas/invierno_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Villa de Merlo</span><span class="flyer-overlay-badge">$289.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Puerto Madryn Invierno', 'invierno')">
+                <div class="flyer-card" onclick="openPackage('Puerto Madryn', 'invierno')">
                     <img src="ordenarmas/invierno_puerto_madryn.jpeg" class="flyer-media flyer-img" alt="Puerto Madryn">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Puerto Madryn</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Puerto Madryn</span><span class="flyer-overlay-badge">$369.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('San Pedro Invierno', 'invierno')">
+                <div class="flyer-card" onclick="openPackage('San Pedro', 'invierno')">
                     <img src="ordenarmas/invierno_san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Pedro</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Pedro</span><span class="flyer-overlay-badge">$109.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('San Rafael Invierno', 'invierno')">
+                <div class="flyer-card" onclick="openPackage('San Rafael', 'invierno')">
                     <img src="ordenarmas/invierno_san_rafael.jpeg" class="flyer-media flyer-img" alt="San Rafael">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Rafael</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Rafael</span><span class="flyer-overlay-badge">$359.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Tandil Invierno', 'invierno')">
+                <div class="flyer-card" onclick="openPackage('Tandil', 'invierno')">
                     <img src="ordenarmas/invierno_tandil.jpeg" class="flyer-media flyer-img" alt="Tandil">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil</span><span class="flyer-overlay-badge">$209.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Termas Invierno', 'invierno')">
-                    <img src="ordenarmas/invierno_termas.jpeg" class="flyer-media flyer-img" alt="Termas">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                <div class="flyer-card" onclick="openPackage('Termas de Guaychú', 'invierno')">
+                    <img src="ordenarmas/invierno_termas.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas de Guaychú</span><span class="flyer-overlay-badge">$99.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Termas Federacion Invierno', 'invierno')">
-                    <img src="ordenarmas/invierno_termas_federacion.jpeg" class="flyer-media flyer-img" alt="Termas Federacion">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas Federación</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                <div class="flyer-card" onclick="openPackage('Termas de Federación', 'invierno')">
+                    <img src="ordenarmas/invierno_termas_federacion.jpeg" class="flyer-media flyer-img" alt="Termas de Federación">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas de Federación</span><span class="flyer-overlay-badge">$219.990</span></div>
                 </div>
-                <div class="flyer-card" onclick="openPackage('Termas Rio Hondo Invierno', 'invierno')">
-                    <img src="ordenarmas/invierno_termas_rio_hondo.jpeg" class="flyer-media flyer-img" alt="Termas Rio Hondo">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas Rio Hondo</span><span class="flyer-overlay-badge">💬 Consultar</span></div>
+                <div class="flyer-card" onclick="openPackage('Termas de Río Hondo', 'invierno')">
+                    <img src="ordenarmas/invierno_termas_rio_hondo.jpeg" class="flyer-media flyer-img" alt="Termas de Río Hondo">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas de Río Hondo</span><span class="flyer-overlay-badge">$449.990</span></div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -3064,94 +3115,94 @@
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Campo La Herradura Feriado', 'feriados')">
-                    <img src="Feriados/feriado_campoherradura.jpeg" class="flyer-media flyer-img" alt="feriado_campoherradura">
-                    <video preload="none" data-src="Feriados/microvideo.mp4" muted class="flyer-video" loop playsinline></video>
-                    <div class="video-badge">▶ VIDEO</div>
-                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
-                </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Villa Carlos Paz Feriado', 'feriados')">
-                    <img src="Feriados/feriado_carlospaz.jpeg" class="flyer-media flyer-img" alt="feriado_carlospaz">
+                    onclick="openPackage('Villa Carlos Paz', 'feriados')">
+                    <img src="Feriados/feriado_carlospaz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
                     <video preload="none" data-src="Feriados/microvideo2.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Villa Carlos Paz</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Villa Carlos Paz</span><span class="flyer-overlay-badge">$229.990</span></div>
                 </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Gualeguaychu Feriado', 'feriados')">
-                    <img src="Feriados/feriado_gualeguaychu.jpeg" class="flyer-media flyer-img" alt="feriado_gualeguaychu">
+                    onclick="openPackage('Gualeguaychú', 'feriados')">
+                    <img src="Feriados/feriado_gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú">
                     <video preload="none" data-src="Feriados/microvideo3.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Gualeguaychú</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Gualeguaychú</span><span class="flyer-overlay-badge">$189.990</span></div>
                 </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Mar Del Plata Feriado', 'feriados')">
-                    <img src="Feriados/feriado_mardelplata.jpeg" class="flyer-media flyer-img" alt="feriado_mardelplata">
+                    onclick="openPackage('Mar del Plata', 'feriados')">
+                    <img src="Feriados/feriado_mardelplata.jpeg" class="flyer-media flyer-img" alt="Mar del Plata">
                     <video preload="none" data-src="Feriados/microvideo.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mar del Plata</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mar del Plata</span><span class="flyer-overlay-badge">$179.990</span></div>
                 </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Mendoza Feriado', 'feriados')">
-                    <img src="Feriados/feriado_mendoza.jpeg" class="flyer-media flyer-img" alt="feriado_mendoza">
+                    onclick="openPackage('Mendoza', 'feriados')">
+                    <img src="Feriados/feriado_mendoza.jpeg" class="flyer-media flyer-img" alt="Mendoza">
                     <video preload="none" data-src="Feriados/microvideo2.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza</span><span class="flyer-overlay-badge">$249.990</span></div>
                 </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('San Pedro Feriado', 'feriados')">
-                    <img src="Feriados/feriado_sanpedro.jpeg" class="flyer-media flyer-img" alt="feriado_sanpedro">
-                    <video preload="none" data-src="Feriados/microvideo3.mp4" muted class="flyer-video" loop playsinline></video>
-                    <div class="video-badge">▶ VIDEO</div>
-                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Pedro</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
-                </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('San Rafael Feriado', 'feriados')">
-                    <img src="Feriados/feriado_sanrafael.jpeg" class="flyer-media flyer-img" alt="feriado_sanrafael">
+                    onclick="openPackage('San Rafael', 'feriados')">
+                    <img src="Feriados/feriado_sanrafael.jpeg" class="flyer-media flyer-img" alt="San Rafael">
                     <video preload="none" data-src="Feriados/microvideo.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Rafael</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Rafael</span><span class="flyer-overlay-badge">$259.990</span></div>
                 </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Tandil Feriado', 'feriados')">
-                    <img src="Feriados/feriado_tandil.jpeg" class="flyer-media flyer-img" alt="feriado_tandil">
+                    onclick="openPackage('Tandil', 'feriados')">
+                    <img src="Feriados/feriado_tandil.jpeg" class="flyer-media flyer-img" alt="Tandil">
                     <video preload="none" data-src="Feriados/microvideo2.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil</span><span class="flyer-overlay-badge">$199.990</span></div>
                 </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Termas Guaychu Feriado', 'feriados')">
-                    <img src="Feriados/feriado_termas_guaychu.jpeg" class="flyer-media flyer-img" alt="feriado_termas_guaychu">
-                    <video preload="none" data-src="Feriados/microvideo3.mp4" muted class="flyer-video" loop playsinline></video>
-                    <div class="video-badge">▶ VIDEO</div>
-                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas de Guaychú</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
-                </div>
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Villa De Merlo Feriado', 'feriados')">
-                    <img src="Feriados/feriado_villademerlo.jpeg" class="flyer-media flyer-img" alt="feriado_villademerlo">
+                    onclick="openPackage('Villa de Merlo', 'feriados')">
+                    <img src="Feriados/feriado_villademerlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo">
                     <video preload="none" data-src="Feriados/microvideo.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Villa de Merlo</span><span
-                            class="flyer-overlay-badge">💬 Consultar</span></div>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Villa de Merlo</span><span class="flyer-overlay-badge">$239.990</span></div>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Campo La Herradura', 'feriados')">
+                    <img src="Feriados/feriado_campoherradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura">
+                    <video preload="none" data-src="Feriados/microvideo.mp4" muted class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Campo La Herradura</span><span class="flyer-overlay-badge">$99.990</span></div>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('San Pedro', 'feriados')">
+                    <img src="Feriados/feriado_sanpedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
+                    <video preload="none" data-src="Feriados/microvideo3.mp4" muted class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Pedro</span><span class="flyer-overlay-badge">$109.990</span></div>
+                </div>
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Termas de Guaychú', 'feriados')">
+                    <img src="Feriados/feriado_termas_guaychu.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
+                    <video preload="none" data-src="Feriados/microvideo3.mp4" muted class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Termas de Guaychú</span><span class="flyer-overlay-badge">$99.990</span></div>
+                </div>
+
+                <div class="flyer-card">
+                    <img src="Feriados/puntosdeembarque.jpeg" class="flyer-media flyer-img" alt="Puntos de Embarque">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Puntos de Embarque</span></div>
+                </div>
+
+                <div class="flyer-card">
+                    <img src="Feriados/resumen_proximos feriadosxlcontravelar.jpeg" class="flyer-media flyer-img" alt="Resumen Feriados">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Resumen Feriados</span></div>
                 </div>
             </div>
         </div>
