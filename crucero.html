@@ -393,7 +393,6 @@
                 id="cruceroVideo"
                 class="absolute inset-0 w-full h-full object-cover"
                 src="ordenar/travelerovideo_compressed.mp4"
-                muted
                 loop
                 playsinline
                 preload="auto">
@@ -753,6 +752,13 @@
                     </div>
                 </div>
             </div>
+        <section class="pb-32 bg-background">
+            <div class="max-w-3xl mx-auto px-8">
+                <div style="background: #fff; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 50px rgba(10,26,107,0.1); border: 1px solid rgba(10,26,107,0.05); transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <div style="padding: 16px; background: var(--navy); color: white; font-family: 'Bebas Neue', sans-serif; font-size: 22px; text-align: center; letter-spacing: 2px;">📍 Puntos de Embarque</div>
+                    <img src="Feriados/puntosdeembarque.jpeg" alt="Puntos de Embarque" style="width: 100%; height: auto; display: block; cursor: pointer;" onclick="window.open(this.src)">
+                </div>
+            </div>
         </section>
     </main>
     
@@ -835,6 +841,9 @@
             const overlay = document.getElementById('videoOverlay');
             if (!vid) return;
             if (vid.paused) {
+                vid.muted = false;
+                const audioBtn = document.getElementById('videoAudioBtn');
+                if (audioBtn) audioBtn.textContent = '🔊';
                 vid.play();
                 btn.style.opacity = '0';
                 btn.style.pointerEvents = 'none';
