@@ -146,6 +146,23 @@ const paquetesData = [
         boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`
     },
     {
+        id: "salta-aereo",
+        title: "Salta Aéreo",
+        season: "invierno",
+        price: "Consultar",
+        image: "",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/SALTA AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "🚌", text: "Traslados in/out" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`
+    },
+    {
         id: "aimogasta",
         title: "Aimogasta",
         season: "invierno",
@@ -605,21 +622,160 @@ const paquetesData = [
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "cataratas-del-iguazu-oto-o",
+        title: "Cataratas Del Iguazú Otoño",
+        season: "otoño",
+        price: "Consultar",
+        image: "Otoño/cataratas_del_iguazu_otoño.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/CATARATAS DEL IGUAZÚ X 3 NTS VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "mar-del-plata-oto-o",
+        title: "Mar Del Plata Otoño",
+        season: "otoño",
+        price: "Consultar",
+        image: "Otoño/mar_del_plata_otoño.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X 2NTS VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "salta-oto-o",
+        title: "Salta Otoño",
+        season: "otoño",
+        price: "Consultar",
+        image: "Otoño/salta_otoño.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "san-pedro-oto-o",
+        title: "San Pedro Otoño",
+        season: "otoño",
+        price: "Consultar",
+        image: "Otoño/san_pedro_otoño.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN PEDRO VEND ABRIL A JUNIO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "campo-la-herradura-oto-o",
+        title: "Campo La Herradura Otoño",
+        season: "otoño",
+        price: "Consultar",
+        image: "Otoño/campo_la_herradura_otoño.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/LA HERRADURA VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🍖", text: "Almuerzo incluido" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "la-rioja-oto-o",
+        title: "La Rioja Otoño",
+        season: "otoño",
+        price: "Consultar",
+        image: "Otoño/la_rioja_otoño.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/LA RIOJA VEND MAYO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "aimogasta-oto-o",
+        title: "Aimogasta Otoño",
+        season: "otoño",
+        price: "Consultar",
+        image: "Otoño/aimogasta_otoño.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/AIMOGASTA VEND JUNIO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "iguazu",
+        title: "Iguazú",
+        season: "invierno",
+        price: "Consultar",
+        image: "ordenarmas/invierno_iguazu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
     }
 ];
 
 function getPackageData(title, season) {
-    const cleanId = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    const seasonId = season ? `${cleanId}-${season.toLowerCase().trim()}` : null;
+    if (!title) return null;
 
-    // Try finding by season-specific ID first, then by clean ID, then by title
-    let p = paquetesData.find(item => item.id === seasonId) || 
-            paquetesData.find(item => item.id === cleanId) ||
-            paquetesData.find(item => item.title.toLowerCase() === title.toLowerCase());
+    // Normalization function to remove accents and special characters
+    const normalize = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    
+    const targetId = normalize(title);
+    const targetSeasonId = season ? `${targetId}-${normalize(season)}` : null;
+
+    // Try finding by normalized ID, original ID, or normalized title
+    let p = paquetesData.find(item => {
+        const itemId = normalize(item.id);
+        const itemTitle = normalize(item.title);
+        return itemId === targetSeasonId || itemId === targetId || itemTitle === targetId || item.id === title;
+    });
+
+    if (!p) {
+        // Fallback to a partial title match if still not found
+        p = paquetesData.find(item => normalize(item.title).includes(targetId) || targetId.includes(normalize(item.title)));
+    }
 
     if (!p) {
         return {
-            id: cleanId,
+            id: targetId,
             title: title || "Destino Turístico",
             season: season || 'Consultar',
             price: "Consultar",
