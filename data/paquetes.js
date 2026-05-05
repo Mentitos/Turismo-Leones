@@ -750,6 +750,57 @@ const paquetesData = [
         importantNotes: `<p>- Cupos limitados.</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
     }
+,
+
+    {
+        id: "cataratas-del-iguazu-valijasya",
+        title: "Cataratas del Iguazu",
+        season: "valijasya",
+        price: "Consultar",
+        image: "valijasya/cataratasdeliguazu.jpeg",
+        features: [
+            { icon: "🌊", text: "Cataratas del Iguazú" },
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🏨", text: "Alojamiento incluido" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Nueva salida! Contactanos para fechas, precios y disponibilidad.</p>`,
+        importantNotes: `<p>- Cupos limitados. Consultá por WhatsApp.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "san-rafael-valijasya",
+        title: "San Rafael",
+        season: "valijasya",
+        price: "Consultar",
+        image: "valijasya/sanrafael.jpeg",
+        features: [
+            { icon: "🏔️", text: "San Rafael, Mendoza" },
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🏨", text: "Alojamiento incluido" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Nueva salida! Contactanos para fechas, precios y disponibilidad.</p>`,
+        importantNotes: `<p>- Cupos limitados. Consultá por WhatsApp.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "villa-carlos-paz-valijasya",
+        title: "Villa Carlos Paz",
+        season: "valijasya",
+        price: "Consultar",
+        image: "valijasya/villacarlospaz.jpeg",
+        features: [
+            { icon: "🎡", text: "Villa Carlos Paz, Córdoba" },
+            { icon: "🚌", text: "Bus Mix" },
+            { icon: "🏨", text: "Alojamiento incluido" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Nueva salida! Contactanos para fechas, precios y disponibilidad.</p>`,
+        importantNotes: `<p>- Cupos limitados. Consultá por WhatsApp.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    }
+
 ];
 
 function getPackageData(title, season) {
