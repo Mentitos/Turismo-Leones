@@ -851,29 +851,35 @@
             grid-column: 1 / -1;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         @media (max-width: 768px) {
             footer {
                 grid-template-columns: 1fr 1fr;
                 gap: 28px;
                 padding: 36px 20px 20px;
             }
+
             .footer-logo {
                 grid-column: 1 / -1;
                 text-align: center;
                 margin-bottom: 4px;
             }
+
             .footer-col {
                 text-align: left;
             }
+
             .footer-contact p {
                 justify-content: flex-start;
                 text-align: left;
                 word-break: break-word;
             }
+
             .footer-map iframe {
                 width: 100% !important;
                 height: 130px !important;
             }
+
             .footer-bottom {
                 grid-column: 1 / -1;
                 padding: 14px 10px 0;
@@ -888,11 +894,13 @@
                 gap: 20px;
                 padding: 28px 16px 16px;
             }
+
             .footer-logo {
                 grid-column: 1;
             }
+
             .footer-col {
-                border-top: 1px solid rgba(255,255,255,0.08);
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
                 padding-top: 16px;
             }
         }
@@ -2476,7 +2484,8 @@
                     <span class="sub">Viajes</span>
                 </div>
             </a>
-            <div class="logo" style="margin-left: 20px; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 20px; pointer-events: none;">
+            <div class="logo"
+                style="margin-left: 20px; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 20px; pointer-events: none;">
                 <img src="logo/logo_sin_fondo_arreglado.png" class="logo-icon" alt="Travelar">
                 <div class="logo-text">
                     <span class="brand">Travelar</span>
@@ -2524,12 +2533,24 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 relative z-10 w-full max-w-6xl mx-auto"></div></div></div></section>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 relative z-10 w-full max-w-6xl mx-auto">
+                </div>
+            </div>
+            </div>
+        </section>
 
-        <section class="py-24 bg-[#f2f4f6] overflow-hidden">
+        <!-- Flyer crucero solo en mobile -->
+        <div class="block lg:hidden py-8 px-4 bg-[#f2f4f6]">
+            <a href="crucero.html" class="block max-w-sm mx-auto">
+                <img src="ordenarmas/actualizada_flyer_crucero_travelero.jpeg"
+                    class="rounded-2xl shadow-2xl w-full" alt="Crucero Travelero Flyer" />
+            </a>
+        </div>
+
+        <section class="py-24 bg-[#f2f4f6] overflow-hidden hidden lg:block">
             <div class="max-w-7xl mx-auto px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-                    <div class="lg:col-span-5">
+                    <div class="lg:col-span-5 hidden lg:block">
                         <h2 class="text-6xl font-bold font-headline text-[#0a1a6b] mb-6 tracking-tight">Crucero
                             Travelero</h2>
                         <h3 class="text-2xl font-bold text-[#f5a623] mb-6 uppercase tracking-widest">Experiencia
@@ -2540,15 +2561,18 @@
                             del Este en un viaje donde no tendrás que pensar en nada más que disfrutar de las playas y
                             atardeceres únicos.</p>
 
-                         <a href="crucero.html"
+                        <a href="crucero.html"
                             class="mt-8 inline-flex items-center gap-3 bg-[#0a1a6b] text-white px-10 py-5 rounded-2xl font-bold hover:bg-[#1a4b8c] transition-all editorial-shadow uppercase tracking-widest text-sm">
                             VER CRUCERO COMPLETO 🚢
                         </a>
                     </div>
                     <div class="lg:col-span-7 relative group">
                         <a href="crucero.html" class="block overflow-hidden rounded-3xl">
-                            <img class="rounded-3xl editorial-shadow w-full aspect-[4/3] object-cover -rotate-2"
-                                data-alt="MSC Splendida Cruise Ship" src="Otros/msc-splendida.webp" />
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="cristo/cristo.png">
+                                <img class="rounded-3xl editorial-shadow w-full aspect-[4/3] object-cover -rotate-2"
+                                    src="ordenarmas/actualizada_flyer_crucero_travelero.jpeg" alt="Crucero Travelero Flyer" />
+                            </picture>
                         </a>
                         <div
                             class="absolute -bottom-10 -left-10 bg-white p-8 rounded-2xl editorial-shadow max-w-xs rotate-3 hidden md:block z-10">
@@ -2591,7 +2615,7 @@
                 </div>
             </div>
 
-            
+
 
             <button class="hero-arrow left" onclick="switchHeroSlide(-1, true)">&#8249;</button>
             <button class="hero-arrow right" onclick="switchHeroSlide(1, true)">&#8250;</button>
@@ -2664,7 +2688,65 @@
         <h2>🔥 DESTACADAS</h2>
     </div>
 
+    <!-- NUEVAS PROMOCIONES VALIJASYA -->
+    <div class="section-header" id="valijas-ya-section"
+        style="background: linear-gradient(90deg, #d32f2f, #b71c1c, #d32f2f);">
+        <h2 style="color: #fff; letter-spacing: 4px;">🔥 NUEVAS PROMOCIONES</h2>
+    </div>
 
+    <!-- Banner imagen del León -->
+    <div
+        style="background: linear-gradient(135deg, #0a1a6b 0%, #1432c8 55%, #6a0dad 100%); padding: 28px 40px; display: flex; align-items: center; gap: 36px; position: relative; overflow: hidden; border-bottom: 3px solid #f5a623;">
+        <div
+            style="position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%, rgba(245,166,35,0.08) 0%, transparent 70%);pointer-events:none;">
+        </div>
+        <img src="valijasya/leon.jpeg" alt="León Turismo Leones"
+            style="height:150px;width:auto;border-radius:10px;border:3px solid rgba(255,215,0,0.5);box-shadow:0 8px 28px rgba(0,0,0,0.45);flex-shrink:0;object-fit:cover;position:relative;z-index:1;">
+        <div style="position:relative;z-index:1;">
+            <div
+                style="font-family:'Bebas Neue',sans-serif;font-size:13px;color:#ffd700;letter-spacing:5px;margin-bottom:6px;text-transform:uppercase;">
+                Turismo Leones Presenta</div>
+            <div
+                style="font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,4vw,52px);color:white;line-height:1.05;letter-spacing:2px;text-shadow:0 3px 12px rgba(0,0,0,0.4);">
+                NUEVOS DESTINOS<br><span style="color:#ffd700;">TEMPORADA 2026</span></div>
+            <div
+                style="margin-top:12px;font-size:13px;color:rgba(255,255,255,0.8);font-weight:600;letter-spacing:0.5px;">
+                Cataratas del Iguazú &nbsp;&middot;&nbsp; San Rafael &nbsp;&middot;&nbsp; Villa Carlos Paz</div>
+        </div>
+    </div>
+
+    <!-- Carrusel de flyers valijasya -->
+    <div class="season-section" style="background:#fafafa; padding-top: 28px;">
+        <h2 class="season-title" style="color:#0a1a6b;">Valijas YA</h2>
+        <div class="flyers-wrapper has-arrows">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this,-1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this,1)">&#8250;</button>
+            <div class="flyers-track">
+                <div class="flyer-card" onclick="openPackage('Cataratas del Iguazu','valijasya')">
+                    <img src="valijasya/cataratasdeliguazu.jpeg" class="flyer-media flyer-img"
+                        alt="Cataratas del Iguazu">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Cataratas del Iguaz&#250;</span>
+                        <span class="flyer-overlay-badge">&#x1F4AC; Consultar</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('San Rafael','valijasya')">
+                    <img src="valijasya/sanrafael.jpeg" class="flyer-media flyer-img" alt="San Rafael">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">San Rafael</span>
+                        <span class="flyer-overlay-badge">&#x1F4AC; Consultar</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Villa Carlos Paz','valijasya')">
+                    <img src="valijasya/villacarlospaz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Villa Carlos Paz</span>
+                        <span class="flyer-overlay-badge">&#x1F4AC; Consultar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="section-header" id="nuestros-viajes">
         <h2>NUESTROS VIAJES</h2>
@@ -2688,9 +2770,9 @@
                     <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil Otoño</span><span
                             class="flyer-overlay-badge">💬 Consultar</span></div>
                 </div>
-                </div>
             </div>
         </div>
+    </div>
     </div>
 
     <div class="season-section">
@@ -2853,7 +2935,8 @@
                 </div>
             </div>
         </div>
-    </div><div class="season-section" data-section-season="semana santa">
+    </div>
+    <div class="season-section" data-section-season="semana santa">
         <h2 class="season-title">SEMANA SANTA <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
@@ -2913,8 +2996,10 @@
             <h4>Turismo Leones</h4>
             <ul>
                 <li><a href="nosotros.html">Quiénes somos</a></li>
-                
-                <li><a href="#" style="color:#f5a623;font-weight:700;display:flex;align-items:center;gap:6px;"><img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar" style="height:16px;width:auto;filter:brightness(1.1);"> Ventas: Travelar</a></li>
+
+                <li><a href="#" style="color:#f5a623;font-weight:700;display:flex;align-items:center;gap:6px;"><img
+                            src="logo/logo_sin_fondo_arreglado.png" alt="Travelar"
+                            style="height:16px;width:auto;filter:brightness(1.1);"> Ventas: Travelar</a></li>
                 <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
         </div>
