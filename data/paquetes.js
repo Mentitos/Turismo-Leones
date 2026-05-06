@@ -406,7 +406,7 @@ const paquetesData = [
         title: "Villa Carlos Paz",
         season: "feriados",
         price: "229.990",
-        image: "Feriados/feriado_carlospaz.jpeg",
+        image: "Feriados/villa_carlos_paz.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/VILLA CARLOS PAZ FERIADO JUNIO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix" },
@@ -422,7 +422,7 @@ const paquetesData = [
         title: "Gualeguaychú",
         season: "feriados",
         price: "189.990",
-        image: "Feriados/feriado_gualeguaychu.jpeg",
+        image: "Feriados/gualeguaychu.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUALEGUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix" },
@@ -454,7 +454,7 @@ const paquetesData = [
         title: "San Rafael",
         season: "feriados",
         price: "259.990",
-        image: "Feriados/feriado_sanrafael.jpeg",
+        image: "Feriados/san_rafael.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/SAN RAFAEL VEND FERIADO JUNIO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix" },
@@ -470,7 +470,7 @@ const paquetesData = [
         title: "Tandil",
         season: "feriados",
         price: "199.990",
-        image: "Feriados/feriado_tandil.jpeg",
+        image: "Feriados/tandil.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/TANDIL VEND FERIADO JUNIO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix" },
@@ -485,7 +485,7 @@ const paquetesData = [
         title: "Villa de Merlo",
         season: "feriados",
         price: "239.990",
-        image: "Feriados/feriado_villademerlo.jpeg",
+        image: "Feriados/villa_merlo.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/MERLO VEND FERIADO JUNIO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix" },
