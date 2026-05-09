@@ -648,29 +648,35 @@
             grid-column: 1 / -1;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         @media (max-width: 768px) {
             footer {
                 grid-template-columns: 1fr 1fr;
                 gap: 28px;
                 padding: 36px 20px 20px;
             }
+
             .footer-logo {
                 grid-column: 1 / -1;
                 text-align: center;
                 margin-bottom: 4px;
             }
+
             .footer-col {
                 text-align: left;
             }
+
             .footer-contact p {
                 justify-content: flex-start;
                 text-align: left;
                 word-break: break-word;
             }
+
             .footer-map iframe {
                 width: 100% !important;
                 height: 130px !important;
             }
+
             .footer-bottom {
                 grid-column: 1 / -1;
                 padding: 14px 10px 0;
@@ -685,11 +691,13 @@
                 gap: 20px;
                 padding: 28px 16px 16px;
             }
+
             .footer-logo {
                 grid-column: 1;
             }
+
             .footer-col {
-                border-top: 1px solid rgba(255,255,255,0.08);
+                border-top: 1px solid rgba(255, 255, 255, 0.08);
                 padding-top: 16px;
             }
         }
@@ -800,11 +808,16 @@
                 padding: 60px 24px 40px;
             }
         }
+
         .carousel-slide {
             position: absolute;
-            inset: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-size: cover;
             background-position: center;
+            background-color: #000740;
             opacity: 0;
             transition: opacity 1s ease-in-out;
         }
@@ -815,17 +828,33 @@
         }
 
         @keyframes zoomIn {
-            0% { transform: scale(1); }
-            100% { transform: scale(1.10); }
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.10);
+            }
         }
 
         @keyframes panUp {
-            0% { background-position: center 100%; }
-            100% { background-position: center 0%; }
+            0% {
+                background-position: center 100%;
+            }
+
+            100% {
+                background-position: center 0%;
+            }
         }
+
         @keyframes panDown {
-            0% { background-position: center 0%; }
-            100% { background-position: center 100%; }
+            0% {
+                background-position: center 0%;
+            }
+
+            100% {
+                background-position: center 100%;
+            }
         }
 
         .carousel-nav {
@@ -851,8 +880,13 @@
             background: rgba(20, 50, 200, 0.9);
         }
 
-        .carousel-nav.prev { left: 10px; }
-        .carousel-nav.next { right: 10px; }
+        .carousel-nav.prev {
+            left: 10px;
+        }
+
+        .carousel-nav.next {
+            right: 10px;
+        }
     </style>
 
 </head>
@@ -869,7 +903,8 @@
                     <span class="sub">Viajes</span>
                 </div>
             </a>
-            <div class="logo" style="margin-left: 20px; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 20px; pointer-events: none;">
+            <div class="logo"
+                style="margin-left: 20px; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 20px; pointer-events: none;">
                 <img src="logo/logo_sin_fondo_arreglado.png" class="logo-icon" alt="Travelar">
                 <div class="logo-text">
                     <span class="brand">Travelar</span>
@@ -918,17 +953,21 @@
                     style="background:none; color:#000740; font-family:'Space Grotesk',sans-serif;">TURISMO LEONES</h2>
                 <div class="text-slate-600 leading-relaxed mb-8 text-lg">
                     <p class="mb-4">
-                        Turismo Leones nació con una misión clara: <strong>hacer viajar a quienes más lo merecen</strong>. 
-                        Somos una agencia de viajes especializada en paquetes grupales, con salidas desde puntos estratégicos 
+                        Turismo Leones nació con una misión clara: <strong>hacer viajar a quienes más lo
+                            merecen</strong>.
+                        Somos una agencia de viajes especializada en paquetes grupales, con salidas desde puntos
+                        estratégicos
                         para tu comodidad.
                     </p>
                     <p class="mb-4">
-                        Contamos con diversos <strong>puntos de embarque</strong> que abarcan: 
-                        Talar de Pacheco, Moreno, Morón, San Justo, Dellepiane (CABA), Avellaneda, Varela y Rotonda Llavallol.
+                        Contamos con diversos <strong>puntos de embarque</strong> que abarcan:
+                        Talar de Pacheco, Moreno, Morón, San Justo, Dellepiane (CABA), Avellaneda, Varela y Rotonda
+                        Llavallol.
                     </p>
                     <p class="mb-4">
-                        Organizamos escapadas, excursiones de día completo, viajes de larga distancia y el exclusivo 
-                        <strong>Crucero Travelero</strong>. Cada salida está pensada para que el pasajero solo se preocupe de disfrutar.
+                        Organizamos escapadas, excursiones de día completo, viajes de larga distancia y el exclusivo
+                        <strong>Crucero Travelero</strong>. Cada salida está pensada para que el pasajero solo se
+                        preocupe de disfrutar.
                     </p>
                     <p>
                         Atendemos de forma personalizada, con grupos chicos y coordinador en cada viaje.
@@ -941,15 +980,18 @@
                     </span>
                     <span
                         class="px-4 py-2 bg-slate-100 rounded-full text-primary font-bold flex items-center gap-2 text-sm">
-                        <img src="leonvolador/leonavion.jpeg" alt="Aéreos" style="height:20px;width:20px;border-radius:50%;object-fit:cover;border:1px solid rgba(0,0,0,0.1);"> Aéreos
+                        <img src="leonvolador/leonavion.jpeg" alt="Aéreos"
+                            style="height:20px;width:20px;border-radius:50%;object-fit:cover;border:1px solid rgba(0,0,0,0.1);">
+                        Aéreos
                     </span>
                     <span
                         class="px-4 py-2 bg-slate-100 rounded-full text-primary font-bold flex items-center gap-2 text-sm">
                         <span>🚢</span> Cruceros
                     </span>
-                                    <span
+                    <span
                         class="px-4 py-2 bg-amber-50 rounded-full text-amber-700 font-bold flex items-center gap-2 text-sm border border-amber-200">
-                        <img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar" style="height:16px;width:auto;"> Ventas: <strong>Travelar</strong>
+                        <img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar" style="height:16px;width:auto;">
+                        Ventas: <strong>Travelar</strong>
                     </span>
                 </div>
             </section>
@@ -994,12 +1036,15 @@
                             Jubilados vinculado a Leones de Malvinas</strong>. Este centro brinda un espacio de
                         encuentro, recreación y asistencia para los adultos mayores de nuestra comunidad.
                     </p>
-                    <div class="inline-flex items-center gap-4 bg-white px-6 py-4 rounded-2xl shadow-sm border border-slate-100">
+                    <div
+                        class="inline-flex items-center gap-4 bg-white px-6 py-4 rounded-2xl shadow-sm border border-slate-100">
                         <span class="material-symbols-outlined text-amber-500 text-3xl">handshake</span>
-                        <span class="text-lg font-bold text-primary">Tu viaje también es una contribución solidaria</span>
+                        <span class="text-lg font-bold text-primary">Tu viaje también es una contribución
+                            solidaria</span>
                     </div>
                 </div>
-                <div class="flex-1 w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl relative" id="abuelitos-carousel">
+                <div class="w-full h-[320px] md:h-[450px] md:flex-1 rounded-2xl overflow-hidden shadow-2xl relative"
+                    id="abuelitos-carousel">
                     <div class="carousel-slide zoom active" style="background-image: url('abuelitos/1.jpeg');"></div>
                     <div class="carousel-slide zoom" style="background-image: url('abuelitos/2.jpeg');"></div>
                     <div class="carousel-slide pan" style="background-image: url('abuelitos/3.jpeg');"></div>
@@ -1008,7 +1053,7 @@
                     <div class="carousel-slide zoom" style="background-image: url('abuelitos/6.jpeg');"></div>
                     <div class="carousel-slide zoom" style="background-image: url('abuelitos/7.jpeg');"></div>
                     <div class="carousel-slide zoom" style="background-image: url('abuelitos/8.jpeg');"></div>
-                    
+
                     <button class="carousel-nav prev" onclick="changeSlide(-1)">&#10094;</button>
                     <button class="carousel-nav next" onclick="changeSlide(1)">&#10095;</button>
                 </div>
@@ -1017,52 +1062,76 @@
 
         <section class="mt-32">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-4" style="background:none; font-family:'Space Grotesk',sans-serif;">¿POR QUÉ VIAJAR CON NOSOTROS?</h2>
-                <p class="text-slate-500 max-w-2xl mx-auto">Excelencia en cada detalle, calidez en el trato y la confianza de años de trayectoria.</p>
+                <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-4"
+                    style="background:none; font-family:'Space Grotesk',sans-serif;">¿POR QUÉ VIAJAR CON NOSOTROS?</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Excelencia en cada detalle, calidez en el trato y la
+                    confianza de años de trayectoria.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                     <div class="text-4xl mb-6">📍</div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Salidas locales</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Partimos desde zona norte del GBA. Sin largas esperas en terminales lejanas.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Partimos desde zona norte del GBA. Sin largas
+                        esperas en terminales lejanas.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                     <div class="text-4xl mb-6">💳</div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Cuotas</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">20% de seña para reservar. Saldo en 3, 6, 9 o 12 cuotas con interés. Transferencia, efectivo o Mercado Pago.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">20% de seña para reservar. Saldo en 3, 6, 9 o 12
+                        cuotas con interés. Transferencia, efectivo o Mercado Pago.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                     <div class="text-4xl mb-6">👥</div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Grupos chicos</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Viajes manejables con coordinador en cada salida para una atención personalizada.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Viajes manejables con coordinador en cada salida
+                        para una atención personalizada.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                     <div class="text-4xl mb-6">✨</div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Con propósito</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Cada venta apoya directamente al Centro de Jubilados de Leones de Malvinas.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Cada venta apoya directamente al Centro de
+                        Jubilados de Leones de Malvinas.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300">
                     <div class="text-4xl mb-6">🏥</div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Cobertura Médica</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Todos nuestros paquetes incluyen cobertura médica de viaje. Tu seguridad es nuestra prioridad.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Todos nuestros paquetes incluyen cobertura médica
+                        de viaje. Tu seguridad es nuestra prioridad.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300" style="border-top: 4px solid #f5a623;">
-                    <div class="text-4xl mb-6"><img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar" style="height:40px;width:auto;"></div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-all duration-300"
+                    style="border-top: 4px solid #f5a623;">
+                    <div class="text-4xl mb-6"><img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar"
+                            style="height:40px;width:auto;"></div>
                     <h3 class="text-xl font-headline font-bold text-primary mb-3">Agencia Oficial</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">Vendemos a través de <strong>Travelar</strong>, nuestra agencia de ventas oficial. Reservas garantizadas.</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">Vendemos a través de <strong>Travelar</strong>,
+                        nuestra agencia de ventas oficial. Reservas garantizadas.</p>
                 </div>
             </div>
         </section>
 
-        <section class="mt-32 text-center bg-primary rounded-3xl p-12 md:p-16 text-white relative overflow-hidden" style="background-color:#000740;">
+        <section class="mt-32 text-center bg-primary rounded-3xl p-12 md:p-16 text-white relative overflow-hidden"
+            style="background-color:#000740;">
             <div class="absolute inset-0 opacity-20 pointer-events-none">
-                <img class="w-full h-full object-cover" alt="Paisaje de montaña" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGb82NBj9VzOXexSGGVL3If_qnpkwz6rl2XL0T5UGZ2b6oGmyVBBfAS1I9yDk2Hm-mzRGdFjzLoXuKPRL3IpgTOdm068dztBLewIm4eiEwJ-jXa-8BelOyny5rrQDXhu39Q910Osogu_IFzYbCpuBaey_So-rUeoQwAPyfrbJ1F-AN7T8FVULXkderhdkMpMo_beqpfhgddQjbvdVcQq3TF-07r18NIuKtWQ80WBrc8bu6OvaH5TOnfJ1Y29jLlZCZ-wM8IKQ-cHY" />
+                <img class="w-full h-full object-cover" alt="Paisaje de montaña"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGb82NBj9VzOXexSGGVL3If_qnpkwz6rl2XL0T5UGZ2b6oGmyVBBfAS1I9yDk2Hm-mzRGdFjzLoXuKPRL3IpgTOdm068dztBLewIm4eiEwJ-jXa-8BelOyny5rrQDXhu39Q910Osogu_IFzYbCpuBaey_So-rUeoQwAPyfrbJ1F-AN7T8FVULXkderhdkMpMo_beqpfhgddQjbvdVcQq3TF-07r18NIuKtWQ80WBrc8bu6OvaH5TOnfJ1Y29jLlZCZ-wM8IKQ-cHY" />
             </div>
             <div class="relative z-10">
-                <h2 class="text-5xl md:text-6xl font-headline font-bold mb-8 tracking-tight" style="background:none; color:white; font-family:'Space Grotesk',sans-serif;">¿LISTO PARA VIAJAR?</h2>
+                <h2 class="text-5xl md:text-6xl font-headline font-bold mb-8 tracking-tight"
+                    style="background:none; color:white; font-family:'Space Grotesk',sans-serif;">¿LISTO PARA VIAJAR?
+                </h2>
                 <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-                    <a href="index.html#nuestros-viajes" class="bg-tertiary-fixed text-primary px-10 py-4 rounded-full font-bold text-lg transition-all hover:scale-105" style="text-decoration:none; background-color:#ffb955; color:#000740;">Ver paquetes disponibles</a>
-                    <a href="https://wa.me/5491151233885" target="_blank" class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg transition-all hover:bg-white hover:text-slate-900" style="text-decoration:none;">Consultá por WhatsApp</a>
+                    <a href="index.html#nuestros-viajes"
+                        class="bg-tertiary-fixed text-primary px-10 py-4 rounded-full font-bold text-lg transition-all hover:scale-105"
+                        style="text-decoration:none; background-color:#ffb955; color:#000740;">Ver paquetes
+                        disponibles</a>
+                    <a href="https://wa.me/5491151233885" target="_blank"
+                        class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-4 rounded-full font-bold text-lg transition-all hover:bg-white hover:text-slate-900"
+                        style="text-decoration:none;">Consultá por WhatsApp</a>
                 </div>
             </div>
         </section>
@@ -1071,7 +1140,8 @@
     <footer id="footer-contacto">
         <div class="footer-logo">
             <div style="font-size: 48px; margin-bottom: 8px;">🦁</div>
-            <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones</div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:20px;color:white;margin-top:4px">Turismo Leones
+            </div>
             <div style="font-size:9px;color:rgba(255,255,255,0.4);letter-spacing:3px">TURISMO</div>
         </div>
 
@@ -1080,7 +1150,9 @@
             <ul>
                 <li><a href="nosotros.html">Quiénes somos</a></li>
                 <li><a href="revendedores.html">Sé parte del equipo</a></li>
-                <li><a href="#" style="color:#f5a623;font-weight:700;display:flex;align-items:center;gap:6px;"><img src="logo/logo_sin_fondo_arreglado.png" alt="Travelar" style="height:16px;width:auto;filter:brightness(1.1);"> Ventas: Travelar</a></li>
+                <li><a href="#" style="color:#f5a623;font-weight:700;display:flex;align-items:center;gap:6px;"><img
+                            src="logo/logo_sin_fondo_arreglado.png" alt="Travelar"
+                            style="height:16px;width:auto;filter:brightness(1.1);"> Ventas: Travelar</a></li>
                 <li><a href="galeria.html">Galería de fotos</a></li>
             </ul>
         </div>
@@ -1151,13 +1223,13 @@
             if (index >= slides.length) currentSlide = 0;
             else if (index < 0) currentSlide = slides.length - 1;
             else currentSlide = index;
-            
+
             const activeSlide = slides[currentSlide];
             activeSlide.classList.add('active');
 
             activeSlide.style.animation = 'none';
             void activeSlide.offsetWidth; // Trigger reflow
-            
+
             if (activeSlide.classList.contains('zoom')) {
                 activeSlide.style.animation = 'zoomIn 4s ease-out forwards';
             } else if (activeSlide.classList.contains('pan')) {
