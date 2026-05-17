@@ -2972,6 +2972,108 @@
 
 
 
+        <!-- ESTILOS PARA VIDEOS DE FLYERS -->
+        <style>
+            .flyer-card.has-video { position: relative; }
+            .flyer-card video.flyer-vid {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.4s ease;
+                z-index: 1;
+            }
+            .flyer-card.playing video.flyer-vid {
+                opacity: 1;
+            }
+            .flyer-card.playing img.flyer-img {
+                opacity: 0;
+            }
+            .video-indicator {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background: rgba(255, 215, 0, 0.9);
+                color: #7b1a00;
+                padding: 4px 8px;
+                border-radius: 12px;
+                font-size: 11px;
+                font-weight: bold;
+                z-index: 3;
+                pointer-events: none;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                transition: opacity 0.3s;
+            }
+            .flyer-card.playing .video-indicator {
+                opacity: 0;
+            }
+        </style>
+
+        <!-- CARRUSEL INVIERNO AEREO HOT SALE -->
+        <div class="season-section" data-section-season="invierno">
+            <h2 class="season-title">&#x2744;&#xFE0F; DESTINOS DE INVIERNO EN AÉREO &mdash; HOT SALE 2026</h2>
+            <div class="flyers-wrapper">
+                <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+                <div class="flyers-track">
+                    <div class="flyer-card has-video" onclick="openPackage('bariloche-invierno-aereo')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="hotsale/invierno/bariloche.jpeg" class="flyer-media flyer-img" alt="Bariloche">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Bariloche/a9092de1-4c02-4275-8bce-981f7c2bebd8.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">&#x25B6; VIDEO</div>
+                        <div class="flyer-overlay"><span class="flyer-overlay-title">Bariloche (Aéreo)</span></div>
+                    </div>
+                    <div class="flyer-card has-video" onclick="openPackage('cataratas-del-iguazu-invierno-aereo')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="hotsale/invierno/cataratas_del_iguazu.jpeg" class="flyer-media flyer-img" alt="Cataratas del Iguazú">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Iguazu/VIDEO-2025-10-24-13-23-55.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">&#x25B6; VIDEO</div>
+                        <div class="flyer-overlay"><span class="flyer-overlay-title">Cataratas (Aéreo)</span></div>
+                    </div>
+                    <div class="flyer-card has-video" onclick="openPackage('mendoza-invierno-aereo')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="hotsale/invierno/mendoza.jpeg" class="flyer-media flyer-img" alt="Mendoza">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Mendoza/440f8b75-6f69-4c46-a475-f5466f52eacd.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">&#x25B6; VIDEO</div>
+                        <div class="flyer-overlay"><span class="flyer-overlay-title">Mendoza (Aéreo)</span></div>
+                    </div>
+                    <div class="flyer-card has-video" onclick="openPackage('salta-invierno-aereo')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="hotsale/invierno/salta.jpeg" class="flyer-media flyer-img" alt="Salta">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/5c9dfacf-1f72-46e3-bdbc-6b7a54e24aa7.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">&#x25B6; VIDEO</div>
+                        <div class="flyer-overlay"><span class="flyer-overlay-title">Salta (Aéreo)</span></div>
+                    </div>
+                    <div class="flyer-card has-video" onclick="openPackage('tilcara-invierno-aereo')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="hotsale/invierno/tilcara.jpeg" class="flyer-media flyer-img" alt="Tilcara">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Tilcara/76740153-99f3-49bc-920f-7ef931cca0c0.MP4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">&#x25B6; VIDEO</div>
+                        <div class="flyer-overlay"><span class="flyer-overlay-title">Tilcara (Aéreo)</span></div>
+                    </div>
+                    <div class="flyer-card has-video" onclick="openPackage('ushuaia-invierno-aereo')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="hotsale/invierno/ushuaia.jpeg" class="flyer-media flyer-img" alt="Ushuaia">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Ushuaia/1d415b1c-2db9-4ca6-a88a-c01b2822bd82.MP4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">&#x25B6; VIDEO</div>
+                        <div class="flyer-overlay"><span class="flyer-overlay-title">Ushuaia (Aéreo)</span></div>
+                    </div>
+                </div>
+                <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
+            </div>
+        </div>
+
         <!-- CARRUSEL OCTUBRE HOT SALE -->
         <div class="season-section" data-section-season="octubre">
             <h2 class="season-title">&#x1F342; DESTINOS HOT SALE &mdash; OCTUBRE 2026</h2>
