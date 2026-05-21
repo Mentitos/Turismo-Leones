@@ -1094,6 +1094,72 @@ const paquetesData = [
         itinerary: `<p>¡Aprovechá la promo de salidas urgentes del mes de Mayo! Viajan 2 personas pagando sólo 1. Cataratas Aéreo, Gualeguaychú, Tandil, Merlo, San Pedro y La Rioja con tarifas únicas.</p>`,
         importantNotes: `<p>- Cupos limitados. Consultanos por WhatsApp para congelar tu lugar inmediatamente.</p>`,
         boardingPoints: `<ul><li>Múltiples puntos de embarque según el destino</li></ul>`
+    },
+    {
+        id: "super-sale-mayo25",
+        title: "Especial 25 de Mayo",
+        season: "mayo25",
+        price: "Consultar",
+        image: "nuevo21_5/resumen.jpeg",
+        features: [
+            { icon: "🔥", text: "Super Sale Especial 25 de Mayo" },
+            { icon: "💳", text: "Pagá en 6 cuotas fijas" },
+            { icon: "📅", text: "Salidas especiales 23/05 y 25/05" },
+            { icon: "🇦🇷", text: "Celebrá el fin de semana patrio" }
+        ],
+        itinerary: `<p>¡Celebrá el fin de semana patrio viajando! Increíbles tarifas promocionales para Tandil, Gualeguaychú y San Pedro. Viajá con total comodidad en salidas grupales con coordinación.</p>`,
+        importantNotes: `<p>- Cupos estrictamente limitados por ser fin de semana patrio.</p><p>- Reservá hoy mismo con seña mínima.</p>`,
+        boardingPoints: `<ul><li>Múltiples puntos de embarque en CABA y GBA según destino.</li></ul>`
+    },
+    {
+        id: "tandil-mayo25",
+        title: "Tandil Especial 25 de Mayo",
+        season: "mayo25",
+        price: "$99.990 + gastos",
+        image: "nuevo21_5/tandil.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort (Salida 23/05)" },
+            { icon: "🏨", text: "Alojamiento en hotel turista" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "2 días / 1 noche" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida Especial del 25 de Mayo! Disfrutá de la tranquilidad y sierras de Tandil. El paquete incluye 2 días y 1 noche de alojamiento con media pensión, y traslados de ida y vuelta.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $199.990 → AHORA $99.990 + gastos.</p><p>- Financiación: 6 cuotas fijas de $25.664.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`
+    },
+    {
+        id: "gualeguaychu-mayo25",
+        title: "Gualeguaychú Especial 25 de Mayo",
+        season: "mayo25",
+        price: "$99.990 + gastos",
+        image: "nuevo21_5/gualeguaychu.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort (Salida 23/05)" },
+            { icon: "🏨", text: "Alojamiento en Hotel Los Robles" },
+            { icon: "🍽️", text: "Desayuno incluido" },
+            { icon: "📅", text: "3 días / 2 noches" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida Especial del 25 de Mayo! Escapate a Gualeguaychú por 3 días y 2 noches, con hospedaje en el Hotel Los Robles y desayuno incluido. Ideal para descansar y recorrer.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $189.990 → AHORA $99.990 + gastos.</p><p>- Financiación: 6 cuotas fijas de $25.664.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`
+    },
+    {
+        id: "san-pedro-mayo25",
+        title: "San Pedro Especial 25 de Mayo",
+        season: "mayo25",
+        price: "$79.990",
+        image: "nuevo21_5/san_pedro.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Confortable (Salida 25/05)" },
+            { icon: "🍖", text: "Almuerzo: Parrillada incluida" },
+            { icon: "📅", text: "Salida Full Day" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida Especial del 25 de Mayo! Viví una jornada de campo de descanso y tradición en San Pedro. Incluye viaje de ida y vuelta en el día y un espectacular almuerzo con parrillada completa.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $109.990 → AHORA $79.990 final (sin gastos extra).</p><p>- Financiación: 6 cuotas fijas de $18.665.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`
     }
 ];
 

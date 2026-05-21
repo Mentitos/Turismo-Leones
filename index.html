@@ -3455,6 +3455,46 @@
         </div>
     </div>
 
+    <!-- SUPER SALE - ESPECIAL 25 DE MAYO -->
+    <div class="season-section" data-section-season="mayo25" id="mayo25-section"
+        style="animation: fadeIn 0.5s ease-in-out; display: block; border: 3px solid #3a9ad9; border-radius: 12px; padding: 20px; background: rgba(58, 154, 217, 0.03); margin: 30px 0;">
+        <h2 class="season-title" style="color: #3a9ad9; margin-top: 0; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">⚡ SUPER SALE – ESPECIAL 25 DE MAYO 🇦🇷 <span class="section-count"></span></h2>
+        <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
+            <div class="flyers-track">
+                <div class="flyer-card" onclick="openPackage('Especial 25 de Mayo', 'mayo25')">
+                    <img src="nuevo21_5/resumen.jpeg" class="flyer-media flyer-img" alt="Super Sale Especial 25 de Mayo">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Especial 25 de Mayo</span>
+                        <span class="flyer-overlay-badge">VER PROMOS</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Tandil Especial 25 de Mayo', 'mayo25')">
+                    <img src="nuevo21_5/tandil.jpeg" class="flyer-media flyer-img" alt="Tandil Especial 25 de Mayo">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Tandil 🇦🇷 (23/05)</span>
+                        <span class="flyer-overlay-badge">$99.990 + gast.</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Gualeguaychú Especial 25 de Mayo', 'mayo25')">
+                    <img src="nuevo21_5/gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú Especial 25 de Mayo">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Gualeguaychú 🇦🇷 (23/05)</span>
+                        <span class="flyer-overlay-badge">$99.990 + gast.</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('San Pedro Especial 25 de Mayo', 'mayo25')">
+                    <img src="nuevo21_5/san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro Especial 25 de Mayo">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">San Pedro 🇦🇷 (25/05)</span>
+                        <span class="flyer-overlay-badge">$79.990</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ESPECIAL DÍA DEL MAESTRO -->
     <div class="season-section" data-section-season="maestro" id="dia-del-maestro-section">
         <!-- Banner Premium -->
@@ -4420,6 +4460,17 @@
                     }
                 }
             }
+
+            const mayo25Section = document.getElementById('mayo25-section');
+            if (mayo25Section) {
+                mayo25Section.style.display = 'block';
+                if (currentHeroSlide === 1) {
+                    const track = mayo25Section.querySelector('.flyers-track');
+                    if (track) {
+                        track.style.transform = 'none';
+                    }
+                }
+            }
         }
 
         function startHeroAutoPlay() {
@@ -4745,11 +4796,14 @@
 
         (function checkPromociones() {
             const valijasSection = document.getElementById('valijas-ya-section');
+            const mayo25Section = document.getElementById('mayo25-section');
             const navPromo = document.getElementById('nav-promociones');
             if (!navPromo) return;
-            if (!valijasSection) { navPromo.style.display = 'none'; return; }
-            const cards = valijasSection.querySelectorAll('.flyer-card');
-            if (cards.length === 0) navPromo.style.display = 'none';
+            const hasValijas = valijasSection && valijasSection.querySelectorAll('.flyer-card').length > 0;
+            const hasMayo25 = mayo25Section && mayo25Section.querySelectorAll('.flyer-card').length > 0;
+            if (!hasValijas && !hasMayo25) {
+                navPromo.style.display = 'none';
+            }
         })();
 
         (function checkMiercolesBanner() {
