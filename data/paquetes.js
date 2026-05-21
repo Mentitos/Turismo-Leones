@@ -799,8 +799,319 @@ const paquetesData = [
         itinerary: `<p>¡Nueva salida! Contactanos para fechas, precios y disponibilidad.</p>`,
         importantNotes: `<p>- Cupos limitados. Consultá por WhatsApp.</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "puerto-madryn-ballenas",
+        title: "Puerto Madryn Ballenas",
+        season: "invierno",
+        price: "$379.990 + gastos / 6 cuotas de $90.998",
+        image: "nuevo20_5/puerto_madryn.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus semicama" },
+            { icon: "🏨", text: "Hotel Samay Huasi (céntrico con piscina climatizada)" },
+            { icon: "🍽️", text: "Desayuno buffet" },
+            { icon: "📅", text: "6 días / 3 noches" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "📍", text: "Con 10 pasajeros te pasamos a buscar" }
+        ],
+        itinerary: `
+            <p><strong>Salidas programadas:</strong></p>
+            <ul>
+                <li><strong>Agosto:</strong> 11, 18</li>
+                <li><strong>Septiembre:</strong> 03, 10, 16, 23</li>
+                <li><strong>Octubre:</strong> 22, 25</li>
+            </ul>
+            <p>¡Disfrutá de la maravillosa Temporada de Ballenas 2026 con el mejor servicio y hotelería!</p>
+        `,
+        importantNotes: `
+            <p>- Precio publicado + gastos.</p>
+            <p>- Financiación: 6 cuotas fijas de $90.998.</p>
+            <p>- Adicional: "Con 10 pasajeros te pasamos a buscar" (consultar zona de cobertura).</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Varios puntos de embarque en Buenos Aires y zonas aledañas (consultá por tu punto más cercano).</li>
+            </ul>
+        `
+    },
+    {
+        id: "mendoza-aereo-dia-del-maestro",
+        title: "Mendoza Aéreo Día del Maestro",
+        season: "maestro",
+        price: "$529.990",
+        image: "nuevo20_5/dia_del_maestro.jpeg",
+        features: [
+            { icon: "✈️", text: "Aéreo desde Buenos Aires (ida y vuelta)" },
+            { icon: "🏨", text: "Alojamiento céntrico con desayuno" },
+            { icon: "🚌", text: "Traslados de llegada y salida" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🍎", text: "Especial Día del Maestro" }
+        ],
+        itinerary: `<p>¡Salida especial Día del Maestro! Disfrutá de la tierra del sol y del buen vino.</p>`,
+        importantNotes: `<p>- Cupos muy limitados. Tarifas especiales para docentes y acompañantes.</p>`,
+        boardingPoints: `<ul><li>Aeroparque Jorge Newbery / Ezeiza</li></ul>`
+    },
+    {
+        id: "cataratas-aereo-dia-del-maestro",
+        title: "Cataratas Aéreo Día del Maestro",
+        season: "maestro",
+        price: "$539.990",
+        image: "nuevo20_5/dia_del_maestro.jpeg",
+        features: [
+            { icon: "✈️", text: "Aéreo desde Buenos Aires (ida y vuelta)" },
+            { icon: "🏨", text: "Alojamiento con piscina y desayuno" },
+            { icon: "🚌", text: "Traslados in/out" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🍎", text: "Especial Día del Maestro" }
+        ],
+        itinerary: `<p>¡Salida especial Día del Maestro! Viví una experiencia única en una de las Nuevas Siete Maravillas del Mundo.</p>`,
+        importantNotes: `<p>- Cupos muy limitados. Tarifas especiales para docentes y acompañantes.</p>`,
+        boardingPoints: `<ul><li>Aeroparque Jorge Newbery / Ezeiza</li></ul>`
+    },
+    {
+        id: "villa-de-merlo-bus-dia-del-maestro",
+        title: "Villa de Merlo Bus Día del Maestro",
+        season: "maestro",
+        price: "$229.990",
+        image: "ordenarmas/invierno_merlo.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix de última generación" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🍎", text: "Especial Día del Maestro" }
+        ],
+        itinerary: `<p>Disfrutá del excelente microclima de Villa de Merlo en este fin de semana especial.</p>`,
+        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
+    },
+    {
+        id: "villa-carlos-paz-bus-dia-del-maestro",
+        title: "Villa Carlos Paz Bus Día del Maestro",
+        season: "maestro",
+        price: "$229.990",
+        image: "ordenarmas/invierno_carlos_paz.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix de última generación" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🍎", text: "Especial Día del Maestro" }
+        ],
+        itinerary: `<p>Divertite y relajate en las sierras de Córdoba en este especial para maestros.</p>`,
+        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
+    },
+    {
+        id: "tandil-bus-dia-del-maestro",
+        title: "Tandil Bus Día del Maestro",
+        season: "maestro",
+        price: "$199.990",
+        image: "ordenarmas/invierno_tandil.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix de última generación" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🍎", text: "Especial Día del Maestro" }
+        ],
+        itinerary: `<p>Escapate a las sierras de Tandil, disfrutá del aire libre y la gastronomía regional.</p>`,
+        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
+    },
+    {
+        id: "gualeguaychu-bus-dia-del-maestro",
+        title: "Gualeguaychú Bus Día del Maestro",
+        season: "maestro",
+        price: "$189.990",
+        image: "ordenarmas/invierno_gualeguaychu.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix de última generación" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🍎", text: "Especial Día del Maestro" }
+        ],
+        itinerary: `<p>Disfrutá del río, las termas y la tranquilidad de Gualeguaychú.</p>`,
+        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
+    },
+    {
+        id: "mar-del-plata-bus-dia-del-maestro",
+        title: "Mar del Plata Bus Día del Maestro",
+        season: "maestro",
+        price: "$179.990",
+        image: "Feriados/feriado_mardelplata.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix de última generación" },
+            { icon: "🏨", text: "Alojamiento céntrico con desayuno" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🍎", text: "Especial Día del Maestro" }
+        ],
+        itinerary: `<p>Disfrutá de la brisa marina, los teatros y los mejores paseos en Mar del Plata.</p>`,
+        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
+    },
+    {
+        id: "san-pedro-bus-dia-del-maestro",
+        title: "San Pedro Bus Día del Maestro",
+        season: "maestro",
+        price: "$109.990",
+        image: "ordenarmas/invierno_san_pedro.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus semicama confortable" },
+            { icon: "🍎", text: "Especial Día del Maestro" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Ideal para un fin de semana campestre en la costa del río Paraná.</p>`,
+        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "campo-la-herradura-bus-dia-del-maestro",
+        title: "Campo La Herradura Bus Día del Maestro",
+        season: "maestro",
+        price: "$99.990",
+        image: "ordenarmas/invierno_campo_la_herradura.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus semicama confortable" },
+            { icon: "🍖", text: "Almuerzo de campo incluido" },
+            { icon: "🍎", text: "Especial Día del Maestro" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Un día de campo inolvidable con el mejor asado criollo y actividades tradicionales.</p>`,
+        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "termas-de-guaychu-bus-dia-del-maestro",
+        title: "Termas de Guaychú Bus Día del Maestro",
+        season: "maestro",
+        price: "$99.990",
+        image: "ordenarmas/invierno_termas.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus semicama confortable" },
+            { icon: "📍", text: "Entrada al complejo termal incluida" },
+            { icon: "🍎", text: "Especial Día del Maestro" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Relajate y renová tus energías en las piletas termales de Guaychú.</p>`,
+        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "cataratas-2x1",
+        title: "Cataratas 2x1",
+        season: "valijasya",
+        price: "$499.990 c/u",
+        image: "Otoño/cataratas_del_iguazu_otoño.jpeg",
+        features: [
+            { icon: "✈️", text: "Aéreo incluido (Salida 23/05)" },
+            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
+            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "🏨", text: "Alojamiento incluido" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida INMEDIATA el 23 de Mayo! Pagás 1 y viajan 2. Disfrutá de las Cataratas del Iguazú a una tarifa de locos.</p>`,
+        importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
+        boardingPoints: `<ul><li>Aeropuerto / Ezeiza</li></ul>`
+    },
+    {
+        id: "gualeguaychu-2x1",
+        title: "Gualeguaychú 2x1",
+        season: "valijasya",
+        price: "$159.990 c/u",
+        image: "Otoño/gualeguaychu_otoño.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort (Salida 23/05)" },
+            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
+            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "🏨", text: "Alojamiento incluido" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida INMEDIATA el 23 de Mayo! Pagás 1 y viajan 2. Relajate en Gualeguaychú el fin de semana.</p>`,
+        importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
+    },
+    {
+        id: "tandil-2x1",
+        title: "Tandil 2x1",
+        season: "valijasya",
+        price: "$164.990 c/u",
+        image: "Otoño/tandil_otoño.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort (Salida 23/05)" },
+            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
+            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "🏨", text: "Alojamiento incluido" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida INMEDIATA el 23 de Mayo! Pagás 1 y viajan 2. Recorré las sierras y descansá en Tandil.</p>`,
+        importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
+    },
+    {
+        id: "merlo-2x1",
+        title: "Merlo 2x1",
+        season: "valijasya",
+        price: "$199.990 c/u",
+        image: "Otoño/villa_de_merlo_otoño.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort (Salida 22/05)" },
+            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
+            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "🏨", text: "Alojamiento incluido" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida INMEDIATA el 22 de Mayo! Pagás 1 y viajan 2. Viví el microclima de Merlo.</p>`,
+        importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
+    },
+    {
+        id: "san-pedro-2x1",
+        title: "San Pedro 2x1",
+        season: "valijasya",
+        price: "$89.990 c/u",
+        image: "Otoño/san_pedro_otoño.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Confortable (Salida 25/05)" },
+            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
+            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida INMEDIATA el 25 de Mayo! Pagás 1 y viajan 2. Un escape perfecto a San Pedro.</p>`,
+        importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "la-rioja-2x1",
+        title: "La Rioja 2x1",
+        season: "valijasya",
+        price: "$269.990 c/u",
+        image: "Otoño/la_rioja_otoño.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort (Salida 27/05)" },
+            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
+            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "🏨", text: "Alojamiento incluido" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida INMEDIATA el 27 de Mayo! Pagás 1 y viajan 2. Viví los maravillosos paisajes de La Rioja.</p>`,
+        importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+    },
+    {
+        id: "super-sale-2x1",
+        title: "Super Sale 2x1",
+        season: "valijasya",
+        price: "Consultar",
+        image: "nuevo20_5/resumen_2x1.jpeg",
+        features: [
+            { icon: "🔥", text: "Super Sale 2x1 en Salidas Inmediatas" },
+            { icon: "💳", text: "Pagá en 3 y 6 cuotas fijas" },
+            { icon: "📅", text: "Salidas próximamente en Mayo" },
+            { icon: "⚠️", text: "Cupos estrictamente limitados" }
+        ],
+        itinerary: `<p>¡Aprovechá la promo de salidas urgentes del mes de Mayo! Viajan 2 personas pagando sólo 1. Cataratas Aéreo, Gualeguaychú, Tandil, Merlo, San Pedro y La Rioja con tarifas únicas.</p>`,
+        importantNotes: `<p>- Cupos limitados. Consultanos por WhatsApp para congelar tu lugar inmediatamente.</p>`,
+        boardingPoints: `<ul><li>Múltiples puntos de embarque según el destino</li></ul>`
     }
-
 ];
 
 function getPackageData(title, season) {

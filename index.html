@@ -2640,6 +2640,25 @@
             </div>
         </section>
 
+        <!-- MIERCOLES BANNER SECTION -->
+        <div id="miercoles-banner-section" style="display: none; width: 90%; max-width: 1200px; margin: 30px auto; overflow: hidden; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.35); position: relative; aspect-ratio: 16/9; background: url('nuevo20_5/muy_buen_miercoles.jpeg') center/cover no-repeat;">
+            <video autoplay muted loop playsinline style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
+                <source src="nuevo20_5/video_miercoles.mp4" type="video/mp4">
+            </video>
+            <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(10, 26, 107, 0.85) 30%, rgba(10, 26, 107, 0.4) 70%, transparent 100%); z-index: 2; display: flex; flex-direction: column; justify-content: center; padding: 0 40px; box-sizing: border-box;">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                    <img src="logo/logo_sin_fondo_arreglado.png" style="height: 50px; width: auto;" alt="Travelar Logo">
+                    <span style="color: #ffd700; font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 2px;">TRAVELAR</span>
+                </div>
+                <h1 style="color: #ffffff; font-family: 'Bebas Neue', sans-serif; font-size: clamp(32px, 6vw, 64px); font-weight: normal; margin: 0; text-shadow: 0 2px 10px rgba(0,0,0,0.5); line-height: 1.1;">
+                    ¡MUY BUEN MIÉRCOLES! <span style="color: #f5a623;">🧡</span>
+                </h1>
+                <p style="color: #f0f0f0; font-family: 'Manrope', sans-serif; font-size: clamp(14px, 2.5vw, 18px); margin: 12px 0 0 0; max-width: 500px; line-height: 1.4; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                    Aprovechá hoy nuestras ofertas de mitad de semana. ¡Congelá tu próximo viaje ahora mismo!
+                </p>
+            </div>
+        </div>
+
         <!-- HOT SALE TURISMO LEONES -->
         <div class="section-header" id="nuevas-promociones">
             <h2>&#x1F525; HOT SALE</h2>
@@ -2912,7 +2931,7 @@
         <div class="hotsale-wrapper">
             <div class="hotsale-inner">
                 <div class="hotsale-flyer-col" id="hotsale-player" onclick="toggleHotsaleVideo()">
-                    <img src="hotsale/hotsale_flyer.jpeg" alt="Hot Sale Travelar Turismo Leones 2026">
+                    <img src="nuevo20_5/hotsale_extendido.jpeg" alt="Hot Sale Travelar Turismo Leones 2026">
                     <video loop playsinline id="hotsale-video" preload="none">
                         <source src="hotsale/hotsale_video.mp4" type="video/mp4">
                     </video>
@@ -2932,26 +2951,24 @@
                         <div class="hs-deal">
                             <div class="hs-deal-badge">3x2</div>
                             <div class="hs-deal-text">
-                                <strong>&#x2705; Viaj&#xe1;s con todo en MAYO</strong>
-                                Pag&#xe1;s 2 pasajes y viajan 3 &mdash; destinos en bus y avi&#xf3;n
-                                &#x1F6A0;&#x2708;&#xFE0F;
+                                <strong>&#x2705; Mayo &mdash; Viajan 3, pagan 2</strong>
+                                Pag&aacute;s 2 pasajes y viajan 3 &mdash; destinos en bus y avi&oacute;n &#x1F6A0;&#x2708;&#xFE0F;
                             </div>
                         </div>
                         <div class="hs-deal">
                             <div class="hs-deal-badge">4x3</div>
                             <div class="hs-deal-text">
-                                <strong>&#x2705; JUNIO y JULIO &mdash; Vacaciones de Invierno</strong>
-                                Pag&#xe1;s 3 pasajes y viajan 4 &mdash; ideal para grupos y familias &#x1F46A;
+                                <strong>&#x2705; Junio/Julio (incluye vacaciones de invierno) &mdash; Viajan 4, pagan 3</strong>
+                                Pag&aacute;s 3 pasajes y viajan 4 &mdash; ideal para grupos y familias &#x1F46A;
                             </div>
                         </div>
                     </div>
                     <div class="hs-sena-row">
-                        &#x1F4B3;&nbsp; Reserv&#xe1; con solo el <strong
-                            style="color:#ffd700;font-size:16px;margin:0 4px;">30%</strong> de se&#xf1;a &mdash;
-                        &#xA1;cuotas accesibles!
+                        &#x1F4B3;&nbsp; Reserv&eacute; con solo el <strong
+                            style="color:#ffd700;font-size:16px;margin:0 4px;">30%</strong> de se&ntilde;a &mdash;
+                        &iexcl;cuotas accesibles!
                     </div>
-                    <div class="hs-vigencia">&#x1F550; V&#xe1;lido para reservas se&#xf1;adas entre el 11 y el 13 de
-                        mayo</div>
+                    <div class="hs-vigencia">&#x23F3; V&aacute;lido hasta el 28 de mayo inclusive</div>
                 </div>
             </div>
         </div>
@@ -3396,13 +3413,138 @@
         <h2>🔥 DESTACADAS</h2>
     </div>
 
+    <!-- SUPER SALE 2x1 -->
     <div class="season-section" data-section-season="valijas-ya" id="valijas-ya-section"
-        style="animation: fadeIn 0.5s ease-in-out; display: none;">
-        <h2 class="season-title" style="color: #d32f2f;">VALIJAS YA <span class="section-count"></span></h2>
+        style="animation: fadeIn 0.5s ease-in-out; display: block; border: 3px solid #d32f2f; border-radius: 12px; padding: 20px; background: rgba(211, 47, 47, 0.03); margin: 30px 0;">
+        <h2 class="season-title" style="color: #d32f2f; margin-top: 0; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">⚡ SUPER SALE 2x1 &mdash; VALIJAS YA <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
+                <div class="flyer-card" onclick="openPackage('Super Sale 2x1', 'valijasya')">
+                    <img src="nuevo20_5/resumen_2x1.jpeg" class="flyer-media flyer-img" alt="Super Sale 2x1">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Super Sale 2x1</span><span
+                            class="flyer-overlay-badge">VER PROMOS</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Cataratas 2x1', 'valijasya')">
+                    <img src="Otoño/cataratas_del_iguazu_otoño.jpeg" class="flyer-media flyer-img" alt="Cataratas 2x1">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Cataratas 2x1 ✈️ (23/05)</span><span
+                            class="flyer-overlay-badge">$499.990 c/u</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Gualeguaychú 2x1', 'valijasya')">
+                    <img src="Otoño/gualeguaychu_otoño.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú 2x1">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Gualeguaychú 2x1 (23/05)</span><span
+                            class="flyer-overlay-badge">$159.990 c/u</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Tandil 2x1', 'valijasya')">
+                    <img src="Otoño/tandil_otoño.jpeg" class="flyer-media flyer-img" alt="Tandil 2x1">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil 2x1 (23/05)</span><span
+                            class="flyer-overlay-badge">$164.990 c/u</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Merlo 2x1', 'valijasya')">
+                    <img src="Otoño/villa_de_merlo_otoño.jpeg" class="flyer-media flyer-img" alt="Merlo 2x1">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Merlo 2x1 (22/05)</span><span
+                            class="flyer-overlay-badge">$199.990 c/u</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('San Pedro 2x1', 'valijasya')">
+                    <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="San Pedro 2x1">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Pedro 2x1 (25/05)</span><span
+                            class="flyer-overlay-badge">$89.990 c/u</span></div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('La Rioja 2x1', 'valijasya')">
+                    <img src="Otoño/la_rioja_otoño.jpeg" class="flyer-media flyer-img" alt="La Rioja 2x1">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">La Rioja 2x1 (27/05)</span><span
+                            class="flyer-overlay-badge">$269.990 c/u</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ESPECIAL DÍA DEL MAESTRO -->
+    <div class="season-section" data-section-season="maestro" id="dia-del-maestro-section">
+        <!-- Banner Premium -->
+        <div class="maestro-banner" style="position: relative; width: 100%; height: 280px; border-radius: 12px; overflow: hidden; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.4); background: url('nuevo20_5/dia_del_maestro.jpeg') center/cover no-repeat;">
+            <div class="maestro-banner-overlay" style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(10, 26, 107, 0.9) 20%, rgba(10, 26, 107, 0.4) 60%, rgba(0, 0, 0, 0.1) 100%); display: flex; flex-direction: column; justify-content: center; padding: 0 40px; box-sizing: border-box;">
+                <span class="maestro-subtitle" style="color: #f5a623; font-family: 'Manrope', sans-serif; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 4px; margin-bottom: 8px; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">SALIDAS EXCLUSIVAS</span>
+                <h1 class="maestro-title" style="color: #ffffff; font-family: 'Bebas Neue', sans-serif; font-size: 48px; line-height: 1; font-weight: normal; margin: 0; text-shadow: 0 2px 10px rgba(0,0,0,0.5); letter-spacing: 2px;">ESPECIAL DÍA DEL MAESTRO <span style="color: #ffd700;">🍎</span></h1>
+                <p class="maestro-desc" style="color: #f0f0f0; font-family: 'Manrope', sans-serif; font-size: 16px; margin: 12px 0 0 0; max-width: 500px; line-height: 1.5; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Viajes de media y larga distancia especialmente diseñados para celebrar a nuestros queridos docentes. ¡Cupos súper limitados!</p>
+            </div>
+        </div>
+
+        <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
+            <div class="flyers-track">
+                <div class="flyer-card" onclick="openPackage('Mendoza Aéreo Día del Maestro', 'maestro')">
+                    <img src="nuevo20_5/dia_del_maestro.jpeg" class="flyer-media flyer-img" alt="Mendoza Aéreo Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Mendoza Aéreo 🍎</span>
+                        <span class="flyer-overlay-badge">$529.990</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Cataratas Aéreo Día del Maestro', 'maestro')">
+                    <img src="nuevo20_5/dia_del_maestro.jpeg" class="flyer-media flyer-img" alt="Cataratas Aéreo Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Cataratas Aéreo 🍎</span>
+                        <span class="flyer-overlay-badge">$539.990</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Villa de Merlo Bus Día del Maestro', 'maestro')">
+                    <img src="ordenarmas/invierno_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo Bus Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Villa de Merlo 🍎</span>
+                        <span class="flyer-overlay-badge">$229.990</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Villa Carlos Paz Bus Día del Maestro', 'maestro')">
+                    <img src="ordenarmas/invierno_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz Bus Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Villa Carlos Paz 🍎</span>
+                        <span class="flyer-overlay-badge">$229.990</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Tandil Bus Día del Maestro', 'maestro')">
+                    <img src="ordenarmas/invierno_tandil.jpeg" class="flyer-media flyer-img" alt="Tandil Bus Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Tandil 🍎</span>
+                        <span class="flyer-overlay-badge">$199.990</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Gualeguaychú Bus Día del Maestro', 'maestro')">
+                    <img src="ordenarmas/invierno_gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú Bus Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Gualeguaychú 🍎</span>
+                        <span class="flyer-overlay-badge">$189.990</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Mar del Plata Bus Día del Maestro', 'maestro')">
+                    <img src="Feriados/feriado_mardelplata.jpeg" class="flyer-media flyer-img" alt="Mar del Plata Bus Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Mar del Plata 🍎</span>
+                        <span class="flyer-overlay-badge">$179.990</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('San Pedro Bus Día del Maestro', 'maestro')">
+                    <img src="ordenarmas/invierno_san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro Bus Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">San Pedro 🍎</span>
+                        <span class="flyer-overlay-badge">$109.990</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Campo La Herradura Bus Día del Maestro', 'maestro')">
+                    <img src="ordenarmas/invierno_campo_la_herradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura Bus Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">La Herradura 🍎</span>
+                        <span class="flyer-overlay-badge">$99.990</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Termas de Guaychú Bus Día del Maestro', 'maestro')">
+                    <img src="ordenarmas/invierno_termas.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú Bus Día del Maestro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Termas de Guaychú 🍎</span>
+                        <span class="flyer-overlay-badge">$99.990</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -3911,6 +4053,11 @@
                     <div class="flyer-overlay"><span class="flyer-overlay-title">Puerto Madryn</span><span
                             class="flyer-overlay-badge">$369.990</span></div>
                 </div>
+                <div class="flyer-card" onclick="openPackage('Puerto Madryn Ballenas', 'invierno')">
+                    <img src="nuevo20_5/puerto_madryn.jpeg" class="flyer-media flyer-img" alt="Puerto Madryn Ballenas">
+                    <div class="flyer-overlay"><span class="flyer-overlay-title">Puerto Madryn Ballenas 🐳</span><span
+                            class="flyer-overlay-badge">$379.990</span></div>
+                </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('San Pedro', 'invierno')">
                     <img src="ordenarmas/invierno_san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
@@ -4270,14 +4417,12 @@
 
             const valijasSection = document.getElementById('valijas-ya-section');
             if (valijasSection) {
+                valijasSection.style.display = 'block';
                 if (currentHeroSlide === 1) {
-                    valijasSection.style.display = 'block';
                     const track = valijasSection.querySelector('.flyers-track');
                     if (track) {
                         track.style.transform = 'none';
                     }
-                } else {
-                    valijasSection.style.display = 'none';
                 }
             }
         }
@@ -4610,6 +4755,16 @@
             if (!valijasSection) { navPromo.style.display = 'none'; return; }
             const cards = valijasSection.querySelectorAll('.flyer-card');
             if (cards.length === 0) navPromo.style.display = 'none';
+        })();
+
+        (function checkMiercolesBanner() {
+            const today = new Date().getDay();
+            if (today === 3) {
+                const banner = document.getElementById('miercoles-banner-section');
+                if (banner) {
+                    banner.style.display = 'block';
+                }
+            }
         })();
 
     </script>
