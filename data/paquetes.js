@@ -1080,23 +1080,6 @@ const paquetesData = [
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
     },
     {
-        id: "la-rioja-2x1",
-        title: "La Rioja 2x1",
-        season: "valijasya",
-        price: "$269.990 c/u",
-        image: "Otoño/la_rioja_otoño.jpeg",
-        features: [
-            { icon: "🚌", text: "Bus Mix Confort (Salida 27/05)" },
-            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
-            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
-            { icon: "🏨", text: "Alojamiento incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>¡Salida INMEDIATA el 27 de Mayo! Pagás 1 y viajan 2. Viví los maravillosos paisajes de La Rioja.</p>`,
-        importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
-    },
-    {
         id: "super-sale-2x1",
         title: "Super Sale 2x1",
         season: "valijasya",
