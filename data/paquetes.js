@@ -1179,6 +1179,73 @@ const paquetesData = [
         itinerary: `<p>¡Salida Especial Vacaciones de Invierno! Disfrutá de la majestuosidad de Formosa y el Bañado La Estrella. El paquete incluye traslados en bus de ida y vuelta, alojamiento en hoteles seleccionados (2 noches en Las Lomitas con media pensión y 2 noches en Formosa con desayuno) y coordinación permanente.</p>`,
         importantNotes: `<p>- Valor por persona: $399.990.</p><p>- Promoción 4x3: ¡Viajan 4 y pagan 3!</p><p>- Financiación de hasta 6 cuotas fijas.</p><p>- CUPOS ESTRICTAMENTE LIMITADOS.</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`
+    },
+    {
+        id: "super-sale-travelero",
+        title: "Super Sale Travelero",
+        season: "supersale",
+        price: "Consultar",
+        image: "supersaletravelero22_5/resumen.jpeg",
+        features: [
+            { icon: "🔥", text: "Super Sale Travelero - Salida 27/05" },
+            { icon: "⚠️", text: "Solo 10 lugares por destino" },
+            { icon: "💳", text: "Cuotas fijas disponibles" },
+            { icon: "📅", text: "Salida confirmada 27 de Mayo" }
+        ],
+        itinerary: `<p>¡Llega el Super Sale Travelero con salida el 27 de Mayo! Aprovechá las tarifas más bajas del año para visitar La Rioja, Villa de Merlo y Villa Carlos Paz con cupos súper limitados (solo 10 lugares por destino).</p>`,
+        importantNotes: `<p>- Cupos estrictamente limitados. Reserva hoy para congelar tu lugar.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque habituales de CABA y GBA.</li></ul>`
+    },
+    {
+        id: "la-rioja-supersale",
+        title: "La Rioja Super Sale",
+        season: "supersale",
+        price: "$159.990",
+        image: "supersaletravelero22_5/la_rioja.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort (Salida 27/05)" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "🗓️", text: "6 días / 3 noches" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "💳", text: "Cuotas fijas disponibles" }
+        ],
+        itinerary: `<p>¡Salida Especial Super Sale Travelero del 27 de Mayo! Disfrutá de la belleza incomparable de La Rioja. El paquete incluye traslados en bus ida y vuelta, 6 días y 3 noches de alojamiento con media pensión, y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $319.990 → AHORA $159.990 (¡50% OFF!).</p><p>- Solo 10 lugares disponibles por destino.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque habituales de CABA y GBA.</li></ul>`
+    },
+    {
+        id: "villa-de-merlo-supersale",
+        title: "Villa de Merlo Super Sale",
+        season: "supersale",
+        price: "$119.990",
+        image: "supersaletravelero22_5/villa_merlo.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort (Salida 27/05)" },
+            { icon: "🏨", text: "Alojamiento en hotel seleccionado" },
+            { icon: "🗓️", text: "5 días / 3 noches" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "💳", text: "Cuotas fijas disponibles" }
+        ],
+        itinerary: `<p>¡Salida Especial Super Sale Travelero del 27 de Mayo! Escapate a Villa de Merlo y disfrutá de su famoso microclima. El paquete incluye traslados en bus ida y vuelta, 5 días y 3 noches de alojamiento, y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $259.990 → AHORA $119.990 (¡Más de 50% OFF!).</p><p>- Solo 10 lugares disponibles por destino.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque habituales de CABA y GBA.</li></ul>`
+    },
+    {
+        id: "villa-carlos-paz-supersale",
+        title: "Villa Carlos Paz Super Sale",
+        season: "supersale",
+        price: "$99.990",
+        image: "supersaletravelero22_5/villa_carlos_paz.jpeg",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort (Salida 27/05)" },
+            { icon: "🏨", text: "Alojamiento en hotel seleccionado" },
+            { icon: "🗓️", text: "5 días / 3 noches" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "💳", text: "Cuotas fijas disponibles" }
+        ],
+        itinerary: `<p>¡Salida Especial Super Sale Travelero del 27 de Mayo! Disfrutá de la diversión y paisajes de Villa Carlos Paz. El paquete incluye traslados en bus ida y vuelta, 5 días y 3 noches de alojamiento, y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $189.990 → AHORA $99.990 (¡Casi 50% OFF!).</p><p>- Solo 10 lugares disponibles por destino.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque habituales de CABA y GBA.</li></ul>`
     }
 ];
 

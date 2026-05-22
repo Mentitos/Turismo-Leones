@@ -3455,6 +3455,50 @@
         </div>
     </div>
 
+    <!-- SUPER SALE TRAVELERO – SALIDA 27/05 -->
+    <div class="season-section" data-section-season="supersale" id="supersale-travelero-section"
+        style="animation: fadeIn 0.5s ease-in-out; display: block; border: 3px solid #d32f2f; border-radius: 12px; padding: 20px; background: rgba(211, 47, 47, 0.03); margin: 30px 0;">
+        <h2 class="season-title" style="color: #d32f2f; margin-top: 0; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">🔥 SUPER SALE TRAVELERO – SALIDA 27/05 ⚠️ SOLO 10 LUGARES POR DESTINO <span class="section-count"></span></h2>
+
+        <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
+            <div class="flyers-track">
+                <div class="flyer-card" onclick="openPackage('Super Sale Travelero', 'supersale')">
+                    <img src="supersaletravelero22_5/resumen.jpeg" class="flyer-media flyer-img" alt="Super Sale Travelero">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Super Sale Travelero</span>
+                        <span class="flyer-overlay-badge">VER PROMOS</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('La Rioja Super Sale', 'supersale')">
+                    <img src="supersaletravelero22_5/la_rioja.jpeg" class="flyer-media flyer-img" alt="La Rioja Super Sale">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">La Rioja (27/05)</span>
+                        <span class="flyer-overlay-badge" style="background-color: #d32f2f; color: white;">$159.990</span>
+                        <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #d32f2f; font-size: 11px; margin-top: 4px; font-weight: bold; border: 1px solid #d32f2f;">SUPER SALE</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Villa de Merlo Super Sale', 'supersale')">
+                    <img src="supersaletravelero22_5/villa_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo Super Sale">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Villa de Merlo (27/05)</span>
+                        <span class="flyer-overlay-badge" style="background-color: #d32f2f; color: white;">$119.990</span>
+                        <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #d32f2f; font-size: 11px; margin-top: 4px; font-weight: bold; border: 1px solid #d32f2f;">SUPER SALE</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Villa Carlos Paz Super Sale', 'supersale')">
+                    <img src="supersaletravelero22_5/villa_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz Super Sale">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Villa Carlos Paz (27/05)</span>
+                        <span class="flyer-overlay-badge" style="background-color: #d32f2f; color: white;">$99.990</span>
+                        <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #d32f2f; font-size: 11px; margin-top: 4px; font-weight: bold; border: 1px solid #d32f2f;">SUPER SALE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- SUPER SALE - ESPECIAL 25 DE MAYO -->
     <div class="season-section" data-section-season="mayo25" id="mayo25-section"
         style="animation: fadeIn 0.5s ease-in-out; display: block; border: 3px solid #3a9ad9; border-radius: 12px; padding: 20px; background: rgba(58, 154, 217, 0.03); margin: 30px 0;">
@@ -4482,6 +4526,17 @@
                 }
             }
 
+            const supersaleSection = document.getElementById('supersale-travelero-section');
+            if (supersaleSection) {
+                supersaleSection.style.display = 'block';
+                if (currentHeroSlide === 1) {
+                    const track = supersaleSection.querySelector('.flyers-track');
+                    if (track) {
+                        track.style.transform = 'none';
+                    }
+                }
+            }
+
             const mayo25Section = document.getElementById('mayo25-section');
             if (mayo25Section) {
                 mayo25Section.style.display = 'block';
@@ -4829,11 +4884,13 @@
         (function checkPromociones() {
             const valijasSection = document.getElementById('valijas-ya-section');
             const mayo25Section = document.getElementById('mayo25-section');
+            const supersaleSection = document.getElementById('supersale-travelero-section');
             const navPromo = document.getElementById('nav-promociones');
             if (!navPromo) return;
             const hasValijas = valijasSection && valijasSection.querySelectorAll('.flyer-card').length > 0;
             const hasMayo25 = mayo25Section && mayo25Section.querySelectorAll('.flyer-card').length > 0;
-            if (!hasValijas && !hasMayo25) {
+            const hasSupersale = supersaleSection && supersaleSection.querySelectorAll('.flyer-card').length > 0;
+            if (!hasValijas && !hasMayo25 && !hasSupersale) {
                 navPromo.style.display = 'none';
             }
         })();
