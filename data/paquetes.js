@@ -1160,6 +1160,25 @@ const paquetesData = [
         itinerary: `<p>¡Salida Especial del 25 de Mayo! Viví una jornada de campo de descanso y tradición en San Pedro. Incluye viaje de ida y vuelta en el día y un espectacular almuerzo con parrillada completa.</p>`,
         importantNotes: `<p>- Tarifa Promocional: ANTES $109.990 → AHORA $79.990 final (sin gastos extra).</p><p>- Financiación: 6 cuotas fijas de $18.665.</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`
+    },
+    {
+        id: "formosa-bañado-la-estrella-invierno",
+        title: "Formosa + Bañado La Estrella",
+        season: "invierno",
+        price: "$399.990",
+        image: "nuevo22_5/formosa_bañadolaestrella.jpeg",
+        pdf: "nuevo22_5/BAÑADO LA ESTRELLA VACACIONES DE INVIERNO.pptx.pdf",
+        features: [
+            { icon: "📅", text: "Salida: 18 de JULIO" },
+            { icon: "🚌", text: "Bus ida y vuelta" },
+            { icon: "🌙", text: "7 días / 4 noches" },
+            { icon: "🏨", text: "Las Lomitas: 2 noches – Media pensión" },
+            { icon: "🏨", text: "Formosa: 2 noches – Desayuno" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Salida Especial Vacaciones de Invierno! Disfrutá de la majestuosidad de Formosa y el Bañado La Estrella. El paquete incluye traslados en bus de ida y vuelta, alojamiento en hoteles seleccionados (2 noches en Las Lomitas con media pensión y 2 noches en Formosa con desayuno) y coordinación permanente.</p>`,
+        importantNotes: `<p>- Valor por persona: $399.990.</p><p>- Promoción 4x3: ¡Viajan 4 y pagan 3!</p><p>- Financiación de hasta 6 cuotas fijas.</p><p>- CUPOS ESTRICTAMENTE LIMITADOS.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`
     }
 ];
 

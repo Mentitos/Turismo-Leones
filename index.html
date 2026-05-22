@@ -3992,6 +3992,27 @@
         </div>
     </div>
 
+    <!-- LANZAMIENTO TRAVELAR – FORMOSA -->
+    <div class="season-section" data-section-season="formosa-lanzamiento" id="formosa-lanzamiento-section"
+        style="animation: fadeIn 0.5s ease-in-out; display: block; border: 3px solid #2e7d32; border-radius: 12px; padding: 20px; background: rgba(46, 125, 50, 0.03); margin: 30px 0;">
+        <h2 class="season-title" style="color: #2e7d32; margin-top: 0; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">LANZAMIENTO TRAVELAR – FORMOSA + BAÑADO LA ESTRELLA <span class="section-count"></span></h2>
+        <div class="flyers-wrapper">
+            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
+            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
+            <div class="flyers-track">
+                <!-- Flyer Card Principal -->
+                <div class="flyer-card" onclick="openPackage('Formosa + Bañado La Estrella', 'invierno')">
+                    <img src="nuevo22_5/formosa_bañadolaestrella.jpeg" class="flyer-media flyer-img" alt="Formosa + Bañado La Estrella">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Formosa + Bañado La Estrella 🌿</span>
+                        <span class="flyer-overlay-badge" style="background-color: #2e7d32; color: white;">$399.990 por persona</span>
+                        <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #1b5e20; font-size: 11px; margin-top: 4px; font-weight: bold; border: 1px solid #1b5e20;">4x3 – VIAJAN 4 PAGAN 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="season-section" data-section-season="invierno">
         <h2 class="season-title">TEMPORADA DE INVIERNO <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
@@ -4466,6 +4487,17 @@
                 mayo25Section.style.display = 'block';
                 if (currentHeroSlide === 1) {
                     const track = mayo25Section.querySelector('.flyers-track');
+                    if (track) {
+                        track.style.transform = 'none';
+                    }
+                }
+            }
+
+            const formosaSection = document.getElementById('formosa-lanzamiento-section');
+            if (formosaSection) {
+                formosaSection.style.display = 'block';
+                if (currentHeroSlide === 1) {
+                    const track = formosaSection.querySelector('.flyers-track');
                     if (track) {
                         track.style.transform = 'none';
                     }
