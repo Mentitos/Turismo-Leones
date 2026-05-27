@@ -2640,24 +2640,7 @@
             </div>
         </section>
 
-        <!-- MIERCOLES BANNER SECTION -->
-        <div id="miercoles-banner-section" style="display: none; width: 90%; max-width: 1200px; margin: 30px auto; overflow: hidden; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.35); position: relative; aspect-ratio: 16/9; background: url('nuevo20_5/muy_buen_miercoles.jpeg') center/cover no-repeat;">
-            <video autoplay muted loop playsinline style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;">
-                <source src="nuevo20_5/video_miercoles.mp4" type="video/mp4">
-            </video>
-            <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(10, 26, 107, 0.85) 30%, rgba(10, 26, 107, 0.4) 70%, transparent 100%); z-index: 2; display: flex; flex-direction: column; justify-content: center; padding: 0 40px; box-sizing: border-box;">
-                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-                    <img src="logo/logo_sin_fondo_arreglado.png" style="height: 50px; width: auto;" alt="Travelar Logo">
-                    <span style="color: #ffd700; font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 2px;">TRAVELAR</span>
-                </div>
-                <h1 style="color: #ffffff; font-family: 'Bebas Neue', sans-serif; font-size: clamp(32px, 6vw, 64px); font-weight: normal; margin: 0; text-shadow: 0 2px 10px rgba(0,0,0,0.5); line-height: 1.1;">
-                    ¡MUY BUEN MIÉRCOLES! <span style="color: #f5a623;">🧡</span>
-                </h1>
-                <p style="color: #f0f0f0; font-family: 'Manrope', sans-serif; font-size: clamp(14px, 2.5vw, 18px); margin: 12px 0 0 0; max-width: 500px; line-height: 1.4; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
-                    Aprovechá hoy nuestras ofertas de mitad de semana. ¡Congelá tu próximo viaje ahora mismo!
-                </p>
-            </div>
-        </div>
+
 
         <!-- HOT SALE TURISMO LEONES -->
         <div class="section-header" id="nuevas-promociones">
@@ -3164,6 +3147,76 @@
             </div>
         </div>
 
+        <!-- CARRUSEL JUNIO HOT SALE -->
+        <div class="season-section" data-section-season="junio-hotsale" id="junio-hotsale-section"
+            style="border: 3px solid #f97316; border-radius: 12px; padding: 20px; background: rgba(249,115,22,0.03); margin: 30px 0;">
+            <h2 class="season-title" style="color: #f97316; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">
+                🔥️ FERIADO JUNIO – PROMOCIÓN 4X3
+            </h2>
+            <div class="flyers-wrapper">
+                <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">‹</button>
+                <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">›</button>
+                <div class="flyers-track">
+                    <div class="flyer-card" onclick="openPackage('Feriado Junio – Promoción 4x3', 'junio-hotsale')">
+                        <img src="junio_hotsale/resumen.jpeg" class="flyer-media flyer-img" alt="Feriado Junio – Promoción 4x3">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Feriado Junio – Promoción 4x3</span>
+                            <span class="flyer-overlay-badge">VER PROMOS</span>
+                        </div>
+                    </div>
+                    <div class="flyer-card" onclick="openPackage('Mendoza', 'junio-hotsale')">
+                        <img src="junio_hotsale/mendoza.jpeg" class="flyer-media flyer-img" alt="Mendoza">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Mendoza</span>
+                            <span class="flyer-overlay-badge">$249.990</span>
+                        </div>
+                    </div>
+                    <div class="flyer-card" onclick="openPackage('San Rafael', 'junio-hotsale')">
+                        <img src="junio_hotsale/san_rafael.jpeg" class="flyer-media flyer-img" alt="San Rafael">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">San Rafael</span>
+                            <span class="flyer-overlay-badge">$259.990</span>
+                        </div>
+                    </div>
+                    <div class="flyer-card" onclick="openPackage('Villa de Merlo', 'junio-hotsale')">
+                        <img src="junio_hotsale/villa_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Villa de Merlo</span>
+                            <span class="flyer-overlay-badge">$239.990</span>
+                        </div>
+                    </div>
+                    <div class="flyer-card" onclick="openPackage('Villa Carlos Paz', 'junio-hotsale')">
+                        <img src="junio_hotsale/villa_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Villa Carlos Paz</span>
+                            <span class="flyer-overlay-badge">$229.990</span>
+                        </div>
+                    </div>
+                    <div class="flyer-card" onclick="openPackage('Tandil', 'junio-hotsale')">
+                        <img src="junio_hotsale/tandil.jpeg" class="flyer-media flyer-img" alt="Tandil">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Tandil</span>
+                            <span class="flyer-overlay-badge">$199.990</span>
+                        </div>
+                    </div>
+                    <div class="flyer-card" onclick="openPackage('Gualeguaychú', 'junio-hotsale')">
+                        <img src="junio_hotsale/gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Gualeguaychú</span>
+                            <span class="flyer-overlay-badge">$189.990</span>
+                        </div>
+                    </div>
+                    <div class="flyer-card" onclick="openPackage('Termas de Guaychú', 'junio-hotsale')">
+                        <img src="junio_hotsale/termas_guaychu.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Termas de Guaychú</span>
+                            <span class="flyer-overlay-badge">$99.990 (Full Day)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- CRUCERO TRAVELERO -->
         <div class="section-header" id="crucero-section">
             <h2>&#x1F6A2; CRUCERO TRAVELERO</h2>
@@ -3409,135 +3462,7 @@
     </div>
     </div>
 
-    <div class="section-header" style="display: none;">
-        <h2>🔥 DESTACADAS</h2>
-    </div>
 
-    <!-- SUPER SALE 2x1 -->
-    <div class="season-section" data-section-season="valijas-ya" id="valijas-ya-section"
-        style="animation: fadeIn 0.5s ease-in-out; display: block; border: 3px solid #d32f2f; border-radius: 12px; padding: 20px; background: rgba(211, 47, 47, 0.03); margin: 30px 0;">
-        <h2 class="season-title" style="color: #d32f2f; margin-top: 0; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">⚡ SUPER SALE 2x1 &mdash; VALIJAS YA <span class="section-count"></span></h2>
-        <div class="flyers-wrapper">
-            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
-            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
-            <div class="flyers-track">
-                <div class="flyer-card" onclick="openPackage('Super Sale 2x1', 'valijasya')">
-                    <img src="nuevo20_5/resumen_2x1.jpeg" class="flyer-media flyer-img" alt="Super Sale 2x1">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Super Sale 2x1</span><span
-                            class="flyer-overlay-badge">VER PROMOS</span></div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('Cataratas 2x1', 'valijasya')">
-                    <img src="Otoño/cataratas_del_iguazu_otoño.jpeg" class="flyer-media flyer-img" alt="Cataratas 2x1">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Cataratas 2x1 ✈️ (23/05)</span><span
-                            class="flyer-overlay-badge">$499.990 c/u</span></div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('Gualeguaychú 2x1', 'valijasya')">
-                    <img src="Otoño/gualeguaychu_otoño.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú 2x1">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Gualeguaychú 2x1 (23/05)</span><span
-                            class="flyer-overlay-badge">$159.990 c/u</span></div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('Tandil 2x1', 'valijasya')">
-                    <img src="Otoño/tandil_otoño.jpeg" class="flyer-media flyer-img" alt="Tandil 2x1">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Tandil 2x1 (23/05)</span><span
-                            class="flyer-overlay-badge">$164.990 c/u</span></div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('Merlo 2x1', 'valijasya')">
-                    <img src="Otoño/villa_de_merlo_otoño.jpeg" class="flyer-media flyer-img" alt="Merlo 2x1">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">Merlo 2x1 (22/05)</span><span
-                            class="flyer-overlay-badge">$199.990 c/u</span></div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('San Pedro 2x1', 'valijasya')">
-                    <img src="Otoño/san_pedro_otoño.jpeg" class="flyer-media flyer-img" alt="San Pedro 2x1">
-                    <div class="flyer-overlay"><span class="flyer-overlay-title">San Pedro 2x1 (25/05)</span><span
-                            class="flyer-overlay-badge">$89.990 c/u</span></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SUPER SALE TRAVELERO – SALIDA 27/05 -->
-    <div class="season-section" data-section-season="supersale" id="supersale-travelero-section"
-        style="animation: fadeIn 0.5s ease-in-out; display: block; border: 3px solid #d32f2f; border-radius: 12px; padding: 20px; background: rgba(211, 47, 47, 0.03); margin: 30px 0;">
-        <h2 class="season-title" style="color: #d32f2f; margin-top: 0; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">🔥 SUPER SALE TRAVELERO – SALIDA 27/05 ⚠️ SOLO 10 LUGARES POR DESTINO <span class="section-count"></span></h2>
-
-        <div class="flyers-wrapper">
-            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
-            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
-            <div class="flyers-track">
-                <div class="flyer-card" onclick="openPackage('Super Sale Travelero', 'supersale')">
-                    <img src="supersaletravelero22_5/resumen.jpeg" class="flyer-media flyer-img" alt="Super Sale Travelero">
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">Super Sale Travelero</span>
-                        <span class="flyer-overlay-badge">VER PROMOS</span>
-                    </div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('La Rioja Super Sale', 'supersale')">
-                    <img src="supersaletravelero22_5/la_rioja.jpeg" class="flyer-media flyer-img" alt="La Rioja Super Sale">
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">La Rioja (27/05)</span>
-                        <span class="flyer-overlay-badge" style="background-color: #d32f2f; color: white;">$159.990</span>
-                        <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #d32f2f; font-size: 11px; margin-top: 4px; font-weight: bold; border: 1px solid #d32f2f;">SUPER SALE</span>
-                    </div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('Villa de Merlo Super Sale', 'supersale')">
-                    <img src="supersaletravelero22_5/villa_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo Super Sale">
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">Villa de Merlo (27/05)</span>
-                        <span class="flyer-overlay-badge" style="background-color: #d32f2f; color: white;">$119.990</span>
-                        <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #d32f2f; font-size: 11px; margin-top: 4px; font-weight: bold; border: 1px solid #d32f2f;">SUPER SALE</span>
-                    </div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('Villa Carlos Paz Super Sale', 'supersale')">
-                    <img src="supersaletravelero22_5/villa_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz Super Sale">
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">Villa Carlos Paz (27/05)</span>
-                        <span class="flyer-overlay-badge" style="background-color: #d32f2f; color: white;">$99.990</span>
-                        <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #d32f2f; font-size: 11px; margin-top: 4px; font-weight: bold; border: 1px solid #d32f2f;">SUPER SALE</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- SUPER SALE - ESPECIAL 25 DE MAYO -->
-    <div class="season-section" data-section-season="mayo25" id="mayo25-section"
-        style="animation: fadeIn 0.5s ease-in-out; display: block; border: 3px solid #3a9ad9; border-radius: 12px; padding: 20px; background: rgba(58, 154, 217, 0.03); margin: 30px 0;">
-        <h2 class="season-title" style="color: #3a9ad9; margin-top: 0; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">⚡ SUPER SALE – ESPECIAL 25 DE MAYO 🇦🇷 <span class="section-count"></span></h2>
-        <div class="flyers-wrapper">
-            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
-            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
-            <div class="flyers-track">
-                <div class="flyer-card" onclick="openPackage('Especial 25 de Mayo', 'mayo25')">
-                    <img src="nuevo21_5/resumen.jpeg" class="flyer-media flyer-img" alt="Super Sale Especial 25 de Mayo">
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">Especial 25 de Mayo</span>
-                        <span class="flyer-overlay-badge">VER PROMOS</span>
-                    </div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('Tandil Especial 25 de Mayo', 'mayo25')">
-                    <img src="nuevo21_5/tandil.jpeg" class="flyer-media flyer-img" alt="Tandil Especial 25 de Mayo">
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">Tandil 🇦🇷 (23/05)</span>
-                        <span class="flyer-overlay-badge">$99.990 + gast.</span>
-                    </div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('Gualeguaychú Especial 25 de Mayo', 'mayo25')">
-                    <img src="nuevo21_5/gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú Especial 25 de Mayo">
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">Gualeguaychú 🇦🇷 (23/05)</span>
-                        <span class="flyer-overlay-badge">$99.990 + gast.</span>
-                    </div>
-                </div>
-                <div class="flyer-card" onclick="openPackage('San Pedro Especial 25 de Mayo', 'mayo25')">
-                    <img src="nuevo21_5/san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro Especial 25 de Mayo">
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">San Pedro 🇦🇷 (25/05)</span>
-                        <span class="flyer-overlay-badge">$79.990</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- ESPECIAL DÍA DEL MAESTRO -->
     <div class="season-section" data-section-season="maestro" id="dia-del-maestro-section">
@@ -4344,24 +4269,7 @@
             </div>
         </div>
     </div>
-    <div class="season-section" data-section-season="semana santa">
-        <h2 class="season-title">SEMANA SANTA <span class="section-count"></span></h2>
-        <div class="flyers-wrapper">
-            <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
-            <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
-            <div class="flyers-track">
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('San Bernaerdo Semana Santa')">
-                    <img src="Semana_Santa/san_bernaerdo_semana_santa.jpeg" class="flyer-media flyer-img"
-                        alt="san_bernaerdo_semana_santa">
-                    <video preload="none" data-src="Semana_Santa/san_bernaerdo_semana_santa.mp4" muted
-                        class="flyer-video" loop playsinline></video>
-                    <div class="video-badge">▶ VIDEO</div>
-                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 
 
@@ -4515,38 +4423,9 @@
                 }
             });
 
-            const valijasSection = document.getElementById('valijas-ya-section');
-            if (valijasSection) {
-                valijasSection.style.display = 'block';
-                if (currentHeroSlide === 1) {
-                    const track = valijasSection.querySelector('.flyers-track');
-                    if (track) {
-                        track.style.transform = 'none';
-                    }
-                }
-            }
 
-            const supersaleSection = document.getElementById('supersale-travelero-section');
-            if (supersaleSection) {
-                supersaleSection.style.display = 'block';
-                if (currentHeroSlide === 1) {
-                    const track = supersaleSection.querySelector('.flyers-track');
-                    if (track) {
-                        track.style.transform = 'none';
-                    }
-                }
-            }
 
-            const mayo25Section = document.getElementById('mayo25-section');
-            if (mayo25Section) {
-                mayo25Section.style.display = 'block';
-                if (currentHeroSlide === 1) {
-                    const track = mayo25Section.querySelector('.flyers-track');
-                    if (track) {
-                        track.style.transform = 'none';
-                    }
-                }
-            }
+
 
             const formosaSection = document.getElementById('formosa-lanzamiento-section');
             if (formosaSection) {
@@ -4882,26 +4761,12 @@
         });
 
         (function checkPromociones() {
-            const valijasSection = document.getElementById('valijas-ya-section');
-            const mayo25Section = document.getElementById('mayo25-section');
-            const supersaleSection = document.getElementById('supersale-travelero-section');
+            const hotsaleSection = document.getElementById('nuevas-promociones');
             const navPromo = document.getElementById('nav-promociones');
             if (!navPromo) return;
-            const hasValijas = valijasSection && valijasSection.querySelectorAll('.flyer-card').length > 0;
-            const hasMayo25 = mayo25Section && mayo25Section.querySelectorAll('.flyer-card').length > 0;
-            const hasSupersale = supersaleSection && supersaleSection.querySelectorAll('.flyer-card').length > 0;
-            if (!hasValijas && !hasMayo25 && !hasSupersale) {
+            const hasHotsale = !!hotsaleSection;
+            if (!hasHotsale) {
                 navPromo.style.display = 'none';
-            }
-        })();
-
-        (function checkMiercolesBanner() {
-            const today = new Date().getDay();
-            if (today === 3) {
-                const banner = document.getElementById('miercoles-banner-section');
-                if (banner) {
-                    banner.style.display = 'block';
-                }
             }
         })();
 
