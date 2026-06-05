@@ -2419,7 +2419,6 @@
             .gs-title {
                 font-size: 18px;
             }
-        }
     </style>
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Manrope:wght@400;500;700;800&display=swap"
@@ -3155,37 +3154,144 @@
             </div>
         </div>
 
-        <!-- CARRUSEL JUNIO HOT SALE -->
-        <div class="season-section" data-section-season="junio-hotsale" id="junio-hotsale-section"
-            style="border: 3px solid #e9c176; border-radius: 12px; padding: 20px; background: rgba(233,193,118,0.03); margin: 30px 0;">
-            <h2 class="season-title" style="color: #e9c176; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">
-                🔥️ SUPER SALE – SELECCIÓN EXCLUSIVA
-            </h2>
+        <!-- CARRUSEL DESTINOS MUNDIALISTAS -->
+        <div class="season-section" data-section-season="mundialista" id="mundialista-section">
+            <h2 class="season-title">⚽ DESTINOS CON PROMO MUNDIALISTA</h2>
             <div class="flyers-wrapper">
                 <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">‹</button>
                 <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">›</button>
                 <div class="flyers-track">
-                    <!-- Nuevos Recursos Super Sale (nuevo2_6) -->
-                    <div class="flyer-card has-video" onclick="openPackage('Campo La Herradura', 'junio-hotsale')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
-                        <img src="nuevo2_6/supersale_herradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura">
-                        <video loop muted playsinline class="flyer-vid" preload="none">
-                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4" type="video/mp4">
-                        </video>
-                        <div class="video-indicator">&#x25B6; VIDEO</div>
+                    <!-- Card Resumen: Promo Mundialista -->
+                    <div class="flyer-card"
+                         onclick="openPackage('Resumen Promo Mundialista', 'mundialista')">
+                        <img src="mundial/resumen.jpeg" class="flyer-media flyer-img" alt="Resumen Promo Mundialista">
                         <div class="flyer-overlay">
-                            <span class="flyer-overlay-title">Campo La Herradura</span>
-                            <span class="flyer-overlay-badge">SUPER SALE</span>
+                            <span class="flyer-overlay-title">Resumen Promo Mundialista 🏆</span>
+                            <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;padding:6px 12px;font-size:11px;border: 1px solid white;">VER RESUMEN ⚽</span>
                         </div>
                     </div>
-                    <div class="flyer-card has-video" onclick="openPackage('Villa Carlos Paz', 'junio-hotsale')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
-                        <img src="nuevo2_6/supersale_villa_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
+
+                    <!-- Card 1: Villa Carlos Paz -->
+                    <div class="flyer-card has-video"
+                         onclick="openPackage('Villa Carlos Paz', 'mundialista')"
+                         onmouseenter="this.querySelector('video').play(); this.classList.add('playing')"
+                         onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="mundial/villa_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
                         <video loop muted playsinline class="flyer-vid" preload="none">
                             <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4" type="video/mp4">
                         </video>
-                        <div class="video-indicator">&#x25B6; VIDEO</div>
+                        <div class="video-indicator">▶ VIDEO</div>
                         <div class="flyer-overlay">
                             <span class="flyer-overlay-title">Villa Carlos Paz</span>
-                            <span class="flyer-overlay-badge">SUPER SALE</span>
+                            <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$129.990</span>
+                            <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $189.990</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Tandil -->
+                    <div class="flyer-card has-video"
+                         onclick="openPackage('Tandil', 'mundialista')"
+                         onmouseenter="this.querySelector('video').play(); this.classList.add('playing')"
+                         onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="mundial/tandil.jpeg" class="flyer-media flyer-img" alt="Tandil">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">▶ VIDEO</div>
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Tandil</span>
+                            <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$119.990</span>
+                            <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $199.990</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Gualeguaychú -->
+                    <div class="flyer-card has-video"
+                         onclick="openPackage('Gualeguaychú', 'mundialista')"
+                         onmouseenter="this.querySelector('video').play(); this.classList.add('playing')"
+                         onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="mundial/gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/ee3c5736-9583-4565-947c-d11d9ce6e4a6.MP4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">▶ VIDEO</div>
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Gualeguaychú</span>
+                            <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$119.990</span>
+                            <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $189.990</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: San Rafael -->
+                    <div class="flyer-card has-video"
+                         onclick="openPackage('San Rafael', 'mundialista')"
+                         onmouseenter="this.querySelector('video').play(); this.classList.add('playing')"
+                         onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="mundial/san_rafael.jpeg" class="flyer-media flyer-img" alt="San Rafael">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">▶ VIDEO</div>
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">San Rafael</span>
+                            <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$189.990</span>
+                            <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $259.990</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Villa de Merlo -->
+                    <div class="flyer-card has-video"
+                         onclick="openPackage('Villa de Merlo', 'mundialista')"
+                         onmouseenter="this.querySelector('video').play(); this.classList.add('playing')"
+                         onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="mundial/villa_de_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/340ccd21-9565-47ea-a02a-6b45ffb3367d.MP4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">▶ VIDEO</div>
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Villa de Merlo</span>
+                            <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$189.990</span>
+                            <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $239.990</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Aimogasta -->
+                    <div class="flyer-card has-video"
+                         onclick="openPackage('Aimogasta', 'mundialista')"
+                         onmouseenter="this.querySelector('video').play(); this.classList.add('playing')"
+                         onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <img src="mundial/aimogasta.jpeg" class="flyer-media flyer-img" alt="Aimogasta">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Aimogasta/VIDEO-2025-10-29-12-12-11.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">▶ VIDEO</div>
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Aimogasta</span>
+                            <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$249.990</span>
+                            <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $369.990</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 7: Aimogasta (2 noches) -->
+                    <div class="flyer-card"
+                         onclick="openPackage('Aimogasta (2 noches)', 'mundialista')">
+                        <img src="mundial/aimogasta.jpeg" class="flyer-media flyer-img" alt="Aimogasta (2 noches)">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Aimogasta (2 noches)</span>
+                            <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$249.990</span>
+                            <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $369.990</span>
+                        </div>
+                    </div>
+
+                    <!-- Card 8: San Rafael (2 noches) -->
+                    <div class="flyer-card"
+                         onclick="openPackage('San Rafael (2 noches)', 'mundialista')">
+                        <img src="mundial/san_rafael.jpeg" class="flyer-media flyer-img" alt="San Rafael (2 noches)">
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">San Rafael (2 noches)</span>
+                            <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$189.990</span>
+                            <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $259.990</span>
                         </div>
                     </div>
                 </div>
