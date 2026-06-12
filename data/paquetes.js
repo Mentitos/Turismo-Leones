@@ -172,11 +172,15 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "19/07", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
     },
     {
         id: "villa-carlos-paz",
@@ -188,11 +192,19 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "17/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "20/07", status: "POCO DISPONIBLE", color: "🟡" },
+            { date: "23/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "26/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "29/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "gualeguaychú",
@@ -204,11 +216,16 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "20/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "27/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "la-rioja",
@@ -220,11 +237,15 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "21/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "mendoza",
@@ -236,11 +257,19 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "17/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "20/07", status: "POCO DISPONIBLE", color: "🟡" },
+            { date: "23/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "26/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "29/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "villa-de-merlo",
@@ -252,11 +281,19 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "17/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "20/07", status: "POCO DISPONIBLE", color: "🟡" },
+            { date: "23/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "26/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "29/07", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
     },
     {
         id: "puerto-madryn",
@@ -268,11 +305,15 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "22/07", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
     },
     {
         id: "san-pedro",
@@ -283,11 +324,15 @@ const paquetesData = [
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN PEDRO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "26/07", status: "AGOTADO", color: "🔴" }
+        ]
     },
     {
         id: "san-rafael",
@@ -299,11 +344,19 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "17/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "20/07", status: "AGOTADO", color: "🔴" },
+            { date: "23/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "26/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "29/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "tandil",
@@ -314,11 +367,16 @@ const paquetesData = [
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/TANDIL VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "18/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "25/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "termas-de-guaychú",
@@ -330,11 +388,16 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "📍", text: "Entrada incluida" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "19/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "26/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "termas-de-federación",
@@ -346,11 +409,16 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "21/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "27/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "termas-de-río-hondo",
@@ -362,11 +430,16 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con pensión completa" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "18/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "22/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "campo-la-herradura",
@@ -378,11 +451,16 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🍖", text: "Almuerzo incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "19/07", status: "AGOTADO", color: "🔴" },
+            { date: "26/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     },
     {
         id: "termas-de-guaychu",
@@ -744,11 +822,18 @@ const paquetesData = [
         features: [
             { icon: "🚌", text: "Bus Mix" },
             { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
+        importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
+        availability: [
+            { date: "18/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "21/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "24/07", status: "DISPONIBLE", color: "🟢" },
+            { date: "27/07", status: "DISPONIBLE", color: "🟢" }
+        ]
     }
 ,
 
@@ -1174,11 +1259,15 @@ const paquetesData = [
             { icon: "🌙", text: "7 días / 4 noches" },
             { icon: "🏨", text: "Las Lomitas: 2 noches – Media pensión" },
             { icon: "🏨", text: "Formosa: 2 noches – Desayuno" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
-        itinerary: `<p>¡Salida Especial Vacaciones de Invierno! Disfrutá de la majestuosidad de Formosa y el Bañado La Estrella. El paquete incluye traslados en bus de ida y vuelta, alojamiento en hoteles seleccionados (2 noches en Las Lomitas con media pensión y 2 noches en Formosa con desayuno) y coordinación permanente.</p>`,
+        itinerary: `<p>¡Salida Especial Vacaciones de Invierno! Disfrutá de la majestuosidad de Formosa y el Bañado La Estrella. El paquete incluye traslados en bus de ida y vuelta, alojamiento en hoteles seleccionados (2 noches en Las Lomitas con media pensión y 2 noches en Formosa con desayuno) y coordination permanente.</p>`,
         importantNotes: `<p>- Valor por persona: $399.990.</p><p>- Promoción 4x3: ¡Viajan 4 y pagan 3!</p><p>- Financiación de hasta 6 cuotas fijas.</p><p>- CUPOS ESTRICTAMENTE LIMITADOS.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`,
+        availability: [
+            { date: "18/07", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
     },
     {
         id: "super-sale-travelero",
