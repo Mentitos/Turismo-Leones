@@ -1270,71 +1270,106 @@ const paquetesData = [
         ]
     },
     {
-        id: "super-sale-travelero",
-        title: "Super Sale Travelero",
-        season: "supersale",
-        price: "Consultar",
-        image: "supersaletravelero22_5/resumen.jpeg",
-        features: [
-            { icon: "🔥", text: "Super Sale Travelero - Salida 27/05" },
-            { icon: "⚠️", text: "Solo 10 lugares por destino" },
-            { icon: "💳", text: "Cuotas fijas disponibles" },
-            { icon: "📅", text: "Salida confirmada 27 de Mayo" }
-        ],
-        itinerary: `<p>¡Llega el Super Sale Travelero con salida el 27 de Mayo! Aprovechá las tarifas más bajas del año para visitar La Rioja, Villa de Merlo y Villa Carlos Paz con cupos súper limitados (solo 10 lugares por destino).</p>`,
-        importantNotes: `<p>- Cupos estrictamente limitados. Reserva hoy para congelar tu lugar.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque habituales de CABA y GBA.</li></ul>`
-    },
-    {
-        id: "la-rioja-supersale",
-        title: "La Rioja Super Sale",
+        id: "campo-la-herradura-supersale",
+        title: "Campo La Herradura Super Sale",
         season: "supersale",
         price: "$159.990",
-        image: "supersaletravelero22_5/la_rioja.jpeg",
+        image: "nuevo19_6/campo_herradura.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix Confort (Salida 27/05)" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "🗓️", text: "6 días / 3 noches" },
+            { icon: "🚌", text: "Bus Mix de última generación" },
+            { icon: "🍖", text: "Almuerzo de campo premium" },
             { icon: "👤", text: "Coordinación permanente" },
-            { icon: "💳", text: "Cuotas fijas disponibles" }
+            { icon: "🔥", text: "Tarifa Super Sale especial" }
         ],
-        itinerary: `<p>¡Salida Especial Super Sale Travelero del 27 de Mayo! Disfrutá de la belleza incomparable de La Rioja. El paquete incluye traslados en bus ida y vuelta, 6 días y 3 noches de alojamiento con media pensión, y coordinación permanente.</p>`,
-        importantNotes: `<p>- Tarifa Promocional: ANTES $319.990 → AHORA $159.990 (¡50% OFF!).</p><p>- Solo 10 lugares disponibles por destino.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque habituales de CABA y GBA.</li></ul>`
+        itinerary: `<p>¡Salida Especial Super Sale! Disfrutá de un día de campo inolvidable en La Herradura con traslados en bus de última generación, almuerzo criollo premium y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $319.990 → AHORA $159.990 (¡50% OFF!).</p><p>- Cupos estrictamente limitados. Reserva hoy para congelar tu tarifa.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque habituales en CABA y GBA.</li></ul>`
     },
     {
-        id: "villa-de-merlo-supersale",
-        title: "Villa de Merlo Super Sale",
+        id: "cataratas-del-iguazu-supersale",
+        title: "Cataratas del Iguazú Super Sale",
         season: "supersale",
-        price: "$119.990",
-        image: "supersaletravelero22_5/villa_merlo.jpeg",
+        price: "$199.990",
+        image: "nuevo19_6/cataratas_iguazu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZÚ VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix Confort (Salida 27/05)" },
-            { icon: "🏨", text: "Alojamiento en hotel seleccionado" },
-            { icon: "🗓️", text: "5 días / 3 noches" },
+            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
+            { icon: "🏨", text: "Alojamiento con desayuno" },
             { icon: "👤", text: "Coordinación permanente" },
-            { icon: "💳", text: "Cuotas fijas disponibles" }
+            { icon: "🔥", text: "Tarifa promocional exclusiva" }
         ],
-        itinerary: `<p>¡Salida Especial Super Sale Travelero del 27 de Mayo! Escapate a Villa de Merlo y disfrutá de su famoso microclima. El paquete incluye traslados en bus ida y vuelta, 5 días y 3 noches de alojamiento, y coordinación permanente.</p>`,
-        importantNotes: `<p>- Tarifa Promocional: ANTES $259.990 → AHORA $119.990 (¡Más de 50% OFF!).</p><p>- Solo 10 lugares disponibles por destino.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque habituales de CABA y GBA.</li></ul>`
+        itinerary: `<p>¡Viví la majestuosidad de las Cataratas del Iguazú con tarifas únicas! El paquete incluye traslados en bus de ida y vuelta, alojamiento en hotel seleccionado con desayuno y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $399.990 → AHORA $199.990 (¡50% OFF!).</p><p>- Cupos limitados disponibles con esta tarifa única.</p>`,
+        boardingPoints: `<ul><li>Múltiples puntos de embarque en CABA y GBA.</li></ul>`
+    },
+    {
+        id: "mendoza-supersale",
+        title: "Mendoza Super Sale",
+        season: "supersale",
+        price: "$179.990",
+        image: "nuevo19_6/mendoza.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MENDOZA VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort de ida y vuelta" },
+            { icon: "🏨", text: "Alojamiento céntrico con desayuno" },
+            { icon: "🍷", text: "Visita a bodegas seleccionadas" },
+            { icon: "👤", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>¡Descubrí los paisajes y vinos de Mendoza a mitad de precio! El paquete incluye traslados en bus, alojamiento en hotel céntrico con desayuno, excursiones incluidas (bodegas) y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $359.990 → AHORA $179.990 (¡50% OFF!).</p><p>- Cupos limitados: reserva con seña mínima para congelar precio.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque habituales en CABA y GBA.</li></ul>`
+    },
+    {
+        id: "salta-supersale",
+        title: "Salta Super Sale",
+        season: "supersale",
+        price: "$229.990",
+        image: "nuevo19_6/salta.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🔥", text: "Tarifa Super Sale especial" }
+        ],
+        itinerary: `<p>¡Salida Especial Super Sale a Salta! Recorré el norte argentino con el mejor precio del mercado. Incluye traslados en bus ida y vuelta, alojamiento seleccionado con media pensión y coordinación.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $459.990 → AHORA $229.990 (¡50% OFF!).</p><p>- Cupos estrictamente limitados. ¡Asegurá tu lugar hoy!</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque habituales en GBA y CABA.</li></ul>`
+    },
+    {
+        id: "san-rafael-supersale",
+        title: "San Rafael Super Sale",
+        season: "supersale",
+        price: "$179.990",
+        image: "nuevo19_6/san_rafael.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN RAFAEL VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "🏔️", text: "Excursión a Valle Grande y Cañón del Atuel" }
+        ],
+        itinerary: `<p>¡San Rafael al mejor precio de la temporada! Disfrutá de Valle Grande y el Cañón del Atuel. El paquete incluye traslados, alojamiento con media pensión y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $359.990 → AHORA $179.990 (¡50% OFF!).</p><p>- Reserva inmediata para congelar tarifa.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en CABA y GBA.</li></ul>`
     },
     {
         id: "villa-carlos-paz-supersale",
         title: "Villa Carlos Paz Super Sale",
         season: "supersale",
-        price: "$99.990",
-        image: "supersaletravelero22_5/villa_carlos_paz.jpeg",
+        price: "$149.990",
+        image: "nuevo19_6/villa_carlos_paz.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix Confort (Salida 27/05)" },
-            { icon: "🏨", text: "Alojamiento en hotel seleccionado" },
-            { icon: "🗓️", text: "5 días / 3 noches" },
+            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
+            { icon: "🏨", text: "Alojamiento con media pensión" },
             { icon: "👤", text: "Coordinación permanente" },
-            { icon: "💳", text: "Cuotas fijas disponibles" }
+            { icon: "🔥", text: "Tarifa Super Sale destacada" }
         ],
-        itinerary: `<p>¡Salida Especial Super Sale Travelero del 27 de Mayo! Disfrutá de la diversión y paisajes de Villa Carlos Paz. El paquete incluye traslados en bus ida y vuelta, 5 días y 3 noches de alojamiento, y coordinación permanente.</p>`,
-        importantNotes: `<p>- Tarifa Promocional: ANTES $189.990 → AHORA $99.990 (¡Casi 50% OFF!).</p><p>- Solo 10 lugares disponibles por destino.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque habituales de CABA y GBA.</li></ul>`
+        itinerary: `<p>¡Viví la diversión de Villa Carlos Paz en Córdoba con una oferta increíble! Incluye traslados en bus de última generación, alojamiento en hotel con media pensión y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Promocional: ANTES $299.990 → AHORA $149.990 (¡50% OFF!).</p><p>- Cupos limitados. ¡Asegurá tu lugar hoy!</p>`,
+        boardingPoints: `<ul><li>Múltiples puntos de embarque en CABA y GBA.</li></ul>`
     }
 ];
 
