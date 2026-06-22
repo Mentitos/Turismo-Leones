@@ -1270,105 +1270,77 @@ const paquetesData = [
         ]
     },
     {
-        id: "campo-la-herradura-supersale",
-        title: "Campo La Herradura Super Sale",
-        season: "supersale",
-        price: "$159.990",
-        image: "nuevo19_6/campo_herradura.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
-        features: [
-            { icon: "🚌", text: "Bus Mix de última generación" },
-            { icon: "🍖", text: "Almuerzo de campo premium" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🔥", text: "Tarifa Super Sale especial" }
-        ],
-        itinerary: `<p>¡Salida Especial Super Sale! Disfrutá de un día de campo inolvidable en La Herradura con traslados en bus de última generación, almuerzo criollo premium y coordinación permanente.</p>`,
-        importantNotes: `<p>- Tarifa Promocional: ANTES $319.990 → AHORA $159.990 (¡50% OFF!).</p><p>- Cupos estrictamente limitados. Reserva hoy para congelar tu tarifa.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque habituales en CABA y GBA.</li></ul>`
-    },
-    {
         id: "cataratas-del-iguazu-supersale",
         title: "Cataratas del Iguazú Super Sale",
         season: "supersale",
-        price: "$199.990",
-        image: "nuevo19_6/cataratas_iguazu.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        price: "$139.990",
+        image: "nuevo22_6/cataratas_iguazu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZU' VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "🏨", text: "Hotel Lilian con piscina" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🗺️", text: "Excursiones: Minas de Wanda, Ruinas de San Ignacio y Cataratas Argentinas" },
             { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🔥", text: "Tarifa promocional exclusiva" }
+            { icon: "💳", text: "Financiación: 6 cuotas de $34.998" }
         ],
-        itinerary: `<p>¡Viví la majestuosidad de las Cataratas del Iguazú con tarifas únicas! El paquete incluye traslados en bus de ida y vuelta, alojamiento en hotel seleccionado con desayuno y coordinación permanente.</p>`,
-        importantNotes: `<p>- Tarifa Promocional: ANTES $399.990 → AHORA $199.990 (¡50% OFF!).</p><p>- Cupos limitados disponibles con esta tarifa única.</p>`,
-        boardingPoints: `<ul><li>Múltiples puntos de embarque en CABA y GBA.</li></ul>`
+        itinerary: `<p>¡Salida Especial Super Sale a Cataratas del Iguazú! Disfrutá de uno de los destinos más increíbles del mundo. El paquete incluye traslados en bus de ida y vuelta, 3 noches de alojamiento en el Hotel Lilian (con piscina), desayuno incluido, coordinación permanente y excursiones a Minas de Wanda, Ruinas de San Ignacio y Cataratas Argentinas.</p>`,
+        importantNotes: `<p>- Tarifa Super Sale: ANTES $279.990 → AHORA $139.990 + Gastos Administrativos ($50.000).</p><p>- Financiación disponible en 6 cuotas de $34.998.</p><p>- Salidas en Junio. Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`
+    },
+    {
+        id: "gualeguaychu-supersale",
+        title: "Gualeguaychú Super Sale",
+        season: "supersale",
+        price: "$89.990",
+        image: "nuevo22_6/gualeguaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHU' VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
+            { icon: "🏨", text: "Hotel Robles / Viedma" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "♨️", text: "Traslado a Termas de Gualeguaychú" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "💳", text: "Financiación: 6 cuotas de $23.333" }
+        ],
+        itinerary: `<p>¡Escapada a Gualeguaychú al precio más bajo del año! Disfrutá de la tranquilidad, el río y las termas. El paquete incluye traslados en bus ida y vuelta, 1 noche de alojamiento en el Hotel Robles o Hotel Viedma con media pensión, traslado incluido a las Termas de Gualeguaychú y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Super Sale: ANTES $179.990 → AHORA $89.990 + Gastos Administrativos ($50.000).</p><p>- Financiación disponible en 6 cuotas de $23.333.</p><p>- Salidas en Junio (2 días / 1 noche). Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en CABA y GBA.</li></ul>`
     },
     {
         id: "mendoza-supersale",
         title: "Mendoza Super Sale",
         season: "supersale",
-        price: "$179.990",
-        image: "nuevo19_6/mendoza.jpeg",
+        price: "$139.990",
+        image: "nuevo22_6/mendoza.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MENDOZA VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix Confort de ida y vuelta" },
-            { icon: "🏨", text: "Alojamiento céntrico con desayuno" },
-            { icon: "🍷", text: "Visita a bodegas seleccionadas" },
-            { icon: "👤", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>¡Descubrí los paisajes y vinos de Mendoza a mitad de precio! El paquete incluye traslados en bus, alojamiento en hotel céntrico con desayuno, excursiones incluidas (bodegas) y coordinación permanente.</p>`,
-        importantNotes: `<p>- Tarifa Promocional: ANTES $359.990 → AHORA $179.990 (¡50% OFF!).</p><p>- Cupos limitados: reserva con seña mínima para congelar precio.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque habituales en CABA y GBA.</li></ul>`
-    },
-    {
-        id: "salta-supersale",
-        title: "Salta Super Sale",
-        season: "supersale",
-        price: "$229.990",
-        image: "nuevo19_6/salta.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
-        features: [
             { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
+            { icon: "🏨", text: "Hotel Géminis" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "♨️", text: "Traslado a Termas de Cacheuta" },
             { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🔥", text: "Tarifa Super Sale especial" }
+            { icon: "💳", text: "Financiación: 6 cuotas de $34.998" }
         ],
-        itinerary: `<p>¡Salida Especial Super Sale a Salta! Recorré el norte argentino con el mejor precio del mercado. Incluye traslados en bus ida y vuelta, alojamiento seleccionado con media pensión y coordinación.</p>`,
-        importantNotes: `<p>- Tarifa Promocional: ANTES $459.990 → AHORA $229.990 (¡50% OFF!).</p><p>- Cupos estrictamente limitados. ¡Asegurá tu lugar hoy!</p>`,
+        itinerary: `<p>¡Mendoza a un precio increíble! Disfrutá de la nieve, la ciudad y el relax en la montaña. El paquete incluye traslados en bus ida y vuelta, 3 noches de alojamiento en el Hotel Géminis con desayuno, traslado incluido a las Termas de Cacheuta y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Super Sale: ANTES $279.990 → AHORA $139.990 + Gastos Administrativos ($50.000).</p><p>- Financiación disponible en 6 cuotas de $34.998.</p><p>- Salidas en Junio (6 días / 3 noches). Cupos limitados.</p>`,
         boardingPoints: `<ul><li>Puntos de embarque habituales en GBA y CABA.</li></ul>`
     },
     {
-        id: "san-rafael-supersale",
-        title: "San Rafael Super Sale",
+        id: "tandil-supersale",
+        title: "Tandil Super Sale",
         season: "supersale",
-        price: "$179.990",
-        image: "nuevo19_6/san_rafael.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN RAFAEL VEND VACACIONES DE INVIERNO 2026.pdf",
+        price: "$99.990",
+        image: "nuevo22_6/tandil.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/TANDIL VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🏔️", text: "Excursión a Valle Grande y Cañón del Atuel" }
+            { icon: "🏨", text: "Hotel El Turista" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "👤", text: "Coordinación permanente" }
         ],
-        itinerary: `<p>¡San Rafael al mejor precio de la temporada! Disfrutá de Valle Grande y el Cañón del Atuel. El paquete incluye traslados, alojamiento con media pensión y coordinación permanente.</p>`,
-        importantNotes: `<p>- Tarifa Promocional: ANTES $359.990 → AHORA $179.990 (¡50% OFF!).</p><p>- Reserva inmediata para congelar tarifa.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en CABA y GBA.</li></ul>`
-    },
-    {
-        id: "villa-carlos-paz-supersale",
-        title: "Villa Carlos Paz Super Sale",
-        season: "supersale",
-        price: "$149.990",
-        image: "nuevo19_6/villa_carlos_paz.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
-        features: [
-            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🔥", text: "Tarifa Super Sale destacada" }
-        ],
-        itinerary: `<p>¡Viví la diversión de Villa Carlos Paz en Córdoba con una oferta increíble! Incluye traslados en bus de última generación, alojamiento en hotel con media pensión y coordinación permanente.</p>`,
-        importantNotes: `<p>- Tarifa Promocional: ANTES $299.990 → AHORA $149.990 (¡50% OFF!).</p><p>- Cupos limitados. ¡Asegurá tu lugar hoy!</p>`,
+        itinerary: `<p>¡Salida Especial a Tandil en Junio! Recorré las sierras, el calvario y disfrutá de los mejores quesos y embutidos. El paquete incluye traslados en bus de ida y vuelta, 1 noche de alojamiento en el Hotel El Turista con media pensión y coordinación permanente.</p>`,
+        importantNotes: `<p>- Tarifa Super Sale: ANTES $199.990 → AHORA $99.990 + Gastos Administrativos ($50.000).</p><p>- Salidas en Junio (2 días / 1 noche). Cupos limitados.</p>`,
         boardingPoints: `<ul><li>Múltiples puntos de embarque en CABA y GBA.</li></ul>`
     }
 ];
