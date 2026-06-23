@@ -1342,6 +1342,48 @@ const paquetesData = [
         itinerary: `<p>¡Salida Especial a Tandil en Junio! Recorré las sierras, el calvario y disfrutá de los mejores quesos y embutidos. El paquete incluye traslados en bus de ida y vuelta, 1 noche de alojamiento en el Hotel El Turista con media pensión y coordinación permanente.</p>`,
         importantNotes: `<p>- Tarifa Super Sale: ANTES $199.990 → AHORA $99.990 + Gastos Administrativos ($50.000).</p><p>- Salidas en Junio (2 días / 1 noche). Cupos limitados.</p>`,
         boardingPoints: `<ul><li>Múltiples puntos de embarque en CABA y GBA.</li></ul>`
+    },
+    {
+        id: "feriado-9-de-julio",
+        title: "Feriado 9 de Julio — Día de la Independencia",
+        season: "feriados",
+        price: "Consultar",
+        image: "9JULIO/resumen.jpeg",
+        features: [
+            { icon: "📅", text: "Feriado 9 de Julio" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" },
+            { icon: "📍", text: "Villa de Merlo — $269.990" },
+            { icon: "📍", text: "Villa Carlos Paz — $249.990" },
+            { icon: "📍", text: "Gualeguaychú — $229.990" },
+            { icon: "📍", text: "Tandil — $199.990" },
+            { icon: "📍", text: "San Pedro — $109.990" },
+            { icon: "📍", text: "Campo La Herradura — $99.990" },
+            { icon: "📍", text: "Termas de Guaychú — $99.990" }
+        ],
+        itinerary: `
+            <p>Disfrutá del fin de semana largo del 9 de Julio con nuestra espectacular promo 4x3: ¡viajan 4 y pagan 3! Elegí entre nuestros increíbles destinos nacionales con traslados y alojamiento incluidos.</p>
+            <br>
+            <p><strong>Destinos y precios por persona (4x3):</strong></p>
+            <ul>
+                <li><strong>Villa de Merlo:</strong> $269.990</li>
+                <li><strong>Villa Carlos Paz:</strong> $249.990</li>
+                <li><strong>Gualeguaychú:</strong> $229.990</li>
+                <li><strong>Tandil:</strong> $199.990</li>
+                <li><strong>San Pedro:</strong> $109.990</li>
+                <li><strong>Campo La Herradura:</strong> $99.990</li>
+                <li><strong>Termas de Guaychú:</strong> $99.990</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>⚠️ Promo por tiempo limitado y cupos sujetos a disponibilidad.</p>
+            <p>- Tarifas por persona en base doble/triple.</p>
+            <p>- Reservá con el 30% de seña y aboná el saldo restante en cuotas accesibles.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Múltiples puntos de embarque en CABA y GBA según destino.</li>
+            </ul>
+        `
     }
 ];
 
