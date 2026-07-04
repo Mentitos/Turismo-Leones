@@ -1274,7 +1274,7 @@ const paquetesData = [
         title: "San Pedro Super Sale",
         season: "supersale",
         price: "$79.990",
-        image: "nuevo25_6/san_pedro.jpeg",
+        image: "9_7/san_pedro.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN PEDRO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
@@ -1294,7 +1294,7 @@ const paquetesData = [
         title: "Termas de Guaychú Super Sale",
         season: "supersale",
         price: "$79.990",
-        image: "nuevo25_6/termas_guaychu.jpeg",
+        image: "9_7/termas_guaychu.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
             { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
@@ -1303,6 +1303,23 @@ const paquetesData = [
             { icon: "💳", text: "Financiación: 6 cuotas de $18.665" }
         ],
         itinerary: `<p>¡Salida Especial Super Sale a las Termas del Guaychú! Excelente opción para desconectar de la rutina y disfrutar con familia o amigos. El paquete incluye traslados en bus confort de ida y vuelta, coordinación permanente y la entrada general incluida al Complejo Termal para disfrutar de sus piscinas de agua salada a temperatura promedio de 37°C. Cuenta con reserva natural para caminatas por senderos y parrillas disponibles.</p>`,
+        importantNotes: `<p>- Tarifa Super Sale: ANTES $99.990 → AHORA $79.990.</p><p>- Financiación disponible en 6 cuotas fijas de $18.665.</p><p>- Salida el 28 de Junio. Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en CABA y GBA.</li></ul>`
+    },
+    {
+        id: "campo-la-herradura-supersale",
+        title: "Campo La Herradura Super Sale",
+        season: "supersale",
+        price: "$79.990",
+        image: "9_7/campo_herradura.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
+            { icon: "🍖", text: "Almuerzo incluido" },
+            { icon: "👤", text: "Coordinación permanente" },
+            { icon: "💳", text: "Financiación: 6 cuotas de $18.665" }
+        ],
+        itinerary: `<p>¡Salida Especial Super Sale a Campo La Herradura! Disfrutá de un día de campo inolvidable con traslados de ida y vuelta en bus confort, coordinación permanente y un exquisito almuerzo criollo.</p>`,
         importantNotes: `<p>- Tarifa Super Sale: ANTES $99.990 → AHORA $79.990.</p><p>- Financiación disponible en 6 cuotas fijas de $18.665.</p><p>- Salida el 28 de Junio. Cupos limitados.</p>`,
         boardingPoints: `<ul><li>Puntos de embarque en CABA y GBA.</li></ul>`
     },

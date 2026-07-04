@@ -2580,10 +2580,24 @@
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
-                <!-- 1. San Pedro -->
+                <!-- 1. Campo La Herradura -->
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Campo La Herradura Super Sale', 'supersale')">
+                    <img src="9_7/campo_herradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura">
+                    <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4" muted class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Campo La Herradura</span>
+                        <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$79.990</span>
+                        <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $99.990</span>
+                    </div>
+                </div>
+
+                <!-- 2. San Pedro -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('San Pedro Super Sale', 'supersale')">
-                    <img src="nuevo25_6/san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
+                    <img src="9_7/san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
                     <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
@@ -2594,10 +2608,10 @@
                     </div>
                 </div>
 
-                <!-- 2. Termas de Guaychú -->
+                <!-- 3. Termas de Guaychú -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Termas de Guaychú Super Sale', 'supersale')">
-                    <img src="nuevo25_6/termas_guaychu.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
+                    <img src="9_7/termas_guaychu.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
                     <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/VIDEO-2025-09-30-16-56-07.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
                     <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
@@ -2605,20 +2619,6 @@
                         <span class="flyer-overlay-title">Termas de Guaychú</span>
                         <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$79.990</span>
                         <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $99.990</span>
-                    </div>
-                </div>
-
-                <!-- 3. Villa Carlos Paz -->
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('Villa Carlos Paz Super Sale', 'supersale')">
-                    <img src="nuevo25_6/villa_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
-                    <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/VIDEO-2025-10-13-20-00-51.mp4" muted class="flyer-video" loop playsinline></video>
-                    <div class="video-badge">▶ VIDEO</div>
-                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">Villa Carlos Paz</span>
-                        <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$139.990</span>
-                        <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $189.990</span>
                     </div>
                 </div>
             </div>
@@ -4929,29 +4929,6 @@
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
-                <!-- Feriado 9 de Julio -->
-                <div class="flyer-card" onclick="openPackage('Feriado 9 de Julio', 'feriados')">
-                    <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="9JULIO/resumen.jpeg" class="flyer-media flyer-img" alt="Feriado 9 de Julio">
-                    <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">Feriado 9 de Julio</span>
-                        <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #1b5e20; font-size: 9px; margin-top: 4px; font-weight: bold; border: 1px solid #1b5e20; align-self: flex-start;">4x3 – VIAJAN 4 PAGAN 3</span>
-                        <span class="flyer-overlay-badge" style="background-color: #d32f2f; color: white; font-size: 9px; margin-top: 4px; font-weight: bold; align-self: flex-start;">Feriado 9 de Julio</span>
-                        <div class="flyer-overlay-dates" style="margin-top: 8px; font-size: 11px; opacity: 0.95; line-height: 1.4; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 6px; width: 100%;">
-                            <span style="font-weight: bold; display: block; margin-bottom: 2px;">Destinos y precios (4x3):</span>
-                            <div style="display: flex; flex-direction: column; gap: 2px; font-size: 10px;">
-                                <span>Villa de Merlo — $269.990</span>
-                                <span>Villa Carlos Paz — $249.990</span>
-                                <span>Gualeguaychú — $229.990</span>
-                                <span>Tandil — $199.990</span>
-                                <span>San Pedro — $109.990</span>
-                                <span>Campo La Herradura — $99.990</span>
-                                <span>Termas de Guaychú — $99.990</span>
-                                <span style="font-size: 9px; color: #ffd700; font-weight: bold; margin-top: 4px; text-transform: uppercase;">⚠️ Promo por tiempo limitado y cupos sujetos a disponibilidad</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Villa Carlos Paz', 'feriados')">
