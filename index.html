@@ -1355,6 +1355,23 @@
             z-index: 2;
         }
 
+        .oferta-sticker {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            width: clamp(55px, 7vw, 75px);
+            height: auto;
+            z-index: 3;
+            pointer-events: none;
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+            animation: pulse-subtle 3s infinite ease-in-out;
+        }
+
+        @keyframes pulse-subtle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.06); }
+        }
+
         .status-badge {
             position: absolute;
             top: 12px;
@@ -2583,6 +2600,7 @@
                 <!-- 1. Campo La Herradura -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Campo La Herradura Super Sale', 'supersale')">
+                    <img src="sticker/sticker.webp" class="oferta-sticker" alt="Oferta Especial">
                     <img src="9_7/campo_herradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura">
                     <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
@@ -2597,6 +2615,7 @@
                 <!-- 2. San Pedro -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('San Pedro Super Sale', 'supersale')">
+                    <img src="sticker/sticker.webp" class="oferta-sticker" alt="Oferta Especial">
                     <img src="9_7/san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
                     <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
@@ -2611,6 +2630,7 @@
                 <!-- 3. Termas de Guaychú -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Termas de Guaychú Super Sale', 'supersale')">
+                    <img src="sticker/sticker.webp" class="oferta-sticker" alt="Oferta Especial">
                     <img src="9_7/termas_guaychu.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
                     <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/VIDEO-2025-09-30-16-56-07.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
@@ -2626,336 +2646,7 @@
     </div>
 
 
-        <!-- HOT SALE TURISMO LEONES -->
-        <div class="section-header" id="nuevas-promociones">
-            <h2>&#x1F525; HOT SALE</h2>
-        </div>
 
-        <style>
-            .hotsale-wrapper {
-                background: linear-gradient(135deg, #c0392b 0%, #e74c3c 40%, #ff6b35 100%);
-                position: relative;
-                overflow: hidden;
-                border-bottom: 3px solid var(--gold);
-            }
-
-            .hotsale-wrapper::before {
-                content: '';
-                position: absolute;
-                inset: 0;
-                background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.03) 0px, rgba(255, 255, 255, 0.03) 2px, transparent 2px, transparent 12px);
-                pointer-events: none;
-            }
-
-            .hotsale-inner {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 0;
-                max-width: 1200px;
-                margin: 0 auto;
-            }
-
-            .hotsale-flyer-col {
-                position: relative;
-                overflow: hidden;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-            }
-
-            .hotsale-flyer-col img {
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: contain;
-                transition: opacity 0.4s ease;
-                position: relative;
-                z-index: 1;
-            }
-
-            .hotsale-flyer-col video {
-                position: absolute;
-                inset: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-                opacity: 0;
-                pointer-events: none;
-                transition: opacity 0.4s ease;
-                z-index: 2;
-            }
-
-            .hotsale-flyer-col.playing img {
-                opacity: 0;
-            }
-
-            .hotsale-flyer-col.playing video {
-                opacity: 1;
-                pointer-events: auto;
-            }
-
-            .hotsale-play-btn {
-                position: absolute;
-                z-index: 3;
-                width: 68px;
-                height: 68px;
-                border-radius: 50%;
-                background: rgba(255, 215, 0, 0.92);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
-                transition: transform 0.2s, background 0.2s, opacity 0.3s;
-                pointer-events: none;
-            }
-
-            .hotsale-play-btn svg {
-                width: 28px;
-                height: 28px;
-                fill: #7b1a00;
-                margin-left: 4px;
-            }
-
-            .hotsale-flyer-col:hover .hotsale-play-btn {
-                transform: scale(1.12);
-                background: #fff;
-            }
-
-            .hotsale-flyer-col.playing .hotsale-play-btn {
-                opacity: 0;
-            }
-
-            .hotsale-flyer-col.playing:hover .hotsale-play-btn {
-                opacity: 1;
-            }
-
-            .hotsale-tap-hint {
-                position: absolute;
-                bottom: 14px;
-                left: 50%;
-                transform: translateX(-50%);
-                background: rgba(0, 0, 0, 0.5);
-                color: #fff;
-                font-size: 11px;
-                font-weight: 700;
-                letter-spacing: 2px;
-                padding: 5px 14px;
-                border-radius: 20px;
-                backdrop-filter: blur(6px);
-                pointer-events: none;
-                transition: opacity 0.3s;
-                white-space: nowrap;
-            }
-
-            .hotsale-flyer-col.playing .hotsale-tap-hint {
-                opacity: 0;
-            }
-
-            .hotsale-info-col {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 32px 36px;
-                gap: 18px;
-                position: relative;
-                z-index: 1;
-            }
-
-            .hs-promo-label {
-                font-family: 'Bebas Neue', sans-serif;
-                font-size: 12px;
-                color: #ffd700;
-                letter-spacing: 5px;
-                margin-bottom: -8px;
-            }
-
-            .hs-promo-title {
-                font-family: 'Bebas Neue', sans-serif;
-                font-size: clamp(30px, 4vw, 50px);
-                color: #fff;
-                line-height: 1;
-                letter-spacing: 1px;
-                text-shadow: 0 3px 14px rgba(0, 0, 0, 0.3);
-            }
-
-            .hs-promo-title span {
-                color: #ffd700;
-            }
-
-            .hs-deals {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .hs-deal {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                background: rgba(255, 255, 255, 0.12);
-                border: 1px solid rgba(255, 255, 255, 0.2);
-                border-radius: 12px;
-                padding: 12px 16px;
-                backdrop-filter: blur(6px);
-                transition: background 0.2s;
-            }
-
-            .hs-deal:hover {
-                background: rgba(255, 255, 255, 0.2);
-            }
-
-            .hs-deal-badge {
-                font-family: 'Bebas Neue', sans-serif;
-                font-size: 26px;
-                color: #ffd700;
-                line-height: 1;
-                flex-shrink: 0;
-                text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-            }
-
-            .hs-deal-text {
-                font-size: 13px;
-                color: rgba(255, 255, 255, 0.95);
-                font-weight: 600;
-                line-height: 1.4;
-            }
-
-            .hs-deal-text strong {
-                color: #fff;
-                display: block;
-                font-size: 14px;
-            }
-
-            .hs-sena-row {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                font-size: 13px;
-                color: rgba(255, 255, 255, 0.9);
-                font-weight: 700;
-                background: rgba(255, 215, 0, 0.15);
-                border: 1px solid rgba(255, 215, 0, 0.35);
-                border-radius: 10px;
-                padding: 10px 14px;
-            }
-
-            .hs-vigencia {
-                font-size: 11px;
-                color: rgba(255, 255, 255, 0.65);
-                letter-spacing: 1px;
-                text-align: center;
-                font-weight: 600;
-            }
-
-            .hotsale-cta {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                background: #ffd700;
-                color: #7b1a00;
-                font-family: 'Bebas Neue', sans-serif;
-                font-size: 18px;
-                letter-spacing: 2px;
-                padding: 14px 32px;
-                border-radius: 50px;
-                text-decoration: none;
-                border: none;
-                cursor: pointer;
-                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
-                transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
-                width: 100%;
-            }
-
-            .hotsale-cta:hover {
-                background: #fff;
-                transform: translateY(-3px);
-                box-shadow: 0 10px 32px rgba(0, 0, 0, 0.4);
-            }
-
-            @media (max-width: 768px) {
-                .hotsale-inner {
-                    grid-template-columns: 1fr;
-                }
-
-                .hotsale-flyer-col {
-                    min-height: 260px;
-                }
-
-                .hotsale-info-col {
-                    padding: 24px 20px;
-                    gap: 14px;
-                }
-
-                .hs-deal {
-                    padding: 10px 14px;
-                }
-            }
-        </style>
-
-        <div class="hotsale-wrapper">
-            <div class="hotsale-inner">
-                <div class="hotsale-flyer-col" id="hotsale-player" onclick="toggleHotsaleVideo()">
-                    <img src="nuevo27_5/hotsale/resumen_hotsale.jpeg" alt="Hot Sale Turismo Leones 2026">
-                    <video loop playsinline id="hotsale-video" preload="none">
-                        <source src="hotsale/hotsale_video.mp4" type="video/mp4">
-                    </video>
-                    <div class="hotsale-play-btn">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z" />
-                        </svg>
-                    </div>
-                    <div class="hotsale-tap-hint">&#x25B6; TOCA PARA VER EL VIDEO</div>
-                </div>
-                <div class="hotsale-info-col">
-                    <div class="hs-promo-label">&#x1F525; TRAVELAR TURISMO &mdash; HOT SALE 2026</div>
-                    <div class="hs-promo-title">
-                        LAS MEJORES<br>PROMOS DEL<br><span>A&#xD1;O</span>
-                    </div>
-                    <div class="hs-deals">
-                        <div class="hs-deal">
-                            <div class="hs-deal-badge">3x2</div>
-                            <div class="hs-deal-text">
-                                <strong>&#x2705; Mayo &mdash; Viajan 3, pagan 2</strong>
-                                Pag&aacute;s 2 pasajes y viajan 3 &mdash; destinos en bus y avi&oacute;n &#x1F6A0;&#x2708;&#xFE0F;
-                            </div>
-                        </div>
-                        <div class="hs-deal">
-                            <div class="hs-deal-badge">4x3</div>
-                            <div class="hs-deal-text">
-                                <strong>&#x2705; Junio/Julio (incluye vacaciones de invierno) &mdash; Viajan 4, pagan 3</strong>
-                                Pag&aacute;s 3 pasajes y viajan 4 &mdash; ideal para grupos y familias &#x1F46A;
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hs-sena-row">
-                        &#x1F4B3;&nbsp; Reserv&eacute; con solo el <strong
-                            style="color:#ffd700;font-size:16px;margin:0 4px;">30%</strong> de se&ntilde;a &mdash;
-                        &iexcl;cuotas accesibles!
-                    </div>
-                    <div class="hs-vigencia">&#x23F3; V&aacute;lido hasta el 28 de mayo inclusive</div>
-                    <a href="https://wa.me/5491151233885" class="hotsale-cta" target="_blank" style="margin-top: 10px;">
-                        🔥 ¡RESERVAR PROMO POR WHATSAPP!
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <script>
-            function toggleHotsaleVideo() {
-                var player = document.getElementById('hotsale-player');
-                var video = document.getElementById('hotsale-video');
-                if (player.classList.contains('playing')) {
-                    player.classList.remove('playing');
-                    video.pause();
-                } else {
-                    player.classList.add('playing');
-                    video.play();
-                }
-            }
-        </script>
 
 
 
@@ -3004,7 +2695,7 @@
 
         <!-- CARRUSEL INVIERNO AEREO HOT SALE -->
         <div class="season-section" data-section-season="invierno">
-            <h2 class="season-title">&#x2744;&#xFE0F; DESTINOS DE INVIERNO EN AÉREO &mdash; HOT SALE 2026</h2>
+            <h2 class="season-title">&#x2744;&#xFE0F; DESTINOS DE INVIERNO EN AÉREO</h2>
             <div class="flyers-wrapper">
                 <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
                 <div class="flyers-track">
@@ -3063,7 +2754,7 @@
 
         <!-- CARRUSEL OCTUBRE HOT SALE -->
         <div class="season-section" data-section-season="octubre">
-            <h2 class="season-title">🔥 DESTINOS HOT SALE</h2>
+            <h2 class="season-title">🔥 DESTINOS DESTACADOS</h2>
             <div class="flyers-wrapper">
                 <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
                 <div class="flyers-track">
@@ -5536,13 +5227,11 @@
         });
 
         (function checkPromociones() {
-            const hotsaleSection = document.getElementById('nuevas-promociones');
             const supersaleSection = document.getElementById('supersale-travelero-section');
             const navPromo = document.getElementById('nav-promociones');
             if (!navPromo) return;
-            const hasHotsale = !!hotsaleSection;
             const hasSupersale = supersaleSection && supersaleSection.querySelectorAll('.flyer-card').length > 0;
-            if (!hasHotsale && !hasSupersale) {
+            if (!hasSupersale) {
                 navPromo.style.display = 'none';
             } else {
                 navPromo.style.display = 'block';

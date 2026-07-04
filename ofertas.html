@@ -1342,6 +1342,23 @@
             z-index: 2;
         }
 
+        .oferta-sticker {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            width: clamp(55px, 7vw, 75px);
+            height: auto;
+            z-index: 3;
+            pointer-events: none;
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
+            animation: pulse-subtle 3s infinite ease-in-out;
+        }
+
+        @keyframes pulse-subtle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.06); }
+        }
+
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -2760,6 +2777,7 @@
                 <!-- 1. Campo La Herradura -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Campo La Herradura Super Sale', 'supersale')">
+                    <img src="sticker/sticker.webp" class="oferta-sticker" alt="Oferta Especial">
                     <img src="9_7/campo_herradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura">
                     <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
@@ -2774,6 +2792,7 @@
                 <!-- 2. San Pedro -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('San Pedro Super Sale', 'supersale')">
+                    <img src="sticker/sticker.webp" class="oferta-sticker" alt="Oferta Especial">
                     <img src="9_7/san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
                     <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
@@ -2788,6 +2807,7 @@
                 <!-- 3. Termas de Guaychú -->
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Termas de Guaychú Super Sale', 'supersale')">
+                    <img src="sticker/sticker.webp" class="oferta-sticker" alt="Oferta Especial">
                     <img src="9_7/termas_guaychu.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
                     <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/VIDEO-2025-09-30-16-56-07.mp4" muted class="flyer-video" loop playsinline></video>
                     <div class="video-badge">▶ VIDEO</div>
