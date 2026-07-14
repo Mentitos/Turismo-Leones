@@ -30,18 +30,24 @@ const paquetesData = [
         id: "bariloche-aereo",
         title: "Bariloche Aéreo",
         season: "invierno",
-        price: "Consultar",
-        image: "",
+        price: "$919.990",
+        image: "14_7/bariloche.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/BARILOCHE AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
             { icon: "✈️", text: "Aéreo desde Buenos Aires" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
+            { icon: "🏨", text: "Alojamiento en Hotel Internacional o similar" },
+            { icon: "🌙", text: "4 días / 3 noches" },
+            { icon: "🍽️", text: "Media Pensión" },
             { icon: "🚌", text: "Traslados in/out" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "🧳", text: "Equipaje de mano de 12kg incluido" },
+            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
-        itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`
+        itinerary: `<p>¡Salida Especial Vacaciones de Invierno a San Carlos de Bariloche! Disfrutá de la nieve y los maravillosos paisajes de la Patagonia. El paquete incluye aéreos desde Buenos Aires, traslados de ida y vuelta al hotel, 3 noches de alojamiento en el Hotel Internacional o similar con Media Pensión y equipaje de mano de 12kg.</p>`,
+        importantNotes: `<p>- Valor por persona: $919.990 + Gastos Administrativos ($10.000).</p><p>- Promoción 4x3: ¡Viajan 4 y pagan 3!</p><p>- Financiación disponible en 6 cuotas fijas de $216.998.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`,
+        availability: [
+            { date: "18/07 al 23/07", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
     },
     {
         id: "ushuaia-aereo",
@@ -1270,76 +1276,25 @@ const paquetesData = [
         ]
     },
     {
-        id: "san-pedro-supersale",
-        title: "San Pedro Super Sale",
+        id: "san-rafael-supersale",
+        title: "San Rafael Super Sale",
         season: "supersale",
-        price: "$79.990",
-        image: "9_7/san_pedro.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN PEDRO VEND VACACIONES DE INVIERNO 2026.pdf",
+        price: "$239.990",
+        image: "14_7/san_rafael.jpeg",
         features: [
             { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
-            { icon: "🍽️", text: "Almuerzo con Parrillada completa" },
-            { icon: "🍊", text: "Visita guiada a La Campiña de Mónica y César" },
-            { icon: "📍", text: "Parada histórica en Vuelta de Obligado" },
-            { icon: "🍰", text: "Visita al complejo Las Amalias y degustación de Ensaimadas" },
+            { icon: "🏨", text: "Alojamiento en Hotel Puesta del Sol" },
+            { icon: "🌙", text: "6 días / 3 noches" },
+            { icon: "🍽️", text: "Media Pensión" },
             { icon: "👤", text: "Coordinación permanente" },
-            { icon: "💳", text: "Financiación: 6 cuotas de $18.665" }
+            { icon: "💳", text: "Financiación: 6 cuotas de $58.331" }
         ],
-        itinerary: `<p>¡Salida Especial Super Sale a San Pedro! Disfrutá de un día espectacular reconectando con la naturaleza, la historia y los sabores tradicionales. Incluye viaje de ida y vuelta en bus mix confort, coordinación permanente, un almuerzo con una típica y sabrosa parrillada, visita guiada en La Campiña para recorrer sus plantaciones de naranjos, parada en el Hito histórico Vuelta de Obligado y tiempo libre para merendar o comprar recuerdos en Las Amalias.</p>`,
-        importantNotes: `<p>- Tarifa Super Sale: ANTES $109.990 → AHORA $79.990.</p><p>- Financiación disponible en 6 cuotas fijas de $18.665.</p><p>- Salida el 28 de Junio. Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en CABA y GBA.</li></ul>`
-    },
-    {
-        id: "termas-de-guaychu-supersale",
-        title: "Termas de Guaychú Super Sale",
-        season: "supersale",
-        price: "$79.990",
-        image: "9_7/termas_guaychu.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
-        features: [
-            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
-            { icon: "♨️", text: "Entrada incluida al Complejo Termal" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "💳", text: "Financiación: 6 cuotas de $18.665" }
-        ],
-        itinerary: `<p>¡Salida Especial Super Sale a las Termas del Guaychú! Excelente opción para desconectar de la rutina y disfrutar con familia o amigos. El paquete incluye traslados en bus confort de ida y vuelta, coordinación permanente y la entrada general incluida al Complejo Termal para disfrutar de sus piscinas de agua salada a temperatura promedio de 37°C. Cuenta con reserva natural para caminatas por senderos y parrillas disponibles.</p>`,
-        importantNotes: `<p>- Tarifa Super Sale: ANTES $99.990 → AHORA $79.990.</p><p>- Financiación disponible en 6 cuotas fijas de $18.665.</p><p>- Salida el 28 de Junio. Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en CABA y GBA.</li></ul>`
-    },
-    {
-        id: "campo-la-herradura-supersale",
-        title: "Campo La Herradura Super Sale",
-        season: "supersale",
-        price: "$79.990",
-        image: "9_7/campo_herradura.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
-        features: [
-            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
-            { icon: "🍖", text: "Almuerzo incluido" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "💳", text: "Financiación: 6 cuotas de $18.665" }
-        ],
-        itinerary: `<p>¡Salida Especial Super Sale a Campo La Herradura! Disfrutá de un día de campo inolvidable con traslados de ida y vuelta en bus confort, coordinación permanente y un exquisito almuerzo criollo.</p>`,
-        importantNotes: `<p>- Tarifa Super Sale: ANTES $99.990 → AHORA $79.990.</p><p>- Financiación disponible en 6 cuotas fijas de $18.665.</p><p>- Salida el 28 de Junio. Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en CABA y GBA.</li></ul>`
-    },
-    {
-        id: "villa-carlos-paz-supersale",
-        title: "Villa Carlos Paz Super Sale",
-        season: "supersale",
-        price: "$139.990",
-        image: "nuevo25_6/villa_carlos_paz.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
-        features: [
-            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
-            { icon: "🏨", text: "Alojamiento en Hotel Palmas del Lago" },
-            { icon: "🍽️", text: "Media Pensión (desayuno y cena)" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "💳", text: "Financiación: 6 cuotas de $34.998" }
-        ],
-        itinerary: `<p>¡Super Sale a Villa Carlos Paz! Disfrutá de las sierras de Córdoba con traslados en bus confort, 3 noches de alojamiento en el prestigioso Hotel Palmas del Lago (cuenta con piscina climatizada), régimen de Media Pensión (desayuno y cena) y coordinación permanente durante el viaje.</p>`,
-        importantNotes: `<p>- Tarifa Super Sale: ANTES $189.990 → AHORA $139.990 + Gastos Administrativos ($10.000).</p><p>- Financiación disponible en 6 cuotas fijas de $34.998.</p><p>- Salida el 29 de Junio. Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en CABA y GBA.</li></ul>`
+        itinerary: `<p>¡Salida Especial Super Sale a San Rafael, Mendoza! Disfrutá de este increíble destino con todo resuelto: traslados de ida y vuelta en bus confort, 3 noches de alojamiento en el Hotel Puesta del Sol con régimen de Media Pensión y coordinación permanente durante todo el viaje.</p>`,
+        importantNotes: `<p>- Tarifa Super Sale: ANTES $359.990 → AHORA $239.990 + Gastos Administrativos ($10.000).</p><p>- Financiación disponible en 6 cuotas fijas de $58.331.</p><p>- Salida el 17 de Julio. Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA.</li></ul>`,
+        availability: [
+            { date: "17/07", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
     },
     {
         id: "feriado-9-de-julio",
