@@ -3682,7 +3682,7 @@
             if (typeof event !== 'undefined' && event.currentTarget) {
                 const target = event.currentTarget;
                 const vid = target.querySelector('video');
-                const img = target.querySelector('img');
+                const img = target.querySelector('img.flyer-img') || target.querySelector('img.flyer-media') || target.querySelector('img:not(.oferta-sticker)') || target.querySelector('img');
 
                 if (!videoUrl && vid) videoUrl = vid.getAttribute('data-src') || vid.getAttribute('src');
                 if (!imageUrl && img) imageUrl = img.getAttribute('src');

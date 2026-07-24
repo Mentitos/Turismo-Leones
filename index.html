@@ -2566,49 +2566,80 @@
     <div id="hero-top"></div>
     <main class="font-body">
 
-    <!-- SECCIÓN PROMO CUMPLEAÑOS / VOUCHER -->
-    <div style="padding: clamp(20px, 4vw, 40px) 15px; max-width: 1200px; margin: 0 auto; box-sizing: border-box;">
-        <div style="background: var(--light-gray); border-radius: 16px; border: 2px solid var(--gold); padding: 30px 20px; box-shadow: 0 8px 32px rgba(10, 26, 107, 0.08); display: flex; flex-direction: column; align-items: center; gap: 24px; animation: fadeIn 0.8s ease-in-out;">
-            
-            <!-- Contenedor del Voucher -->
-            <div style="width: 100%; max-width: 800px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); border: 2px solid var(--navy); background: #ffffff;">
-                <img src="voucher/voucher.jpeg" alt="Voucher de Regalo - Turismo Leones" style="width: 100%; height: auto; display: block; object-fit: contain;">
-            </div>
-
-            <!-- Texto Descriptivo -->
-            <div style="text-align: center; max-width: 750px;">
-                <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: clamp(28px, 4.5vw, 42px); color: var(--navy); letter-spacing: 2px; margin: 0 0 12px 0; line-height: 1.2;">
-                    ¡Gracias por participar del cumpleaños de Turismo Leones!
-                </h2>
-                <p style="font-family: 'Montserrat', sans-serif; font-size: clamp(15px, 2.2vw, 19px); color: #222222; font-weight: 600; line-height: 1.5; margin: 0;">
-                    Revisá tu WhatsApp, el premio ya está en camino.
-                </p>
-            </div>
-            
-        </div>
-    </div>
-
-    <!-- SUPER SALE TRAVELERO -->
-    <div class="season-section" data-section-season="supersale" id="supersale-travelero-section"
-        style="animation: fadeIn 0.5s ease-in-out; display: block; border: 3px solid #d32f2f; border-radius: 12px; padding: 20px; background: rgba(211, 47, 47, 0.03); margin: 30px 0;">
-        <h2 class="season-title" style="color: #d32f2f; margin-top: 0; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">🔥 SUPER SALE TRAVELERO <span class="section-count"></span></h2>
+    <!-- FIN DE SEMANA LARGO DE AGOSTO -->
+    <div class="season-section" data-section-season="feriado-agosto" id="feriado-agosto-section"
+        style="animation: fadeIn 0.5s ease-in-out; display: block; border: 2px solid var(--gold); border-radius: 12px; padding: 20px; background: rgba(245, 166, 35, 0.05); margin: 30px 0;">
+        <h2 class="season-title" style="color: var(--navy); margin-top: 0; font-family: 'Bebas Neue', sans-serif; font-size: 36px; letter-spacing: 2px;">
+            ☀️ FIN DE SEMANA LARGO DE AGOSTO <span class="section-count"></span>
+        </h2>
 
         <div class="flyers-wrapper has-arrows">
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
-                <!-- 1. San Rafael Super Sale -->
-                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
-                    onclick="openPackage('San Rafael Super Sale', 'supersale')">
-                    <img src="sticker/sticker.webp" class="oferta-sticker" alt="Oferta Especial">
-                    <img src="14_7/san_rafael.jpeg" class="flyer-media flyer-img" alt="San Rafael Super Sale">
-                    <video preload="none" data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4" muted class="flyer-video" loop playsinline></video>
-                    <div class="video-badge">▶ VIDEO</div>
-                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                <div class="flyer-card" onclick="openPackage('Feriado Largo de Agosto', 'feriado-agosto')">
+                    <img src="24_7/agosto_feriado_largo/sticker.31" class="oferta-sticker" alt="Promo 4x3">
+                    <img src="24_7/agosto_feriado_largo/resumen.jpeg" class="flyer-media flyer-img" alt="Fin de Semana Largo de Agosto">
                     <div class="flyer-overlay">
-                        <span class="flyer-overlay-title">San Rafael</span>
-                        <span class="flyer-overlay-badge" style="background:#f5a623;color:#0a1a6b;font-weight:900;">$239.990</span>
-                        <span class="flyer-overlay-badge" style="background:rgba(0,0,0,0.5);color:rgba(255,255,255,0.6);text-decoration:line-through;font-size:9px;">Antes $359.990</span>
+                        <span class="flyer-overlay-title">Resumen Feriado de Agosto</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                        <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #1b5e20; font-size: 9px; margin-top: 4px; font-weight: bold; border: 1px solid #1b5e20; align-self: flex-start;">PROMO 4x3</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Campo La Herradura', 'feriado-agosto')">
+                    <img src="24_7/agosto_feriado_largo/sticker.31" class="oferta-sticker" alt="Promo 4x3">
+                    <img src="24_7/agosto_feriado_largo/campo_herradura.jpeg" class="flyer-media flyer-img" alt="Campo La Herradura">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Campo La Herradura</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Gualeguaychú', 'feriado-agosto')">
+                    <img src="24_7/agosto_feriado_largo/sticker.31" class="oferta-sticker" alt="Promo 4x3">
+                    <img src="24_7/agosto_feriado_largo/guaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Gualeguaychú</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('San Pedro', 'feriado-agosto')">
+                    <img src="24_7/agosto_feriado_largo/sticker.31" class="oferta-sticker" alt="Promo 4x3">
+                    <img src="24_7/agosto_feriado_largo/san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">San Pedro</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Tandil', 'feriado-agosto')">
+                    <img src="24_7/agosto_feriado_largo/sticker.31" class="oferta-sticker" alt="Promo 4x3">
+                    <img src="24_7/agosto_feriado_largo/tandil.jpeg" class="flyer-media flyer-img" alt="Tandil">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Tandil</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Termas de Guaychú', 'feriado-agosto')">
+                    <img src="24_7/agosto_feriado_largo/sticker.31" class="oferta-sticker" alt="Promo 4x3">
+                    <img src="24_7/agosto_feriado_largo/termas_guaychu.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Termas de Guaychú</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Villa Carlos Paz', 'feriado-agosto')">
+                    <img src="24_7/agosto_feriado_largo/sticker.31" class="oferta-sticker" alt="Promo 4x3">
+                    <img src="24_7/agosto_feriado_largo/villa_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Villa Carlos Paz</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Villa de Merlo', 'feriado-agosto')">
+                    <img src="24_7/agosto_feriado_largo/sticker.31" class="oferta-sticker" alt="Promo 4x3">
+                    <img src="24_7/agosto_feriado_largo/villa_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Villa de Merlo</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
                     </div>
                 </div>
             </div>
@@ -3340,17 +3371,17 @@
             <div class="banner-route">📍 ✦ ✦ ✦ 🚌</div>
         </div>
 
-        <div class="banner banner-promo" onclick="window.location.href='ofertas.html#supersale-travelero-section'" style="cursor:pointer;"
+        <div class="banner banner-promo" onclick="window.location.href='ofertas.html#feriado-agosto-section'" style="cursor:pointer;"
             aria-label="Ver Promociones">
             <div class="banner-waves"></div>
-            <div class="promo-super">SUPER SALE TURISMO LEONES</div>
+            <div class="promo-super">PROMOCIONES Y FERIADOS XL</div>
             <div
                 style="position:relative;width:160px;height:120px;display:flex;align-items:center;justify-content:center;z-index:1">
                 <svg width="160" height="120" viewBox="0 0 160 120" style="position:absolute;top:0;left:0">
                     <polygon points="80,5 100,45 155,45 110,75 130,115 80,85 30,115 50,75 5,45 60,45" fill="#e00020"
                         stroke="#ff4444" stroke-width="2" />
                 </svg>
-                <span class="promo-2x1">2X1</span>
+                <span class="promo-2x1">4X3</span>
             </div>
         </div>
         <a href="galeria.html" class="banner banner-galeria" id="galeria-banner" aria-label="Ver galería">
@@ -3892,16 +3923,23 @@
     </div>
 
     <div class="season-section" data-section-season="invierno">
-        <h2 class="season-title">TEMPORADA DE INVIERNO <span class="section-count"></span></h2>
+        <h2 class="season-title">❄️ TEMPORADA DE INVIERNO <span class="section-count"></span></h2>
         <div class="flyers-wrapper">
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
 
+                <div class="flyer-card" onclick="openPackage('Resumen Invierno', 'invierno')">
+                    <img src="24_7/invierno/resumen.jpeg" class="flyer-media flyer-img" alt="Resumen Temporada de Invierno">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Resumen Temporada de Invierno</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                    </div>
+                </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Aimogasta', 'invierno')">
                     <div class="status-badge" style="background: rgba(245, 158, 11, 0.95);">⚠️ POCO DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_aimogasta.jpeg" class="flyer-media flyer-img" alt="Aimogasta">
+                    <img src="24_7/invierno/aimogasta.jpeg" class="flyer-media flyer-img" alt="Aimogasta">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Aimogasta/VIDEO-2025-10-29-12-12-11.mp4"
                         muted class="flyer-video" loop playsinline></video>
@@ -3922,7 +3960,7 @@
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Campo La Herradura', 'invierno')">
                     <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_campo_la_herradura.jpeg" class="flyer-media flyer-img"
+                    <img src="24_7/invierno/campo_herradura.jpeg" class="flyer-media flyer-img"
                         alt="Campo La Herradura">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4"
@@ -3942,10 +3980,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="flyer-card" onclick="openPackage('Cataratas del Iguazú', 'invierno')">
+                    <img src="24_7/invierno/cataratas_iguazu.jpeg" class="flyer-media flyer-img" alt="Cataratas del Iguazú">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Cataratas del Iguazú</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                    </div>
+                </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Villa Carlos Paz', 'invierno')">
                     <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
+                    <img src="24_7/invierno/villa_carlos_paz.jpeg" class="flyer-media flyer-img" alt="Villa Carlos Paz">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4"
                         muted class="flyer-video" loop playsinline></video>
@@ -3970,7 +4015,7 @@
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Gualeguaychú', 'invierno')">
                     <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_gualeguaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú">
+                    <img src="24_7/invierno/guaychu.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/ee3c5736-9583-4565-947c-d11d9ce6e4a6.MP4"
                         muted class="flyer-video" loop playsinline></video>
@@ -3987,6 +4032,13 @@
                                 <span>🟢 27/07</span>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="flyer-card" onclick="openPackage('Gualeguaychú Promo', 'invierno')">
+                    <img src="24_7/invierno/guaychu2.jpeg" class="flyer-media flyer-img" alt="Gualeguaychú Especial">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Gualeguaychú Especial</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
                     </div>
                 </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
@@ -4013,7 +4065,7 @@
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Mendoza', 'invierno')">
                     <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_mendoza.jpeg" class="flyer-media flyer-img" alt="Mendoza">
+                    <img src="24_7/invierno/mendoza.jpeg" class="flyer-media flyer-img" alt="Mendoza">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mendoza/3ee0ac3c-755c-4fdc-9172-56f1773f6910.MP4"
                         muted class="flyer-video" loop playsinline></video>
@@ -4035,10 +4087,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="flyer-card" onclick="openPackage('Salta Invierno', 'invierno')">
+                    <img src="24_7/invierno/salta.jpeg" class="flyer-media flyer-img" alt="Salta Invierno">
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Salta Invierno</span>
+                        <span class="flyer-overlay-badge">💬 Consultar</span>
+                    </div>
+                </div>
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Villa de Merlo', 'invierno')">
                     <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo">
+                    <img src="24_7/invierno/villa_merlo.jpeg" class="flyer-media flyer-img" alt="Villa de Merlo">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/340ccd21-9565-47ea-a02a-6b45ffb3367d.MP4"
                         muted class="flyer-video" loop playsinline></video>
@@ -4089,7 +4148,7 @@
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('San Pedro', 'invierno')">
                     <div class="status-badge" style="background: rgba(239, 68, 68, 0.95);">🔴 AGOTADO</div>
-                    <img src="ordenarmas/invierno_san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
+                    <img src="24_7/invierno/san_pedro.jpeg" class="flyer-media flyer-img" alt="San Pedro">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4"
                         muted class="flyer-video" loop playsinline></video>
@@ -4110,7 +4169,7 @@
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('San Rafael', 'invierno')">
                     <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_san_rafael.jpeg" class="flyer-media flyer-img" alt="San Rafael">
+                    <img src="24_7/invierno/san_rafael.jpeg" class="flyer-media flyer-img" alt="San Rafael">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4"
                         muted class="flyer-video" loop playsinline></video>
@@ -4135,7 +4194,7 @@
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Tandil', 'invierno')">
                     <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_tandil.jpeg" class="flyer-media flyer-img" alt="Tandil">
+                    <img src="24_7/invierno/tandil.jpeg" class="flyer-media flyer-img" alt="Tandil">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4"
                         muted class="flyer-video" loop playsinline></video>
@@ -4157,7 +4216,7 @@
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Termas de Guaychú', 'invierno')">
                     <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_termas.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
+                    <img src="24_7/invierno/termas_guaychu.jpeg" class="flyer-media flyer-img" alt="Termas de Guaychú">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4"
                         muted class="flyer-video" loop playsinline></video>
@@ -4196,7 +4255,7 @@
                 <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
                     onclick="openPackage('Termas de Río Hondo', 'invierno')">
                     <div class="status-badge" style="background: rgba(16, 185, 129, 0.95);">🟢 DISPONIBLE</div>
-                    <img src="ordenarmas/invierno_termas_rio_hondo.jpeg" class="flyer-media flyer-img"
+                    <img src="24_7/invierno/termas_rio_hondo.jpeg" class="flyer-media flyer-img"
                         alt="Termas de Río Hondo">
                     <video preload="none"
                         data-src="ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Rio Hondo/81881e9d-6144-41d9-b8c1-6cf2551f3964.MP4"
@@ -4207,6 +4266,8 @@
                         <span class="flyer-overlay-title">Termas de Río Hondo</span>
                         <span class="flyer-overlay-badge">$449.990</span>
                         <span class="flyer-overlay-badge" style="background-color: #ffd700; color: #1b5e20; font-size: 9px; margin-top: 4px; font-weight: bold; border: 1px solid #1b5e20; align-self: flex-start;">4x3 – VIAJAN 4 PAGAN 3</span>
+                        <div class="flyer-overlay-dates" style="margin-top: 8px; font-size: 11px; opacity: 0.95; line-height: 1.4; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 6px; width: 100%;">
+                            <span style="font-weight: bold; display: block; margin-bottom: 2px;">Salidas y Disponibilidad:</span>
                             <div style="display: flex; flex-wrap: wrap; gap: 4px 8px;">
                                 <span>🟢 18/07</span>
                                 <span>🟢 22/07</span>
@@ -5032,7 +5093,7 @@
             if (typeof event !== 'undefined' && event.currentTarget) {
                 const target = event.currentTarget;
                 const vid = target.querySelector('video');
-                const img = target.querySelector('img');
+                const img = target.querySelector('img.flyer-img') || target.querySelector('img.flyer-media') || target.querySelector('img:not(.oferta-sticker)') || target.querySelector('img');
 
                 if (!videoUrl && vid) videoUrl = vid.getAttribute('data-src') || vid.getAttribute('src');
                 if (!imageUrl && img) imageUrl = img.getAttribute('src');
@@ -5193,11 +5254,11 @@
         });
 
         (function checkPromociones() {
-            const supersaleSection = document.getElementById('supersale-travelero-section');
             const navPromo = document.getElementById('nav-promociones');
             if (!navPromo) return;
-            const hasSupersale = supersaleSection && supersaleSection.querySelectorAll('.flyer-card').length > 0;
-            if (!hasSupersale) {
+            const feriadoAgostoSection = document.getElementById('feriado-agosto-section');
+            const hasPromos = feriadoAgostoSection && feriadoAgostoSection.querySelectorAll('.flyer-card').length > 0;
+            if (!hasPromos) {
                 navPromo.style.display = 'none';
             } else {
                 navPromo.style.display = 'block';

@@ -1276,27 +1276,6 @@ const paquetesData = [
         ]
     },
     {
-        id: "san-rafael-supersale",
-        title: "San Rafael Super Sale",
-        season: "supersale",
-        price: "$239.990",
-        image: "14_7/san_rafael.jpeg",
-        features: [
-            { icon: "🚌", text: "Bus Mix Confort ida y vuelta" },
-            { icon: "🏨", text: "Alojamiento en Hotel Puesta del Sol" },
-            { icon: "🌙", text: "6 días / 3 noches" },
-            { icon: "🍽️", text: "Media Pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "💳", text: "Financiación: 6 cuotas de $58.331" }
-        ],
-        itinerary: `<p>¡Salida Especial Super Sale a San Rafael, Mendoza! Disfrutá de este increíble destino con todo resuelto: traslados de ida y vuelta en bus confort, 3 noches de alojamiento en el Hotel Puesta del Sol con régimen de Media Pensión y coordinación permanente durante todo el viaje.</p>`,
-        importantNotes: `<p>- Tarifa Super Sale: ANTES $359.990 → AHORA $239.990 + Gastos Administrativos ($10.000).</p><p>- Financiación disponible en 6 cuotas fijas de $58.331.</p><p>- Salida el 17 de Julio. Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA.</li></ul>`,
-        availability: [
-            { date: "17/07", status: "POCO DISPONIBLE", color: "🟡" }
-        ]
-    },
-    {
         id: "feriado-9-de-julio",
         title: "Feriado 9 de Julio — Día de la Independencia",
         season: "feriados",
