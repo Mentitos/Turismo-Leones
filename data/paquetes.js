@@ -6,15 +6,15 @@ const paquetesData = [
         price: "Consultar",
         image: "Otros/crucero_travelero_flyer.jpeg",
         features: [
-            { icon: "🚢", text: "Crucero Full Destacados" },
-            { icon: "💰", text: "No gastas ni un mango más" },
-            { icon: "🍽️", text: "All Inclusive" },
-            { icon: "🎭", text: "Shows y entretenimiento" }
+            { icon: "", text: "Crucero Full Destacados" },
+            { icon: "", text: "No gastas ni un mango más" },
+            { icon: "", text: "All Inclusive" },
+            { icon: "", text: "Shows y entretenimiento" }
         ],
         itinerary: `
-            <p><strong>Día 1:</strong> Embarque y bienvenida a bordo.</p>
-            <p><strong>Días Navegación:</strong> Disfrute de todas las instalaciones, comidas y shows incluidos.</p>
-            <p><strong>Destinos:</strong> Recorrido por las costas más bellas.</p>
+            <p><strong>Día 1:</strong>Embarque y bienvenida a bordo.</p>
+            <p><strong>Días Navegación:</strong>Disfrute de todas las instalaciones, comidas y shows incluidos.</p>
+            <p><strong>Destinos:</strong>Recorrido por las costas más bellas.</p>
         `,
         importantNotes: `
             <p>- Documentación requerida: DNI o Pasaporte vigente.</p>
@@ -34,19 +34,19 @@ const paquetesData = [
         image: "14_7/bariloche.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/BARILOCHE AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
-            { icon: "🏨", text: "Alojamiento en Hotel Internacional o similar" },
-            { icon: "🌙", text: "4 días / 3 noches" },
-            { icon: "🍽️", text: "Media Pensión" },
-            { icon: "🚌", text: "Traslados in/out" },
-            { icon: "🧳", text: "Equipaje de mano de 12kg incluido" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento en Hotel Internacional o similar" },
+            { icon: "", text: "4 días / 3 noches" },
+            { icon: "", text: "Media Pensión" },
+            { icon: "", text: "Traslados in/out" },
+            { icon: "", text: "Equipaje de mano de 12kg incluido" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>¡Salida Especial Vacaciones de Invierno a San Carlos de Bariloche! Disfrutá de la nieve y los maravillosos paisajes de la Patagonia. El paquete incluye aéreos desde Buenos Aires, traslados de ida y vuelta al hotel, 3 noches de alojamiento en el Hotel Internacional o similar con Media Pensión y equipaje de mano de 12kg.</p>`,
         importantNotes: `<p>- Valor por persona: $919.990 + Gastos Administrativos ($10.000).</p><p>- Promoción 4x3: ¡Viajan 4 y pagan 3!</p><p>- Financiación disponible en 6 cuotas fijas de $216.998.</p><p>- Cupos limitados.</p>`,
         boardingPoints: `<ul><li>Aeropuerto de Ezeiza / Aeroparque</li></ul>`,
         availability: [
-            { date: "18/07 al 23/07", status: "POCO DISPONIBLE", color: "🟡" }
+            { date: "18/07 al 23/07", status: "POCO DISPONIBLE", color: "" }
         ]
     },
     {
@@ -57,10 +57,10 @@ const paquetesData = [
         image: "Otros/ushuaia.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/USHUAIA AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "🚌", text: "Traslados in/out" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Traslados in/out" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -74,10 +74,10 @@ const paquetesData = [
         image: "",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Marzo-Abril/EL CALAFATE (vend MAR).pdf",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "🚌", text: "Traslados in/out" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Traslados in/out" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -91,10 +91,10 @@ const paquetesData = [
         image: "",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/CATARATAS DEL IGUAZÚ AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "🚌", text: "Traslados in/out" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Traslados in/out" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -108,10 +108,10 @@ const paquetesData = [
         image: "",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/MENDOZA AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "🚌", text: "Traslados in/out" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Traslados in/out" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -125,10 +125,10 @@ const paquetesData = [
         image: "",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/PUERTO MADRYN VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "🚌", text: "Traslados in/out" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Traslados in/out" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -142,10 +142,10 @@ const paquetesData = [
         image: "ordenarmas/invierno_aereo_tilcara.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/TILCARA AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "🚌", text: "Traslados in/out" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Traslados in/out" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -159,10 +159,10 @@ const paquetesData = [
         image: "",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/SALTA AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "🚌", text: "Traslados in/out" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Traslados in/out" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -176,16 +176,16 @@ const paquetesData = [
         image: "ordenarmas/invierno_aimogasta.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/AIMOGASTA VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "19/07", status: "POCO DISPONIBLE", color: "🟡" }
+            { date: "19/07", status: "POCO DISPONIBLE", color: "" }
         ]
     },
     {
@@ -196,20 +196,20 @@ const paquetesData = [
         image: "ordenarmas/invierno_carlos_paz.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "17/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "20/07", status: "POCO DISPONIBLE", color: "🟡" },
-            { date: "23/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "26/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "29/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "17/07", status: "DISPONIBLE", color: "" },
+            { date: "20/07", status: "POCO DISPONIBLE", color: "" },
+            { date: "23/07", status: "DISPONIBLE", color: "" },
+            { date: "26/07", status: "DISPONIBLE", color: "" },
+            { date: "29/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -220,17 +220,17 @@ const paquetesData = [
         image: "ordenarmas/invierno_gualeguaychu.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "20/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "27/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "20/07", status: "DISPONIBLE", color: "" },
+            { date: "27/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -241,16 +241,16 @@ const paquetesData = [
         image: "ordenarmas/invierno_la_rioja.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA RIOJA VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "21/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "21/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -261,20 +261,20 @@ const paquetesData = [
         image: "ordenarmas/invierno_mendoza.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MENDOZA VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "17/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "20/07", status: "POCO DISPONIBLE", color: "🟡" },
-            { date: "23/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "26/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "29/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "17/07", status: "DISPONIBLE", color: "" },
+            { date: "20/07", status: "POCO DISPONIBLE", color: "" },
+            { date: "23/07", status: "DISPONIBLE", color: "" },
+            { date: "26/07", status: "DISPONIBLE", color: "" },
+            { date: "29/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -285,20 +285,20 @@ const paquetesData = [
         image: "ordenarmas/invierno_merlo.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MERLO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "17/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "20/07", status: "POCO DISPONIBLE", color: "🟡" },
-            { date: "23/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "26/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "29/07", status: "POCO DISPONIBLE", color: "🟡" }
+            { date: "17/07", status: "DISPONIBLE", color: "" },
+            { date: "20/07", status: "POCO DISPONIBLE", color: "" },
+            { date: "23/07", status: "DISPONIBLE", color: "" },
+            { date: "26/07", status: "DISPONIBLE", color: "" },
+            { date: "29/07", status: "POCO DISPONIBLE", color: "" }
         ]
     },
     {
@@ -309,16 +309,16 @@ const paquetesData = [
         image: "ordenarmas/invierno_puerto_madryn.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/PUERTO MADRYN VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "22/07", status: "POCO DISPONIBLE", color: "🟡" }
+            { date: "22/07", status: "POCO DISPONIBLE", color: "" }
         ]
     },
     {
@@ -329,15 +329,15 @@ const paquetesData = [
         image: "ordenarmas/invierno_san_pedro.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN PEDRO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "26/07", status: "AGOTADO", color: "🔴" }
+            { date: "26/07", status: "AGOTADO", color: "" }
         ]
     },
     {
@@ -348,20 +348,20 @@ const paquetesData = [
         image: "ordenarmas/invierno_san_rafael.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN RAFAEL VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "17/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "20/07", status: "AGOTADO", color: "🔴" },
-            { date: "23/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "26/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "29/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "17/07", status: "DISPONIBLE", color: "" },
+            { date: "20/07", status: "AGOTADO", color: "" },
+            { date: "23/07", status: "DISPONIBLE", color: "" },
+            { date: "26/07", status: "DISPONIBLE", color: "" },
+            { date: "29/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -372,16 +372,16 @@ const paquetesData = [
         image: "ordenarmas/invierno_tandil.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/TANDIL VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "18/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "25/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "18/07", status: "DISPONIBLE", color: "" },
+            { date: "25/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -392,17 +392,17 @@ const paquetesData = [
         image: "ordenarmas/invierno_termas.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "📍", text: "Entrada incluida" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Entrada incluida" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "19/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "26/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "19/07", status: "DISPONIBLE", color: "" },
+            { date: "26/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -413,17 +413,17 @@ const paquetesData = [
         image: "ordenarmas/invierno_termas_federacion.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/FEDERACION VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "21/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "27/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "21/07", status: "DISPONIBLE", color: "" },
+            { date: "27/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -434,17 +434,17 @@ const paquetesData = [
         image: "ordenarmas/invierno_termas_rio_hondo.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/TERMAS DE RÍO HONDO VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con pensión completa" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con pensión completa" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "18/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "22/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "18/07", status: "DISPONIBLE", color: "" },
+            { date: "22/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -455,17 +455,17 @@ const paquetesData = [
         image: "ordenarmas/invierno_campo_la_herradura.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🍖", text: "Almuerzo incluido" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Almuerzo incluido" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "19/07", status: "AGOTADO", color: "🔴" },
-            { date: "26/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "19/07", status: "AGOTADO", color: "" },
+            { date: "26/07", status: "DISPONIBLE", color: "" }
         ]
     },
     {
@@ -476,10 +476,10 @@ const paquetesData = [
         image: "Otoño/gualeguaychu_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/GUAYCHÚ VEND MARZO A JUNIO 2026.pdf",
         features: [
-            { icon: "📅", text: "Programa Full Day" },
-            { icon: "🚌", text: "Traslados en Bus Mix Confort | Ida y Vuelta" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "📍", text: "Incluye entrada al Complejo Termal" }
+            { icon: "", text: "Programa Full Day" },
+            { icon: "", text: "Traslados en Bus Mix Confort | Ida y Vuelta" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Incluye entrada al Complejo Termal" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -493,9 +493,9 @@ const paquetesData = [
         image: "Feriados/villa_carlos_paz.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/VILLA CARLOS PAZ FERIADO JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -509,9 +509,9 @@ const paquetesData = [
         image: "Feriados/gualeguaychu.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUALEGUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -525,9 +525,9 @@ const paquetesData = [
         image: "Feriados/feriado_mendoza.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/MENDOZA VEND FERIADO JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -541,9 +541,9 @@ const paquetesData = [
         image: "Feriados/san_rafael.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/SAN RAFAEL VEND FERIADO JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -557,8 +557,8 @@ const paquetesData = [
         image: "Feriados/tandil.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/TANDIL VEND FERIADO JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -572,9 +572,9 @@ const paquetesData = [
         image: "Feriados/villa_merlo.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/MERLO VEND FERIADO JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -588,9 +588,9 @@ const paquetesData = [
         image: "Feriados/feriado_termas_guaychu.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "📍", text: "Entrada incluida" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Entrada incluida" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -604,9 +604,9 @@ const paquetesData = [
         image: "Otoño/gualeguaychu_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/GUALEGUAYCHÚ X 1 NT VEND ABRIL A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -620,9 +620,9 @@ const paquetesData = [
         image: "Otoño/mendoza_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MENDOZA X 3 NTS VEND MARZO A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -636,9 +636,9 @@ const paquetesData = [
         image: "Otoño/puerto_madryn_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/PUERTO MADRYN X 3 NTS VEND JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -652,9 +652,9 @@ const paquetesData = [
         image: "Otoño/san_rafael_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN RAFAEL X 3 NTS SEGUNDA QUINCENA MAYO A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -668,8 +668,8 @@ const paquetesData = [
         image: "Otoño/tandil_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/TANDIL X1 NT VEND MARZO A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -683,9 +683,9 @@ const paquetesData = [
         image: "Otoño/villa_carlos_paz_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/VILLA CARLOS PAZ VEND MAYO_JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -699,9 +699,9 @@ const paquetesData = [
         image: "Otoño/villa_de_merlo_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MERLO X 3 NTS SEGUNDA QUINCENA MARZO A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -715,9 +715,9 @@ const paquetesData = [
         image: "Otoño/cataratas_del_iguazu_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/CATARATAS DEL IGUAZÚ X 3 NTS VEND MARZO A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -731,9 +731,9 @@ const paquetesData = [
         image: "Otoño/mar_del_plata_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X 2NTS VEND MARZO A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -747,9 +747,9 @@ const paquetesData = [
         image: "Otoño/salta_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -763,8 +763,8 @@ const paquetesData = [
         image: "Otoño/san_pedro_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN PEDRO VEND ABRIL A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -778,9 +778,9 @@ const paquetesData = [
         image: "Otoño/campo_la_herradura_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/LA HERRADURA VEND MARZO A JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🍖", text: "Almuerzo incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Almuerzo incluido" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -794,9 +794,9 @@ const paquetesData = [
         image: "Otoño/la_rioja_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/LA RIOJA VEND MAYO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -810,9 +810,9 @@ const paquetesData = [
         image: "Otoño/aimogasta_otoño.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/AIMOGASTA VEND JUNIO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p>`,
@@ -826,19 +826,19 @@ const paquetesData = [
         image: "ordenarmas/invierno_iguazu.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZÚ VEND VACACIONES DE INVIERNO 2026.pdf",
         features: [
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>Consulte el itinerario detallado en el PDF adjunto.</p>`,
         importantNotes: `<p>- Cupos limitados.</p><p>- Promoción: ¡Viajan 4 y pagan 3!</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`,
         availability: [
-            { date: "18/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "21/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "24/07", status: "DISPONIBLE", color: "🟢" },
-            { date: "27/07", status: "DISPONIBLE", color: "🟢" }
+            { date: "18/07", status: "DISPONIBLE", color: "" },
+            { date: "21/07", status: "DISPONIBLE", color: "" },
+            { date: "24/07", status: "DISPONIBLE", color: "" },
+            { date: "27/07", status: "DISPONIBLE", color: "" }
         ]
     }
 ,
@@ -850,10 +850,10 @@ const paquetesData = [
         price: "Consultar",
         image: "valijasya/cataratasdeliguazu.jpeg",
         features: [
-            { icon: "🌊", text: "Cataratas del Iguazú" },
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Cataratas del Iguazú" },
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento incluido" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Nueva salida! Contactanos para fechas, precios y disponibilidad.</p>`,
         importantNotes: `<p>- Cupos limitados. Consultá por WhatsApp.</p>`,
@@ -866,10 +866,10 @@ const paquetesData = [
         price: "Consultar",
         image: "valijasya/sanrafael.jpeg",
         features: [
-            { icon: "🏔️", text: "San Rafael, Mendoza" },
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "San Rafael, Mendoza" },
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento incluido" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Nueva salida! Contactanos para fechas, precios y disponibilidad.</p>`,
         importantNotes: `<p>- Cupos limitados. Consultá por WhatsApp.</p>`,
@@ -882,10 +882,10 @@ const paquetesData = [
         price: "Consultar",
         image: "valijasya/villacarlospaz.jpeg",
         features: [
-            { icon: "🎡", text: "Villa Carlos Paz, Córdoba" },
-            { icon: "🚌", text: "Bus Mix" },
-            { icon: "🏨", text: "Alojamiento incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Villa Carlos Paz, Córdoba" },
+            { icon: "", text: "Bus Mix" },
+            { icon: "", text: "Alojamiento incluido" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Nueva salida! Contactanos para fechas, precios y disponibilidad.</p>`,
         importantNotes: `<p>- Cupos limitados. Consultá por WhatsApp.</p>`,
@@ -898,19 +898,19 @@ const paquetesData = [
         price: "$379.990 + gastos / 6 cuotas de $90.998",
         image: "nuevo20_5/puerto_madryn.jpeg",
         features: [
-            { icon: "🚌", text: "Bus semicama" },
-            { icon: "🏨", text: "Hotel Samay Huasi (céntrico con piscina climatizada)" },
-            { icon: "🍽️", text: "Desayuno buffet" },
-            { icon: "📅", text: "6 días / 3 noches" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "📍", text: "Con 10 pasajeros te pasamos a buscar" }
+            { icon: "", text: "Bus semicama" },
+            { icon: "", text: "Hotel Samay Huasi (céntrico con piscina climatizada)" },
+            { icon: "", text: "Desayuno buffet" },
+            { icon: "", text: "6 días / 3 noches" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Con 10 pasajeros te pasamos a buscar" }
         ],
         itinerary: `
             <p><strong>Salidas programadas:</strong></p>
             <ul>
-                <li><strong>Agosto:</strong> 11, 18</li>
-                <li><strong>Septiembre:</strong> 03, 10, 16, 23</li>
-                <li><strong>Octubre:</strong> 22, 25</li>
+                <li><strong>Agosto:</strong>11, 18</li>
+                <li><strong>Septiembre:</strong>03, 10, 16, 23</li>
+                <li><strong>Octubre:</strong>22, 25</li>
             </ul>
             <p>¡Disfrutá de la maravillosa Temporada de Ballenas 2026 con el mejor servicio y hotelería!</p>
         `,
@@ -932,11 +932,11 @@ const paquetesData = [
         price: "$529.990",
         image: "nuevo20_5/dia_del_maestro.jpeg",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires (ida y vuelta)" },
-            { icon: "🏨", text: "Alojamiento céntrico con desayuno" },
-            { icon: "🚌", text: "Traslados de llegada y salida" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🍎", text: "Especial Día del Maestro" }
+            { icon: "", text: "Aéreo desde Buenos Aires (ida y vuelta)" },
+            { icon: "", text: "Alojamiento céntrico con desayuno" },
+            { icon: "", text: "Traslados de llegada y salida" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Especial Día del Maestro" }
         ],
         itinerary: `<p>¡Salida especial Día del Maestro! Disfrutá de la tierra del sol y del buen vino.</p>`,
         importantNotes: `<p>- Cupos muy limitados. Tarifas especiales para docentes y acompañantes.</p>`,
@@ -949,11 +949,11 @@ const paquetesData = [
         price: "$539.990",
         image: "nuevo20_5/dia_del_maestro.jpeg",
         features: [
-            { icon: "✈️", text: "Aéreo desde Buenos Aires (ida y vuelta)" },
-            { icon: "🏨", text: "Alojamiento con piscina y desayuno" },
-            { icon: "🚌", text: "Traslados in/out" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🍎", text: "Especial Día del Maestro" }
+            { icon: "", text: "Aéreo desde Buenos Aires (ida y vuelta)" },
+            { icon: "", text: "Alojamiento con piscina y desayuno" },
+            { icon: "", text: "Traslados in/out" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Especial Día del Maestro" }
         ],
         itinerary: `<p>¡Salida especial Día del Maestro! Viví una experiencia única en una de las Nuevas Siete Maravillas del Mundo.</p>`,
         importantNotes: `<p>- Cupos muy limitados. Tarifas especiales para docentes y acompañantes.</p>`,
@@ -966,10 +966,10 @@ const paquetesData = [
         price: "$229.990",
         image: "ordenarmas/invierno_merlo.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix de última generación" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🍎", text: "Especial Día del Maestro" }
+            { icon: "", text: "Bus Mix de última generación" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Especial Día del Maestro" }
         ],
         itinerary: `<p>Disfrutá del excelente microclima de Villa de Merlo en este fin de semana especial.</p>`,
         importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
@@ -982,10 +982,10 @@ const paquetesData = [
         price: "$229.990",
         image: "ordenarmas/invierno_carlos_paz.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix de última generación" },
-            { icon: "🏨", text: "Alojamiento con media pensión" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🍎", text: "Especial Día del Maestro" }
+            { icon: "", text: "Bus Mix de última generación" },
+            { icon: "", text: "Alojamiento con media pensión" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Especial Día del Maestro" }
         ],
         itinerary: `<p>Divertite y relajate en las sierras de Córdoba en este especial para maestros.</p>`,
         importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
@@ -998,10 +998,10 @@ const paquetesData = [
         price: "$199.990",
         image: "ordenarmas/invierno_tandil.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix de última generación" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🍎", text: "Especial Día del Maestro" }
+            { icon: "", text: "Bus Mix de última generación" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Especial Día del Maestro" }
         ],
         itinerary: `<p>Escapate a las sierras de Tandil, disfrutá del aire libre y la gastronomía regional.</p>`,
         importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
@@ -1014,10 +1014,10 @@ const paquetesData = [
         price: "$189.990",
         image: "ordenarmas/invierno_gualeguaychu.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix de última generación" },
-            { icon: "🏨", text: "Alojamiento con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🍎", text: "Especial Día del Maestro" }
+            { icon: "", text: "Bus Mix de última generación" },
+            { icon: "", text: "Alojamiento con desayuno" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Especial Día del Maestro" }
         ],
         itinerary: `<p>Disfrutá del río, las termas y la tranquilidad de Gualeguaychú.</p>`,
         importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
@@ -1030,10 +1030,10 @@ const paquetesData = [
         price: "$179.990",
         image: "Feriados/feriado_mardelplata.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix de última generación" },
-            { icon: "🏨", text: "Alojamiento céntrico con desayuno" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🍎", text: "Especial Día del Maestro" }
+            { icon: "", text: "Bus Mix de última generación" },
+            { icon: "", text: "Alojamiento céntrico con desayuno" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Especial Día del Maestro" }
         ],
         itinerary: `<p>Disfrutá de la brisa marina, los teatros y los mejores paseos en Mar del Plata.</p>`,
         importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
@@ -1046,9 +1046,9 @@ const paquetesData = [
         price: "$109.990",
         image: "ordenarmas/invierno_san_pedro.jpeg",
         features: [
-            { icon: "🚌", text: "Bus semicama confortable" },
-            { icon: "🍎", text: "Especial Día del Maestro" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus semicama confortable" },
+            { icon: "", text: "Especial Día del Maestro" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Ideal para un fin de semana campestre en la costa del río Paraná.</p>`,
         importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
@@ -1061,10 +1061,10 @@ const paquetesData = [
         price: "$99.990",
         image: "ordenarmas/invierno_campo_la_herradura.jpeg",
         features: [
-            { icon: "🚌", text: "Bus semicama confortable" },
-            { icon: "🍖", text: "Almuerzo de campo incluido" },
-            { icon: "🍎", text: "Especial Día del Maestro" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus semicama confortable" },
+            { icon: "", text: "Almuerzo de campo incluido" },
+            { icon: "", text: "Especial Día del Maestro" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Un día de campo inolvidable con el mejor asado criollo y actividades tradicionales.</p>`,
         importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
@@ -1077,10 +1077,10 @@ const paquetesData = [
         price: "$99.990",
         image: "ordenarmas/invierno_termas.jpeg",
         features: [
-            { icon: "🚌", text: "Bus semicama confortable" },
-            { icon: "📍", text: "Entrada al complejo termal incluida" },
-            { icon: "🍎", text: "Especial Día del Maestro" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus semicama confortable" },
+            { icon: "", text: "Entrada al complejo termal incluida" },
+            { icon: "", text: "Especial Día del Maestro" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Relajate y renová tus energías en las piletas termales de Guaychú.</p>`,
         importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
@@ -1093,11 +1093,11 @@ const paquetesData = [
         price: "$499.990 c/u",
         image: "Otoño/cataratas_del_iguazu_otoño.jpeg",
         features: [
-            { icon: "✈️", text: "Aéreo incluido (Salida 23/05)" },
-            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
-            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
-            { icon: "🏨", text: "Alojamiento incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Aéreo incluido (Salida 23/05)" },
+            { icon: "", text: "PROMO SUPER SALE 2x1" },
+            { icon: "", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "", text: "Alojamiento incluido" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Salida INMEDIATA el 23 de Mayo! Pagás 1 y viajan 2. Disfrutá de las Cataratas del Iguazú a una tarifa de locos.</p>`,
         importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
@@ -1110,11 +1110,11 @@ const paquetesData = [
         price: "$159.990 c/u",
         image: "Otoño/gualeguaychu_otoño.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix Confort (Salida 23/05)" },
-            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
-            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
-            { icon: "🏨", text: "Alojamiento incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix Confort (Salida 23/05)" },
+            { icon: "", text: "PROMO SUPER SALE 2x1" },
+            { icon: "", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "", text: "Alojamiento incluido" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Salida INMEDIATA el 23 de Mayo! Pagás 1 y viajan 2. Relajate en Gualeguaychú el fin de semana.</p>`,
         importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
@@ -1127,11 +1127,11 @@ const paquetesData = [
         price: "$164.990 c/u",
         image: "Otoño/tandil_otoño.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix Confort (Salida 23/05)" },
-            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
-            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
-            { icon: "🏨", text: "Alojamiento incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix Confort (Salida 23/05)" },
+            { icon: "", text: "PROMO SUPER SALE 2x1" },
+            { icon: "", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "", text: "Alojamiento incluido" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Salida INMEDIATA el 23 de Mayo! Pagás 1 y viajan 2. Recorré las sierras y descansá en Tandil.</p>`,
         importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
@@ -1144,11 +1144,11 @@ const paquetesData = [
         price: "$199.990 c/u",
         image: "Otoño/villa_de_merlo_otoño.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix Confort (Salida 22/05)" },
-            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
-            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
-            { icon: "🏨", text: "Alojamiento incluido" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix Confort (Salida 22/05)" },
+            { icon: "", text: "PROMO SUPER SALE 2x1" },
+            { icon: "", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "", text: "Alojamiento incluido" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Salida INMEDIATA el 22 de Mayo! Pagás 1 y viajan 2. Viví el microclima de Merlo.</p>`,
         importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
@@ -1161,10 +1161,10 @@ const paquetesData = [
         price: "$89.990 c/u",
         image: "Otoño/san_pedro_otoño.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Confortable (Salida 25/05)" },
-            { icon: "🔥", text: "PROMO SUPER SALE 2x1" },
-            { icon: "💳", text: "Aboná en 3 y 6 cuotas" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Confortable (Salida 25/05)" },
+            { icon: "", text: "PROMO SUPER SALE 2x1" },
+            { icon: "", text: "Aboná en 3 y 6 cuotas" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Salida INMEDIATA el 25 de Mayo! Pagás 1 y viajan 2. Un escape perfecto a San Pedro.</p>`,
         importantNotes: `<p>- Cupos súper limitados. La reserva es por el 2x1.</p>`,
@@ -1177,10 +1177,10 @@ const paquetesData = [
         price: "Consultar",
         image: "nuevo20_5/resumen_2x1.jpeg",
         features: [
-            { icon: "🔥", text: "Super Sale 2x1 en Salidas Inmediatas" },
-            { icon: "💳", text: "Pagá en 3 y 6 cuotas fijas" },
-            { icon: "📅", text: "Salidas próximamente en Mayo" },
-            { icon: "⚠️", text: "Cupos estrictamente limitados" }
+            { icon: "", text: "Super Sale 2x1 en Salidas Inmediatas" },
+            { icon: "", text: "Pagá en 3 y 6 cuotas fijas" },
+            { icon: "", text: "Salidas próximamente en Mayo" },
+            { icon: "", text: "Cupos estrictamente limitados" }
         ],
         itinerary: `<p>¡Aprovechá la promo de salidas urgentes del mes de Mayo! Viajan 2 personas pagando sólo 1. Cataratas Aéreo, Gualeguaychú, Tandil, Merlo, San Pedro y La Rioja con tarifas únicas.</p>`,
         importantNotes: `<p>- Cupos limitados. Consultanos por WhatsApp para congelar tu lugar inmediatamente.</p>`,
@@ -1193,9 +1193,9 @@ const paquetesData = [
         price: "Consultar",
         image: "nuevo21_5/resumen.jpeg",
         features: [
-            { icon: "🔥", text: "Super Sale Especial 25 de Mayo" },
-            { icon: "💳", text: "Pagá en 6 cuotas fijas" },
-            { icon: "📅", text: "Salidas especiales 23/05 y 25/05" },
+            { icon: "", text: "Super Sale Especial 25 de Mayo" },
+            { icon: "", text: "Pagá en 6 cuotas fijas" },
+            { icon: "", text: "Salidas especiales 23/05 y 25/05" },
             { icon: "🇦🇷", text: "Celebrá el fin de semana patrio" }
         ],
         itinerary: `<p>¡Celebrá el fin de semana patrio viajando! Increíbles tarifas promocionales para Tandil, Gualeguaychú y San Pedro. Viajá con total comodidad en salidas grupales con coordinación.</p>`,
@@ -1209,11 +1209,11 @@ const paquetesData = [
         price: "$99.990 + gastos",
         image: "nuevo21_5/tandil.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix Confort (Salida 23/05)" },
-            { icon: "🏨", text: "Alojamiento en hotel turista" },
-            { icon: "🍽️", text: "Media Pensión incluida" },
-            { icon: "📅", text: "2 días / 1 noche" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix Confort (Salida 23/05)" },
+            { icon: "", text: "Alojamiento en hotel turista" },
+            { icon: "", text: "Media Pensión incluida" },
+            { icon: "", text: "2 días / 1 noche" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Salida Especial del 25 de Mayo! Disfrutá de la tranquilidad y sierras de Tandil. El paquete incluye 2 días y 1 noche de alojamiento con media pensión, y traslados de ida y vuelta.</p>`,
         importantNotes: `<p>- Tarifa Promocional: ANTES $199.990 → AHORA $99.990 + gastos.</p><p>- Financiación: 6 cuotas fijas de $25.664.</p>`,
@@ -1226,11 +1226,11 @@ const paquetesData = [
         price: "$99.990 + gastos",
         image: "nuevo21_5/gualeguaychu.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Mix Confort (Salida 23/05)" },
-            { icon: "🏨", text: "Alojamiento en Hotel Los Robles" },
-            { icon: "🍽️", text: "Desayuno incluido" },
-            { icon: "📅", text: "3 días / 2 noches" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Mix Confort (Salida 23/05)" },
+            { icon: "", text: "Alojamiento en Hotel Los Robles" },
+            { icon: "", text: "Desayuno incluido" },
+            { icon: "", text: "3 días / 2 noches" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Salida Especial del 25 de Mayo! Escapate a Gualeguaychú por 3 días y 2 noches, con hospedaje en el Hotel Los Robles y desayuno incluido. Ideal para descansar y recorrer.</p>`,
         importantNotes: `<p>- Tarifa Promocional: ANTES $189.990 → AHORA $99.990 + gastos.</p><p>- Financiación: 6 cuotas fijas de $25.664.</p>`,
@@ -1243,10 +1243,10 @@ const paquetesData = [
         price: "$79.990",
         image: "nuevo21_5/san_pedro.jpeg",
         features: [
-            { icon: "🚌", text: "Bus Confortable (Salida 25/05)" },
-            { icon: "🍖", text: "Almuerzo: Parrillada incluida" },
-            { icon: "📅", text: "Salida Full Day" },
-            { icon: "👤", text: "Coordinación permanente" }
+            { icon: "", text: "Bus Confortable (Salida 25/05)" },
+            { icon: "", text: "Almuerzo: Parrillada incluida" },
+            { icon: "", text: "Salida Full Day" },
+            { icon: "", text: "Coordinación permanente" }
         ],
         itinerary: `<p>¡Salida Especial del 25 de Mayo! Viví una jornada de campo de descanso y tradición en San Pedro. Incluye viaje de ida y vuelta en el día y un espectacular almuerzo con parrillada completa.</p>`,
         importantNotes: `<p>- Tarifa Promocional: ANTES $109.990 → AHORA $79.990 final (sin gastos extra).</p><p>- Financiación: 6 cuotas fijas de $18.665.</p>`,
@@ -1260,19 +1260,19 @@ const paquetesData = [
         image: "nuevo22_5/formosa_bañadolaestrella.jpeg",
         pdf: "nuevo22_5/BAÑADO LA ESTRELLA VACACIONES DE INVIERNO.pptx.pdf",
         features: [
-            { icon: "📅", text: "Salida: 18 de JULIO" },
-            { icon: "🚌", text: "Bus ida y vuelta" },
-            { icon: "🌙", text: "7 días / 4 noches" },
-            { icon: "🏨", text: "Las Lomitas: 2 noches – Media pensión" },
-            { icon: "🏨", text: "Formosa: 2 noches – Desayuno" },
-            { icon: "👤", text: "Coordinación permanente" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
+            { icon: "", text: "Salida: 18 de JULIO" },
+            { icon: "", text: "Bus ida y vuelta" },
+            { icon: "", text: "7 días / 4 noches" },
+            { icon: "", text: "Las Lomitas: 2 noches – Media pensión" },
+            { icon: "", text: "Formosa: 2 noches – Desayuno" },
+            { icon: "", text: "Coordinación permanente" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" }
         ],
         itinerary: `<p>¡Salida Especial Vacaciones de Invierno! Disfrutá de la majestuosidad de Formosa y el Bañado La Estrella. El paquete incluye traslados en bus de ida y vuelta, alojamiento en hoteles seleccionados (2 noches en Las Lomitas con media pensión y 2 noches en Formosa con desayuno) y coordination permanente.</p>`,
         importantNotes: `<p>- Valor por persona: $399.990.</p><p>- Promoción 4x3: ¡Viajan 4 y pagan 3!</p><p>- Financiación de hasta 6 cuotas fijas.</p><p>- CUPOS ESTRICTAMENTE LIMITADOS.</p>`,
         boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA.</li></ul>`,
         availability: [
-            { date: "18/07", status: "POCO DISPONIBLE", color: "🟡" }
+            { date: "18/07", status: "POCO DISPONIBLE", color: "" }
         ]
     },
     {
@@ -1282,15 +1282,15 @@ const paquetesData = [
         price: "Consultar",
         image: "9JULIO/resumen.jpeg",
         features: [
-            { icon: "📅", text: "Feriado 9 de Julio" },
-            { icon: "🎁", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" },
-            { icon: "📍", text: "Villa de Merlo — $269.990" },
-            { icon: "📍", text: "Villa Carlos Paz — $249.990" },
-            { icon: "📍", text: "Gualeguaychú — $229.990" },
-            { icon: "📍", text: "Tandil — $199.990" },
-            { icon: "📍", text: "San Pedro — $109.990" },
-            { icon: "📍", text: "Campo La Herradura — $99.990" },
-            { icon: "📍", text: "Termas de Guaychú — $99.990" }
+            { icon: "", text: "Feriado 9 de Julio" },
+            { icon: "", text: "Promo 4x3: ¡Viajan 4 y pagan 3!" },
+            { icon: "", text: "Villa de Merlo — $269.990" },
+            { icon: "", text: "Villa Carlos Paz — $249.990" },
+            { icon: "", text: "Gualeguaychú — $229.990" },
+            { icon: "", text: "Tandil — $199.990" },
+            { icon: "", text: "San Pedro — $109.990" },
+            { icon: "", text: "Campo La Herradura — $99.990" },
+            { icon: "", text: "Termas de Guaychú — $99.990" }
         ],
         itinerary: `
             <p>Disfrutá del fin de semana largo del 9 de Julio con nuestra espectacular promo 4x3: ¡viajan 4 y pagan 3! Elegí entre nuestros increíbles destinos nacionales con traslados y alojamiento incluidos.</p>
@@ -1307,7 +1307,7 @@ const paquetesData = [
             </ul>
         `,
         importantNotes: `
-            <p>⚠️ Promo por tiempo limitado y cupos sujetos a disponibilidad.</p>
+            <p>Promo por tiempo limitado y cupos sujetos a disponibilidad.</p>
             <p>- Tarifas por persona en base doble/triple.</p>
             <p>- Reservá con el 30% de seña y aboná el saldo restante en cuotas accesibles.</p>
         `,
@@ -1323,7 +1323,7 @@ function getPackageData(title, season) {
     if (!title) return null;
 
     // Normalization function to remove accents and special characters
-    const normalize = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    const normalize = (s) =>s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
     
     const targetId = normalize(title);
     const targetSeasonId = season ? `${targetId}-${normalize(season)}` : null;
@@ -1337,7 +1337,7 @@ function getPackageData(title, season) {
 
     if (!p) {
         // Fallback to a partial title match if still not found
-        p = paquetesData.find(item => normalize(item.title).includes(targetId) || targetId.includes(normalize(item.title)));
+        p = paquetesData.find(item =>normalize(item.title).includes(targetId) || targetId.includes(normalize(item.title)));
     }
 
     if (!p) {
@@ -1348,9 +1348,9 @@ function getPackageData(title, season) {
             price: "Consultar",
             image: "Otoño/gualeguaychu_otoño.jpeg",
             features: [
-                { icon: "📅", text: "Programa Full Day" },
-                { icon: "🚌", text: "Traslados en Bus Mix Confort | Ida y Vuelta" },
-                { icon: "👤", text: "Coordinación permanente" },
+                { icon: "", text: "Programa Full Day" },
+                { icon: "", text: "Traslados en Bus Mix Confort | Ida y Vuelta" },
+                { icon: "", text: "Coordinación permanente" },
                 { icon: "✔", text: "Asistencia médica" }
             ],
             itinerary: paquetesData[0].itinerary,
