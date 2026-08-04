@@ -1,5 +1,259 @@
 const paquetesData = [
     {
+        id: "resumen-primavera",
+        title: "Resumen Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "30_7/primavera/resumen.jpeg",
+        pdf: "",
+        video: "",
+        features: [
+            { icon: "", text: "Salidas Especiales Primavera" },
+            { icon: "", text: "Consulta por todos nuestros destinos" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "bariloche-primavera",
+        title: "Bariloche Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "30_7/primavera/bariloche.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/BARILOCHE AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Bariloche/a9092de1-4c02-4275-8bce-981f7c2bebd8.mp4",
+        features: [
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento con Desayuno" },
+            { icon: "", text: "Traslados In/Out" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "ushuaia-primavera",
+        title: "Ushuaia Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "30_7/primavera/ushuaia.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/USHUAIA AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Ushuaia/1d415b1c-2db9-4ca6-a88a-c01b2822bd82.MP4",
+        features: [
+            { icon: "", text: "Aéreo desde Buenos Aires" },
+            { icon: "", text: "Alojamiento con Desayuno" },
+            { icon: "", text: "Traslados In/Out" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "aimogasta-primavera",
+        title: "Aimogasta Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/aimogasta.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/AIMOGASTA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Aimogasta/VIDEO-2025-10-29-12-12-11.mp4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Alojamiento con Media Pensión" },
+            { icon: "", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "campo-la-herradura-primavera",
+        title: "Campo La Herradura Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/campo_herradura.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Día de Campo Completo" },
+            { icon: "", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "cataratas-del-iguazu-primavera",
+        title: "Cataratas del Iguazú Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/cataratas_iguazu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Iguazu/VIDEO-2025-09-27-13-52-38.mp4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Alojamiento con Desayuno" },
+            { icon: "", text: "Excursiones incluidas" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "gualeguaychu-primavera",
+        title: "Gualeguaychú Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/gualeguaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/ee3c5736-9583-4565-947c-d11d9ce6e4a6.MP4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Alojamiento con Desayuno" },
+            { icon: "", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "mendoza-primavera",
+        title: "Mendoza Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/mendoza.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MENDOZA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mendoza/3ee0ac3c-755c-4fdc-9172-56f1773f6910.MP4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Alojamiento con Media Pensión" },
+            { icon: "", text: "Excursiones en cordillera" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "salta-primavera",
+        title: "Salta Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/salta.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Alojamiento con Desayuno" },
+            { icon: "", text: "Recorrido por Valles" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "san-pedro-primavera",
+        title: "San Pedro Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/san_pedro.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN PEDRO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Escapada de Fin de Semana" },
+            { icon: "", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "san-rafael-primavera",
+        title: "San Rafael Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/san_rafael.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN RAFAEL VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Alojamiento con Media Pensión" },
+            { icon: "", text: "Valle Grande y Atuel" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "tandil-primavera",
+        title: "Tandil Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/tandil.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/TANDIL VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Alojamiento con Desayuno" },
+            { icon: "", text: "Paseos serranos" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "termas-de-guaychu-primavera",
+        title: "Termas de Guaychú Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/termas_guaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Entrada al parque termal" },
+            { icon: "", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "villa-carlos-paz-primavera",
+        title: "Villa Carlos Paz Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/villa_carlos_paz.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Alojamiento con Media Pensión" },
+            { icon: "", text: "Coordinación permanente" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
+        id: "villa-de-merlo-primavera",
+        title: "Villa de Merlo Primavera",
+        season: "primavera",
+        price: "Consultar",
+        image: "4_8/villa_merlo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MERLO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/340ccd21-9565-47ea-a02a-6b45ffb3367d.MP4",
+        features: [
+            { icon: "", text: "Bus Mix Confort" },
+            { icon: "", text: "Alojamiento con Media Pensión" },
+            { icon: "", text: "Microclima serrano" }
+        ],
+        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
+        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
+        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
+    },
+    {
         id: "crucero-travelero",
         title: "Crucero Travelero",
         season: "Todo el año",
