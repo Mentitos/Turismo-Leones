@@ -2965,6 +2965,18 @@
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
+                <div class="flyer-card has-video" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)" onclick="openPackage('Bariloche Nieve Agosto', 'invierno')">
+                    <div class="status-badge" style="background: rgba(239, 68, 68, 0.95); font-weight: bold;">¡SOLO 10 LUGARES!</div>
+                    <img src="8_8/bariloche.jpeg" class="flyer-media flyer-img" alt="Bariloche 25/08">
+                    <video preload="none" data-src="8_8/video.mp4" muted class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Bariloche Nieve (Salida 25/08)</span>
+                        <span class="flyer-overlay-badge">Consultar</span>
+                        <span class="flyer-overlay-badge" style="background-color: #3b82f6; color: #ffffff; font-size: 9px; margin-top: 4px; font-weight: bold; align-self: flex-start;">AÉREO / NIEVE</span>
+                    </div>
+                </div>
                 <div class="flyer-card" onclick="openPackage('Feriado Largo de Agosto', 'feriado-agosto')">
                     <img src="sticker/sticker.webp" class="oferta-sticker" alt="Promo 4x3">
                     <img src="31_7/resumen_agosto.jpeg" class="flyer-media flyer-img" alt="Fin de Semana Largo de Agosto">
@@ -3088,6 +3100,18 @@
             <div class="flyers-wrapper">
                 <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
                 <div class="flyers-track">
+                    <div class="flyer-card has-video" onclick="openPackage('Bariloche Nieve Agosto', 'invierno')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
+                        <div class="status-badge" style="background: rgba(239, 68, 68, 0.95); font-weight: bold;">¡SOLO 10 LUGARES!</div>
+                        <img src="8_8/bariloche.jpeg" class="flyer-media flyer-img" alt="Bariloche 25/08">
+                        <video loop muted playsinline class="flyer-vid" preload="none">
+                            <source src="8_8/video.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-indicator">&#x25B6; VIDEO</div>
+                        <div class="flyer-overlay">
+                            <span class="flyer-overlay-title">Bariloche 25/08 (Especial Nieve)</span>
+                            <span class="flyer-overlay-badge">Consultar</span>
+                        </div>
+                    </div>
                     <div class="flyer-card has-video" onclick="openPackage('Bariloche Aéreo', 'invierno')" onmouseenter="this.querySelector('video').play(); this.classList.add('playing')" onmouseleave="this.querySelector('video').pause(); this.classList.remove('playing')">
                         <img src="14_7/bariloche.jpeg" class="flyer-media flyer-img" alt="Bariloche">
                         <video loop muted playsinline class="flyer-vid" preload="none">
@@ -4021,6 +4045,25 @@
             <button class="flyer-carousel-btn left" onclick="scrollTrack(this, -1)">&#8249;</button>
             <button class="flyer-carousel-btn right" onclick="scrollTrack(this, 1)">&#8250;</button>
             <div class="flyers-track">
+                <div class="flyer-card" onmouseenter="playVid(this)" onmouseleave="pauseVid(this)"
+                    onclick="openPackage('Bariloche Nieve Agosto', 'invierno')">
+                    <div class="status-badge" style="background: rgba(239, 68, 68, 0.95);">¡SOLO 10 LUGARES!</div>
+                    <img src="8_8/bariloche.jpeg" class="flyer-media flyer-img" alt="Bariloche Salida 25/08">
+                    <video preload="none" data-src="8_8/video.mp4" muted class="flyer-video" loop playsinline></video>
+                    <div class="video-badge">▶ VIDEO</div>
+                    <button class="audio-btn" onclick="toggleAudio(event, this)" aria-label="Mute/Unmute">🔇</button>
+                    <div class="flyer-overlay">
+                        <span class="flyer-overlay-title">Bariloche Nieve (25/08)</span>
+                        <span class="flyer-overlay-badge">Consultar</span>
+                        <span class="flyer-overlay-badge" style="background-color: #3b82f6; color: #ffffff; font-size: 9px; margin-top: 4px; font-weight: bold; align-self: flex-start;">SALIDA AGOSTO AÉREO</span>
+                        <div class="flyer-overlay-dates" style="margin-top: 8px; font-size: 11px; opacity: 0.95; line-height: 1.4; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 6px; width: 100%;">
+                            <span style="font-weight: bold; display: block; margin-bottom: 2px;">Salida:</span>
+                            <div style="display: flex; flex-wrap: wrap; gap: 4px 8px;">
+                                <span>25/08</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="flyer-card" onclick="openPackage('Resumen Invierno', 'invierno')">
                     <img src="24_7/invierno/resumen.jpeg" class="flyer-media flyer-img" alt="Resumen Temporada de Invierno">

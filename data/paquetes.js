@@ -1,5 +1,47 @@
 const paquetesData = [
     {
+        id: "bariloche-agosto",
+        title: "Bariloche Nieve Agosto (Salida 25/08)",
+        season: "invierno",
+        price: "Consultar",
+        image: "8_8/bariloche.jpeg",
+        pdf: "8_8/programa_viaje.jpeg",
+        video: "8_8/video.mp4",
+        features: [
+            { icon: "", text: "Vuelo Aéreo Ida y Vuelta" },
+            { icon: "", text: "Salida Especial: 25 de Agosto (25/08)" },
+            { icon: "", text: "Nieve en Bariloche a mejor precio" },
+            { icon: "", text: "¡Solo 10 lugares disponibles!" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¿Se quedaron con ganas de nieve?</strong></p>
+            <p>Apurate con esta salida de Agosto a San Carlos de Bariloche donde no solo es más barato sino que aún hay mucha nieve!</p>
+            <p><strong>BARILOCHE🍫❄️</strong></p>
+            <ul>
+                <li>🏷️ <strong>Salida:</strong> 25/08</li>
+                <li>✈️ <strong>Transporte:</strong> Aéreo desde Buenos Aires</li>
+                <li>⚠️ <strong>Disponibilidad:</strong> ¡Solo 10 lugares disponibles!</li>
+            </ul>
+            <br>
+            <p>Consulte el programa de viaje detallado en el documento adjunto o visualízelo a continuación:</p>
+            <p><img src="8_8/programa_viaje.jpeg" alt="Programa de Viaje Bariloche 25/08" style="max-width:100%; border-radius:12px; margin-top:15px; box-shadow:0 4px 12px rgba(0,0,0,0.15);"></p>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 25 de Agosto (25/08).</p>
+            <p>- <strong>CUPOS MUY LIMITADOS:</strong> ¡Solo 10 lugares disponibles!</p>
+            <p>- Salida promocional imperdible en temporada de nieve.</p>
+            <p>- Consultá por medios de pago y financiación en cuotas fijas.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salida en Aéreo desde Buenos Aires (Aeroparque / Ezeiza) con traslados in/out en destino.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Salida 25/08", status: "POCO DISPONIBLE", color: "" }
+        ]
+    },
+    {
         id: "resumen-primavera",
         title: "Resumen Primavera",
         season: "primavera",
