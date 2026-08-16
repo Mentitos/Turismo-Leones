@@ -787,17 +787,24 @@
         }
 
         function reproducirVideo() {
-            const videoUrl = new URLSearchParams(window.location.search).get('video');
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get('id');
+            const season = params.get('season');
+            const data = (typeof getPackageData === 'function') ? getPackageData(id, season) : null;
+            const videoUrl = params.get('video') || (data ? data.video : '');
+
             if (videoUrl) {
                 const mediaBox = document.getElementById('pkgMediaBox');
-                mediaBox.innerHTML = `
-                    <div style="position: absolute; top: 15px; right: 15px; z-index: 20;">
-                        <button onclick="volverAlFlyer()" style="background: rgba(0,0,0,0.7); color: white; border: 2px solid rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; font-weight: bold; font-family: 'Montserrat', sans-serif; font-size: 12px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: background 0.2s;">
-                            ✕ Volver al Flyer
-                        </button>
-                    </div>
-                    <video id="detailVideo" src="${videoUrl}" controls autoplay style="max-height: 100%; max-width: 100%; width: 100%;"></video>
-                `;
+                if (mediaBox) {
+                    mediaBox.innerHTML = `
+                        <div style="position: absolute; top: 15px; right: 15px; z-index: 20;">
+                            <button onclick="volverAlFlyer()" style="background: rgba(0,0,0,0.7); color: white; border: 2px solid rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 20px; font-weight: bold; font-family: 'Montserrat', sans-serif; font-size: 12px; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: background 0.2s;">
+                                ✕ Volver al Flyer
+                            </button>
+                        </div>
+                        <video id="detailVideo" src="${videoUrl}" controls autoplay style="max-height: 100%; max-width: 100%; width: 100%; border-radius: 12px;"></video>
+                    `;
+                }
             }
         }
 
@@ -805,47 +812,15 @@
             const params = new URLSearchParams(window.location.search);
             const id = params.get('id');
             const season = params.get('season');
-            const urlImage = params.get('image');
-            const urlVideo = params.get('video');
+            const data = (typeof getPackageData === 'function') ? getPackageData(id, season) : null;
+            const urlImage = params.get('image') || (data ? data.image : '');
+            const urlVideo = params.get('video') || (data ? data.video : '');
             
-            if (!id || !urlImage) return;
-            const data = getPackageData(id, season);
+            if (!urlImage) return;
 
             const mediaBox = document.getElementById('pkgMediaBox');
-            let html = `<img src="${urlImage}" alt="${data.title}" style="cursor: pointer; width: 100%; height: 100%; object-fit: contain;">`;
-            if (urlVideo) {
-                html += `
-                        <div class="pkg-play-overlay" onclick="reproducirVideo()">
-                            <div class="play-icon-circle">▶</div>
-                            <div class="play-hint">TOCA EL FLYER PARA VER VIDEO</div>
-                        </div>
-                `;
-            }
-            mediaBox.innerHTML = html;
-        }
-
-        window.onload = () => {
-            const params = new URLSearchParams(window.location.search);
-            const id = params.get('id');
-            const season = params.get('season');
-            const urlImage = params.get('image');
-            const urlVideo = params.get('video');
-
-            if (!id) {
-                document.getElementById('pkgTitle').textContent = "Paquete no encontrado";
-                return;
-            }
-
-            const data = getPackageData(id, season);
-
-            document.title = `${data.title} - Turismo Leones`;
-            document.getElementById('pkgTitle').textContent = data.title;
-            document.getElementById('pkgSeason').textContent = (data.season === 'enviar info' || !data.season) ? 'Consultar' : data.season;
-
-            const mediaBox = document.getElementById('pkgMediaBox');
-            if (urlImage) {
-                let html = `<img src="${urlImage}" alt="${data.title}" style="cursor: pointer; width: 100%; height: 100%; object-fit: contain;">`;
-
+            if (mediaBox) {
+                let html = `<img src="${urlImage}" alt="${data ? data.title : 'Paquete'}" style="cursor: pointer; width: 100%; height: 100%; object-fit: contain;">`;
                 if (urlVideo) {
                     html += `
                         <div class="pkg-play-overlay" onclick="reproducirVideo()">
@@ -855,61 +830,131 @@
                     `;
                 }
                 mediaBox.innerHTML = html;
-            } else if (urlVideo) {
-                mediaBox.innerHTML = `<video id="detailVideo" src="${urlVideo}" controls autoplay muted loop style="max-height: 100%; max-width: 100%; width: 100%;"></video>`;
-                document.getElementById('pkgPlayBtn').style.display = 'flex';
-            } else if (data.image) {
-                mediaBox.innerHTML = `<img src="${data.image}" alt="${data.title}">`;
-                document.getElementById('pkgPlayBtn').style.display = 'none';
             }
+        }
 
-            const wpText = `Hola, quisiera averiguar por el paquete de ${data.title}${data.season ? ' (' + data.season + ')' : ''}`;
-            document.getElementById('pkgReservarBtn').href = `https://wa.me/5491151233885?text=${encodeURIComponent(wpText)}`;
+        window.onload = () => {
+            try {
+                const params = new URLSearchParams(window.location.search);
+                const id = params.get('id');
+                const season = params.get('season');
+                const urlImage = params.get('image');
+                const urlVideo = params.get('video');
 
-            const featuresList = document.getElementById('pkgFeatures');
-            if (data.features && data.features.length) {
-                featuresList.innerHTML = data.features.map(f => `<li><span>${f.icon}</span> ${f.text}</li>`).join('');
-            }
+                if (!id) {
+                    const titleEl = document.getElementById('pkgTitle');
+                    if (titleEl) titleEl.textContent = "Paquete no encontrado";
+                    return;
+                }
 
-            const availabilityContainer = document.getElementById('pkgAvailabilityContainer');
-            const availabilityList = document.getElementById('pkgAvailabilityList');
-            if (data.availability && data.availability.length) {
-                availabilityContainer.style.display = 'block';
-                availabilityList.innerHTML = data.availability.map(item => `
-                    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 600; padding: 8px 0; border-bottom: 1px dashed #e2e8f0;">
-                        <span style="display: flex; align-items: center; gap: 8px; color: #334155;"> ${item.date}</span>
-                        <span class="status-pill" style="
-                            padding: 3px 10px; 
-                            border-radius: 20px; 
-                            font-size: 11px; 
-                            color: white; 
-                            font-weight: bold;
-                            letter-spacing: 0.5px;
-                            background-color: ${item.status === 'AGOTADO' ? '#ef4444' : (item.status === 'POCO DISPONIBLE' ? '#f59e0b' : '#10b981')}
-                        ">${item.color} ${item.status}</span>
-                    </div>
-                `).join('');
-            } else {
-                availabilityContainer.style.display = 'none';
-            }
+                let data = null;
+                if (typeof getPackageData === 'function') {
+                    data = getPackageData(id, season);
+                }
 
-            if (data.pdf) {
-                const controls = document.querySelector('.pkg-controls >div');
-                if (controls) {
-                    const pdfBtn = document.createElement('a');
-                    pdfBtn.href = data.pdf;
-                    pdfBtn.className = 'pkg-reservar-btn';
-                    pdfBtn.style.background = 'var(--navy)';
-                    pdfBtn.style.marginTop = '10px';
-                    pdfBtn.style.display = 'block';
-                    pdfBtn.style.textAlign = 'center';
-                    pdfBtn.target = '_blank';
-                    pdfBtn.innerHTML = ' VER ITINERARIO (PDF)';
-                    controls.appendChild(pdfBtn);
+                if (!data) {
+                    data = {
+                        id: id,
+                        title: decodeURIComponent(id),
+                        season: season || 'Consultar',
+                        price: 'Consultar',
+                        image: urlImage || '15_8/campo_herradura.jpeg',
+                        features: [
+                            { icon: '🚌', text: 'Bus Ida y Vuelta' },
+                            { icon: '🙋‍♂️', text: 'Coordinación permanente' },
+                            { icon: '✨', text: 'Consultar por más detalles y reservas' }
+                        ]
+                    };
+                }
+
+                document.title = `${data.title} - Turismo Leones`;
+                const titleEl = document.getElementById('pkgTitle');
+                if (titleEl) titleEl.textContent = data.title;
+                
+                const seasonEl = document.getElementById('pkgSeason');
+                if (seasonEl) seasonEl.textContent = (data.season === 'enviar info' || !data.season) ? 'Consultar' : data.season;
+
+                const mediaBox = document.getElementById('pkgMediaBox');
+                if (mediaBox) {
+                    const displayImage = urlImage || data.image;
+                    const displayVideo = urlVideo || data.video;
+
+                    if (displayImage) {
+                        let html = `<img src="${displayImage}" alt="${data.title}" style="cursor: pointer; width: 100%; height: 100%; object-fit: contain;">`;
+
+                        if (displayVideo) {
+                            html += `
+                                <div class="pkg-play-overlay" onclick="reproducirVideo()">
+                                    <div class="play-icon-circle">▶</div>
+                                    <div class="play-hint">TOCA EL FLYER PARA VER VIDEO</div>
+                                </div>
+                            `;
+                        }
+                        mediaBox.innerHTML = html;
+                    } else if (displayVideo) {
+                        mediaBox.innerHTML = `<video id="detailVideo" src="${displayVideo}" controls autoplay muted loop style="max-height: 100%; max-width: 100%; width: 100%; border-radius: 12px;"></video>`;
+                    }
+                }
+
+                const wpText = `Hola, quisiera averiguar por el paquete de ${data.title}${data.season ? ' (' + data.season + ')' : ''}`;
+                const resBtn = document.getElementById('pkgReservarBtn');
+                if (resBtn) {
+                    resBtn.href = `https://wa.me/5491151233885?text=${encodeURIComponent(wpText)}`;
+                }
+
+                const featuresList = document.getElementById('pkgFeatures');
+                if (featuresList && data.features && data.features.length) {
+                    featuresList.innerHTML = data.features.map(f => `<li><span>${f.icon || '✔'}</span> ${f.text}</li>`).join('');
+                }
+
+                const availabilityContainer = document.getElementById('pkgAvailabilityContainer');
+                const availabilityList = document.getElementById('pkgAvailabilityList');
+                if (availabilityContainer && availabilityList) {
+                    if (data.availability && data.availability.length) {
+                        availabilityContainer.style.display = 'block';
+                        availabilityList.innerHTML = data.availability.map(item => `
+                            <div style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; font-weight: 600; padding: 8px 0; border-bottom: 1px dashed #e2e8f0;">
+                                <span style="display: flex; align-items: center; gap: 8px; color: #334155;"> ${item.date}</span>
+                                <span class="status-pill" style="
+                                    padding: 3px 10px; 
+                                    border-radius: 20px; 
+                                    font-size: 11px; 
+                                    color: white; 
+                                    font-weight: bold;
+                                    letter-spacing: 0.5px;
+                                    background-color: ${item.status === 'AGOTADO' ? '#ef4444' : (item.status === 'POCO DISPONIBLE' ? '#f59e0b' : '#10b981')}
+                                ">${item.color || ''} ${item.status}</span>
+                            </div>
+                        `).join('');
+                    } else {
+                        availabilityContainer.style.display = 'none';
+                    }
+                }
+
+                if (data.pdf) {
+                    const controls = document.querySelector('.pkg-controls > div');
+                    if (controls && !document.getElementById('pdfBtnDynamic')) {
+                        const pdfBtn = document.createElement('a');
+                        pdfBtn.id = 'pdfBtnDynamic';
+                        pdfBtn.href = data.pdf;
+                        pdfBtn.className = 'pkg-reservar-btn';
+                        pdfBtn.style.background = 'var(--navy)';
+                        pdfBtn.style.marginTop = '10px';
+                        pdfBtn.style.display = 'block';
+                        pdfBtn.style.textAlign = 'center';
+                        pdfBtn.target = '_blank';
+                        pdfBtn.innerHTML = '📄 VER ITINERARIO (PDF)';
+                        controls.appendChild(pdfBtn);
+                    }
+                }
+            } catch (err) {
+                console.error("Error cargando detalle:", err);
+                const titleEl = document.getElementById('pkgTitle');
+                if (titleEl && titleEl.textContent === "Cargando...") {
+                    const params = new URLSearchParams(window.location.search);
+                    titleEl.textContent = params.get('id') || "Detalle del Paquete";
                 }
             }
-
-
         };
     </script>
 </body>

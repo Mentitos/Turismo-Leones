@@ -1,5 +1,188 @@
 const paquetesData = [
     {
+        id: "campo-la-herradura-dia-del-maestro",
+        title: "Campo La Herradura Día del Maestro",
+        season: "maestro",
+        price: "$99.990",
+        image: "15_8/campo_herradura.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "☀️", text: "Programa Full Day (Día de Campo)" },
+            { icon: "🥩", text: "Desayuno, Almuerzo (Asado) y Merienda" },
+            { icon: "🥤", text: "Bebidas sin alcohol incluidas" },
+            { icon: "🐎", text: "Cabalgatas y actividades campestres" },
+            { icon: "💳", text: "6 cuotas fijas de $23.331" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡Especial Día del Maestro en Campo La Herradura!</strong></p>
+            <p>Vení a disfrutar de un día de campo completo e inolvidable para celebrar el Día del Maestro rodeado de naturaleza y la mejor gastronomía criolla.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>☀️ <strong>Modalidad:</strong> Full Day (Día de campo).</li>
+                <li>🥩 <strong>Gastronomía completa:</strong> Recepción/desayuno, almuerzo con asado criollo completo, bebidas sin alcohol libres y merienda.</li>
+                <li>🐎 <strong>Actividades:</strong> Paseos a caballo, cabalgatas guiadas y uso de todas las instalaciones del predio.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $23.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas Septiembre:</strong> 11 de Septiembre (AGOTADO) | 13 de Septiembre (¡ÚLTIMOS LUGARES!).</p>
+            <p>- Tarifa especial Día del Maestro por persona: $99.990.</p>
+            <p>- Financiación disponible en 6 cuotas de $23.331.</p>
+            <p>- Cupos limitados. Reservá con anticipación.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "11 de Septiembre", status: "AGOTADO", color: "🔴" },
+            { date: "13 de Septiembre", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
+    },
+    {
+        id: "mar-del-plata-dia-del-maestro",
+        title: "Mar del Plata Día del Maestro",
+        season: "maestro",
+        price: "$179.990",
+        image: "15_8/mar_plata.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X 2NTS VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "3 Días / 2 Noches en Hotel Nuevo Horizonte" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🌊", text: "Escapada especial a la costa" },
+            { icon: "💳", text: "6 cuotas de $44.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡Especial Día del Maestro en Mar del Plata!</strong></p>
+            <p>Disfrutá de una hermosa escapada frente al mar en 'La Feliz' para celebrar el Día del Maestro como te merecés.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta de última generación.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 3 Días / 2 Noches en Hotel Nuevo Horizonte.</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno buffet incluido.</li>
+                <li>🙋‍♂️ <strong>Coordinación:</strong> Coordinador permanente durante todo el itinerario.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $44.331 (Gastos Adm. $10.000).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida Septiembre:</strong> 11 de Septiembre (¡ÚLTIMOS LUGARES!).</p>
+            <p>- Tarifa especial Día del Maestro por persona: $179.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación disponible en 6 cuotas de $44.331.</p>
+            <p>- Cupos muy reducidos.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "11 de Septiembre", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
+    },
+    {
+        id: "san-pedro-dia-del-maestro",
+        title: "San Pedro Día del Maestro",
+        season: "maestro",
+        price: "$109.990",
+        image: "15_8/san_pedro.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN PEDRO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "☀️", text: "Programa Full Day" },
+            { icon: "🥩", text: "Almuerzo con Parrillada incluida" },
+            { icon: "🏛️", text: "Visita Vuelta de Obligado" },
+            { icon: "🍊", text: "Visita La Campiña de Mónica y César" },
+            { icon: "🥐", text: "Visita fábrica de Ensaimadas" },
+            { icon: "💳", text: "6 cuotas de $25.665" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡Especial Día del Maestro en San Pedro!</strong></p>
+            <p>Vení a pasar un día maravilloso junto al río Paraná, descubriendo la historia, paisajes y la deliciosa gastronomía sampedrina.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>☀️ <strong>Modalidad:</strong> Full Day.</li>
+                <li>🥩 <strong>Gastronomía:</strong> Almuerzo con auténtica Parrillada incluida.</li>
+                <li>🏛️ <strong>Excursiones y Paseos:</strong> Visita al Monumento Histórico Vuelta de Obligado, visita guiada a La Campiña (de Mónica y César) y visita con degustación a fábrica tradicional de Ensaimadas.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $25.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas Septiembre:</strong> 11 de Septiembre (¡ÚLTIMOS LUGARES!) | 13 de Septiembre (¡ÚLTIMOS LUGARES!).</p>
+            <p>- Tarifa especial Día del Maestro por persona: $109.990.</p>
+            <p>- Financiación disponible en 6 cuotas de $25.665.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "11 de Septiembre", status: "POCO DISPONIBLE", color: "🟡" },
+            { date: "13 de Septiembre", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
+    },
+    {
+        id: "termas-de-guaychu-dia-del-maestro",
+        title: "Termas de Guaychú Día del Maestro",
+        season: "maestro",
+        price: "$99.990",
+        image: "15_8/termas_guaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "☀️", text: "Programa Full Day" },
+            { icon: "🎟️", text: "Entrada Incluida al Complejo Termal" },
+            { icon: "🏊‍♂️", text: "Piscinas termales cubiertas y al aire libre" },
+            { icon: "🌿", text: "Naturaleza, relax y recreación" },
+            { icon: "💳", text: "6 cuotas de $23.331" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡Especial Día del Maestro en Termas de Guaychú!</strong></p>
+            <p>Regalate un día de descanso total, relax y diversión en las reconocidas aguas termales de Guaychú (Entre Ríos).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>☀️ <strong>Modalidad:</strong> Full Day Termal.</li>
+                <li>🎟️ <strong>Entrada al complejo:</strong> Entrada general 100% incluida a Termas de Guaychú.</li>
+                <li>🏊‍♂️ <strong>Instalaciones:</strong> Acceso a piscinas de aguas termales, parques, áreas de sombra y descanso.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $23.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas Septiembre:</strong> 11 de Septiembre (AGOTADO) | 13 de Septiembre (¡ÚLTIMOS LUGARES!).</p>
+            <p>- Tarifa especial Día del Maestro por persona: $99.990.</p>
+            <p>- Financiación disponible en 6 cuotas de $23.331.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "11 de Septiembre", status: "AGOTADO", color: "🔴" },
+            { date: "13 de Septiembre", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
+    },
+    {
         id: "bariloche-agosto",
         title: "Bariloche Nieve Agosto (Salida 25/08)",
         season: "invierno",
@@ -1221,160 +1404,7 @@ const paquetesData = [
             </ul>
         `
     },
-    {
-        id: "mendoza-aereo-dia-del-maestro",
-        title: "Mendoza Aéreo Día del Maestro",
-        season: "maestro",
-        price: "$529.990",
-        image: "nuevo20_5/dia_del_maestro.jpeg",
-        features: [
-            { icon: "", text: "Aéreo desde Buenos Aires (ida y vuelta)" },
-            { icon: "", text: "Alojamiento céntrico con desayuno" },
-            { icon: "", text: "Traslados de llegada y salida" },
-            { icon: "", text: "Coordinación permanente" },
-            { icon: "", text: "Especial Día del Maestro" }
-        ],
-        itinerary: `<p>¡Salida especial Día del Maestro! Disfrutá de la tierra del sol y del buen vino.</p>`,
-        importantNotes: `<p>- Cupos muy limitados. Tarifas especiales para docentes y acompañantes.</p>`,
-        boardingPoints: `<ul><li>Aeroparque Jorge Newbery / Ezeiza</li></ul>`
-    },
-    {
-        id: "cataratas-aereo-dia-del-maestro",
-        title: "Cataratas Aéreo Día del Maestro",
-        season: "maestro",
-        price: "$539.990",
-        image: "nuevo20_5/dia_del_maestro.jpeg",
-        features: [
-            { icon: "", text: "Aéreo desde Buenos Aires (ida y vuelta)" },
-            { icon: "", text: "Alojamiento con piscina y desayuno" },
-            { icon: "", text: "Traslados in/out" },
-            { icon: "", text: "Coordinación permanente" },
-            { icon: "", text: "Especial Día del Maestro" }
-        ],
-        itinerary: `<p>¡Salida especial Día del Maestro! Viví una experiencia única en una de las Nuevas Siete Maravillas del Mundo.</p>`,
-        importantNotes: `<p>- Cupos muy limitados. Tarifas especiales para docentes y acompañantes.</p>`,
-        boardingPoints: `<ul><li>Aeroparque Jorge Newbery / Ezeiza</li></ul>`
-    },
-    {
-        id: "villa-de-merlo-bus-dia-del-maestro",
-        title: "Villa de Merlo Bus Día del Maestro",
-        season: "maestro",
-        price: "$229.990",
-        image: "ordenarmas/invierno_merlo.jpeg",
-        features: [
-            { icon: "", text: "Bus Mix de última generación" },
-            { icon: "", text: "Alojamiento con media pensión" },
-            { icon: "", text: "Coordinación permanente" },
-            { icon: "", text: "Especial Día del Maestro" }
-        ],
-        itinerary: `<p>Disfrutá del excelente microclima de Villa de Merlo en este fin de semana especial.</p>`,
-        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
-    },
-    {
-        id: "villa-carlos-paz-bus-dia-del-maestro",
-        title: "Villa Carlos Paz Bus Día del Maestro",
-        season: "maestro",
-        price: "$229.990",
-        image: "ordenarmas/invierno_carlos_paz.jpeg",
-        features: [
-            { icon: "", text: "Bus Mix de última generación" },
-            { icon: "", text: "Alojamiento con media pensión" },
-            { icon: "", text: "Coordinación permanente" },
-            { icon: "", text: "Especial Día del Maestro" }
-        ],
-        itinerary: `<p>Divertite y relajate en las sierras de Córdoba en este especial para maestros.</p>`,
-        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
-    },
-    {
-        id: "tandil-bus-dia-del-maestro",
-        title: "Tandil Bus Día del Maestro",
-        season: "maestro",
-        price: "$199.990",
-        image: "ordenarmas/invierno_tandil.jpeg",
-        features: [
-            { icon: "", text: "Bus Mix de última generación" },
-            { icon: "", text: "Alojamiento con desayuno" },
-            { icon: "", text: "Coordinación permanente" },
-            { icon: "", text: "Especial Día del Maestro" }
-        ],
-        itinerary: `<p>Escapate a las sierras de Tandil, disfrutá del aire libre y la gastronomía regional.</p>`,
-        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
-    },
-    {
-        id: "gualeguaychu-bus-dia-del-maestro",
-        title: "Gualeguaychú Bus Día del Maestro",
-        season: "maestro",
-        price: "$189.990",
-        image: "ordenarmas/invierno_gualeguaychu.jpeg",
-        features: [
-            { icon: "", text: "Bus Mix de última generación" },
-            { icon: "", text: "Alojamiento con desayuno" },
-            { icon: "", text: "Coordinación permanente" },
-            { icon: "", text: "Especial Día del Maestro" }
-        ],
-        itinerary: `<p>Disfrutá del río, las termas y la tranquilidad de Gualeguaychú.</p>`,
-        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
-    },
-    {
-        id: "mar-del-plata-bus-dia-del-maestro",
-        title: "Mar del Plata Bus Día del Maestro",
-        season: "maestro",
-        price: "$179.990",
-        image: "Feriados/feriado_mardelplata.jpeg",
-        features: [
-            { icon: "", text: "Bus Mix de última generación" },
-            { icon: "", text: "Alojamiento céntrico con desayuno" },
-            { icon: "", text: "Coordinación permanente" },
-            { icon: "", text: "Especial Día del Maestro" }
-        ],
-        itinerary: `<p>Disfrutá de la brisa marina, los teatros y los mejores paseos en Mar del Plata.</p>`,
-        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque en CABA y GBA</li></ul>`
-    },
-    {
-        id: "san-pedro-bus-dia-del-maestro",
-        title: "San Pedro Bus Día del Maestro",
-        season: "maestro",
-        price: "$109.990",
-        image: "ordenarmas/invierno_san_pedro.jpeg",
-        features: [
-            { icon: "", text: "Bus semicama confortable" },
-            { icon: "", text: "Especial Día del Maestro" },
-            { icon: "", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>Ideal para un fin de semana campestre en la costa del río Paraná.</p>`,
-        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
-    },
-    {
-        id: "campo-la-herradura-bus-dia-del-maestro",
-        title: "Campo La Herradura Bus Día del Maestro",
-        season: "maestro",
-        price: "$99.990",
-        image: "ordenarmas/invierno_campo_la_herradura.jpeg",
-        features: [
-            { icon: "", text: "Bus semicama confortable" },
-            { icon: "", text: "Almuerzo de campo incluido" },
-            { icon: "", text: "Especial Día del Maestro" },
-            { icon: "", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>Un día de campo inolvidable con el mejor asado criollo y actividades tradicionales.</p>`,
-        importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,
-        boardingPoints: `<ul><li>Varios puntos de embarque</li></ul>`
-    },
-    {
-        id: "termas-de-guaychu-bus-dia-del-maestro",
-        title: "Termas de Guaychú Bus Día del Maestro",
-        season: "maestro",
-        price: "$99.990",
-        image: "ordenarmas/invierno_termas.jpeg",
-        features: [
-            { icon: "", text: "Bus semicama confortable" },
-            { icon: "", text: "Entrada al complejo termal incluida" },
+    { icon: "", text: "Entrada al complejo termal incluida" },
             { icon: "", text: "Especial Día del Maestro" },
             { icon: "", text: "Coordinación permanente" }
         ],
@@ -1619,39 +1649,53 @@ function getPackageData(title, season) {
     if (!title) return null;
 
     // Normalization function to remove accents and special characters
-    const normalize = (s) =>s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    const normalize = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
     
     const targetId = normalize(title);
     const targetSeasonId = season ? `${targetId}-${normalize(season)}` : null;
 
-    // Try finding by normalized ID, original ID, or normalized title
+    // 1. Try finding by normalized ID, original ID, or normalized title
     let p = paquetesData.find(item => {
         const itemId = normalize(item.id);
         const itemTitle = normalize(item.title);
         return itemId === targetSeasonId || itemId === targetId || itemTitle === targetId || item.id === title;
     });
 
-    if (!p) {
-        // Fallback to a partial title match if still not found
-        p = paquetesData.find(item =>normalize(item.title).includes(targetId) || targetId.includes(normalize(item.title)));
+    // 2. Try finding with season filter
+    if (!p && season) {
+        p = paquetesData.find(item => {
+            const itemTitle = normalize(item.title);
+            const itemSeason = normalize(item.season || '');
+            return (itemTitle.includes(targetId) || targetId.includes(itemTitle)) && itemSeason === normalize(season);
+        });
     }
 
+    // 3. Fallback to a partial title or ID match
+    if (!p) {
+        p = paquetesData.find(item => {
+            const itemTitle = normalize(item.title);
+            const itemId = normalize(item.id);
+            return itemTitle.includes(targetId) || targetId.includes(itemTitle) || itemId.includes(targetId) || targetId.includes(itemId);
+        });
+    }
+
+    // 4. Default fallback object so no flyer EVER fails
     if (!p) {
         return {
             id: targetId,
             title: title || "Destino Turístico",
             season: season || 'Consultar',
             price: "Consultar",
-            image: "Otoño/gualeguaychu_otoño.jpeg",
+            image: "15_8/campo_herradura.jpeg",
             features: [
-                { icon: "", text: "Programa Full Day" },
-                { icon: "", text: "Traslados en Bus Mix Confort | Ida y Vuelta" },
-                { icon: "", text: "Coordinación permanente" },
-                { icon: "✔", text: "Asistencia médica" }
+                { icon: "🚌", text: "Traslados ida y vuelta en Bus Mix Confort" },
+                { icon: "🙋‍♂️", text: "Coordinación permanente" },
+                { icon: "✨", text: "Salidas programadas y cupos limitados" },
+                { icon: "✔", text: "Asistencia médica incluida" }
             ],
-            itinerary: paquetesData[0].itinerary,
-            importantNotes: paquetesData[0].importantNotes,
-            boardingPoints: paquetesData[0].boardingPoints,
+            itinerary: `<p>Consulte el itinerario detallado de <strong>${title}</strong> solicitando información personalizada.</p>`,
+            importantNotes: `<p>- Tarifas y disponibilidad sujetas a confirmación.</p><p>- Consultá facilidades de pago en cuotas.</p>`,
+            boardingPoints: `<ul><li>Puntos de embarque en CABA y Gran Buenos Aires.</li></ul>`,
             legal: ""
         };
     }
