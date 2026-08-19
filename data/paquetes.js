@@ -1,5 +1,198 @@
 const paquetesData = [
     {
+        id: "aimogasta-super-sale",
+        title: "Aimogasta Super Sale",
+        season: "super-sale",
+        price: "$199.990",
+        originalPrice: "$389.990",
+        image: "nuevo19_8/aimogasta.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/AIMOGASTA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Aimogasta/VIDEO-2025-10-29-12-12-11.mp4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $389.990" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Gran Arauco (6 Días / 3 Noches)" },
+            { icon: "📅", text: "Salida: 20 de Agosto" },
+            { icon: "💳", text: "6 cuotas de $48.998" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN AIMOGASTA!</strong></p>
+            <p>Aprovechá esta super oferta exclusiva para viajar a Aimogasta a un precio imperdible de <strong>$199.990</strong> (Precio regular: $389.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Gran Arauco (6 días / 3 noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 20 de Agosto.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $48.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 20 de Agosto.</p>
+            <p>- Tarifa Super Sale: $199.990 (Antes $389.990).</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $48.998.</p>
+            <p>- Cupos limitados hasta agotar disponibilidad.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "20 de Agosto", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "salta-super-sale",
+        title: "Salta Super Sale",
+        season: "super-sale",
+        price: "$199.990",
+        originalPrice: "$439.990",
+        image: "nuevo19_8/salta.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $439.990" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "⛰️", text: "Traslado incluido a la Virgen del Cerro" },
+            { icon: "🏨", text: "Hotel Inti Raymi (7 Días / 4 Noches)" },
+            { icon: "📅", text: "Salida: 20 de Agosto" },
+            { icon: "💳", text: "6 cuotas de $48.998" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN SALTA LA LINDA!</strong></p>
+            <p>Viví la magia del norte argentino con una tarifa promocional única de <strong>$199.990</strong> (Precio regular: $439.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Inti Raymi (7 días / 4 noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>⛰️ <strong>Excursión:</strong> Traslado incluido a la Virgen del Cerro.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 20 de Agosto.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $48.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 20 de Agosto.</p>
+            <p>- Tarifa Super Sale: $199.990 (Antes $439.990).</p>
+            <p>- Traslado incluido a la Virgen del Cerro.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $48.998.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "20 de Agosto", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "termas-de-rio-hondo-super-sale",
+        title: "Termas de Río Hondo Super Sale",
+        season: "super-sale",
+        price: "$289.990",
+        originalPrice: "$479.990",
+        image: "nuevo19_8/terma_rio_hondo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/TERMAS DE RIO HONDO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Rio Hondo/81881e9d-6144-41d9-b8c1-6cf2551f3964.MP4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $479.990" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🍽️", text: "Pensión Completa" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏊", text: "Hotel Internacional con Piscina Termal (7 Días / 4 Noches)" },
+            { icon: "📅", text: "Salida: 23 de Agosto" },
+            { icon: "💳", text: "6 cuotas de $69.998" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN TERMAS DE RÍO HONDO!</strong></p>
+            <p>Relax total y aguas termales con Pensión Completa por solo <strong>$289.990</strong> (Precio regular: $479.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Internacional con Piscina Termal (7 días / 4 noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Pensión Completa.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 23 de Agosto.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $69.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 23 de Agosto.</p>
+            <p>- Tarifa Super Sale: $289.990 (Antes $479.990).</p>
+            <p>- Hotel con piscina termal y pensión completa.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $69.998.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "23 de Agosto", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "villa-carlos-paz-super-sale",
+        title: "Villa Carlos Paz Super Sale",
+        season: "super-sale",
+        price: "$179.990",
+        originalPrice: "$269.990",
+        image: "nuevo19_8/villa_carlos_paz.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $269.990" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🍽️", text: "Pensión Completa" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏊", text: "Hotel Palmas del Lago con Piscina Climatizada (5 Días / 3 Noches)" },
+            { icon: "📅", text: "Salida: 22 de Agosto" },
+            { icon: "💳", text: "6 cuotas de $44.331" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN VILLA CARLOS PAZ!</strong></p>
+            <p>Disfrutá de las sierras de Córdoba con Pensión Completa en Hotel Palmas del Lago por <strong>$179.990</strong> (Precio regular: $269.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Palmas del Lago con piscina climatizada (5 días / 3 noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Pensión Completa.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 22 de Agosto.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $44.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 22 de Agosto.</p>
+            <p>- Tarifa Super Sale: $179.990 (Antes $269.990).</p>
+            <p>- Hotel con piscina climatizada y pensión completa.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $44.331.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "22 de Agosto", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
         id: "campo-la-herradura-dia-del-maestro",
         title: "Campo La Herradura Día del Maestro",
         season: "maestro",
