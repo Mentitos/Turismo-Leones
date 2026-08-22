@@ -418,6 +418,289 @@ const paquetesData = [
         ]
     },
     {
+        id: "mar-de-ajo-primavera-3d-2n",
+        title: "Mar de Ajó Primavera (3D / 2N)",
+        season: "primavera",
+        price: "$199.990",
+        image: "22_8/mar_ajo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Atlantic (A 30 mts del mar)" },
+            { icon: "📅", text: "Salida: Diciembre 01-03 (3 Días / 2 Noches)" },
+            { icon: "💳", text: "6 cuotas de $48.997" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA A MAR DE AJÓ CON TRAVELAR!</strong></p>
+            <p>Disfrutá de una escapada increíble a Mar de Ajó junto al mar con todo resuelto por <strong>$199.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Atlantic (a sólo 30 metros del mar - 3 días / 2 noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>📅 <strong>Salida confirmada:</strong> Diciembre 01 al 03.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $48.997.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> Diciembre 01-03.</p>
+            <p>- <strong>Duración:</strong> 3 Días / 2 Noches.</p>
+            <p>- <strong>Tarifa:</strong> $199.990 por persona.</p>
+            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
+            <p>- <strong>Financiación:</strong> 6 cuotas de $48.997.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Diciembre 01-03", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "mar-de-ajo-primavera-2d-1n",
+        title: "Mar de Ajó Primavera (2D / 1N)",
+        season: "primavera",
+        price: "$169.990",
+        image: "22_8/mar_ajo_2.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Atlantic (A 30 mts del mar)" },
+            { icon: "📅", text: "Salida: Noviembre 07 (2 Días / 1 Noche)" },
+            { icon: "💳", text: "6 cuotas de $41.998" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡ESCAPADA DE PRIMAVERA A MAR DE AJÓ CON TRAVELAR!</strong></p>
+            <p>Aprovechá este fin de semana primaveral frente a la playa por <strong>$169.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Atlantic (a sólo 30 metros del mar - 2 días / 1 noche).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 07 de Noviembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $41.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 07 de Noviembre.</p>
+            <p>- <strong>Duración:</strong> 2 Días / 1 Noche.</p>
+            <p>- <strong>Tarifa:</strong> $169.990 por persona.</p>
+            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
+            <p>- <strong>Financiación:</strong> 6 cuotas de $41.998.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "07 de Noviembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "mar-del-plata-primavera-3d-2n",
+        title: "Mar del Plata Primavera (3D / 2N)",
+        season: "primavera",
+        price: "$199.990",
+        image: "22_8/mar_del_plata.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X 2NTS VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🍽️", text: "Pensión Completa" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Riazor (3 Días / 2 Noches)" },
+            { icon: "📅", text: "Salidas: Diciembre 01 - 03 - 08" },
+            { icon: "💳", text: "6 cuotas de $48.997" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA A MAR DEL PLATA CON TRAVELAR!</strong></p>
+            <p>Viví la ciudad feliz con pensión completa y la mejor atención en Hotel Riazor por <strong>$199.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Riazor (3 días / 2 noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Pensión Completa.</li>
+                <li>📅 <strong>Salidas confirmadas:</strong> Diciembre 01, 03 y 08.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $48.997.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> Diciembre 01, 03 y 08.</p>
+            <p>- <strong>Duración:</strong> 3 Días / 2 Noches.</p>
+            <p>- <strong>Tarifa:</strong> $199.990 por persona con Pensión Completa.</p>
+            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
+            <p>- <strong>Financiación:</strong> 6 cuotas de $48.997.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "01 de Diciembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "03 de Diciembre", status: "ÚLTIMOS LUGARES", color: "🟡" },
+            { date: "08 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-del-plata-primavera-2d-1n",
+        title: "Mar del Plata Primavera (2D / 1N)",
+        season: "primavera",
+        price: "$169.990",
+        image: "22_8/mar_del_plata_2.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X1 NT VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🍽️", text: "Pensión Completa" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Riazor (2 Días / 1 Noche)" },
+            { icon: "📅", text: "Salida: Noviembre 07" },
+            { icon: "💳", text: "6 cuotas de $41.998" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡ESCAPADA DE PRIMAVERA A MAR DEL PLATA CON TRAVELAR!</strong></p>
+            <p>Disfrutá del mar en Mar del Plata con Pensión Completa por <strong>$169.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Riazor (2 días / 1 noche).</li>
+                <li>🍽️ <strong>Régimen:</strong> Pensión Completa.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 07 de Noviembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $41.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 07 de Noviembre.</p>
+            <p>- <strong>Duración:</strong> 2 Días / 1 Noche.</p>
+            <p>- <strong>Tarifa:</strong> $169.990 por persona con Pensión Completa.</p>
+            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
+            <p>- <strong>Financiación:</strong> 6 cuotas de $41.998.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "07 de Noviembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "san-bernardo-primavera",
+        title: "San Bernardo Primavera",
+        season: "primavera",
+        price: "$239.990",
+        image: "22_8/san_bernardo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Bernardo/425148a7-1c28-44ae-81d5-f4997dcda3d8.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "☕", text: "Desayuno y Merienda" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Majo (Frente al mar - 3 Días / 2 Noches)" },
+            { icon: "📅", text: "Salidas: Noviembre 27 | Diciembre 11-13" },
+            { icon: "💳", text: "6 cuotas de $58.331" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA A SAN BERNARDO CON TRAVELAR!</strong></p>
+            <p>Viví una estadía de ensueño frente al mar en Hotel Majo por <strong>$239.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Majo (Frente al mar - 3 días / 2 noches).</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno y Merienda incluidos.</li>
+                <li>📅 <strong>Salidas confirmadas:</strong> 27 de Noviembre y 11 al 13 de Diciembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $58.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> 27 de Noviembre y 11 al 13 de Diciembre.</p>
+            <p>- <strong>Duración:</strong> 3 Días / 2 Noches.</p>
+            <p>- <strong>Tarifa:</strong> $239.990 por persona.</p>
+            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
+            <p>- <strong>Financiación:</strong> 6 cuotas de $58.331.</p>
+            <p>- Hotel Majo frente al mar.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "27 de Noviembre", status: "ÚLTIMOS LUGARES", color: "🟡" },
+            { date: "11-13 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "santa-teresita-primavera",
+        title: "Santa Teresita Primavera",
+        season: "primavera",
+        price: "$189.990",
+        image: "22_8/santa_teresita.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Santa Teresita/d9ed77d3-3006-497f-b8c2-d6df92bc76c9.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Turista (3 Días / 2 Noches)" },
+            { icon: "📅", text: "Salida: Diciembre 11-13" },
+            { icon: "💳", text: "6 cuotas de $46.665" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA A SANTA TERESITA CON TRAVELAR!</strong></p>
+            <p>Disfrutá de la tranquilidad y las playas de Santa Teresita en Hotel Turista por <strong>$189.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Turista (3 días / 2 noches).</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno incluido.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 11 al 13 de Diciembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $46.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 11 al 13 de Diciembre.</p>
+            <p>- <strong>Duración:</strong> 3 Días / 2 Noches.</p>
+            <p>- <strong>Tarifa:</strong> $189.990 por persona.</p>
+            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
+            <p>- <strong>Financiación:</strong> 6 cuotas de $46.665.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "11-13 de Diciembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
         id: "resumen-primavera",
         title: "Resumen Primavera",
         season: "primavera",
