@@ -1,4 +1,813 @@
 const paquetesData = [
+    // === TRAVEL SALE 2026 JETSMART (25_5) ===
+    {
+        id: "resumen-travel-sale-jetsmart",
+        title: "Resumen Travel Sale JetSMART",
+        season: "jetsmart",
+        price: "Desde $525.990",
+        image: "25_5/24_30_agosto_jetsmart/resumen.jpeg",
+        features: [
+            { icon: "✈️", text: "Vuelos con JetSMART + Traslados incluidos" },
+            { icon: "💥", text: "¡PROMO 4X3! Viajan 4 pagan 3" },
+            { icon: "🧳", text: "Equipaje Carry On 10kg incluido" },
+            { icon: "📍", text: "Destinos: Salta, Cataratas, Ushuaia y San Martín de los Andes" },
+            { icon: "📅", text: "Promoción válida del 24 al 30 de Agosto" }
+        ],
+        itinerary: `
+            <p>✈️ <strong>¡TRAVEL SALE 2026 JETSMART - PROMO 4X3!</strong></p>
+            <p>Del 24 al 30 de Agosto aprovechá la super promo <strong>4x3 (Viajan 4 Pagan 3)</strong> en destinos aéreos seleccionados volando con <strong>JetSMART</strong>.</p>
+            <br>
+            <p><strong>DESTINOS Y TARIFAS DESTACADAS:</strong></p>
+            <ul>
+                <li>📍 <strong>Salta (4 Días / 3 Noches):</strong> $659.990</li>
+                <li>📍 <strong>Salta (5 Días / 4 Noches):</strong> $779.990</li>
+                <li>📍 <strong>Cataratas del Iguazú (4 Días / 3 Noches):</strong> $699.990 / $749.990</li>
+                <li>📍 <strong>San Martín de los Andes (4 Días / 3 Noches):</strong> $699.990</li>
+                <li>📍 <strong>Ushuaia (5 Días / 4 Noches):</strong> $849.990</li>
+                <li>📍 <strong>Bariloche (4 Días / 3 Noches):</strong> $549.990</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Promoción válida únicamente para compras del 24 al 30 de Agosto.</p>
+            <p>- Promo 4x3: viajan 4 personas, pagan 3.</p>
+            <p>- Vuelos con JetSMART con equipaje carry on de 10kg incluido.</p>
+            <p>- Cupos aéreos limitados por fecha.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salidas aéreas desde Aeroparque Jorge Newbery / Ezeiza.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Del 24 al 30 de Agosto", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "bariloche-jetsmart-travel-sale",
+        title: "Bariloche JetSMART Travel Sale",
+        season: "jetsmart",
+        price: "$549.990",
+        originalPrice: "$729.990",
+        image: "25_5/24_30_agosto_jetsmart/bariloche.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Bariloche/a9092de1-4c02-4275-8bce-981f7c2bebd8.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/BARILOCHE AÉREO VEND MAYO_ JUNIO.pdf",
+        features: [
+            { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
+            { icon: "🚐", text: "Traslados in / out incluidos" },
+            { icon: "🏨", text: "Hotel Internacional o Similar (4 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🧳", text: "Carry On 10kg incluido" },
+            { icon: "📅", text: "Salida: 24 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $130.664 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✈️ <strong>¡TRAVEL SALE 2026 EN BARILOCHE CON JETSMART!</strong></p>
+            <p>Disfrutá de la belleza incomparable de San Carlos de Bariloche con vuelos directos JetSMART a un precio promocional de <strong>$549.990</strong> (Antes $729.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ <strong>Vuelos:</strong> Pasajes aéreos ida y vuelta con JetSMART + Carry On de 10kg.</li>
+                <li>🚐 <strong>Traslados:</strong> Aeropuerto / Hotel / Aeropuerto en destino.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 4 Días / 3 Noches en Hotel Internacional o similar.</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 24 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $130.664.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 24 de Septiembre.</p>
+            <p>- Tarifa Travel Sale: $549.990 (Antes $729.990).</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $130.664.</p>
+            <p>- Cupos aéreos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salida desde Aeroparque / Ezeiza con JetSMART.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "24 de Septiembre", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
+    },
+    {
+        id: "salta-jetsmart-4x3-travel-sale",
+        title: "Salta JetSMART 4x3 Travel Sale",
+        season: "jetsmart",
+        price: "$659.990",
+        image: "25_5/24_30_agosto_jetsmart/salta.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/SALTA AÉREO VEND JUNIO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 4X3! Viajan 4 pagan 3" },
+            { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
+            { icon: "🚐", text: "Traslados in / out incluidos" },
+            { icon: "🏨", text: "Hotel Inti Raymi" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🧳", text: "Carry On 10kg incluido" },
+            { icon: "📅", text: "Salidas: 13 Oct, 10 Nov (4D/3N: $659.990) y 05 Dic Feriado (5D/4N: $779.990)" },
+            { icon: "💳", text: "6 cuotas de $156.331 / $184.331" }
+        ],
+        itinerary: `
+            <p>✈️ <strong>¡SALTA LA LINDA CON JETSMART - PROMO 4X3!</strong></p>
+            <p>Viajá en grupo o familia con la imperdible promo <strong>4x3 (Viajan 4 Pagan 3)</strong> hacia el norte argentino con vuelos directos JetSMART.</p>
+            <br>
+            <p><strong>OPCIONES DE VIAJE:</strong></p>
+            <ul>
+                <li>📅 <strong>13 de Octubre & 10 de Noviembre:</strong> 4 Días / 3 Noches por <strong>$659.990</strong> (6 cuotas de $156.331).</li>
+                <li>📅 <strong>05 de Diciembre (Feriado):</strong> 5 Días / 4 Noches por <strong>$779.990</strong> (6 cuotas de $184.331).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ Pasajes aéreos con JetSMART + Carry on 10kg.</li>
+                <li>🚐 Traslados aeropuerto / hotel / aeropuerto.</li>
+                <li>🏨 Hotel Inti Raymi.</li>
+                <li>🍽️ Media Pensión.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Promo 4x3: Viajan 4 pagan 3.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Salida Feriado 05/12: 5 Días / 4 Noches ($779.990).</p>
+            <p>- Salidas Octubre y Noviembre: 4 Días / 3 Noches ($659.990).</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salida desde Aeroparque / Ezeiza con JetSMART.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "13 de Octubre (4D/3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "10 de Noviembre (4D/3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "05 de Diciembre Feriado (5D/4N)", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
+    },
+    {
+        id: "salta-jetsmart-promo-septiembre",
+        title: "Salta JetSMART Promo Septiembre",
+        season: "jetsmart",
+        price: "$525.990",
+        originalPrice: "$699.990",
+        image: "25_5/24_30_agosto_jetsmart/salta2.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/SALTA AÉREO VEND JUNIO 2026.pdf",
+        features: [
+            { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
+            { icon: "🚐", text: "Traslados in / out incluidos" },
+            { icon: "🏨", text: "Hotel Inti Raymi (4 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🧳", text: "Carry On 10kg incluido" },
+            { icon: "📅", text: "Salida: 26 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $125.064 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✈️ <strong>¡ESPECIAL SEPTIEMBRE EN SALTA CON JETSMART!</strong></p>
+            <p>Aprovechá la tarifa super rebajada de <strong>$525.990</strong> (Antes $699.990) con salida especial el 26 de Septiembre.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ <strong>Vuelos:</strong> Pasajes ida y vuelta con JetSMART + Carry on 10kg.</li>
+                <li>🚐 <strong>Traslados:</strong> Aeropuerto / Hotel / Aeropuerto.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Inti Raymi (4 Días / 3 Noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 26 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $125.064.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 26 de Septiembre.</p>
+            <p>- Tarifa Promo: $525.990 (Antes $699.990).</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $125.064.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salida desde Aeroparque / Ezeiza con JetSMART.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "26 de Septiembre", status: "POCO DISPONIBLE", color: "🟡" }
+        ]
+    },
+    {
+        id: "san-martin-de-los-andes-jetsmart-4x3-travel-sale",
+        title: "San Martín de los Andes JetSMART 4x3 Travel Sale",
+        season: "jetsmart",
+        price: "$699.990",
+        image: "25_5/24_30_agosto_jetsmart/san_martin_los_andes.jpeg",
+        features: [
+            { icon: "💥", text: "¡PROMO 4X3! Viajan 4 pagan 3" },
+            { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
+            { icon: "🚐", text: "Traslados in / out incluidos" },
+            { icon: "🏨", text: "Hotel Turismo Patagonia (4 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🧳", text: "Carry On 10kg incluido" },
+            { icon: "📅", text: "Salida: 09 de Diciembre" },
+            { icon: "💳", text: "6 cuotas de $165.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✈️ <strong>¡SAN MARTÍN DE LOS ANDES CON JETSMART - PROMO 4X3!</strong></p>
+            <p>Viví los paisajes cordilleranos y lagos cristalinos con la promo <strong>4x3 (Viajan 4 Pagan 3)</strong> por <strong>$699.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ <strong>Vuelos:</strong> Pasajes aéreos con JetSMART + Carry on 10kg.</li>
+                <li>🚐 <strong>Traslados:</strong> Aeropuerto / Hotel / Aeropuerto.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Turismo Patagonia (4 Días / 3 Noches).</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno buffet.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 09 de Diciembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $165.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 09 de Diciembre.</p>
+            <p>- Promo 4x3: Viajan 4 pagan 3.</p>
+            <p>- Tarifa por persona: $699.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación en 6 cuotas de $165.665.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salida desde Aeroparque / Ezeiza con JetSMART.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "09 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "ushuaia-jetsmart-4x3-travel-sale",
+        title: "Ushuaia JetSMART 4x3 Travel Sale",
+        season: "jetsmart",
+        price: "$849.990",
+        image: "25_5/24_30_agosto_jetsmart/ushuaia.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Ushuaia/VIDEO-2025-09-27-13-51-23.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Marzo-Abril/USHUAIA (vend MAR Y ABR).pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 4X3! Viajan 4 pagan 3" },
+            { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
+            { icon: "🚐", text: "Traslados in / out incluidos" },
+            { icon: "🏨", text: "Hotel Les Eclaireurs (5 Días / 4 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🧳", text: "Carry On 10kg incluido" },
+            { icon: "📅", text: "Salidas: 26 de Octubre y 13 de Noviembre" },
+            { icon: "💳", text: "6 cuotas de $200.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✈️ <strong>¡USHUAIA FIN DEL MUNDO CON JETSMART - PROMO 4X3!</strong></p>
+            <p>Descubrí los paisajes más australes del planeta con la promoción <strong>4x3 (Viajan 4 Pagan 3)</strong> por <strong>$849.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ <strong>Vuelos:</strong> Pasajes aéreos con JetSMART + Carry on 10kg.</li>
+                <li>🚐 <strong>Traslados:</strong> Aeropuerto / Hotel / Aeropuerto.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Les Eclaireurs (5 Días / 4 Noches).</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno buffet.</li>
+                <li>📅 <strong>Salidas confirmadas:</strong> 26 de Octubre y 13 de Noviembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $200.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> 26 de Octubre y 13 de Noviembre.</p>
+            <p>- Promo 4x3: Viajan 4 pagan 3.</p>
+            <p>- Tarifa por persona: $849.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación en 6 cuotas de $200.665.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salida desde Aeroparque / Ezeiza con JetSMART.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "26 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "13 de Noviembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    // === TRAVEL SALE 2026 PROMO 3X2 (25_5) ===
+    {
+        id: "campo-la-herradura-travel-sale",
+        title: "Campo La Herradura Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$99.990",
+        image: "25_5/24_30_agosto/campo_herradura.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "☀️", text: "Programa Full Day (Día de campo)" },
+            { icon: "🥩", text: "Desayuno, Almuerzo (Asado) y Merienda" },
+            { icon: "🥤", text: "Bebidas sin alcohol incluidas" },
+            { icon: "🐎", text: "Cabalgata y actividades incluidas" },
+            { icon: "📅", text: "Salidas: Septiembre 06 y 27" },
+            { icon: "💳", text: "6 cuotas de $25.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN CAMPO LA HERRADURA - PROMO 3X2!</strong></p>
+            <p>Disfrutá de un día de campo completo con asado criollo, bebidas y cabalgatas con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por solo <strong>$99.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>☀️ <strong>Modalidad:</strong> Full Day campestre.</li>
+                <li>🥩 <strong>Gastronomía:</strong> Recepción/desayuno, almuerzo con asado criollo, bebidas sin alcohol libres y merienda.</li>
+                <li>🐎 <strong>Actividades:</strong> Cabalgata guiada y recreación en el predio.</li>
+                <li>📅 <strong>Salidas:</strong> Septiembre 06 y 27.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $25.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> Septiembre 06 y 27.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $25.665.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "06 de Septiembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "27 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "cataratas-del-iguazu-travel-sale",
+        title: "Cataratas del Iguazú Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$359.990",
+        image: "25_5/24_30_agosto/cataratas_iguazu.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Iguazu/VIDEO-2025-10-03-12-25-14.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Lilian con Piscina (6 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🌊", text: "Excursiones: Ruinas San Ignacio, Minas Wanda y Cataratas Argentinas" },
+            { icon: "📅", text: "Salidas: Septiembre 06 y 27" },
+            { icon: "💳", text: "6 cuotas de $86.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN CATARATAS DEL IGUAZÚ - PROMO 3X2!</strong></p>
+            <p>Maravilla del Mundo a un precio único con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por <strong>$359.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinador permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 6 Días / 3 Noches en Hotel Lilian con piscina.</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno.</li>
+                <li>🌊 <strong>Excursiones:</strong> Traslados a Ruinas de San Ignacio, Minas de Wanda y Parque Nacional Iguazú (lado argentino).</li>
+                <li>📅 <strong>Salidas:</strong> Septiembre 06 y 27.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $86.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> Septiembre 06 y 27.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $86.331.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "06 de Septiembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "27 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "gualeguaychu-travel-sale",
+        title: "Gualeguaychú Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$139.990",
+        image: "25_5/24_30_agosto/gualeguaychu.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/VIDEO-2025-12-19-13-34-16.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Los Robles (2 Días / 1 Noche)" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🏊", text: "Traslado a Termas del Guaychú incluido" },
+            { icon: "📅", text: "Salidas: Viernes 25 Sep ($139.990) y Sábado 26 Sep ($149.990)" },
+            { icon: "💳", text: "6 cuotas desde $34.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN GUALEGUAYCHÚ - PROMO 3X2!</strong></p>
+            <p>Escapada termal y relax en Entre Ríos con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong>.</p>
+            <br>
+            <p><strong>OPCIONES DE SALIDA:</strong></p>
+            <ul>
+                <li>📅 <strong>Salida Viernes 25 de Septiembre:</strong> $139.990 (6 cuotas de $34.998).</li>
+                <li>📅 <strong>Salida Sábado 26 de Septiembre:</strong> $149.990 (6 cuotas de $37.331).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta con coordinador.</li>
+                <li>🏨 Hotel Los Robles (2 Días / 1 Noche).</li>
+                <li>🍽️ Media Pensión.</li>
+                <li>🏊 Traslado a Termas del Guaychú.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas fijas.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Viernes 25 de Septiembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "Sábado 26 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mendoza-travel-sale",
+        title: "Mendoza Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$299.990",
+        image: "25_5/24_30_agosto/mendoza.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mendoza/VIDEO-2025-10-20-14-32-50.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MENDOZA X 3 NTS VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Geminis (6 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "♨️", text: "Traslado a Termas de Cacheuta incluido" },
+            { icon: "📅", text: "Salida: 20 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $72.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN MENDOZA - PROMO 3X2!</strong></p>
+            <p>Tierra del sol y del buen vino con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por solo <strong>$299.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinador permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Geminis (6 Días / 3 Noches).</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno buffet.</li>
+                <li>♨️ <strong>Excursión:</strong> Traslado incluido a Termas de Cacheuta.</li>
+                <li>📅 <strong>Salida:</strong> 20 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $72.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 20 de Septiembre.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $72.331.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "20 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "salta-travel-sale",
+        title: "Salta Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$459.990",
+        image: "25_5/24_30_agosto/salta.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/VIDEO-2025-11-12-12-47-52.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Inti Raymi (7 Días / 4 Noches)" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "⛰️", text: "Traslado a la Virgen del Cerro incluido" },
+            { icon: "📅", text: "Salida: 21 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $109.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN SALTA LA LINDA - PROMO 3X2!</strong></p>
+            <p>Conocé el norte argentino con la promoción <strong>3x2 (Viajan 3 Pagan 2)</strong> por <strong>$459.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinador permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Inti Raymi (7 Días / 4 Noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>⛰️ <strong>Excursión:</strong> Traslado incluido a la Virgen del Cerro.</li>
+                <li>📅 <strong>Salida:</strong> 21 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $109.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 21 de Septiembre.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $109.665.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "21 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-pedro-travel-sale",
+        title: "San Pedro Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$109.990",
+        image: "25_5/24_30_agosto/san_pedro.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN PEDRO VEND ABRIL A JUNIO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "☀️", text: "Programa Full Day" },
+            { icon: "🥩", text: "Almuerzo con Parrillada incluida" },
+            { icon: "🏛️", text: "Visitas: Vuelta de Obligado, La Campiña y Ensaimadas" },
+            { icon: "📅", text: "Salida: 27 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $27.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN SAN PEDRO - PROMO 3X2!</strong></p>
+            <p>Un día perfecto de parrillada, historia y sabores con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por <strong>$109.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinador permanente.</li>
+                <li>☀️ <strong>Modalidad:</strong> Full Day completo.</li>
+                <li>🥩 <strong>Gastronomía:</strong> Almuerzo completo con parrillada.</li>
+                <li>🏛️ <strong>Visitas:</strong> Monumento Vuelta de Obligado, La Campiña de Mónica y César, y fábrica de ensaimadas.</li>
+                <li>📅 <strong>Salida:</strong> 27 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $27.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 27 de Septiembre.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $27.998.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "27 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-rafael-travel-sale",
+        title: "San Rafael Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$359.990",
+        image: "25_5/24_30_agosto/san_rafael.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN RAFAEL X 3 NTS SEGUNDA QUINCENA MAYO A JUNIO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Puesta del Sol (6 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "📅", text: "Salida: 23 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $86.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN SAN RAFAEL - PROMO 3X2!</strong></p>
+            <p>Cañón del Atuel, bodegas y paisajes mendocinos inolvidables con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por <strong>$359.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta de última generación.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Puesta del Sol (6 Días / 3 Noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>🙋‍♂️ <strong>Coordinación:</strong> Guía/coordinador permanente.</li>
+                <li>📅 <strong>Salida:</strong> 23 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $86.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 23 de Septiembre.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $86.331.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "23 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "tandil-travel-sale",
+        title: "Tandil Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$219.990",
+        image: "25_5/24_30_agosto/tandil.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/TANDIL X1 NT VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel El Turista (2 Días / 1 Noche)" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🧀", text: "Paseos serranos y sabores tradicionales" },
+            { icon: "📅", text: "Salidas: Septiembre 19 y 26" },
+            { icon: "💳", text: "6 cuotas de $53.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN TANDIL - PROMO 3X2!</strong></p>
+            <p>Sierras, quesos y embutidos con la imperdible promoción <strong>3x2 (Viajan 3 Pagan 2)</strong> por <strong>$219.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinador permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel El Turista (2 Días / 1 Noche).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>⛰️ <strong>Actividades:</strong> Paseos por las sierras de Tandil.</li>
+                <li>📅 <strong>Salidas:</strong> Septiembre 19 y 26.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $53.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> Septiembre 19 y 26.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $53.665.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "19 de Septiembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "26 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "termas-del-guaychu-travel-sale",
+        title: "Termas del Guaychú Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$99.990",
+        image: "25_5/24_30_agosto/termas_guaychu.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/VIDEO-2025-09-30-16-56-07.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/GUAYCHÚ VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "☀️", text: "Programa Full Day" },
+            { icon: "🎟️", text: "Entrada incluida al Complejo Termal" },
+            { icon: "📅", text: "Salidas: Septiembre 06 y 20" },
+            { icon: "💳", text: "6 cuotas de $25.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN TERMAS DEL GUAYCHÚ - PROMO 3X2!</strong></p>
+            <p>Un día entero de spa, aguas termales y desconexión total con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por solo <strong>$99.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinador permanente.</li>
+                <li>☀️ <strong>Modalidad:</strong> Full Day termal.</li>
+                <li>🎟️ <strong>Entrada:</strong> Entrada general incluida al complejo termal.</li>
+                <li>📅 <strong>Salidas:</strong> Septiembre 06 y 20.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $25.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> Septiembre 06 y 20.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $25.665.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "06 de Septiembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "20 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-carlos-paz-travel-sale",
+        title: "Villa Carlos Paz Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$289.990",
+        image: "25_5/24_30_agosto/villa_carlos_paz.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/VIDEO-2025-10-20-13-56-05.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏊", text: "Hotel Palmas del Lago con Piscina Climatizada (5 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Pensión Completa" },
+            { icon: "📅", text: "Salidas: Septiembre 06 y 13" },
+            { icon: "💳", text: "6 cuotas de $69.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN VILLA CARLOS PAZ - PROMO 3X2!</strong></p>
+            <p>Disfrutá de las sierras cordobesas con Pensión Completa y piscina climatizada con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por <strong>$289.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinador permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Palmas del Lago con piscina climatizada (5 Días / 3 Noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Pensión Completa.</li>
+                <li>📅 <strong>Salidas:</strong> Septiembre 06 y 13.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $69.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> Septiembre 06 y 13.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $69.998.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "06 de Septiembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "13 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-de-merlo-travel-sale",
+        title: "Villa de Merlo Travel Sale (3x2)",
+        season: "travel-sale",
+        price: "$269.990",
+        image: "25_5/24_30_agosto/villa_merlo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/VIDEO-2025-10-30-10-10-15.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/MERLO VEND FERIADO MAYO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡PROMO 3X2! Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Virginia Spa con Piscina Climatizada (5 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🌄", text: "Microclima y paisajes de San Luis" },
+            { icon: "📅", text: "Salidas: Septiembre 16 y 22" },
+            { icon: "💳", text: "6 cuotas de $65.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡TRAVEL SALE 2026 EN VILLA DE MERLO - PROMO 3X2!</strong></p>
+            <p>El tercer microclima del mundo te espera con Hotel Spa y piscina climatizada con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por <strong>$269.990</strong> por persona.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinador permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Virginia Spa con piscina climatizada (5 Días / 3 Noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>🌄 <strong>Entorno:</strong> Sierras y microclima puntano.</li>
+                <li>📅 <strong>Salidas:</strong> Septiembre 16 y 22.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $65.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> Septiembre 16 y 22.</p>
+            <p>- Promo 3x2: Viajan 3 pagan 2.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $65.331.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "16 de Septiembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "22 de Septiembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+
     {
         id: "aimogasta-super-sale",
         title: "Aimogasta Super Sale",
