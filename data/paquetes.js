@@ -809,41 +809,42 @@ const paquetesData = [
     },
 
     {
-        id: "aimogasta-super-sale",
-        title: "Aimogasta Super Sale",
+        id: "campo-la-herradura-super-sale",
+        title: "Campo La Herradura Super Sale",
         season: "super-sale",
-        price: "$199.990",
-        originalPrice: "$389.990",
-        image: "nuevo19_8/aimogasta.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/AIMOGASTA VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Aimogasta/VIDEO-2025-10-29-12-12-11.mp4",
+        price: "$85.990",
+        originalPrice: "$99.990",
+        image: "1_9/campo_herradura.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
         features: [
-            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $389.990" },
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $99.990" },
             { icon: "🚌", text: "Bus Ida y Vuelta" },
-            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🍽️", text: "Desayuno, Almuerzo y Merienda" },
+            { icon: "🥩", text: "Incluye Asado con Bebidas sin Alcohol" },
+            { icon: "🐎", text: "Cabalgata Incluida" },
             { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "🏨", text: "Hotel Gran Arauco (6 Días / 3 Noches)" },
-            { icon: "📅", text: "Salida: 20 de Agosto" },
-            { icon: "💳", text: "6 cuotas de $48.998" }
+            { icon: "📅", text: "Salida: 27 de Septiembre (Full Day)" },
+            { icon: "💳", text: "6 cuotas de $22.398" }
         ],
         itinerary: `
-            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN AIMOGASTA!</strong></p>
-            <p>Aprovechá esta super oferta exclusiva para viajar a Aimogasta a un precio imperdible de <strong>$199.990</strong> (Precio regular: $389.990).</p>
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN CAMPO LA HERRADURA!</strong></p>
+            <p>Disfrutá de un día de campo inolvidable a un precio promocional exclusivo de <strong>$85.990</strong> (Precio regular: $99.990).</p>
             <br>
             <p><strong>INCLUYE:</strong></p>
             <ul>
                 <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
-                <li>🏨 <strong>Alojamiento:</strong> Hotel Gran Arauco (6 días / 3 noches).</li>
-                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
-                <li>📅 <strong>Salida confirmada:</strong> 20 de Agosto.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $48.998.</li>
+                <li>🍽️ <strong>Gastronomía:</strong> Desayuno campestre, almuerzo con asado criollo y bebidas sin alcohol, y merienda.</li>
+                <li>🐎 <strong>Actividades:</strong> Paseo a caballo / cabalgata y disfrute del predio.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 27 de Septiembre (Full Day).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $22.398.</li>
             </ul>
         `,
         importantNotes: `
-            <p>- <strong>Salida:</strong> 20 de Agosto.</p>
-            <p>- Tarifa Super Sale: $199.990 (Antes $389.990).</p>
+            <p>- <strong>Salida:</strong> 27 de Septiembre.</p>
+            <p>- Tarifa Super Sale: $85.990 (Antes $99.990).</p>
             <p>- Gastos administrativos: $10.000.</p>
-            <p>- Financiación en 6 cuotas de $48.998.</p>
+            <p>- Financiación en 6 cuotas de $22.398.</p>
             <p>- Cupos limitados hasta agotar disponibilidad.</p>
         `,
         boardingPoints: `
@@ -852,48 +853,94 @@ const paquetesData = [
             </ul>
         `,
         availability: [
-            { date: "20 de Agosto", status: "ÚLTIMOS LUGARES", color: "🟡" }
+            { date: "27 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
         ]
     },
     {
-        id: "salta-super-sale",
-        title: "Salta Super Sale",
+        id: "cataratas-del-iguazu-super-sale",
+        title: "Cataratas del Iguazú Super Sale",
         season: "super-sale",
-        price: "$199.990",
-        originalPrice: "$439.990",
-        image: "nuevo19_8/salta.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
+        price: "$309.990",
+        originalPrice: "$359.990",
+        image: "1_9/cataratas_iguazu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Iguazu/VIDEO-2025-10-03-12-25-14.mp4",
         features: [
-            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $439.990" },
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $359.990" },
             { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🏨", text: "Hotel Lilian con Piscina (6 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno Incluido" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🌊", text: "Excursiones: Ruinas de San Ignacio, Minas de Wanda y Cataratas Argentinas" },
+            { icon: "📅", text: "Salida: 27 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $74.665" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN CATARATAS DEL IGUAZÚ!</strong></p>
+            <p>Una de las 7 Maravillas Naturales del Mundo a un precio insuperable de <strong>$309.990</strong> (Precio regular: $359.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Lilian con piscina (6 días / 3 noches).</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno incluido.</li>
+                <li>🌊 <strong>Excursiones:</strong> Traslados a Ruinas de San Ignacio, Minas de Wanda y Parque Nacional Cataratas Argentinas.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 27 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $74.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 27 de Septiembre.</p>
+            <p>- Tarifa Super Sale: $309.990 (Antes $359.990).</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $74.665.</p>
+            <p>- No incluye entradas a los parques y reservas.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "27 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "gualeguaychu-super-sale",
+        title: "Gualeguaychú Super Sale",
+        season: "super-sale",
+        price: "$119.990",
+        originalPrice: "$139.990",
+        image: "1_9/gualeguaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/VIDEO-2025-12-19-13-34-16.mp4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Desde $119.990 (Antes $139.990)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🏨", text: "Hotel Los Robles (2 Días / 1 Noche)" },
             { icon: "🍽️", text: "Media Pensión" },
             { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "⛰️", text: "Traslado incluido a la Virgen del Cerro" },
-            { icon: "🏨", text: "Hotel Inti Raymi (7 Días / 4 Noches)" },
-            { icon: "📅", text: "Salida: 20 de Agosto" },
-            { icon: "💳", text: "6 cuotas de $48.998" }
+            { icon: "📅", text: "Salidas: 25 y 26 de Septiembre" },
+            { icon: "💳", text: "Desde 6 cuotas de $30.331" }
         ],
         itinerary: `
-            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN SALTA LA LINDA!</strong></p>
-            <p>Viví la magia del norte argentino con una tarifa promocional única de <strong>$199.990</strong> (Precio regular: $439.990).</p>
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN GUALEGUAYCHÚ!</strong></p>
+            <p>Escapada ideal a Entre Ríos con Media Pensión en Hotel Los Robles por solo <strong>$119.990</strong> (Salida Viernes 25) o <strong>$129.990</strong> (Salida Sábado 26).</p>
             <br>
             <p><strong>INCLUYE:</strong></p>
             <ul>
                 <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
-                <li>🏨 <strong>Alojamiento:</strong> Hotel Inti Raymi (7 días / 4 noches).</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Los Robles (2 días / 1 noche).</li>
                 <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
-                <li>⛰️ <strong>Excursión:</strong> Traslado incluido a la Virgen del Cerro.</li>
-                <li>📅 <strong>Salida confirmada:</strong> 20 de Agosto.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $48.998.</li>
+                <li>📅 <strong>Salidas:</strong> Viernes 25 de Septiembre ($119.990 / 6 cuotas de $30.331) y Sábado 26 de Septiembre ($129.990 / 6 cuotas de $32.665).</li>
             </ul>
         `,
         importantNotes: `
-            <p>- <strong>Salida:</strong> 20 de Agosto.</p>
-            <p>- Tarifa Super Sale: $199.990 (Antes $439.990).</p>
-            <p>- Traslado incluido a la Virgen del Cerro.</p>
+            <p>- <strong>Salidas:</strong> Viernes 25 y Sábado 26 de Septiembre.</p>
+            <p>- Tarifa Super Sale: Viernes $119.990 (Antes $139.990) / Sábado $129.990 (Antes $149.990).</p>
             <p>- Gastos administrativos: $10.000.</p>
-            <p>- Financiación en 6 cuotas de $48.998.</p>
+            <p>- Financiación en 6 cuotas.</p>
             <p>- Cupos limitados.</p>
         `,
         boardingPoints: `
@@ -902,46 +949,49 @@ const paquetesData = [
             </ul>
         `,
         availability: [
-            { date: "20 de Agosto", status: "ÚLTIMOS LUGARES", color: "🟡" }
+            { date: "Viernes 25 de Septiembre ($119.990)", status: "ÚLTIMOS LUGARES", color: "🟡" },
+            { date: "Sábado 26 de Septiembre ($129.990)", status: "ÚLTIMOS LUGARES", color: "🟡" }
         ]
     },
     {
-        id: "termas-de-rio-hondo-super-sale",
-        title: "Termas de Río Hondo Super Sale",
+        id: "mendoza-super-sale",
+        title: "Mendoza Super Sale",
         season: "super-sale",
-        price: "$289.990",
-        originalPrice: "$479.990",
-        image: "nuevo19_8/terma_rio_hondo.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/TERMAS DE RIO HONDO VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Rio Hondo/81881e9d-6144-41d9-b8c1-6cf2551f3964.MP4",
+        price: "$259.990",
+        originalPrice: "$299.990",
+        image: "1_9/mendoza.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MENDOZA X 3 NTS VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mendoza/VIDEO-2025-10-20-14-32-50.mp4",
         features: [
-            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $479.990" },
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $299.990" },
             { icon: "🚌", text: "Bus Ida y Vuelta" },
-            { icon: "🍽️", text: "Pensión Completa" },
+            { icon: "🏨", text: "Hotel Géminis (6 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno Incluido" },
             { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "🏊", text: "Hotel Internacional con Piscina Termal (7 Días / 4 Noches)" },
-            { icon: "📅", text: "Salida: 23 de Agosto" },
-            { icon: "💳", text: "6 cuotas de $69.998" }
+            { icon: "♨️", text: "Traslado incluido a Termas de Cacheuta" },
+            { icon: "📅", text: "Salida: 20 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $62.998" }
         ],
         itinerary: `
-            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN TERMAS DE RÍO HONDO!</strong></p>
-            <p>Relax total y aguas termales con Pensión Completa por solo <strong>$289.990</strong> (Precio regular: $479.990).</p>
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN MENDOZA!</strong></p>
+            <p>Conocé la tierra del buen sol y del buen vino con traslado a Cacheuta por solo <strong>$259.990</strong> (Precio regular: $299.990).</p>
             <br>
             <p><strong>INCLUYE:</strong></p>
             <ul>
                 <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
-                <li>🏨 <strong>Alojamiento:</strong> Hotel Internacional con Piscina Termal (7 días / 4 noches).</li>
-                <li>🍽️ <strong>Régimen:</strong> Pensión Completa.</li>
-                <li>📅 <strong>Salida confirmada:</strong> 23 de Agosto.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $69.998.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Géminis (6 días / 3 noches).</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno.</li>
+                <li>♨️ <strong>Excursión:</strong> Traslado incluido a Termas de Cacheuta.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 20 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $62.998.</li>
             </ul>
         `,
         importantNotes: `
-            <p>- <strong>Salida:</strong> 23 de Agosto.</p>
-            <p>- Tarifa Super Sale: $289.990 (Antes $479.990).</p>
-            <p>- Hotel con piscina termal y pensión completa.</p>
+            <p>- <strong>Salida:</strong> 20 de Septiembre.</p>
+            <p>- Tarifa Super Sale: $259.990 (Antes $299.990).</p>
+            <p>- Traslado incluido a Termas de Cacheuta.</p>
             <p>- Gastos administrativos: $10.000.</p>
-            <p>- Financiación en 6 cuotas de $69.998.</p>
+            <p>- Financiación en 6 cuotas de $62.998.</p>
             <p>- Cupos limitados.</p>
         `,
         boardingPoints: `
@@ -950,46 +1000,233 @@ const paquetesData = [
             </ul>
         `,
         availability: [
-            { date: "23 de Agosto", status: "ÚLTIMOS LUGARES", color: "🟡" }
+            { date: "20 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "san-pedro-super-sale",
+        title: "San Pedro Super Sale",
+        season: "super-sale",
+        price: "$94.990",
+        originalPrice: "$109.990",
+        image: "1_9/san_pedro.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN PEDRO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $109.990" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🍽️", text: "Incluye Parrillada Completa (Full Day)" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏛️", text: "Visitas: Vuelta de Obligado, La Campiña y Ensaimadas" },
+            { icon: "📅", text: "Salida: 27 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $24.498" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN SAN PEDRO!</strong></p>
+            <p>Un día completo con parrillada y visitas turísticas imperdibles por solo <strong>$94.990</strong> (Precio regular: $109.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🍽️ <strong>Gastronomía:</strong> Almuerzo con parrillada completa incluida.</li>
+                <li>🏛️ <strong>Visitas:</strong> Vuelta de Obligado, La Campiña de Mónica y César, y paseo para degustar ensaimadas tradicionales.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 27 de Septiembre (Full Day).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $24.498.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 27 de Septiembre.</p>
+            <p>- Tarifa Super Sale: $94.990 (Antes $109.990).</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $24.498.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "27 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "san-rafael-super-sale",
+        title: "San Rafael Super Sale",
+        season: "super-sale",
+        price: "$309.990",
+        originalPrice: "$359.990",
+        image: "1_9/san_rafael.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN RAFAEL X 3 NTS SEGUNDA QUINCENA MAYO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $359.990" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🏨", text: "Hotel Puesta del Sol (6 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "📅", text: "Salida: 23 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $74.665" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN SAN RAFAEL!</strong></p>
+            <p>Cañón del Atuel, diques imponentes y paisajes mendocinos únicos por <strong>$309.990</strong> (Precio regular: $359.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Puesta del Sol (6 días / 3 noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 23 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $74.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 23 de Septiembre.</p>
+            <p>- Tarifa Super Sale: $309.990 (Antes $359.990).</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $74.665.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "23 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "tandil-super-sale",
+        title: "Tandil Super Sale",
+        season: "super-sale",
+        price: "$189.990",
+        originalPrice: "$219.990",
+        image: "1_9/tandil.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/TANDIL X1 NT VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $219.990" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🏨", text: "Hotel El Turista (2 Días / 1 Noche)" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "📅", text: "Salida: 26 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $46.665" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN TANDIL!</strong></p>
+            <p>Sierras, quesos y salames tradicionales, y paisajes serranos con Media Pensión por solo <strong>$189.990</strong> (Precio regular: $219.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel El Turista (2 días / 1 noche).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 26 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $46.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 26 de Septiembre.</p>
+            <p>- Tarifa Super Sale: $189.990 (Antes $219.990).</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $46.665.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "26 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "termas-de-guaychu-super-sale",
+        title: "Termas de Guaychú Super Sale",
+        season: "super-sale",
+        price: "$85.990",
+        originalPrice: "$99.990",
+        image: "1_9/termas_guaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/GUAYCHÚ VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/VIDEO-2025-09-30-16-56-07.mp4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $99.990" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🏊", text: "Entrada Incluida al Complejo Termal (Full Day)" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "📅", text: "Salidas: 06 y 20 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $22.398" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN TERMAS DEL GUAYCHÚ!</strong></p>
+            <p>Disfrutá de un día de relax total en las aguas termales con entrada incluida al complejo por solo <strong>$85.990</strong> (Precio regular: $99.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏊 <strong>Entrada:</strong> Acceso completo al complejo termal Termas del Guaychú.</li>
+                <li>📅 <strong>Salidas confirmadas:</strong> 06 y 20 de Septiembre (Full Day).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $22.398.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas:</strong> 06 y 20 de Septiembre.</p>
+            <p>- Tarifa Super Sale: $85.990 (Antes $99.990).</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $22.398.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "06 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" },
+            { date: "20 de Septiembre", status: "DISPONIBLE", color: "🟢" }
         ]
     },
     {
         id: "villa-carlos-paz-super-sale",
         title: "Villa Carlos Paz Super Sale",
         season: "super-sale",
-        price: "$179.990",
-        originalPrice: "$269.990",
-        image: "nuevo19_8/villa_carlos_paz.jpeg",
+        price: "$249.990",
+        originalPrice: "$289.990",
+        image: "1_9/villa_carlos_paz.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/VIDEO-2025-10-20-13-56-05.mp4",
         features: [
-            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $269.990" },
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $289.990" },
             { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🏨", text: "Hotel Palmas del Lago con Piscina Climatizada (5 Días / 3 Noches)" },
             { icon: "🍽️", text: "Pensión Completa" },
             { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "🏊", text: "Hotel Palmas del Lago con Piscina Climatizada (5 Días / 3 Noches)" },
-            { icon: "📅", text: "Salida: 22 de Agosto" },
-            { icon: "💳", text: "6 cuotas de $44.331" }
+            { icon: "📅", text: "Salida: 13 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $60.665" }
         ],
         itinerary: `
             <p>🔥 <strong>¡SUPER SALE TRAVELERO EN VILLA CARLOS PAZ!</strong></p>
-            <p>Disfrutá de las sierras de Córdoba con Pensión Completa en Hotel Palmas del Lago por <strong>$179.990</strong> (Precio regular: $269.990).</p>
+            <p>Sierras de Córdoba con Pensión Completa en el Hotel Palmas del Lago por <strong>$249.990</strong> (Precio regular: $289.990).</p>
             <br>
             <p><strong>INCLUYE:</strong></p>
             <ul>
                 <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
                 <li>🏨 <strong>Alojamiento:</strong> Hotel Palmas del Lago con piscina climatizada (5 días / 3 noches).</li>
                 <li>🍽️ <strong>Régimen:</strong> Pensión Completa.</li>
-                <li>📅 <strong>Salida confirmada:</strong> 22 de Agosto.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $44.331.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 13 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $60.665.</li>
             </ul>
         `,
         importantNotes: `
-            <p>- <strong>Salida:</strong> 22 de Agosto.</p>
-            <p>- Tarifa Super Sale: $179.990 (Antes $269.990).</p>
+            <p>- <strong>Salida:</strong> 13 de Septiembre.</p>
+            <p>- Tarifa Super Sale: $249.990 (Antes $289.990).</p>
             <p>- Hotel con piscina climatizada y pensión completa.</p>
             <p>- Gastos administrativos: $10.000.</p>
-            <p>- Financiación en 6 cuotas de $44.331.</p>
+            <p>- Financiación en 6 cuotas de $60.665.</p>
             <p>- Cupos limitados.</p>
         `,
         boardingPoints: `
@@ -998,7 +1235,55 @@ const paquetesData = [
             </ul>
         `,
         availability: [
-            { date: "22 de Agosto", status: "ÚLTIMOS LUGARES", color: "🟡" }
+            { date: "13 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
+        ]
+    },
+    {
+        id: "villa-de-merlo-super-sale",
+        title: "Villa de Merlo Super Sale",
+        season: "super-sale",
+        price: "$229.990",
+        originalPrice: "$269.990",
+        image: "1_9/villa_merlo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MERLO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/VIDEO-2025-10-30-10-10-15.mp4",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! Antes $269.990" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🏨", text: "Hotel Virginia Spa con Piscina Climatizada (5 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "📅", text: "Salida: 22 de Septiembre" },
+            { icon: "💳", text: "6 cuotas de $55.998" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN VILLA DE MERLO!</strong></p>
+            <p>Disfrutá del tercer microclima del mundo en el Hotel Virginia Spa con piscina climatizada por <strong>$229.990</strong> (Precio regular: $269.990).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Hotel Virginia Spa con piscina climatizada (5 días / 3 noches).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 22 de Septiembre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $55.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida:</strong> 22 de Septiembre.</p>
+            <p>- Tarifa Super Sale: $229.990 (Antes $269.990).</p>
+            <p>- Hotel con piscina climatizada y spa, media pensión.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $55.998.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "22 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
         ]
     },
     {
