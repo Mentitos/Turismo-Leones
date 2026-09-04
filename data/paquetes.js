@@ -1286,6 +1286,407 @@ const paquetesData = [
             { date: "22 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
         ]
     },
+    // === FERIADO OCTUBRE (4_9) ===
+    {
+        id: "campo-la-herradura-feriado-octubre",
+        title: "Campo La Herradura Feriado Octubre",
+        season: "feriado-octubre",
+        price: "$99.990",
+        image: "4_9/campo_herradura.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/LA HERRADURA VEND FERIADO MAYO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
+        features: [
+            { icon: "🍂", text: "Feriado de Octubre · Salida 11 de Octubre (Full Day)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🍽️", text: "Desayuno, Almuerzo y Merienda" },
+            { icon: "🥩", text: "Asado con Bebidas sin Alcohol incluidas" },
+            { icon: "🐎", text: "Cabalgata y actividades campestres" },
+            { icon: "💳", text: "6 cuotas de $25.665" }
+        ],
+        itinerary: `
+            <p>🍂 <strong>¡ESPECIAL FERIADO DE OCTUBRE EN CAMPO LA HERRADURA!</strong></p>
+            <p>Vení a disfrutar de un día de campo inolvidable para el fin de semana largo de Octubre. Naturaleza, relax, gastronomía criolla y diversión para toda la familia.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🍽️ <strong>Gastronomía completa:</strong> Recepción/desayuno, almuerzo criollo con asado completo y bebidas sin alcohol, y merienda campestre.</li>
+                <li>🐎 <strong>Actividades:</strong> Paseo a caballo / cabalgata y uso libre de las instalaciones del predio.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 11 de Octubre (Full Day).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $25.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 11 de Octubre (Full Day).</p>
+            <p>- Tarifa por persona: $99.990.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación disponible en 6 cuotas de $25.665.</p>
+            <p>- Cupos limitados para el fin de semana largo.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "11 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "gualeguaychu-feriado-octubre",
+        title: "Gualeguaychú Feriado Octubre",
+        season: "feriado-octubre",
+        price: "$179.990",
+        image: "4_9/gualeguaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUALEGUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/VIDEO-2025-12-19-13-34-16.mp4",
+        features: [
+            { icon: "🍂", text: "Feriado de Octubre · Salida 10 de Octubre (3D / 2N)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Los Robles" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "💳", text: "6 cuotas de $44.331" }
+        ],
+        itinerary: `
+            <p>🍂 <strong>¡ESPECIAL FERIADO DE OCTUBRE EN GUALEGUAYCHÚ!</strong></p>
+            <p>Escapada de 3 días y 2 noches en Gualeguaychú, Entre Ríos. Naturaleza, relax junto al río y la mejor atención.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 noches en Hotel Los Robles.</li>
+                <li>☕ <strong>Régimen:</strong> Desayuno diario incluido.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 10 de Octubre (3 Días / 2 Noches).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $44.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 10 de Octubre.</p>
+            <p>- Tarifa por persona: $179.990.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación disponible en 6 cuotas de $44.331.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "10 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-de-ajo-feriado-octubre",
+        title: "Mar de Ajó Feriado Octubre",
+        season: "feriado-octubre",
+        price: "$209.990",
+        image: "4_9/mar_ajo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
+        features: [
+            { icon: "🍂", text: "Feriado de Octubre · Salida 10 de Octubre (3D / 2N)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Atlantic (A 30 mts del mar)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $51.331" }
+        ],
+        itinerary: `
+            <p>🍂 <strong>¡ESPECIAL FERIADO DE OCTUBRE EN MAR DE AJÓ!</strong></p>
+            <p>Disfrutá del mar y la brisa costera en Mar de Ajó con una ubicación privilegiada a solo 30 metros de la playa.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 noches en Hotel Atlantic (a 30 metros del mar).</li>
+                <li>🍽️ <strong>Régimen:</strong> Media pensión incluida.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 10 de Octubre (3 Días / 2 Noches).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $51.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 10 de Octubre.</p>
+            <p>- Tarifa por persona: $209.990.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación disponible en 6 cuotas de $51.331.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "10 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-del-plata-feriado-octubre",
+        title: "Mar del Plata Feriado Octubre",
+        season: "feriado-octubre",
+        price: "$219.990",
+        image: "4_9/mar_plata.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO DÍA DEL TRABAJADOR/MAR DEL PLATA VEND DIA DEL TRABAJADOR 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
+        features: [
+            { icon: "🍂", text: "Feriado de Octubre · Salida 10 de Octubre (3D / 2N)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Riazor" },
+            { icon: "🍽️", text: "Pensión Completa incluida" },
+            { icon: "💳", text: "6 cuotas de $53.665" }
+        ],
+        itinerary: `
+            <p>🍂 <strong>¡ESPECIAL FERIADO DE OCTUBRE EN MAR DEL PLATA!</strong></p>
+            <p>Fin de semana largo en La Feliz con <strong>Pensión Completa</strong> y estadía en el Hotel Riazor.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 noches en Hotel Riazor.</li>
+                <li>🍽️ <strong>Régimen:</strong> Pensión Completa incluida (desayuno, almuerzo y cena).</li>
+                <li>📅 <strong>Salida confirmada:</strong> 10 de Octubre (3 Días / 2 Noches).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $53.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 10 de Octubre.</p>
+            <p>- Tarifa por persona con Pensión Completa: $219.990.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación disponible en 6 cuotas de $53.665.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "10 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-pedro-feriado-octubre",
+        title: "San Pedro Feriado Octubre",
+        season: "feriado-octubre",
+        price: "$109.990",
+        image: "4_9/san_pedro.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/SAN PEDRO VEND FERIADO MAYO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
+        features: [
+            { icon: "🍂", text: "Feriado de Octubre · Salida 10 de Octubre (Full Day)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🥩", text: "Almuerzo con Parrillada incluida" },
+            { icon: "📍", text: "Visita Vuelta de Obligado" },
+            { icon: "🍊", text: "Visita La Campiña de Mónica y César" },
+            { icon: "🥐", text: "Visita a Fábrica de Ensaimadas" },
+            { icon: "💳", text: "6 cuotas de $27.998" }
+        ],
+        itinerary: `
+            <p>🍂 <strong>¡ESPECIAL FERIADO DE OCTUBRE EN SAN PEDRO!</strong></p>
+            <p>Un día espectacular de paseo histórico y gastronómico en San Pedro.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🥩 <strong>Gastronomía:</strong> Almuerzo con deliciosa parrillada completa.</li>
+                <li>📍 <strong>Excursiones:</strong> Visita al Monumento de Vuelta de Obligado, recorrido por La Campiña de Mónica y César, y visita a fábrica artesanal de ensaimadas.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 10 de Octubre (Full Day).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $27.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 10 de Octubre (Full Day).</p>
+            <p>- Tarifa por persona: $109.990.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $27.998.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "10 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "tandil-feriado-octubre",
+        title: "Tandil Feriado Octubre",
+        season: "feriado-octubre",
+        price: "$229.990",
+        image: "4_9/tandil.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/TANDIL VEND FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
+        features: [
+            { icon: "🍂", text: "Feriado de Octubre · Salida 10 al 11 de Octubre (2D / 1N)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel El Turista" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $55.998" }
+        ],
+        itinerary: `
+            <p>🍂 <strong>¡ESPECIAL FERIADO DE OCTUBRE EN TANDIL!</strong></p>
+            <p>Sierras, aire puro, embutidos y quesos artesanales, y los paisajes más lindos en Tandil.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 1 noche en Hotel El Turista.</li>
+                <li>🍽️ <strong>Régimen:</strong> Media pensión incluida.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 10 al 11 de Octubre (2 Días / 1 Noche).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $55.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 10 al 11 de Octubre.</p>
+            <p>- Tarifa por persona: $229.990.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $55.998.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "10 al 11 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "termas-del-guaychu-feriado-octubre",
+        title: "Termas del Guaychú Feriado Octubre",
+        season: "feriado-octubre",
+        price: "$99.990",
+        image: "4_9/termas_guaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/VIDEO-2025-09-30-16-56-07.mp4",
+        features: [
+            { icon: "🍂", text: "Feriado de Octubre · Salida 11 de Octubre (Full Day)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🎟️", text: "Entrada incluida al Complejo Termal" },
+            { icon: "🏊‍♂️", text: "Piscinas termales y parque recreativo" },
+            { icon: "💳", text: "6 cuotas de $25.665" }
+        ],
+        itinerary: `
+            <p>🍂 <strong>¡ESPECIAL FERIADO DE OCTUBRE EN TERMAS DEL GUAYCHÚ!</strong></p>
+            <p>Día de descanso, relax y bienestar en las aguas termales de Termas del Guaychú, Entre Ríos.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🎟️ <strong>Entradas:</strong> Ingreso completo al predio y piscinas termales.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 11 de Octubre (Full Day).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $25.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 11 de Octubre (Full Day).</p>
+            <p>- Tarifa por persona: $99.990.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $25.665.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "11 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-carlos-paz-feriado-octubre",
+        title: "Villa Carlos Paz Feriado Octubre",
+        season: "feriado-octubre",
+        price: "$249.990",
+        image: "4_9/villa_carlos_paz.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/VILLA CARLOS PAZ FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/VIDEO-2025-10-20-13-56-05.mp4",
+        features: [
+            { icon: "🍂", text: "Feriado de Octubre · Salida 09 de Octubre (4D / 2N)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Palmas del Lago (Piscina Climatizada)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $60.665" }
+        ],
+        itinerary: `
+            <p>🍂 <strong>¡ESPECIAL FERIADO DE OCTUBRE EN VILLA CARLOS PAZ!</strong></p>
+            <p>Fin de semana largo en el corazón de las sierras cordobesas. Paisajes, paseos y relax con piscina climatizada.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 noches en Hotel Palmas del Lago con piscina climatizada.</li>
+                <li>🍽️ <strong>Régimen:</strong> Media pensión incluida.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 09 de Octubre (4 Días / 2 Noches).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $60.665.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 09 de Octubre.</p>
+            <p>- Tarifa por persona: $249.990.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $60.665.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "09 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-de-merlo-feriado-octubre",
+        title: "Villa de Merlo Feriado Octubre",
+        season: "feriado-octubre",
+        price: "$239.990",
+        image: "4_9/villa_merlo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/MERLO VEND FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/VIDEO-2025-10-30-10-10-15.mp4",
+        features: [
+            { icon: "🍂", text: "Feriado de Octubre · Salida 09 de Octubre (4D / 2N)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta" },
+            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Virginia Spa (Piscina Climatizada)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $58.331" }
+        ],
+        itinerary: `
+            <p>🍂 <strong>¡ESPECIAL FERIADO DE OCTUBRE EN VILLA DE MERLO!</strong></p>
+            <p>Microclima privilegiado, naturaleza, gastronomía y descanso con spa en las sierras puntanas.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 noches en Hotel Virginia Spa con piscina climatizada.</li>
+                <li>🍽️ <strong>Régimen:</strong> Media pensión incluida.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 09 de Octubre (4 Días / 2 Noches).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $58.331.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 09 de Octubre.</p>
+            <p>- Tarifa por persona: $239.990.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $58.331.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "09 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
     {
         id: "campo-la-herradura-dia-del-maestro",
         title: "Campo La Herradura Día del Maestro",
