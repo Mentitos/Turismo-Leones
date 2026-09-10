@@ -1,4 +1,479 @@
 const paquetesData = [
+    // === VERANO TRAVELERO 2026 (10_9) ===
+    {
+        id: "resumen-verano-travelero",
+        title: "Resumen Verano Travelero",
+        season: "verano",
+        price: "Desde $259.990",
+        image: "10_9/resumen.jpeg",
+        features: [
+            { icon: "☀️", text: "Temporada de Verano 2026 - Salidas Enero y Febrero" },
+            { icon: "🚌", text: "Bus Confort ida y vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hoteles seleccionados con desayuno, media pensión o pensión completa" },
+            { icon: "💳", text: "Financiación accesible en hasta 6 cuotas fijas" },
+            { icon: "📍", text: "10 destinos imperdibles: Costa Atlántica, Cuyo, Córdoba, Litoral y Sierras" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡LLEGÓ EL VERANO TRAVELERO 2026 A TURISMO LEONES!</strong></p>
+            <p>Planificá tus vacaciones de verano con las mejores tarifas del mercado, transporte confortable, excelente hotelería y financiación en cuotas fijas. Salidas programadas durante todo Enero y Febrero 2026.</p>
+            <br>
+            <p><strong>DESTINOS Y TARIFAS DESTACADAS:</strong></p>
+            <ul>
+                <li>🏖️ <strong>Santa Teresita (4D / 3N):</strong> $259.990 · Hotel Turista (Desayuno) · 6 cuotas de $64.165</li>
+                <li>🏖️ <strong>Mar del Plata - Nuevo Horizonte (4D / 3N):</strong> $289.990 · Hotel Nuevo Horizonte (Desayuno) · 6 cuotas de $71.165</li>
+                <li>🏖️ <strong>Mar de Ajó (4D / 3N):</strong> $299.990 · Hotel Atlantic (Media Pensión) · 6 cuotas de $73.498</li>
+                <li>🏖️ <strong>Mar del Plata - Riazor (4D / 3N):</strong> $329.990 · Hotel Riazor (Pensión Completa) · 6 cuotas de $80.498</li>
+                <li>🌄 <strong>Mendoza (6D / 3N):</strong> $339.990 · Hotel Géminis Centro (Desayuno) · 6 cuotas de $82.831</li>
+                <li>⛰️ <strong>Villa de Merlo (5D / 3N):</strong> $339.990 · Hotel Virginia Spa (Media Pensión) · 6 cuotas de $82.831</li>
+                <li>🏞️ <strong>Villa Carlos Paz (5D / 3N):</strong> $349.990 · Hotel Palmas del Lago (Media Pensión) · 6 cuotas de $85.165</li>
+                <li>🌊 <strong>Cataratas del Iguazú (6D / 3N):</strong> $389.990 · Hotel Lilian (Desayuno + Excursiones) · 6 cuotas de $94.498</li>
+                <li>🏖️ <strong>San Bernardo (4D / 3N):</strong> $409.990 · Hotel Majo Frente al Mar (Desayuno + Dto. Rest.) · 6 cuotas de $99.165</li>
+                <li>🍷 <strong>San Rafael (6D / 3N):</strong> $419.990 · Hotel Puesta del Sol (Media Pensión) · 6 cuotas de $101.498</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifas por persona en base doble/triple/cuádruple.</p>
+            <p>- Gastos administrativos: $15.000 por pasajero.</p>
+            <p>- Financiación en hasta 6 cuotas fijas con tarjeta de crédito.</p>
+            <p>- Cupos limitados para temporada alta de verano (Enero y Febrero 2026).</p>
+            <p>- Seña del 20% para asegurar cupo y congelar tarifa.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Múltiples puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero y Febrero 2026", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-rafael-verano-travelero",
+        title: "San Rafael Verano Travelero",
+        season: "verano",
+        price: "$419.990",
+        image: "10_9/san_rafael.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "6 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Puesta del Sol con piscina exterior" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $101.498 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🍷 <strong>SAN RAFAEL VERANO 2026</strong></p>
+            <p>Viví el encanto de Mendoza en San Rafael: paisajes imponentes, bodegas tradicionales y relax total en plena temporada veraniega.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Traslados en Bus ida y vuelta con servicio a bordo.</li>
+                <li>🏨 3 noches de alojamiento en el <strong>Hotel Puesta del Sol</strong> con piscina exterior.</li>
+                <li>🍽️ <strong>Media Pensión</strong> (desayuno y cena).</li>
+                <li>🙋‍♂️ Coordinador durante todo el viaje.</li>
+                <li>✨ Asistencia médica al viajero incluida.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $419.990.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $101.498.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 03, 06, 09, 12, 15, 18, 21, 24, 27, 30", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 02, 08, 11, 14, 17, 20, 23", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-bernardo-verano-travelero",
+        title: "San Bernardo Verano Travelero",
+        season: "verano",
+        price: "$409.990",
+        image: "10_9/san_bernardo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Bernardo/425148a7-1c28-44ae-81d5-f4997dcda3d8.mp4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "4 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Majo (Frente al mar · Piscina climatizada)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🍝", text: "Descuento en restaurante Al Buen Tallarín" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $99.165 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🏖️ <strong>SAN BERNARDO VERANO 2026</strong></p>
+            <p>Disfrutá de la playa, la peatonal y el verano en San Bernardo alojándote frente al mar en el <strong>Hotel Majo</strong>.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta confortable.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Majo</strong> frente a la playa con piscina climatizada.</li>
+                <li>☕ <strong>Desayuno</strong> diario.</li>
+                <li>🍝 Descuento exclusivo en el restaurante <em>Al Buen Tallarín</em>.</li>
+                <li>🙋‍♂️ Coordinación permanente durante todo el viaje.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $409.990.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $99.165.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 06, 09, 12, 15, 18, 27, 30", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 11, 14, 17, 20, 23, 26", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "cataratas-del-iguazu-verano-travelero",
+        title: "Cataratas del Iguazú Verano Travelero",
+        season: "verano",
+        price: "$389.990",
+        image: "10_9/catartas_iguazu.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Iguazu/c43b53df-c771-4cdd-bf96-85be7cc2c49e.MP4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "6 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Lilian con piscina" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "💎", text: "Traslado a Minas de Wanda y Ruinas de San Ignacio" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $94.498 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌊 <strong>CATARATAS DEL IGUAZÚ VERANO 2026</strong></p>
+            <p>Descubrí una de las 7 Maravillas Naturales del Mundo con alojamiento con piscina y traslados a excursiones históricas incluidos.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus semicama ida y vuelta.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Lilian</strong> con piscina.</li>
+                <li>☕ Desayuno diario incluido.</li>
+                <li>💎 Traslado a Minas de Wanda y Ruinas de San Ignacio.</li>
+                <li>🙋‍♂️ Coordinación permanente durante todo el itinerario.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $389.990.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $94.498.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 09, 12, 15, 18, 21, 24, 27, 30", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 02, 08, 11, 14, 17, 20", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-carlos-paz-verano-travelero",
+        title: "Villa Carlos Paz Verano Travelero",
+        season: "verano",
+        price: "$349.990",
+        image: "10_9/villa_carlos_paz.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "5 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Palmas del Lago (2 piscinas: exterior y climatizada)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $85.165 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🏞️ <strong>VILLA CARLOS PAZ VERANO 2026</strong></p>
+            <p>Sumergite en la capital del verano cordobés: teatros, lago San Roque, balnearios y el confort del Hotel Palmas del Lago con 2 piscinas.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Palmas del Lago</strong> (exterior y climatizada).</li>
+                <li>🍽️ <strong>Media Pensión</strong> incluida.</li>
+                <li>🙋‍♂️ Coordinación durante todo el viaje.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $349.990.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $85.165.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 04, 07, 10, 13, 16, 19, 22, 25, 28", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 08, 11, 14, 17, 20, 23, 26", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-de-merlo-verano-travelero",
+        title: "Villa de Merlo Verano Travelero",
+        season: "verano",
+        price: "$339.990",
+        image: "10_9/villa_merlo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/340ccd21-9565-47ea-a02a-6b45ffb3367d.MP4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "5 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Virginia Spa (2 piscinas: exterior y climatizada)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $82.831 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⛰️ <strong>VILLA DE MERLO VERANO 2026</strong></p>
+            <p>El tercer microclima del mundo te espera para unas vacaciones de puro relax, aire de sierras y confort en Hotel Virginia Spa.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta semicama.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Virginia Spa</strong> con 2 piscinas.</li>
+                <li>🍽️ <strong>Media Pensión</strong> incluida.</li>
+                <li>🙋‍♂️ Coordinación permanente.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $339.990.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $82.831.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 05, 08, 11, 14, 17, 20, 23, 26, 29", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 10, 13, 16, 19, 22, 25", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mendoza-verano-travelero",
+        title: "Mendoza Verano Travelero",
+        season: "verano",
+        price: "$339.990",
+        image: "10_9/mendoza.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mendoza/3ee0ac3c-755c-4fdc-9172-56f1773f6910.MP4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "6 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Géminis (Ubicación céntrica)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $82.831 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🍷 <strong>MENDOZA CAPITAL VERANO 2026</strong></p>
+            <p>Disfrutá del verano al pie de los Andes: arboledas, fuentes, excursiones a bodegas y la mejor gastronomía cuyana.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta confort.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Géminis</strong> (en pleno centro mendocino).</li>
+                <li>☕ Desayuno incluido.</li>
+                <li>🙋‍♂️ Coordinador permanente durante todo el viaje.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $339.990.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $82.831.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 06, 09, 12, 15, 18, 21, 24, 27, 30", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 02, 08, 11, 14, 17, 20, 23", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-del-plata-riazor-verano-travelero",
+        title: "Mar del Plata Hotel Riazor Verano Travelero",
+        season: "verano",
+        price: "$329.990",
+        image: "10_9/mar_plata.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/d253cbf7-3722-4e04-8399-eae25cb1080d.MP4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "4 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Riazor" },
+            { icon: "🍽️", text: "Pensión Completa (Desayuno, Almuerzo y Cena)" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $80.498 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🏖️ <strong>MAR DEL PLATA - HOTEL RIAZOR (PENSIÓN COMPLETA)</strong></p>
+            <p>¡Disfrutá del verano con Pensión Completa! Hotel Riazor te brinda la mejor atención con todas las comidas incluidas para unas vacaciones perfectas.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta semicama confort.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Riazor</strong>.</li>
+                <li>🍽️ <strong>Pensión Completa</strong> (Desayuno, Almuerzo y Cena).</li>
+                <li>🙋‍♂️ Coordinación durante todo el viaje.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $329.990.</p>
+            <p>- Régimen: Pensión Completa.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $80.498.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 04, 07, 10, 13, 16, 19, 22, 25, 28, 31", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 03, 09, 12, 15, 18, 21, 24, 27", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-de-ajo-verano-travelero",
+        title: "Mar de Ajó Verano Travelero",
+        season: "verano",
+        price: "$299.990",
+        image: "10_9/mar_ajo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "4 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Atlantic (A 30 mts de la playa)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $73.498 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌊 <strong>MAR DE AJÓ VERANO 2026</strong></p>
+            <p>A pasos del mar, con la mejor tranquilidad de la costa. Alojamiento en el Hotel Atlantic a 30 metros de la playa con Media Pensión.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta confort.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Atlantic</strong> (a 30 metros de la playa).</li>
+                <li>🍽️ <strong>Media Pensión</strong> incluida.</li>
+                <li>🙋‍♂️ Coordinación permanente.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $299.990.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $73.498.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 05, 08, 11, 14, 17, 20, 23, 26, 29", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 01, 09, 12, 15, 18, 21, 24, 27", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-del-plata-nuevo-horizonte-verano-travelero",
+        title: "Mar del Plata Hotel Nuevo Horizonte Verano Travelero",
+        season: "verano",
+        price: "$289.990",
+        image: "10_9/mar_plata3.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/d253cbf7-3722-4e04-8399-eae25cb1080d.MP4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "4 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Nuevo Horizonte" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $71.165 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🏖️ <strong>MAR DEL PLATA - HOTEL NUEVO HORIZONTE</strong></p>
+            <p>Disfrutá de la playa, los teatros y el clásico paseo por la rambla con la mejor tarifa. Alojamiento en el Hotel Nuevo Horizonte con desayuno.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta confort.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Nuevo Horizonte</strong>.</li>
+                <li>☕ <strong>Desayuno</strong> incluido.</li>
+                <li>🙋‍♂️ Coordinación durante el viaje.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $289.990.</p>
+            <p>- Régimen: Desayuno.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $71.165.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 09, 12, 15, 18, 21, 24, 27, 30", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 11, 14, 17, 20, 23, 26", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "santa-teresita-verano-travelero",
+        title: "Santa Teresita Verano Travelero",
+        season: "verano",
+        price: "$259.990",
+        image: "10_9/santa_teresita.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Santa Teresita/d9ed77d3-3006-497f-b8c2-d6df92bc76c9.mp4",
+        features: [
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🌙", text: "4 Días / 3 Noches de estadía" },
+            { icon: "🏨", text: "Hotel Turista (A metros del mar)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "💳", text: "6 cuotas de $64.165 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🏖️ <strong>SANTA TERESITA VERANO 2026</strong></p>
+            <p>La escapada de verano más conveniente de la costa atlántica. Hotel a metros de la playa, paseos en familia y descanso asegurado.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta confort.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Turista</strong> (a metros del mar).</li>
+                <li>☕ <strong>Desayuno</strong> incluido.</li>
+                <li>🙋‍♂️ Coordinación permanente durante todo el viaje.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa por persona: $259.990.</p>
+            <p>- Gastos administrativos: $15.000.</p>
+            <p>- Plan 6 cuotas fijas de $64.165.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Enero: 07, 10, 13, 16, 19, 22, 25, 28, 31", status: "DISPONIBLE", color: "🟢" },
+            { date: "Febrero: 03, 13, 16, 19, 22, 25, 28", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
     // === TRAVEL SALE 2026 JETSMART · OFERTA ESPECIAL 4X3 (8_9) ===
     {
         id: "resumen-travel-sale-jetsmart",
@@ -3435,9 +3910,16 @@ const paquetesData = [
             </ul>
         `
     },
-    { icon: "", text: "Entrada al complejo termal incluida" },
-            { icon: "", text: "Especial Día del Maestro" },
-            { icon: "", text: "Coordinación permanente" }
+    {
+        id: "termas-de-guaychu-dia-del-maestro",
+        title: "Termas de Guaychú",
+        season: "escapadas",
+        price: "Consultar",
+        image: "15_8/termas_guaychu.jpeg",
+        features: [
+            { icon: "♨️", text: "Entrada al complejo termal incluida" },
+            { icon: "✨", text: "Especial Día del Maestro" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" }
         ],
         itinerary: `<p>Relajate y renová tus energías en las piletas termales de Guaychú.</p>`,
         importantNotes: `<p>- Tarifas promocionales por el Día del Maestro.</p>`,

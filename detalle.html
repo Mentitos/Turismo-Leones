@@ -659,6 +659,8 @@
                     <ul class="pkg-features" id="pkgFeatures">
                     </ul>
 
+                    <div class="pkg-price-bar" id="pkgPrice" style="margin-top: 20px; display: none;"></div>
+
                     <div id="pkgAvailabilityContainer" style="margin-top: 25px; padding: 20px; background: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.06); display: none; width: 100%;">
                         <h3 style="font-size: 15px; font-weight: bold; color: var(--navy); margin-bottom: 15px; display: flex; align-items: center; gap: 8px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">
                             <span></span>Salidas y Disponibilidad
@@ -668,6 +670,18 @@
 
                 </div>
             </div>
+
+            <div class="pkg-tabs" id="pkgTabsContainer" style="display: none; margin-top: 30px;">
+                <button class="pkg-tab-btn active" onclick="switchTab('itinerario')">Itinerario</button>
+                <button class="pkg-tab-btn" onclick="switchTab('notas')">Notas Importantes</button>
+                <button class="pkg-tab-btn" onclick="switchTab('embarque')">Puntos de Embarque</button>
+                <button class="pkg-tab-btn" onclick="switchTab('legales')">Legales</button>
+            </div>
+
+            <div id="tab-itinerario" class="pkg-tab-content active"></div>
+            <div id="tab-notas" class="pkg-tab-content"></div>
+            <div id="tab-embarque" class="pkg-tab-content"></div>
+            <div id="tab-legales" class="pkg-tab-content"></div>
 
             
             <div style="background: linear-gradient(135deg, #0a1a6b 0%, #1432c8 100%); padding: 20px 40px; display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; border-radius: 12px; margin-bottom: 30px;">
@@ -920,7 +934,7 @@
                                     border-radius: 20px; 
                                     font-size: 11px; 
                                     color: white; 
-                                    font-weight: bold;
+                                    font-weight: bold; 
                                     letter-spacing: 0.5px;
                                     background-color: ${item.status === 'AGOTADO' ? '#ef4444' : (item.status === 'POCO DISPONIBLE' ? '#f59e0b' : '#10b981')}
                                 ">${item.color || ''} ${item.status}</span>
@@ -929,6 +943,29 @@
                     } else {
                         availabilityContainer.style.display = 'none';
                     }
+                }
+
+                const priceEl = document.getElementById('pkgPrice');
+                if (priceEl && data.price && data.price !== 'Consultar') {
+                    priceEl.textContent = data.price;
+                    priceEl.style.display = 'block';
+                }
+
+                if (data.itinerary || data.importantNotes || data.boardingPoints || data.legal) {
+                    const tabsContainer = document.getElementById('pkgTabsContainer');
+                    if (tabsContainer) tabsContainer.style.display = 'flex';
+
+                    const tabItin = document.getElementById('tab-itinerario');
+                    if (tabItin && data.itinerary) tabItin.innerHTML = data.itinerary;
+
+                    const tabNotas = document.getElementById('tab-notas');
+                    if (tabNotas && data.importantNotes) tabNotas.innerHTML = data.importantNotes;
+
+                    const tabEmb = document.getElementById('tab-embarque');
+                    if (tabEmb && data.boardingPoints) tabEmb.innerHTML = data.boardingPoints;
+
+                    const tabLeg = document.getElementById('tab-legales');
+                    if (tabLeg && data.legal) tabLeg.innerHTML = data.legal;
                 }
 
                 if (data.pdf) {
