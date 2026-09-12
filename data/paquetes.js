@@ -1821,13 +1821,13 @@ const paquetesData = [
             { date: "22 de Septiembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
         ]
     },
-    // === FERIADO OCTUBRE (4_9) ===
+    // === FERIADO OCTUBRE (12_9) ===
     {
         id: "campo-la-herradura-feriado-octubre",
         title: "Campo La Herradura Feriado Octubre",
         season: "feriado-octubre",
         price: "$99.990",
-        image: "4_9/campo_herradura.jpeg",
+        image: "12_9/campo_herradura.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/LA HERRADURA VEND FERIADO MAYO 2026.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
         features: [
@@ -1873,7 +1873,7 @@ const paquetesData = [
         title: "Gualeguaychú Feriado Octubre",
         season: "feriado-octubre",
         price: "$179.990",
-        image: "4_9/gualeguaychu.jpeg",
+        image: "12_9/Gualeguaychu.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUALEGUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/VIDEO-2025-12-19-13-34-16.mp4",
         features: [
@@ -1918,7 +1918,7 @@ const paquetesData = [
         title: "Mar de Ajó Feriado Octubre",
         season: "feriado-octubre",
         price: "$209.990",
-        image: "4_9/mar_ajo.jpeg",
+        image: "12_9/mar_ajo.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
         features: [
@@ -1962,7 +1962,7 @@ const paquetesData = [
         title: "Mar del Plata Feriado Octubre",
         season: "feriado-octubre",
         price: "$219.990",
-        image: "4_9/mar_plata.jpeg",
+        image: "12_9/mar_plata.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO DÍA DEL TRABAJADOR/MAR DEL PLATA VEND DIA DEL TRABAJADOR 2026.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
         features: [
@@ -2006,7 +2006,7 @@ const paquetesData = [
         title: "San Pedro Feriado Octubre",
         season: "feriado-octubre",
         price: "$109.990",
-        image: "4_9/san_pedro.jpeg",
+        image: "12_9/san_pedro.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/SAN PEDRO VEND FERIADO MAYO 2026.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
         features: [
@@ -2052,7 +2052,7 @@ const paquetesData = [
         title: "Tandil Feriado Octubre",
         season: "feriado-octubre",
         price: "$229.990",
-        image: "4_9/tandil.jpeg",
+        image: "12_9/tandil.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/TANDIL VEND FERIADO JUNIO 2026.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
         features: [
@@ -2096,7 +2096,7 @@ const paquetesData = [
         title: "Termas del Guaychú Feriado Octubre",
         season: "feriado-octubre",
         price: "$99.990",
-        image: "4_9/termas_guaychu.jpeg",
+        image: "12_9/termas_guaychu.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/VIDEO-2025-09-30-16-56-07.mp4",
         features: [
@@ -2139,7 +2139,7 @@ const paquetesData = [
         title: "Villa Carlos Paz Feriado Octubre",
         season: "feriado-octubre",
         price: "$249.990",
-        image: "4_9/villa_carlos_paz.jpeg",
+        image: "12_9/villa_carlos_paz.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/VILLA CARLOS PAZ FERIADO JUNIO 2026.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/VIDEO-2025-10-20-13-56-05.mp4",
         features: [
@@ -2183,7 +2183,7 @@ const paquetesData = [
         title: "Villa de Merlo Feriado Octubre",
         season: "feriado-octubre",
         price: "$239.990",
-        image: "4_9/villa_merlo.jpeg",
+        image: "12_9/villa_merlo.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/MERLO VEND FERIADO JUNIO 2026.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/VIDEO-2025-10-30-10-10-15.mp4",
         features: [
