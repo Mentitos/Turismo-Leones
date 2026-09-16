@@ -1,4 +1,881 @@
 const paquetesData = [
+    // === PRIMAVERA TRAVELERA 4X3 (15_9) ===
+    {
+        id: "campo-la-herradura-primavera",
+        title: "Campo La Herradura Primavera",
+        season: "primavera",
+        price: "$99.990",
+        image: "15_9/campo_herradura.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🥩", text: "Full Day: Desayuno, Almuerzo con Asado y Merienda" },
+            { icon: "🐎", text: "Cabalgata y actividades recreativas en el campo" },
+            { icon: "💳", text: "6 cuotas de $25.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Campo La Herradura</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Full Day · Estancia de Campo.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Desayuno, Almuerzo y Merienda (Asado libre y Bebidas sin alcohol).</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Asado completo con bebidas sin alcohol, cabalgatas y uso de instalaciones.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $25.665</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "11 y 18 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "15 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "20 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "termas-de-guaychu-primavera",
+        title: "Termas del Guaychú Primavera",
+        season: "primavera",
+        price: "$99.990",
+        image: "15_9/gualeguaychu_2.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "♨️", text: "Entrada incluida al complejo termal Termas del Guaychú" },
+            { icon: "🏊‍♂️", text: "Piscinas termales y predio recreativo" },
+            { icon: "💳", text: "6 cuotas de $25.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Termas del Guaychú</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Full Day · Complejo Termal Guaychú.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Día completo de relax termal.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Entrada incluida al Complejo Termal Guaychú.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $25.665</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "04, 18 y 25 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "08 y 15 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "13 y 20 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-pedro-primavera",
+        title: "San Pedro Primavera",
+        season: "primavera",
+        price: "$109.990",
+        image: "15_9/san_pedro.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN PEDRO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🥩", text: "Almuerzo con parrillada completa incluido" },
+            { icon: "📍", text: "Visita a Vuelta de Obligado, La Campiña y Ensaimadas" },
+            { icon: "💳", text: "6 cuotas de $27.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>San Pedro</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> Full Day · Paseo de Día Completo.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Incluye Almuerzo Parrillada Completa.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Visita Vuelta de Obligado, Visita La Campiña y fábrica de ensaimadas.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $27.998</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "04 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "29 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "13 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "gualeguaychu-primavera",
+        title: "Gualeguaychú Primavera",
+        season: "primavera",
+        price: "Desde $139.990",
+        image: "15_9/gualeguaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/ee3c5736-9583-4565-947c-d11d9ce6e4a6.MP4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Los Robles con Media Pensión" },
+            { icon: "♨️", text: "Traslado incluido a Termas del Guaychú" },
+            { icon: "💳", text: "Viernes $139.990 (6 cuotas $34.998) / Sábados $149.990 (6 cuotas $37.331)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Gualeguaychú</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 Días / 1 Noche · Hotel Los Robles.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Media Pensión.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Traslado a Termas del Guaychú.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas desde $34.998</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Viernes: 16 Oct / 06 y 27 Nov / 11 y 18 Dic ($139.990)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Sábados: 17 y 31 Oct / 07 y 28 Nov / 12 y 19 Dic ($149.990)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-de-ajo-primavera-2d-1n",
+        title: "Mar de Ajó Primavera (2D / 1N)",
+        season: "primavera",
+        price: "$169.990",
+        image: "15_9/mar_de_ajo_2.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🏨", text: "Hotel Atlantic a solo 30 metros del mar" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $41.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Mar de Ajó (2D / 1N)</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 Días / 1 Noche · Hotel Atlantic (a 30 metros de la playa).</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Media Pensión.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Alojamiento costero, playa y relax.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $41.998</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "07 de Noviembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-del-plata-primavera-2d-1n",
+        title: "Mar del Plata Primavera (2D / 1N)",
+        season: "primavera",
+        price: "$169.990",
+        image: "15_9/mar_del_plata.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X1 NT VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta confort" },
+            { icon: "🏨", text: "Hotel Riazor céntrico" },
+            { icon: "🍽️", text: "Pensión Completa (Desayuno, Almuerzo y Cena)" },
+            { icon: "💳", text: "6 cuotas de $41.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Mar del Plata (2D / 1N)</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 Días / 1 Noche · Hotel Riazor.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Pensión Completa.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Alojamiento con todas las comidas incluidas.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $41.998</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "07 de Noviembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "santa-teresita-primavera",
+        title: "Santa Teresita Primavera",
+        season: "primavera",
+        price: "$189.990",
+        image: "15_9/santa_teresita.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Santa Teresita/d9ed77d3-3006-497f-b8c2-d6df92bc76c9.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Turista con Desayuno" },
+            { icon: "🏖️", text: "Playas amplias y centro comercial" },
+            { icon: "💳", text: "6 cuotas de $46.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Santa Teresita</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 3 Días / 2 Noches · Hotel Turista.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Desayuno incluido.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Alojamiento, playa, centro comercial y relax.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $46.665</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "11 al 13 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-de-ajo-primavera-3d-2n",
+        title: "Mar de Ajó Primavera (3D / 2N)",
+        season: "primavera",
+        price: "$199.990",
+        image: "15_9/mar_de_ajo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Atlantic a 30 metros de la playa" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $48.997 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Mar de Ajó (3D / 2N)</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 3 Días / 2 Noches · Hotel Atlantic (a 30 metros de la playa).</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Media Pensión.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Alojamiento costero, playa y relax.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $48.997</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "01 al 03 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-del-plata-primavera-3d-2n",
+        title: "Mar del Plata Primavera (3D / 2N)",
+        season: "primavera",
+        price: "$199.990",
+        image: "15_9/mar_del_plata_2.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X 2NTS VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Riazor céntrico" },
+            { icon: "🍽️", text: "Pensión Completa incluida" },
+            { icon: "💳", text: "6 cuotas de $48.997 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Mar del Plata (3D / 2N)</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 3 Días / 2 Noches · Hotel Riazor.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Pensión Completa.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Alojamiento céntrico con todas las comidas.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $48.997</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "01, 03 y 08 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "tandil-primavera",
+        title: "Tandil Primavera",
+        season: "primavera",
+        price: "$219.990",
+        image: "15_9/tandil.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/TANDIL VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel El Turista con Media Pensión" },
+            { icon: "🧀", text: "Circuito serrano y gastronomía típica" },
+            { icon: "💳", text: "6 cuotas de $53.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Tandil</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 Días / 1 Noche · Hotel El Turista.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Media Pensión.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Sierras, quesos y embutidos artesanales.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $53.665</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "24 y 31 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "14 y 28 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "12 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-bernardo-primavera",
+        title: "San Bernardo Primavera",
+        season: "primavera",
+        price: "$239.990",
+        image: "15_9/san_bernardo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Bernardo/425148a7-1c28-44ae-81d5-f4997dcda3d8.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Majo Frente al Mar con Piscina Climatizada" },
+            { icon: "☕", text: "Desayuno y Merienda incluidos" },
+            { icon: "💳", text: "6 cuotas de $58.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>San Bernardo</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 3 Días / 2 Noches · Hotel Majo (Frente al mar · Piscina climatizada).</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Desayuno y Merienda.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Frente a la playa, pileta climatizada y confort.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $58.331</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "27 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "11 al 13 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-de-merlo-primavera",
+        title: "Villa de Merlo Primavera",
+        season: "primavera",
+        price: "$269.990",
+        image: "15_9/villa_merlo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MERLO VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/340ccd21-9565-47ea-a02a-6b45ffb3367d.MP4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Virginia Spa con Piscina Climatizada" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $65.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Villa de Merlo</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 5 Días / 3 Noches · Hotel Virginia Spa (Piscina climatizada).</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Media Pensión.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Spa, piscina climatizada y microclima del valle.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $65.331</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "14 y 28 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "14 y 28 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "12 y 17 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-carlos-paz-primavera",
+        title: "Villa Carlos Paz Primavera",
+        season: "primavera",
+        price: "$289.990",
+        image: "15_9/villa_carlos_paz.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Palmas del Lago con Piscina Climatizada" },
+            { icon: "🍽️", text: "Pensión Completa (Desayuno, Almuerzo y Cena)" },
+            { icon: "💳", text: "6 cuotas de $69.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Villa Carlos Paz</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 5 Días / 3 Noches · Hotel Palmas del Lago (Piscina climatizada).</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Pensión Completa.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Piscina climatizada, vista al lago y pensión completa.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $69.998</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "17 y 24 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "07 y 14 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "09 y 16 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mendoza-primavera",
+        title: "Mendoza Primavera",
+        season: "primavera",
+        price: "$299.990",
+        image: "15_9/mendoza.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MENDOZA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mendoza/3ee0ac3c-755c-4fdc-9172-56f1773f6910.MP4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Géminis con Desayuno" },
+            { icon: "♨️", text: "Traslado incluido a Termas de Cacheuta" },
+            { icon: "💳", text: "6 cuotas de $72.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Mendoza</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 6 Días / 3 Noches · Hotel Géminis Centro.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Desayuno incluido.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Traslado a Termas de Cacheuta.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $72.331</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "20 y 27 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "13 y 21 de Noviembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "cataratas-del-iguazu-primavera",
+        title: "Cataratas del Iguazú Primavera",
+        season: "primavera",
+        price: "$359.990",
+        image: "15_9/cataratas_del_iguazu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Iguazu/VIDEO-2025-09-27-13-52-38.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Lilian con piscina y Desayuno" },
+            { icon: "🌊", text: "Traslado a Ruinas de San Ignacio, Minas de Wanda y Cataratas Argentinas" },
+            { icon: "💳", text: "6 cuotas de $86.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Cataratas del Iguazú</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 6 Días / 3 Noches · Hotel Lilian (con piscina).</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Desayuno incluido.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Traslado a Ruinas de San Ignacio, Minas de Wanda y Cataratas Argentinas.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $86.331</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "07 y 25 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "03 y 15 de Noviembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-rafael-primavera",
+        title: "San Rafael Primavera",
+        season: "primavera",
+        price: "$359.990",
+        image: "15_9/san_rafael.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN RAFAEL VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Puesta del Sol con piscina" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $86.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>San Rafael</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 6 Días / 3 Noches · Hotel Puesta del Sol.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Media Pensión.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Cañón del Atuel, bodegas y paisajes mendocinos.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $86.331</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "09 y 22 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "02 y 13 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "08 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "puerto-madryn-primavera",
+        title: "Puerto Madryn Primavera",
+        season: "primavera",
+        price: "$379.990",
+        image: "15_9/puerto_madryn.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/PUERTO MADRYN VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Puerto Madryn/3ac8b515-3c4b-466a-a557-6a9d2506fc62.MP4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Samay Huasi con Piscina Climatizada" },
+            { icon: "🐋", text: "Temporada alta de avistaje de ballenas en Península Valdés" },
+            { icon: "💳", text: "6 cuotas de $90.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Puerto Madryn</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 6 Días / 3 Noches · Hotel Samay Huasi (Piscina climatizada).</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Desayuno incluido.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Avistaje de ballenas franco austral y fauna marina.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $90.998</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "22 y 25 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "16 y 21 de Noviembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "aimogasta-primavera",
+        title: "Aimogasta Primavera",
+        season: "primavera",
+        price: "$399.990",
+        image: "15_9/aimogasta.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/AIMOGASTA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Aimogasta/VIDEO-2025-10-29-12-12-11.mp4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Gran Arauco con Media Pensión" },
+            { icon: "🌵", text: "La Rioja termal y paisajes únicos" },
+            { icon: "💳", text: "6 cuotas de $95.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Aimogasta</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 6 Días / 3 Noches · Hotel Gran Arauco.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Media Pensión.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Termas de Santa Teresita riojanas, olivos y paisajes andinos.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $95.665</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "13 de Octubre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "salta-primavera",
+        title: "Salta Primavera",
+        season: "primavera",
+        price: "$459.990",
+        image: "15_9/salta.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
+        features: [
+            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "Hotel Inti Raymi con Media Pensión" },
+            { icon: "🙏", text: "Traslado incluido a la Virgen del Cerro" },
+            { icon: "💳", text: "6 cuotas de $109.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA CON TRAVELAR!</strong></p>
+            <p>Aprovechá la <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!) para tu escapada o vacaciones de primavera a <strong>Salta</strong>.</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 7 Días / 4 Noches · Hotel Inti Raymi.</li>
+                <li>🍽️ <strong>Régimen de comidas:</strong> Media Pensión.</li>
+                <li>✨ <strong>Inclusiones especiales:</strong> Traslado a la Virgen del Cerro.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 pasajeros, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona en base séxtuple/quíntuple/cuádruple/triple/doble según disponibilidad.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $109.665</strong>.</p>
+            <p>- Cupos limitados por salida para la temporada de Primavera.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "21 de Octubre", status: "DISPONIBLE", color: "🟢" },
+            { date: "02 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "14 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
     // === VERANO TRAVELERO 2026 (10_9) ===
     {
         id: "resumen-verano-travelero",
@@ -2448,289 +3325,6 @@ const paquetesData = [
         ]
     },
     {
-        id: "mar-de-ajo-primavera-3d-2n",
-        title: "Mar de Ajó Primavera (3D / 2N)",
-        season: "primavera",
-        price: "$199.990",
-        image: "22_8/mar_ajo.jpeg",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
-        features: [
-            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
-            { icon: "🚌", text: "Bus Ida y Vuelta" },
-            { icon: "🍽️", text: "Media Pensión" },
-            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "🏨", text: "Hotel Atlantic (A 30 mts del mar)" },
-            { icon: "📅", text: "Salida: Diciembre 01-03 (3 Días / 2 Noches)" },
-            { icon: "💳", text: "6 cuotas de $48.997" }
-        ],
-        itinerary: `
-            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA A MAR DE AJÓ CON TRAVELAR!</strong></p>
-            <p>Disfrutá de una escapada increíble a Mar de Ajó junto al mar con todo resuelto por <strong>$199.990</strong> por persona.</p>
-            <br>
-            <p><strong>INCLUYE:</strong></p>
-            <ul>
-                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
-                <li>🏨 <strong>Alojamiento:</strong> Hotel Atlantic (a sólo 30 metros del mar - 3 días / 2 noches).</li>
-                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
-                <li>📅 <strong>Salida confirmada:</strong> Diciembre 01 al 03.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $48.997.</li>
-            </ul>
-        `,
-        importantNotes: `
-            <p>- <strong>Salida:</strong> Diciembre 01-03.</p>
-            <p>- <strong>Duración:</strong> 3 Días / 2 Noches.</p>
-            <p>- <strong>Tarifa:</strong> $199.990 por persona.</p>
-            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
-            <p>- <strong>Financiación:</strong> 6 cuotas de $48.997.</p>
-            <p>- Cupos limitados.</p>
-        `,
-        boardingPoints: `
-            <ul>
-                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
-            </ul>
-        `,
-        availability: [
-            { date: "Diciembre 01-03", status: "ÚLTIMOS LUGARES", color: "🟡" }
-        ]
-    },
-    {
-        id: "mar-de-ajo-primavera-2d-1n",
-        title: "Mar de Ajó Primavera (2D / 1N)",
-        season: "primavera",
-        price: "$169.990",
-        image: "22_8/mar_ajo_2.jpeg",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
-        features: [
-            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
-            { icon: "🚌", text: "Bus Ida y Vuelta" },
-            { icon: "🍽️", text: "Media Pensión" },
-            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "🏨", text: "Hotel Atlantic (A 30 mts del mar)" },
-            { icon: "📅", text: "Salida: Noviembre 07 (2 Días / 1 Noche)" },
-            { icon: "💳", text: "6 cuotas de $41.998" }
-        ],
-        itinerary: `
-            <p>🌸 <strong>¡ESCAPADA DE PRIMAVERA A MAR DE AJÓ CON TRAVELAR!</strong></p>
-            <p>Aprovechá este fin de semana primaveral frente a la playa por <strong>$169.990</strong> por persona.</p>
-            <br>
-            <p><strong>INCLUYE:</strong></p>
-            <ul>
-                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
-                <li>🏨 <strong>Alojamiento:</strong> Hotel Atlantic (a sólo 30 metros del mar - 2 días / 1 noche).</li>
-                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
-                <li>📅 <strong>Salida confirmada:</strong> 07 de Noviembre.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $41.998.</li>
-            </ul>
-        `,
-        importantNotes: `
-            <p>- <strong>Salida:</strong> 07 de Noviembre.</p>
-            <p>- <strong>Duración:</strong> 2 Días / 1 Noche.</p>
-            <p>- <strong>Tarifa:</strong> $169.990 por persona.</p>
-            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
-            <p>- <strong>Financiación:</strong> 6 cuotas de $41.998.</p>
-            <p>- Cupos limitados.</p>
-        `,
-        boardingPoints: `
-            <ul>
-                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
-            </ul>
-        `,
-        availability: [
-            { date: "07 de Noviembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
-        ]
-    },
-    {
-        id: "mar-del-plata-primavera-3d-2n",
-        title: "Mar del Plata Primavera (3D / 2N)",
-        season: "primavera",
-        price: "$199.990",
-        image: "22_8/mar_del_plata.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X 2NTS VEND MARZO A JUNIO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
-        features: [
-            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
-            { icon: "🚌", text: "Bus Ida y Vuelta" },
-            { icon: "🍽️", text: "Pensión Completa" },
-            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "🏨", text: "Hotel Riazor (3 Días / 2 Noches)" },
-            { icon: "📅", text: "Salidas: Diciembre 01 - 03 - 08" },
-            { icon: "💳", text: "6 cuotas de $48.997" }
-        ],
-        itinerary: `
-            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA A MAR DEL PLATA CON TRAVELAR!</strong></p>
-            <p>Viví la ciudad feliz con pensión completa y la mejor atención en Hotel Riazor por <strong>$199.990</strong> por persona.</p>
-            <br>
-            <p><strong>INCLUYE:</strong></p>
-            <ul>
-                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
-                <li>🏨 <strong>Alojamiento:</strong> Hotel Riazor (3 días / 2 noches).</li>
-                <li>🍽️ <strong>Régimen:</strong> Pensión Completa.</li>
-                <li>📅 <strong>Salidas confirmadas:</strong> Diciembre 01, 03 y 08.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $48.997.</li>
-            </ul>
-        `,
-        importantNotes: `
-            <p>- <strong>Salidas:</strong> Diciembre 01, 03 y 08.</p>
-            <p>- <strong>Duración:</strong> 3 Días / 2 Noches.</p>
-            <p>- <strong>Tarifa:</strong> $199.990 por persona con Pensión Completa.</p>
-            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
-            <p>- <strong>Financiación:</strong> 6 cuotas de $48.997.</p>
-            <p>- Cupos limitados.</p>
-        `,
-        boardingPoints: `
-            <ul>
-                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
-            </ul>
-        `,
-        availability: [
-            { date: "01 de Diciembre", status: "DISPONIBLE", color: "🟢" },
-            { date: "03 de Diciembre", status: "ÚLTIMOS LUGARES", color: "🟡" },
-            { date: "08 de Diciembre", status: "DISPONIBLE", color: "🟢" }
-        ]
-    },
-    {
-        id: "mar-del-plata-primavera-2d-1n",
-        title: "Mar del Plata Primavera (2D / 1N)",
-        season: "primavera",
-        price: "$169.990",
-        image: "22_8/mar_del_plata_2.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X1 NT VEND MARZO A JUNIO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
-        features: [
-            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
-            { icon: "🚌", text: "Bus Ida y Vuelta" },
-            { icon: "🍽️", text: "Pensión Completa" },
-            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "🏨", text: "Hotel Riazor (2 Días / 1 Noche)" },
-            { icon: "📅", text: "Salida: Noviembre 07" },
-            { icon: "💳", text: "6 cuotas de $41.998" }
-        ],
-        itinerary: `
-            <p>🌸 <strong>¡ESCAPADA DE PRIMAVERA A MAR DEL PLATA CON TRAVELAR!</strong></p>
-            <p>Disfrutá del mar en Mar del Plata con Pensión Completa por <strong>$169.990</strong> por persona.</p>
-            <br>
-            <p><strong>INCLUYE:</strong></p>
-            <ul>
-                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
-                <li>🏨 <strong>Alojamiento:</strong> Hotel Riazor (2 días / 1 noche).</li>
-                <li>🍽️ <strong>Régimen:</strong> Pensión Completa.</li>
-                <li>📅 <strong>Salida confirmada:</strong> 07 de Noviembre.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $41.998.</li>
-            </ul>
-        `,
-        importantNotes: `
-            <p>- <strong>Salida:</strong> 07 de Noviembre.</p>
-            <p>- <strong>Duración:</strong> 2 Días / 1 Noche.</p>
-            <p>- <strong>Tarifa:</strong> $169.990 por persona con Pensión Completa.</p>
-            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
-            <p>- <strong>Financiación:</strong> 6 cuotas de $41.998.</p>
-            <p>- Cupos limitados.</p>
-        `,
-        boardingPoints: `
-            <ul>
-                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
-            </ul>
-        `,
-        availability: [
-            { date: "07 de Noviembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
-        ]
-    },
-    {
-        id: "san-bernardo-primavera",
-        title: "San Bernardo Primavera",
-        season: "primavera",
-        price: "$239.990",
-        image: "22_8/san_bernardo.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Bernardo/425148a7-1c28-44ae-81d5-f4997dcda3d8.mp4",
-        features: [
-            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
-            { icon: "🚌", text: "Bus Ida y Vuelta" },
-            { icon: "☕", text: "Desayuno y Merienda" },
-            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "🏨", text: "Hotel Majo (Frente al mar - 3 Días / 2 Noches)" },
-            { icon: "📅", text: "Salidas: Noviembre 27 | Diciembre 11-13" },
-            { icon: "💳", text: "6 cuotas de $58.331" }
-        ],
-        itinerary: `
-            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA A SAN BERNARDO CON TRAVELAR!</strong></p>
-            <p>Viví una estadía de ensueño frente al mar en Hotel Majo por <strong>$239.990</strong> por persona.</p>
-            <br>
-            <p><strong>INCLUYE:</strong></p>
-            <ul>
-                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
-                <li>🏨 <strong>Alojamiento:</strong> Hotel Majo (Frente al mar - 3 días / 2 noches).</li>
-                <li>☕ <strong>Régimen:</strong> Desayuno y Merienda incluidos.</li>
-                <li>📅 <strong>Salidas confirmadas:</strong> 27 de Noviembre y 11 al 13 de Diciembre.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $58.331.</li>
-            </ul>
-        `,
-        importantNotes: `
-            <p>- <strong>Salidas:</strong> 27 de Noviembre y 11 al 13 de Diciembre.</p>
-            <p>- <strong>Duración:</strong> 3 Días / 2 Noches.</p>
-            <p>- <strong>Tarifa:</strong> $239.990 por persona.</p>
-            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
-            <p>- <strong>Financiación:</strong> 6 cuotas de $58.331.</p>
-            <p>- Hotel Majo frente al mar.</p>
-            <p>- Cupos limitados.</p>
-        `,
-        boardingPoints: `
-            <ul>
-                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
-            </ul>
-        `,
-        availability: [
-            { date: "27 de Noviembre", status: "ÚLTIMOS LUGARES", color: "🟡" },
-            { date: "11-13 de Diciembre", status: "DISPONIBLE", color: "🟢" }
-        ]
-    },
-    {
-        id: "santa-teresita-primavera",
-        title: "Santa Teresita Primavera",
-        season: "primavera",
-        price: "$189.990",
-        image: "22_8/santa_teresita.jpeg",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Santa Teresita/d9ed77d3-3006-497f-b8c2-d6df92bc76c9.mp4",
-        features: [
-            { icon: "🌸", text: "¡Viajá en Primavera con TravelAr!" },
-            { icon: "🚌", text: "Bus Ida y Vuelta" },
-            { icon: "☕", text: "Desayuno incluido" },
-            { icon: "🙋‍♂️", text: "Coordinación Permanente" },
-            { icon: "🏨", text: "Hotel Turista (3 Días / 2 Noches)" },
-            { icon: "📅", text: "Salida: Diciembre 11-13" },
-            { icon: "💳", text: "6 cuotas de $46.665" }
-        ],
-        itinerary: `
-            <p>🌸 <strong>¡VIAJÁ EN PRIMAVERA A SANTA TERESITA CON TRAVELAR!</strong></p>
-            <p>Disfrutá de la tranquilidad y las playas de Santa Teresita en Hotel Turista por <strong>$189.990</strong> por persona.</p>
-            <br>
-            <p><strong>INCLUYE:</strong></p>
-            <ul>
-                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con coordinación permanente.</li>
-                <li>🏨 <strong>Alojamiento:</strong> Hotel Turista (3 días / 2 noches).</li>
-                <li>☕ <strong>Régimen:</strong> Desayuno incluido.</li>
-                <li>📅 <strong>Salida confirmada:</strong> 11 al 13 de Diciembre.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $46.665.</li>
-            </ul>
-        `,
-        importantNotes: `
-            <p>- <strong>Salida:</strong> 11 al 13 de Diciembre.</p>
-            <p>- <strong>Duración:</strong> 3 Días / 2 Noches.</p>
-            <p>- <strong>Tarifa:</strong> $189.990 por persona.</p>
-            <p>- <strong>Gastos administrativos:</strong> $10.000.</p>
-            <p>- <strong>Financiación:</strong> 6 cuotas de $46.665.</p>
-            <p>- Cupos limitados.</p>
-        `,
-        boardingPoints: `
-            <ul>
-                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
-            </ul>
-        `,
-        availability: [
-            { date: "11-13 de Diciembre", status: "ÚLTIMOS LUGARES", color: "🟡" }
-        ]
-    },
-    {
         id: "resumen-primavera",
         title: "Resumen Primavera",
         season: "primavera",
@@ -2775,210 +3369,6 @@ const paquetesData = [
             { icon: "", text: "Aéreo desde Buenos Aires" },
             { icon: "", text: "Alojamiento con Desayuno" },
             { icon: "", text: "Traslados In/Out" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "aimogasta-primavera",
-        title: "Aimogasta Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/aimogasta.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/AIMOGASTA VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Aimogasta/VIDEO-2025-10-29-12-12-11.mp4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Alojamiento con Media Pensión" },
-            { icon: "", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "campo-la-herradura-primavera",
-        title: "Campo La Herradura Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/campo_herradura.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Día de Campo Completo" },
-            { icon: "", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "cataratas-del-iguazu-primavera",
-        title: "Cataratas del Iguazú Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/cataratas_iguazu.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/CATARATAS DEL IGUAZÚ VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Iguazu/VIDEO-2025-09-27-13-52-38.mp4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Alojamiento con Desayuno" },
-            { icon: "", text: "Excursiones incluidas" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "gualeguaychu-primavera",
-        title: "Gualeguaychú Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/gualeguaychu.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/ee3c5736-9583-4565-947c-d11d9ce6e4a6.MP4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Alojamiento con Desayuno" },
-            { icon: "", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "mendoza-primavera",
-        title: "Mendoza Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/mendoza.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MENDOZA VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mendoza/3ee0ac3c-755c-4fdc-9172-56f1773f6910.MP4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Alojamiento con Media Pensión" },
-            { icon: "", text: "Excursiones en cordillera" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "salta-primavera",
-        title: "Salta Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/salta.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Alojamiento con Desayuno" },
-            { icon: "", text: "Recorrido por Valles" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "san-pedro-primavera",
-        title: "San Pedro Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/san_pedro.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN PEDRO VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Escapada de Fin de Semana" },
-            { icon: "", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "san-rafael-primavera",
-        title: "San Rafael Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/san_rafael.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN RAFAEL VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Alojamiento con Media Pensión" },
-            { icon: "", text: "Valle Grande y Atuel" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "tandil-primavera",
-        title: "Tandil Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/tandil.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/TANDIL VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Alojamiento con Desayuno" },
-            { icon: "", text: "Paseos serranos" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "termas-de-guaychu-primavera",
-        title: "Termas de Guaychú Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/termas_guaychu.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Entrada al parque termal" },
-            { icon: "", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "villa-carlos-paz-primavera",
-        title: "Villa Carlos Paz Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/villa_carlos_paz.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Alojamiento con Media Pensión" },
-            { icon: "", text: "Coordinación permanente" }
-        ],
-        itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
-        importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
-        boardingPoints: `<ul><li>Puntos de embarque en GBA y CABA</li></ul>`
-    },
-    {
-        id: "villa-de-merlo-primavera",
-        title: "Villa de Merlo Primavera",
-        season: "primavera",
-        price: "Consultar",
-        image: "4_8/villa_merlo.jpeg",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MERLO VEND VACACIONES DE INVIERNO 2026.pdf",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/340ccd21-9565-47ea-a02a-6b45ffb3367d.MP4",
-        features: [
-            { icon: "", text: "Bus Mix Confort" },
-            { icon: "", text: "Alojamiento con Media Pensión" },
-            { icon: "", text: "Microclima serrano" }
         ],
         itinerary: `<p>Consulte el itinerario detallado de Primavera en el PDF adjunto.</p>`,
         importantNotes: `<p>- Tarifas sujetas a disponibilidad y cambios sin previo aviso.</p><p>- Cupos limitados.</p>`,
