@@ -1,4 +1,146 @@
 const paquetesData = [
+    // === ESPECIAL DÍA DE LA MADRE 4X3 (23_9) ===
+    {
+        id: "campo-la-herradura-dia-de-la-madre",
+        title: "Campo La Herradura Día de la Madre",
+        season: "dia-de-la-madre",
+        price: "$99.990",
+        image: "23_9/campo_herradura.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
+        features: [
+            { icon: "💐", text: "¡Especial Día de la Madre con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "☀️", text: "Modalidad Full Day" },
+            { icon: "🥩", text: "Desayuno, Almuerzo con Asado y Merienda campestre" },
+            { icon: "🥤", text: "Bebidas sin alcohol incluidas en el almuerzo" },
+            { icon: "🐎", text: "Cabalgata y actividades recreativas en la estancia" },
+            { icon: "💳", text: "6 cuotas de $25.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>💐 <strong>¡ESPECIAL DÍA DE LA MADRE EN CAMPO LA HERRADURA!</strong></p>
+            <p>Festejá el Día de la Madre con una escapada de campo única. Disfrutá de la naturaleza, asado criollo libre con bebidas sin alcohol, cabalgatas y la imperdible <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!).</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta de última generación con coordinación permanente.</li>
+                <li>☀️ <strong>Modalidad:</strong> Full Day en Estancia de Campo.</li>
+                <li>🍽️ <strong>Gastronomía completa:</strong> Desayuno, Almuerzo con Asado libre y bebidas sin alcohol, y Merienda campestre.</li>
+                <li>🐎 <strong>Actividades:</strong> Cabalgata guiada y libre acceso a todas las instalaciones del predio.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 personas, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> Domingo 18 de Octubre (Día de la Madre).</p>
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona: $99.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $25.665</strong>.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Domingo 18 de Octubre (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "termas-del-guaychu-dia-de-la-madre",
+        title: "Termas del Guaychú Día de la Madre",
+        season: "dia-de-la-madre",
+        price: "$99.990",
+        image: "23_9/gualeguaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUAYCHÚ VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4",
+        features: [
+            { icon: "💐", text: "¡Especial Día de la Madre con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "☀️", text: "Modalidad Full Day" },
+            { icon: "🎟️", text: "Entrada general incluida al Complejo Termal de Guaychú" },
+            { icon: "🏊‍♂️", text: "Piscinas termales y relax en la naturaleza entrerriana" },
+            { icon: "💳", text: "6 cuotas de $25.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>💐 <strong>¡ESPECIAL DÍA DE LA MADRE EN TERMAS DEL GUAYCHÚ!</strong></p>
+            <p>Regalale a mamá un día de relax, aguas termales y descanso total en Entre Ríos con la espectacular <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!).</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta de confort con coordinación permanente.</li>
+                <li>☀️ <strong>Modalidad:</strong> Full Day Termal.</li>
+                <li>🎟️ <strong>Entrada incluida:</strong> Acceso general al Complejo Termal de Guaychú (Entre Ríos).</li>
+                <li>🏊‍♂️ <strong>Instalaciones:</strong> Piscinas termales cubiertas y al aire libre, parque y áreas de descanso.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 personas, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> Domingo 18 de Octubre (Día de la Madre).</p>
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Tarifa por persona: $99.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación disponible en <strong>6 cuotas de $25.665</strong>.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Domingo 18 de Octubre (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "gualeguaychu-dia-de-la-madre",
+        title: "Gualeguaychú Día de la Madre",
+        season: "dia-de-la-madre",
+        price: "Desde $139.990",
+        image: "23_9/gualeguaychu0.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHU VEND VACACIONES DE INVIERNO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/ee3c5736-9583-4565-947c-d11d9ce6e4a6.MP4",
+        features: [
+            { icon: "💐", text: "¡Especial Día de la Madre con TravelAr! · Promo Exclusiva 4x3" },
+            { icon: "💥", text: "PROMO 4X3: ¡Viajan 4, pagan 3!" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con coordinación permanente" },
+            { icon: "🏨", text: "2 Días / 1 Noche en Hotel Los Robles" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "♨️", text: "Incluye Traslado al Complejo Termas del Guaychú" },
+            { icon: "📅", text: "Salidas: Viernes 16 ($139.990) y Sábado 17 ($149.990)" },
+            { icon: "💳", text: "Financiación en 6 cuotas (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>💐 <strong>¡ESPECIAL DÍA DE LA MADRE EN GUALEGUAYCHÚ (2 DÍAS / 1 NOCHE)!</strong></p>
+            <p>Una escapada inolvidable de fin de semana para celebrar a mamá en Gualeguaychú, alojándose en Hotel Los Robles con Media Pensión y traslado a las Termas de Guaychú con la imperdible <strong>PROMO 4X3</strong> (¡Viajan 4 y Pagan 3!).</p>
+            <br>
+            <p><strong>DETALLES DEL PAQUETE:</strong></p>
+            <ul>
+                <li>🚌 <strong>Transporte:</strong> Bus ida y vuelta con servicio confort y coordinación permanente.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 2 Días / 1 Noche en Hotel Los Robles.</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
+                <li>♨️ <strong>Paseos incluidos:</strong> Traslado al Complejo Termas del Guaychú.</li>
+                <li>💥 <strong>Promoción Exclusiva:</strong> Promo 4x3 (viajan 4 personas, abonan 3).</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida Viernes 16 de Octubre:</strong> $139.990 por persona (6 cuotas de $34.998).</p>
+            <p>- <strong>Salida Sábado 17 de Octubre:</strong> $149.990 por persona (6 cuotas de $37.331).</p>
+            <p>- <strong>Promoción 4x3:</strong> Viajan 4 personas, pagan 3.</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Viernes 16 de Octubre ($139.990)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Sábado 17 de Octubre ($149.990)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
     // === PRIMAVERA TRAVELERA 4X3 (15_9) ===
     {
         id: "campo-la-herradura-primavera",
