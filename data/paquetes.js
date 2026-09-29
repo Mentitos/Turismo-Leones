@@ -1493,39 +1493,37 @@ const paquetesData = [
             { date: "Febrero: 03, 13, 16, 19, 22, 25, 28", status: "DISPONIBLE", color: "🟢" }
         ]
     },
-    // === PAQUETES AÉREOS JETSMART · PROMOS 4X3 (23_9) ===
+    // === PAQUETES AÉREOS JETSMART · VIAJÁ EN PRIMAVERA (29_9) ===
     {
         id: "resumen-travel-sale-jetsmart",
         title: "Resumen Travel Sale JetSMART",
         season: "jetsmart",
-        price: "Desde $659.990",
+        price: "Desde $499.990",
         image: "23_9/resumen_nuevo.jpeg",
         features: [
-            { icon: "✈️", text: "Vuelos con JetSMART + Traslados incluidos" },
-            { icon: "💥", text: "¡PROMO 4X3! Viajan 4 pagan 3" },
+            { icon: "✈️", text: "Vuelos directos JetSMART + Traslados incluidos" },
+            { icon: "🌸", text: "¡Tarifas Especiales Primavera!" },
             { icon: "🧳", text: "Equipaje Carry On 10kg incluido" },
-            { icon: "📍", text: "Destinos: Salta, Bariloche, Ushuaia, Cataratas y San Martín" },
-            { icon: "📅", text: "Salidas en Octubre, Noviembre y Diciembre 2026" },
+            { icon: "📍", text: "Destinos: Salta, Cataratas, Bariloche, Ushuaia y San Martín" },
+            { icon: "📅", text: "Salidas confirmadas en Octubre, Noviembre y Diciembre 2026" },
             { icon: "💳", text: "6 cuotas fijas disponibles (+ $10.000 Gastos Adm.)" }
         ],
         itinerary: `
-            <p>✈️ <strong>¡PAQUETES AÉREOS PROMOS 4X3 - JETSMART!</strong></p>
-            <p>Viajá en primavera con <strong>TravelAr</strong> y disfrutá de la super promo <strong>4x3 (Viajan 4 Pagan 3)</strong> en destinos aéreos seleccionados volando con <strong>JetSMART</strong>.</p>
+            <p>✈️ <strong>¡PAQUETES AÉREOS JETSMART - VIAJÁ EN PRIMAVERA!</strong></p>
+            <p>Viajá en primavera con <strong>TravelAr</strong> y disfrutá de increíbles tarifas especiales en destinos aéreos seleccionados volando con <strong>JetSMART</strong>.</p>
             <br>
             <p><strong>DESTINOS Y TARIFAS DESTACADAS:</strong></p>
             <ul>
-                <li>📍 <strong>Salta (4 Días / 3 Noches):</strong> $659.990 (6 cuotas de $156.331) · Salidas 13 Oct y 10 Nov</li>
-                <li>📍 <strong>Salta (5 Días / 4 Noches):</strong> $779.990 (6 cuotas de $184.331) · Salida 05 Dic (Feriado)</li>
-                <li>📍 <strong>Bariloche (4 Días / 3 Noches):</strong> $799.990 (6 cuotas de $188.998) · Salidas 10 Oct (Feriado) y 20 Nov (Feriado)</li>
-                <li>📍 <strong>Ushuaia (5 Días / 4 Noches):</strong> $849.990 (6 cuotas de $200.665) · Salidas 26 Oct y 13 Nov</li>
-                <li>📍 <strong>Cataratas del Iguazú (4 Días / 3 Noches):</strong> $699.990 (6 cuotas de $165.665) [10 Oct Feriado y 11 Nov] / $749.990 (6 cuotas de $177.331) [20 Nov Feriado]</li>
+                <li>📍 <strong>Salta (4 Días / 3 Noches):</strong> $499.990 (Antes $659.990 · 6 cuotas de $118.998) · Salida 13 Oct</li>
+                <li>📍 <strong>Cataratas del Iguazú (4 Días / 3 Noches):</strong> $529.990 (Antes $699.990 · 6 cuotas de $125.998) · Salida 10 Oct (Feriado)</li>
+                <li>📍 <strong>Bariloche (4 Días / 3 Noches):</strong> $599.990 (Antes $799.990 · 6 cuotas de $142.331) · Salida 10 Oct (Feriado)</li>
+                <li>📍 <strong>Ushuaia (5 Días / 4 Noches):</strong> $639.990 (Antes $849.990 · 6 cuotas de $151.665) · Salida 26 Oct</li>
                 <li>📍 <strong>San Martín de los Andes (4 Días / 3 Noches):</strong> $699.990 (6 cuotas de $165.665) · Salida 09 Dic</li>
             </ul>
         `,
         importantNotes: `
-            <p>- Promo 4x3: viajan 4 personas, pagan 3.</p>
-            <p>- Vuelos con JetSMART con equipaje carry on de 10kg incluido.</p>
-            <p>- Traslados aeropuerto / hotel / aeropuerto en destino incluidos.</p>
+            <p>- Vuelos directos con JetSMART con equipaje carry on de 10kg incluido.</p>
+            <p>- Traslados in / out aeropuerto / hotel / aeropuerto en destino incluidos.</p>
             <p>- Gastos administrativos: $10.000 por persona.</p>
             <p>- Financiación disponible en 6 cuotas fijas.</p>
             <p>- Cupos aéreos limitados por fecha.</p>
@@ -1536,38 +1534,33 @@ const paquetesData = [
             </ul>
         `,
         availability: [
-            { date: "Octubre: 10, 13, 26", status: "DISPONIBLE", color: "🟢" },
+            { date: "Octubre: 10 (Feriado), 13, 26", status: "DISPONIBLE", color: "🟢" },
             { date: "Noviembre: 10, 11, 13, 20", status: "DISPONIBLE", color: "🟢" },
             { date: "Diciembre: 05 (Feriado), 09", status: "DISPONIBLE", color: "🟢" }
         ]
     },
     {
-        id: "cataratas-del-iguazu-jetsmart-4x3-travel-sale",
-        title: "Cataratas del Iguazú JetSMART 4x3 Travel Sale",
+        id: "cataratas-del-iguazu-jetsmart-primavera",
+        aliases: ["cataratas-del-iguazu-jetsmart-4x3-travel-sale", "cataratas-del-iguazu-jetsmart-travel-sale", "Cataratas del Iguazú JetSMART 4x3 Travel Sale"],
+        title: "Cataratas del Iguazú JetSMART Primavera",
         season: "jetsmart",
-        price: "$699.990",
-        image: "23_9/cataratas_del_iguazu_nuevo.jpeg",
+        price: "$529.990",
+        originalPrice: "$699.990",
+        image: "29_9/cataratas_del_iguazu.jpeg",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Iguazu/c43b53df-c771-4cdd-bf96-85be7cc2c49e.MP4",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/CATARATAS DEL IGUAZÚ AÉREO VEND MAYO_ JUNIO 2026.pdf",
         features: [
-            { icon: "💥", text: "¡PROMO 4X3! Viajan 4 pagan 3" },
             { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
             { icon: "🚐", text: "Traslados in / out incluidos" },
             { icon: "🏨", text: "Hotel El Libertador (4 Días / 3 Noches)" },
             { icon: "🍽️", text: "Media Pensión incluida" },
             { icon: "🧳", text: "Carry On 10kg incluido" },
-            { icon: "📅", text: "Salidas: 10 Oct Feriado, 11 Nov ($699.990) y 20 Nov Feriado ($749.990)" },
-            { icon: "💳", text: "6 cuotas de $165.665 / $177.331 (+ $10.000 Gastos Adm.)" }
+            { icon: "📅", text: "Salida: 10 de Octubre (Feriado)" },
+            { icon: "💳", text: "6 cuotas de $125.998 (+ $10.000 Gastos Adm.)" }
         ],
         itinerary: `
-            <p>✈️ <strong>¡VIAJÁ EN PRIMAVERA A CATARATAS DEL IGUAZÚ CON JETSMART - PROMO 4X3!</strong></p>
-            <p>Descubrí una de las 7 Maravillas Naturales del Mundo con vuelos directos JetSMART y la increíble promo <strong>4x3 (Viajan 4 Pagan 3)</strong>.</p>
-            <br>
-            <p><strong>OPCIONES DE VIAJE:</strong></p>
-            <ul>
-                <li>📅 <strong>10 de Octubre (Feriado) & 11 de Noviembre:</strong> 4 Días / 3 Noches por <strong>$699.990</strong> (6 cuotas de $165.665).</li>
-                <li>📅 <strong>20 de Noviembre (Feriado):</strong> 4 Días / 3 Noches por <strong>$749.990</strong> (6 cuotas de $177.331).</li>
-            </ul>
+            <p>✈️ <strong>¡VIAJÁ EN PRIMAVERA A CATARATAS DEL IGUAZÚ CON JETSMART!</strong></p>
+            <p>Descubrí una de las 7 Maravillas Naturales del Mundo con vuelos directos JetSMART y una tarifa imperdible de <strong>$529.990</strong> (Antes <del>$699.990</del>).</p>
             <br>
             <p><strong>INCLUYE:</strong></p>
             <ul>
@@ -1575,64 +1568,15 @@ const paquetesData = [
                 <li>🚐 Traslados aeropuerto / hotel / aeropuerto en destino.</li>
                 <li>🏨 Hotel El Libertador (4 Días / 3 Noches).</li>
                 <li>🍽️ Media Pensión incluida.</li>
+                <li>📅 Salida confirmada: 10 de Octubre (Feriado).</li>
+                <li>💳 Financiación: 6 cuotas de $125.998.</li>
             </ul>
         `,
         importantNotes: `
-            <p>- Promo 4x3: Viajan 4 pagan 3.</p>
+            <p>- Tarifa especial promocional: $529.990 por persona (Antes $699.990).</p>
+            <p>- Salida confirmada: 10 de Octubre (Feriado).</p>
             <p>- Gastos administrativos: $10.000.</p>
-            <p>- Salidas 10 Octubre (Feriado) y 11 Noviembre: $699.990 (6 cuotas de $165.665).</p>
-            <p>- Salida 20 Noviembre (Feriado): $749.990 (6 cuotas de $177.331).</p>
-            <p>- Cupos aéreos limitados por fecha.</p>
-        `,
-        boardingPoints: `
-            <ul>
-                <li>Salida desde Aeroparque / Ezeiza con JetSMART.</li>
-            </ul>
-        `,
-        availability: [
-            { date: "10 de Octubre Feriado (4D/3N)", status: "DISPONIBLE", color: "🟢" },
-            { date: "11 de Noviembre (4D/3N)", status: "DISPONIBLE", color: "🟢" },
-            { date: "20 de Noviembre Feriado (4D/3N)", status: "DISPONIBLE", color: "🟢" }
-        ]
-    },
-    {
-        id: "bariloche-jetsmart-travel-sale",
-        title: "Bariloche JetSMART Travel Sale",
-        season: "jetsmart",
-        price: "$799.990",
-        image: "23_9/bariloche_nuevo.jpeg",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Bariloche/a9092de1-4c02-4275-8bce-981f7c2bebd8.mp4",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/BARILOCHE AÉREO VEND MAYO_ JUNIO.pdf",
-        features: [
-            { icon: "💥", text: "¡PROMO 4X3! Viajan 4 pagan 3" },
-            { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
-            { icon: "🚐", text: "Traslados in / out incluidos" },
-            { icon: "🏨", text: "Hotel Internacional o similar (4 Días / 3 Noches)" },
-            { icon: "🍽️", text: "Media Pensión incluida" },
-            { icon: "🧳", text: "Carry On 10kg incluido" },
-            { icon: "📅", text: "Salidas: 10 de Octubre (Feriado) y 20 de Noviembre (Feriado)" },
-            { icon: "💳", text: "6 cuotas de $188.998 (+ $10.000 Gastos Adm.)" }
-        ],
-        itinerary: `
-            <p>✈️ <strong>¡VIAJÁ EN PRIMAVERA A BARILOCHE CON JETSMART - PROMO 4X3!</strong></p>
-            <p>Disfrutá de la belleza incomparable de San Carlos de Bariloche con vuelos directos JetSMART y la promo <strong>4x3 (Viajan 4 Pagan 3)</strong> por <strong>$799.990</strong>.</p>
-            <br>
-            <p><strong>INCLUYE:</strong></p>
-            <ul>
-                <li>✈️ <strong>Vuelos:</strong> Pasajes aéreos ida y vuelta con JetSMART + Carry On de 10kg.</li>
-                <li>🚐 <strong>Traslados:</strong> Aeropuerto / Hotel / Aeropuerto en destino.</li>
-                <li>🏨 <strong>Alojamiento:</strong> 4 Días / 3 Noches en Hotel Internacional o similar.</li>
-                <li>🍽️ <strong>Régimen:</strong> Media Pensión.</li>
-                <li>📅 <strong>Salidas confirmadas:</strong> 10 de Octubre (Feriado) y 20 de Noviembre (Feriado).</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $188.998.</li>
-            </ul>
-        `,
-        importantNotes: `
-            <p>- Promo 4x3: Viajan 4 pagan 3.</p>
-            <p>- Salidas confirmadas: 10 de Octubre (Feriado) y 20 de Noviembre (Feriado).</p>
-            <p>- Tarifa: $799.990 por persona.</p>
-            <p>- Gastos administrativos: $10.000.</p>
-            <p>- Financiación en 6 cuotas de $188.998.</p>
+            <p>- Financiación en 6 cuotas de $125.998.</p>
             <p>- Cupos aéreos limitados.</p>
         `,
         boardingPoints: `
@@ -1641,51 +1585,48 @@ const paquetesData = [
             </ul>
         `,
         availability: [
-            { date: "10 de Octubre (Feriado)", status: "DISPONIBLE", color: "🟢" },
-            { date: "20 de Noviembre (Feriado)", status: "DISPONIBLE", color: "🟢" }
+            { date: "10 de Octubre (Feriado)", status: "DISPONIBLE", color: "🟢" }
         ]
     },
     {
-        id: "salta-jetsmart-4x3-travel-sale",
-        title: "Salta JetSMART 4x3 Travel Sale",
+        id: "bariloche-jetsmart-primavera",
+        aliases: ["bariloche-jetsmart-travel-sale", "Bariloche JetSMART Travel Sale"],
+        title: "Bariloche JetSMART Primavera",
         season: "jetsmart",
-        price: "$659.990",
-        image: "23_9/salta_nuevo.jpeg",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
-        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/SALTA AÉREO VEND JUNIO 2026.pdf",
+        price: "$599.990",
+        originalPrice: "$799.990",
+        image: "29_9/bariloche.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Bariloche/a9092de1-4c02-4275-8bce-981f7c2bebd8.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/BARILOCHE AÉREO VEND MAYO_ JUNIO.pdf",
         features: [
-            { icon: "💥", text: "¡PROMO 4X3! Viajan 4 pagan 3" },
             { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
             { icon: "🚐", text: "Traslados in / out incluidos" },
-            { icon: "🏨", text: "Hotel Inti Raymi" },
+            { icon: "🏨", text: "Hotel Internacional o similar (4 Días / 3 Noches)" },
             { icon: "🍽️", text: "Media Pensión incluida" },
             { icon: "🧳", text: "Carry On 10kg incluido" },
-            { icon: "📅", text: "Salidas: 13 Oct, 10 Nov (4D/3N: $659.990) y 05 Dic Feriado (5D/4N: $779.990)" },
-            { icon: "💳", text: "6 cuotas de $156.331 / $184.331 (+ $10.000 Gastos Adm.)" }
+            { icon: "📅", text: "Salida: 10 de Octubre (Feriado)" },
+            { icon: "💳", text: "6 cuotas de $142.331 (+ $10.000 Gastos Adm.)" }
         ],
         itinerary: `
-            <p>✈️ <strong>¡VIAJÁ EN PRIMAVERA A SALTA LA LINDA CON JETSMART - PROMO 4X3!</strong></p>
-            <p>Viajá en grupo o familia con la imperdible promo <strong>4x3 (Viajan 4 Pagan 3)</strong> hacia el norte argentino con vuelos directos JetSMART.</p>
-            <br>
-            <p><strong>OPCIONES DE VIAJE:</strong></p>
-            <ul>
-                <li>📅 <strong>13 de Octubre & 10 de Noviembre:</strong> 4 Días / 3 Noches por <strong>$659.990</strong> (6 cuotas de $156.331).</li>
-                <li>📅 <strong>05 de Diciembre (Feriado):</strong> 5 Días / 4 Noches por <strong>$779.990</strong> (6 cuotas de $184.331).</li>
-            </ul>
+            <p>✈️ <strong>¡VIAJÁ EN PRIMAVERA A BARILOCHE CON JETSMART!</strong></p>
+            <p>Disfrutá de la belleza incomparable de San Carlos de Bariloche con vuelos directos JetSMART por solo <strong>$599.990</strong> (Antes <del>$799.990</del>).</p>
             <br>
             <p><strong>INCLUYE:</strong></p>
             <ul>
-                <li>✈️ Pasajes aéreos con JetSMART + Carry on 10kg.</li>
-                <li>🚐 Traslados aeropuerto / hotel / aeropuerto.</li>
-                <li>🏨 Hotel Inti Raymi.</li>
-                <li>🍽️ Media Pensión incluida.</li>
+                <li>✈️ <strong>Vuelos:</strong> Pasajes aéreos ida y vuelta con JetSMART + Carry On de 10kg.</li>
+                <li>🚐 <strong>Traslados:</strong> Aeropuerto / Hotel / Aeropuerto en destino.</li>
+                <li>🏨 <strong>Alojamiento:</strong> 4 Días / 3 Noches en Hotel Internacional o similar.</li>
+                <li>🍽️ <strong>Régimen:</strong> Media Pensión incluida.</li>
+                <li>📅 <strong>Salida confirmada:</strong> 10 de Octubre (Feriado).</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $142.331.</li>
             </ul>
         `,
         importantNotes: `
-            <p>- Promo 4x3: Viajan 4 pagan 3.</p>
+            <p>- Tarifa especial promocional: $599.990 por persona (Antes $799.990).</p>
+            <p>- Salida confirmada: 10 de Octubre (Feriado).</p>
             <p>- Gastos administrativos: $10.000.</p>
-            <p>- Salida Feriado 05/12: 5 Días / 4 Noches ($779.990).</p>
-            <p>- Salidas Octubre y Noviembre: 4 Días / 3 Noches ($659.990).</p>
+            <p>- Financiación en 6 cuotas de $142.331.</p>
+            <p>- Cupos aéreos limitados.</p>
         `,
         boardingPoints: `
             <ul>
@@ -1693,9 +1634,56 @@ const paquetesData = [
             </ul>
         `,
         availability: [
-            { date: "13 de Octubre (4D/3N)", status: "DISPONIBLE", color: "🟢" },
-            { date: "10 de Noviembre (4D/3N)", status: "DISPONIBLE", color: "🟢" },
-            { date: "05 de Diciembre Feriado (5D/4N)", status: "POCO DISPONIBLE", color: "🟡" }
+            { date: "10 de Octubre (Feriado)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "salta-jetsmart-primavera",
+        aliases: ["salta-jetsmart-4x3-travel-sale", "Salta JetSMART 4x3 Travel Sale"],
+        title: "Salta JetSMART Primavera",
+        season: "jetsmart",
+        price: "$499.990",
+        originalPrice: "$659.990",
+        image: "29_9/salta.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/SALTA AÉREO VEND JUNIO 2026.pdf",
+        features: [
+            { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
+            { icon: "🚐", text: "Traslados in / out incluidos" },
+            { icon: "🏨", text: "Hotel Inti Raymi (4 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🧳", text: "Carry On 10kg incluido" },
+            { icon: "📅", text: "Salida: 13 de Octubre" },
+            { icon: "💳", text: "6 cuotas de $118.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✈️ <strong>¡VIAJÁ EN PRIMAVERA A SALTA LA LINDA CON JETSMART!</strong></p>
+            <p>Viajá hacia el norte argentino con vuelos directos JetSMART por solo <strong>$499.990</strong> (Antes <del>$659.990</del>).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ Pasajes aéreos con JetSMART + Carry on 10kg.</li>
+                <li>🚐 Traslados aeropuerto / hotel / aeropuerto.</li>
+                <li>🏨 Hotel Inti Raymi (4 Días / 3 Noches).</li>
+                <li>🍽️ Media Pensión incluida.</li>
+                <li>📅 Salida confirmada: 13 de Octubre.</li>
+                <li>💳 Financiación: 6 cuotas de $118.998.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa especial promocional: $499.990 por persona (Antes $659.990).</p>
+            <p>- Salida confirmada: 13 de Octubre (4 Días / 3 Noches).</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas de $118.998.</p>
+            <p>- Cupos aéreos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salida desde Aeroparque / Ezeiza con JetSMART.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "13 de Octubre (4D/3N)", status: "DISPONIBLE", color: "🟢" }
         ]
     },
     {
@@ -1791,26 +1779,27 @@ const paquetesData = [
         ]
     },
     {
-        id: "ushuaia-jetsmart-4x3-travel-sale",
-        title: "Ushuaia JetSMART 4x3 Travel Sale",
+        id: "ushuaia-jetsmart-primavera",
+        aliases: ["ushuaia-jetsmart-4x3-travel-sale", "Ushuaia JetSMART 4x3 Travel Sale"],
+        title: "Ushuaia JetSMART Primavera",
         season: "jetsmart",
-        price: "$849.990",
-        image: "23_9/ushuaia_nuevo.jpeg",
+        price: "$639.990",
+        originalPrice: "$849.990",
+        image: "29_9/ushuaia.jpeg",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Ushuaia/VIDEO-2025-09-27-13-51-23.mp4",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Marzo-Abril/USHUAIA (vend MAR Y ABR).pdf",
         features: [
-            { icon: "💥", text: "¡PROMO 4X3! Viajan 4 pagan 3" },
             { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
             { icon: "🚐", text: "Traslados in / out incluidos" },
             { icon: "🏨", text: "Hotel Les Eclaireurs (5 Días / 4 Noches)" },
             { icon: "☕", text: "Desayuno incluido" },
             { icon: "🧳", text: "Carry On 10kg incluido" },
-            { icon: "📅", text: "Salidas: 26 de Octubre y 13 de Noviembre" },
-            { icon: "💳", text: "6 cuotas de $200.665 (+ $10.000 Gastos Adm.)" }
+            { icon: "📅", text: "Salida: 26 de Octubre" },
+            { icon: "💳", text: "6 cuotas de $151.665 (+ $10.000 Gastos Adm.)" }
         ],
         itinerary: `
-            <p>✈️ <strong>¡VIAJÁ EN PRIMAVERA A USHUAIA FIN DEL MUNDO CON JETSMART - PROMO 4X3!</strong></p>
-            <p>Descubrí los paisajes más australes del planeta con la promoción <strong>4x3 (Viajan 4 Pagan 3)</strong> por <strong>$849.990</strong> por persona.</p>
+            <p>✈️ <strong>¡VIAJÁ EN PRIMAVERA A USHUAIA FIN DEL MUNDO CON JETSMART!</strong></p>
+            <p>Descubrí los paisajes más australes del planeta con vuelos directos JetSMART por solo <strong>$639.990</strong> por persona (Antes <del>$849.990</del>).</p>
             <br>
             <p><strong>INCLUYE:</strong></p>
             <ul>
@@ -1818,15 +1807,15 @@ const paquetesData = [
                 <li>🚐 <strong>Traslados:</strong> Aeropuerto / Hotel / Aeropuerto.</li>
                 <li>🏨 <strong>Alojamiento:</strong> Hotel Les Eclaireurs (5 Días / 4 Noches).</li>
                 <li>☕ <strong>Régimen:</strong> Desayuno buffet.</li>
-                <li>📅 <strong>Salidas confirmadas:</strong> 26 de Octubre y 13 de Noviembre.</li>
-                <li>💳 <strong>Financiación:</strong> 6 cuotas de $200.665.</li>
+                <li>📅 <strong>Salidas confirmadas:</strong> 26 de Octubre.</li>
+                <li>💳 <strong>Financiación:</strong> 6 cuotas de $151.665.</li>
             </ul>
         `,
         importantNotes: `
-            <p>- Salidas: 26 de Octubre y 13 de Noviembre.</p>
-            <p>- Promo 4x3: Viajan 4 pagan 3.</p>
-            <p>- Tarifa por persona: $849.990 (+ $10.000 Gastos Adm.).</p>
-            <p>- Financiación en 6 cuotas de $200.665.</p>
+            <p>- Salida confirmada: 26 de Octubre (5 Días / 4 Noches).</p>
+            <p>- Tarifa especial por persona: $639.990 (+ $10.000 Gastos Adm. · Antes $849.990).</p>
+            <p>- Financiación en 6 cuotas de $151.665.</p>
+            <p>- Cupos aéreos limitados.</p>
         `,
         boardingPoints: `
             <ul>
@@ -1834,8 +1823,7 @@ const paquetesData = [
             </ul>
         `,
         availability: [
-            { date: "26 de Octubre", status: "DISPONIBLE", color: "🟢" },
-            { date: "13 de Noviembre", status: "DISPONIBLE", color: "🟢" }
+            { date: "26 de Octubre", status: "DISPONIBLE", color: "🟢" }
         ]
     },
     // === TRAVEL SALE 2026 PROMO 3X2 (25_5) ===
@@ -4700,11 +4688,12 @@ function getPackageData(title, season) {
     const targetId = normalize(title);
     const targetSeasonId = season ? `${targetId}-${normalize(season)}` : null;
 
-    // 1. Try finding by normalized ID, original ID, or normalized title
+    // 1. Try finding by normalized ID, original ID, normalized title, or aliases
     let p = paquetesData.find(item => {
         const itemId = normalize(item.id);
         const itemTitle = normalize(item.title);
-        return itemId === targetSeasonId || itemId === targetId || itemTitle === targetId || item.id === title;
+        const matchAlias = item.aliases && item.aliases.some(a => normalize(a) === targetId || normalize(a) === targetSeasonId || a === title);
+        return itemId === targetSeasonId || itemId === targetId || itemTitle === targetId || item.id === title || matchAlias;
     });
 
     // 2. Try finding with season filter
