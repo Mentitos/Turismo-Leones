@@ -1,4 +1,611 @@
 const paquetesData = [
+    // === ESPECIAL FERIADOS TRAVELEROS · NOVIEMBRE & DICIEMBRE (7_10) ===
+    {
+        id: "campo-la-herradura-feriados-nov-dic",
+        aliases: ["campo-la-herradura-feriados", "Campo La Herradura Feriados", "Campo La Herradura Noviembre Diciembre"],
+        title: "Campo La Herradura Feriados",
+        season: "feriados-nov-dic",
+        price: "$109.990",
+        image: "7_10/campo_herradura.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/LA HERRADURA VEND FERIADO MAYO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Noviembre & Diciembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "☀️", text: "Modalidad Full Day" },
+            { icon: "🥩", text: "Desayuno, Almuerzo con Asado libre y Merienda campestre" },
+            { icon: "🥤", text: "Bebidas sin alcohol incluidas en el almuerzo" },
+            { icon: "🐎", text: "Cabalgata y libre acceso a las instalaciones" },
+            { icon: "💳", text: "6 cuotas de $27.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADOS TRAVELEROS EN CAMPO LA HERRADURA!</strong></p>
+            <p>Disfrutá de una jornada de campo inolvidable para los fines de semana largos de Noviembre y Diciembre. Aire puro, asado criollo completo con bebidas sin alcohol incluidas, cabalgatas guiadas y diversión familiar.</p>
+            <br>
+            <p><strong>SALIDAS CONFIRMADAS:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre:</strong> Salida 22 de Noviembre (Full Day) — <strong>$109.990</strong> (6 cuotas de $27.998).</li>
+                <li>📅 <strong>Feriado Diciembre:</strong> Salida 06 de Diciembre (Full Day) — <strong>$109.990</strong> (6 cuotas de $27.998).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Transporte ida y vuelta en unidad confort con coordinación permanente.</li>
+                <li>☀️ Modalidad Full Day en Estancia Campo La Herradura.</li>
+                <li>🍽️ Gastronomía completa: Recepción con desayuno, almuerzo con asado criollo y bebidas sin alcohol, y merienda campestre.</li>
+                <li>🐎 Actividades campestres: Cabalgata y uso de instalaciones del predio.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas confirmadas:</strong> 22 de Noviembre y 06 de Diciembre (Full Day).</p>
+            <p>- Tarifa por persona: $109.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación disponible en 6 cuotas de $27.998.</p>
+            <p>- Cupos limitados para fines de semana largos.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "22 de Noviembre (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "06 de Diciembre (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "cataratas-del-iguazu-feriados-nov-dic",
+        aliases: ["cataratas-del-iguazu-feriados", "Cataratas del Iguazú Feriados", "Cataratas del Iguazú Diciembre"],
+        title: "Cataratas del Iguazú Feriados",
+        season: "feriados-nov-dic",
+        price: "$399.990",
+        image: "7_10/cataratas_del_iguazu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/CATARATAS DEL IGUAZÚ X 3 NTS VEND MARZO A JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Iguazu/VIDEO-2025-09-27-13-52-38.mp4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Feriado Diciembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta Semi Cama con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Lilian (con piscina exterior)" },
+            { icon: "☕", text: "Desayuno incluido (6 Días / 3 Noches)" },
+            { icon: "🎟️", text: "Traslados a Ruinas San Ignacio, Minas de Wanda y Cataratas Argentinas" },
+            { icon: "💳", text: "6 cuotas de $95.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADO DE DICIEMBRE EN CATARATAS DEL IGUAZÚ!</strong></p>
+            <p>Viví la majestuosidad de una de las 7 Maravillas Naturales del Mundo en este viaje de 6 días y 3 noches. Disfrutá de la selva misionera, excursiones guiadas y el relax en el Hotel Lilian con piscina exterior.</p>
+            <br>
+            <p><strong>SALIDA CONFIRMADA:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Diciembre:</strong> Salida 04 de Diciembre (6 Días / 3 Noches) — <strong>$399.990</strong> (6 cuotas de $95.665).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta en unidad semi cama confort con coordinación permanente.</li>
+                <li>🏨 3 noches de alojamiento en Hotel Lilian con piscina exterior.</li>
+                <li>☕ Desayuno diario incluido.</li>
+                <li>🎟️ Traslados incluidos: Ruinas de San Ignacio, Minas de Wanda y Parque Nacional Cataratas Argentinas.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 04 de Diciembre (6 Días / 3 Noches).</p>
+            <p>- Tarifa por persona: $399.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación en 6 cuotas de $95.665.</p>
+            <p>- No incluye entradas a los Parques Nacionales ni Ruinas (se abonan en destino).</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "04 de Diciembre (6D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "termas-del-guaychu-feriados-nov-dic",
+        aliases: ["termas-del-guaychu-feriados", "Termas del Guaychú Feriados", "Termas del Guaychu Feriados"],
+        title: "Termas del Guaychú Feriados",
+        season: "feriados-nov-dic",
+        price: "$99.990",
+        image: "7_10/gualeguaychu.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Noviembre & Diciembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "☀️", text: "Modalidad Full Day Termal" },
+            { icon: "🎟️", text: "Entrada general incluida al Complejo Termas del Guaychú" },
+            { icon: "🏊‍♂️", text: "Piscinas termales cubiertas y descubiertas" },
+            { icon: "💳", text: "6 cuotas de $25.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADOS TRAVELEROS EN TERMAS DEL GUAYCHÚ!</strong></p>
+            <p>Regalate un día de relax, descanso y bienestar en las termas de Entre Ríos. Disfrutá de sus piscinas con aguas termales, bosque nativo y comodidades para recargar energías.</p>
+            <br>
+            <p><strong>SALIDAS CONFIRMADAS:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre:</strong> Salida 08 de Noviembre (Full Day) — <strong>$99.990</strong> (6 cuotas de $25.665).</li>
+                <li>📅 <strong>Feriado Noviembre:</strong> Salida 22 de Noviembre (Full Day) — <strong>$99.990</strong> (6 cuotas de $25.665).</li>
+                <li>📅 <strong>Feriado Diciembre:</strong> Salida 06 de Diciembre (Full Day) — <strong>$99.990</strong> (6 cuotas de $25.665).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta de confort con coordinación permanente.</li>
+                <li>☀️ Modalidad Full Day Termal.</li>
+                <li>🎟️ Entrada general incluida al Complejo Termal de Guaychú.</li>
+                <li>🏊‍♂️ Acceso a piscinas termales cubiertas y exteriores y predio parquizado.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas confirmadas:</strong> 08 de Noviembre, 22 de Noviembre y 06 de Diciembre (Full Day).</p>
+            <p>- Tarifa por persona: $99.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación en 6 cuotas de $25.665.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "08 de Noviembre (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "22 de Noviembre (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "06 de Diciembre (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "gualeguaychu-feriados-nov-dic",
+        aliases: ["gualeguaychu-feriados", "Gualeguaychú Feriados", "Gualeguaychu Feriados"],
+        title: "Gualeguaychú Feriados",
+        season: "feriados-nov-dic",
+        price: "Desde $149.990",
+        image: "7_10/gualeguaychu_2.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUALEGUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/ee3c5736-9583-4565-947c-d11d9ce6e4a6.MP4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Noviembre & Diciembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Los Robles" },
+            { icon: "🍽️", text: "Media Pensión (Salida 07/11) · Desayuno (21/11 y 05/12)" },
+            { icon: "♨️", text: "Salida 07/11 incluye Traslado a Termas del Guaychú" },
+            { icon: "💳", text: "Financiación en 6 cuotas (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADOS TRAVELEROS EN GUALEGUAYCHÚ!</strong></p>
+            <p>Escapadas de fin de semana largo en Entre Ríos para disfrutar en familia o en pareja con alojamiento en el Hotel Los Robles.</p>
+            <br>
+            <p><strong>SALIDAS Y OPCIONES:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre (Salida 07/11):</strong> 2 Días / 1 Noche — <strong>$149.990</strong> (6 cuotas de $37.331). Incluye Media Pensión y Traslado a Termas del Guaychú.</li>
+                <li>📅 <strong>Feriado Noviembre (Salida 21/11):</strong> 3 Días / 2 Noches — <strong>$179.990</strong> (6 cuotas de $44.331). Incluye Desayuno.</li>
+                <li>📅 <strong>Feriado Diciembre (Salida 05/12):</strong> 4 Días / 3 Noches — <strong>$209.990</strong> (6 cuotas de $51.331). Incluye Desayuno.</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Transporte ida y vuelta en bus confort con coordinación permanente.</li>
+                <li>🏨 Alojamiento en Hotel Los Robles según opción seleccionada.</li>
+                <li>🍽️ Régimen gastronómico indicado según cada salida.</li>
+                <li>♨️ Traslado a Termas del Guaychú incluido en salida del 07 de Noviembre.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida 07/11 (2D/1N):</strong> $149.990 (6 cuotas de $37.331).</p>
+            <p>- <strong>Salida 21/11 (3D/2N):</strong> $179.990 (6 cuotas de $44.331).</p>
+            <p>- <strong>Salida 05/12 (4D/3N):</strong> $209.990 (6 cuotas de $51.331).</p>
+            <p>- Gastos administrativos: $10.000 por pasajero.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "07 de Noviembre (2D / 1N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "21 de Noviembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "05 de Diciembre (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-del-plata-feriados-nov-dic",
+        aliases: ["mar-del-plata-feriados", "Mar del Plata Feriados"],
+        title: "Mar del Plata Feriados",
+        season: "feriados-nov-dic",
+        price: "Desde $169.990",
+        image: "7_10/mar_del_plata.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO DÍA DEL TRABAJADOR/MAR DEL PLATA VEND DIA DEL TRABAJADOR 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Noviembre & Diciembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Riazor" },
+            { icon: "🍽️", text: "Pensión Completa incluida en todas las salidas" },
+            { icon: "💳", text: "Financiación en 6 cuotas (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADOS TRAVELEROS EN MAR DEL PLATA!</strong></p>
+            <p>Disfrutá del mar y la rambla con la mejor propuesta para los fines de semana largos: bus ida y vuelta, Hotel Riazor y Pensión Completa en todas las opciones.</p>
+            <br>
+            <p><strong>SALIDAS PROGRAMADAS:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre (Salida 07/11):</strong> 2 Días / 1 Noche — <strong>$169.990</strong> (6 cuotas de $41.998).</li>
+                <li>📅 <strong>Feriado Noviembre (Salida 21/11):</strong> 3 Días / 2 Noches — <strong>$219.990</strong> (6 cuotas de $53.665).</li>
+                <li>📅 <strong>Feriado Diciembre (Salida 05/12):</strong> 4 Días / 3 Noches — <strong>$279.990</strong> (6 cuotas de $67.665).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta en unidad confort con coordinación permanente.</li>
+                <li>🏨 Alojamiento en Hotel Riazor.</li>
+                <li>🍽️ Régimen: Pensión Completa (desayuno, almuerzo y cena) durante toda la estadía.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas confirmadas:</strong> 07/11 ($169.990), 21/11 ($219.990) y 05/12 ($279.990).</p>
+            <p>- Todas las salidas incluyen Pensión Completa.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación disponible en 6 cuotas.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "07 de Noviembre (2D / 1N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "21 de Noviembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "05 de Diciembre (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-de-ajo-feriados-nov-dic",
+        aliases: ["mar-de-ajo-feriados", "Mar de Ajó Feriados", "Mar de Ajo Feriados"],
+        title: "Mar de Ajó Feriados",
+        season: "feriados-nov-dic",
+        price: "Desde $169.990",
+        image: "7_10/mar_de_ajo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Noviembre & Diciembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Atlantic (a 30 metros del mar)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "Financiación en 6 cuotas (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADOS TRAVELEROS EN MAR DE AJÓ!</strong></p>
+            <p>Escapate a la costa atlántica con una ubicación inmejorable: Hotel Atlantic a solo 30 metros de la playa con Media Pensión para que te relajes frente al mar.</p>
+            <br>
+            <p><strong>SALIDAS PROGRAMADAS:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre (Salida 07/11):</strong> 2 Días / 1 Noche — <strong>$169.990</strong> (6 cuotas de $41.998).</li>
+                <li>📅 <strong>Feriado Noviembre (Salida 21/11):</strong> 3 Días / 2 Noches — <strong>$209.990</strong> (6 cuotas de $51.331).</li>
+                <li>📅 <strong>Feriado Diciembre (Salida 05/12):</strong> 4 Días / 3 Noches — <strong>$249.990</strong> (6 cuotas de $60.665).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta con coordinación permanente.</li>
+                <li>🏨 Alojamiento en Hotel Atlantic (a 30 metros del mar).</li>
+                <li>🍽️ Régimen: Media Pensión diaria.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas confirmadas:</strong> 07/11 ($169.990), 21/11 ($209.990) y 05/12 ($249.990).</p>
+            <p>- Hotel a solo 30 metros del mar con Media Pensión.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación disponible en 6 cuotas.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "07 de Noviembre (2D / 1N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "21 de Noviembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "05 de Diciembre (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "santa-teresita-feriados-nov-dic",
+        aliases: ["santa-teresita-feriados", "Santa Teresita Feriados"],
+        title: "Santa Teresita Feriados",
+        season: "feriados-nov-dic",
+        price: "Desde $189.990",
+        image: "7_10/santa_teresita.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Santa Teresita/d9ed77d3-3006-497f-b8c2-d6df92bc76c9.mp4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Noviembre & Diciembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Turista (a metros del mar)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "💳", text: "Financiación en 6 cuotas (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADOS TRAVELEROS EN SANTA TERESITA!</strong></p>
+            <p>Disfrutá del mar, el paseo costero y la tranquilidad de Santa Teresita con estadía en el clásico Hotel Turista a pocos metros de la playa.</p>
+            <br>
+            <p><strong>SALIDAS PROGRAMADAS:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre (Salida 21/11):</strong> 3 Días / 2 Noches — <strong>$189.990</strong> (6 cuotas de $46.665).</li>
+                <li>📅 <strong>Feriado Diciembre (Salida 05/12):</strong> 4 Días / 3 Noches — <strong>$219.990</strong> (6 cuotas de $53.665).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus confort ida y vuelta con coordinación permanente.</li>
+                <li>🏨 Alojamiento en Hotel Turista (a metros del mar).</li>
+                <li>☕ Desayuno diario incluido.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas confirmadas:</strong> 21/11 ($189.990) y 05/12 ($219.990).</p>
+            <p>- Hotel a metros del mar con desayuno.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación disponible en 6 cuotas.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "21 de Noviembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "05 de Diciembre (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-pedro-feriados-nov-dic",
+        aliases: ["san-pedro-feriados", "San Pedro Feriados"],
+        title: "San Pedro Feriados",
+        season: "feriados-nov-dic",
+        price: "$109.990",
+        image: "7_10/san_pedro.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/SAN PEDRO VEND FERIADO MAYO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Salida Feriado Noviembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "☀️", text: "Modalidad Full Day" },
+            { icon: "🥩", text: "Parrillada Completa incluida" },
+            { icon: "🏰", text: "Visita Vuelta de Obligado, La Campiña y Ensaimadas" },
+            { icon: "💳", text: "6 cuotas de $27.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADO DE NOVIEMBRE EN SAN PEDRO!</strong></p>
+            <p>Una jornada colmada de historia, paisajes ribereños y delicias gastronómicas. Recorremos el Sitio Histórico Vuelta de Obligado, la emblemática estancia La Campiña y la tradicional fábrica de ensaimadas, con almuerzo de parrillada completa incluido.</p>
+            <br>
+            <p><strong>SALIDA CONFIRMADA:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre:</strong> Salida 22 de Noviembre (Full Day) — <strong>$109.990</strong> (6 cuotas de $27.998).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta con coordinación permanente.</li>
+                <li>☀️ Modalidad Full Day.</li>
+                <li>🥩 Almuerzo completo: Parrillada criolla.</li>
+                <li>🏰 Paseos guiados: Monumento histórico Vuelta de Obligado, La Campiña y visita a productora de ensaimadas.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 22 de Noviembre (Full Day).</p>
+            <p>- Tarifa por persona: $109.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación en 6 cuotas de $27.998.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "22 de Noviembre (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-rafael-feriados-nov-dic",
+        aliases: ["san-rafael-feriados", "San Rafael Feriados"],
+        title: "San Rafael Feriados",
+        season: "feriados-nov-dic",
+        price: "$359.990",
+        image: "7_10/san_rafael.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/SAN RAFAEL VEND FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Feriado Diciembre (5D / 3N)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Puesta del Sol (con piscina exterior)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $86.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADO DE DICIEMBRE EN SAN RAFAEL!</strong></p>
+            <p>Descubrí la magia de Mendoza: imponentes cañones, diques de aguas cristalinas, bodegas centenarias y la calidez cuyana. Alojamiento en Hotel Puesta del Sol con piscina exterior y Media Pensión.</p>
+            <br>
+            <p><strong>SALIDA CONFIRMADA:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Diciembre:</strong> Salida 04 de Diciembre (5 Días / 3 Noches) — <strong>$359.990</strong> (6 cuotas de $86.331).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus semi cama ida y vuelta de confort con coordinación permanente.</li>
+                <li>🏨 3 noches de alojamiento en Hotel Puesta del Sol con piscina al aire libre.</li>
+                <li>🍽️ Régimen: Media Pensión incluida.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salida confirmada:</strong> 04 de Diciembre (5 Días / 3 Noches).</p>
+            <p>- Hotel con piscina exterior y Media Pensión.</p>
+            <p>- Tarifa por persona: $359.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación disponible en 6 cuotas de $86.331.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "04 de Diciembre (5D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "tandil-feriados-nov-dic",
+        aliases: ["tandil-feriados", "Tandil Feriados"],
+        title: "Tandil Feriados",
+        season: "feriados-nov-dic",
+        price: "$229.990",
+        image: "7_10/tandil.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/TANDIL VEND FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Noviembre & Diciembre (2D / 1N)" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel El Turista" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "6 cuotas de $55.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADOS TRAVELEROS EN TANDIL!</strong></p>
+            <p>Paisajes serranos, aire puro, tradicionales quesos y salames, y la paz que necesitás para desconectar el fin de semana largo. Estadía en Hotel El Turista con Media Pensión.</p>
+            <br>
+            <p><strong>SALIDAS CONFIRMADAS:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre:</strong> Salida 21 de Noviembre (2 Días / 1 Noche) — <strong>$229.990</strong> (6 cuotas de $55.998).</li>
+                <li>📅 <strong>Feriado Diciembre:</strong> Salida 05 de Diciembre (2 Días / 1 Noche) — <strong>$229.990</strong> (6 cuotas de $55.998).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta con servicio de confort y coordinación permanente.</li>
+                <li>🏨 1 noche de alojamiento en Hotel El Turista.</li>
+                <li>🍽️ Régimen: Media Pensión.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas confirmadas:</strong> 21 de Noviembre y 05 de Diciembre (2 Días / 1 Noche).</p>
+            <p>- Tarifa por persona: $229.990 (+ $10.000 Gastos Adm.).</p>
+            <p>- Financiación disponible en 6 cuotas de $55.998.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "21 de Noviembre (2D / 1N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "05 de Diciembre (2D / 1N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-carlos-paz-feriados-nov-dic",
+        aliases: ["villa-carlos-paz-feriados", "Villa Carlos Paz Feriados"],
+        title: "Villa Carlos Paz Feriados",
+        season: "feriados-nov-dic",
+        price: "Desde $249.990",
+        image: "7_10/villa_carlos_paz.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/VILLA CARLOS PAZ FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Noviembre & Diciembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Palmas del Lago (con piscina climatizada y exterior)" },
+            { icon: "🍽️", text: "Pensión Completa (Salida 07/11) · Media Pensión (20/11 y 04/12)" },
+            { icon: "💳", text: "Financiación en 6 cuotas (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADOS TRAVELEROS EN VILLA CARLOS PAZ!</strong></p>
+            <p>Vení a disfrutar de las sierras cordobesas, paseos por la costanera y la mejor infraestructura hotelera en Hotel Palmas del Lago con piscina climatizada y descubierta.</p>
+            <br>
+            <p><strong>SALIDAS Y TARIFAS:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre (Salida 07/11):</strong> 5 Días / 3 Noches — <strong>$289.990</strong> (6 cuotas de $69.998). Pensión Completa.</li>
+                <li>📅 <strong>Feriado Noviembre (Salida 20/11):</strong> 4 Días / 2 Noches — <strong>$249.990</strong> (6 cuotas de $60.665). Media Pensión.</li>
+                <li>📅 <strong>Feriado Diciembre (Salida 04/12):</strong> 5 Días / 3 Noches — <strong>$279.990</strong> (6 cuotas de $67.665). Media Pensión.</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta en unidad confort con coordinación permanente.</li>
+                <li>🏨 Alojamiento en Hotel Palmas del Lago con acceso a piscinas climatizada y exterior.</li>
+                <li>🍽️ Régimen gastronómico correspondiente según la salida seleccionada.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas confirmadas:</strong> 07/11 ($289.990), 20/11 ($249.990) y 04/12 ($279.990).</p>
+            <p>- Hotel con piscina climatizada y exterior.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación disponible en 6 cuotas.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "07 de Noviembre (5D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "20 de Noviembre (4D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "04 de Diciembre (5D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-de-merlo-feriados-nov-dic",
+        aliases: ["villa-de-merlo-feriados", "Villa de Merlo Feriados", "Merlo Feriados"],
+        title: "Villa de Merlo Feriados",
+        season: "feriados-nov-dic",
+        price: "Desde $249.990",
+        image: "7_10/villa_merlo.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/MERLO VEND FERIADO JUNIO 2026.pdf",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/340ccd21-9565-47ea-a02a-6b45ffb3367d.MP4",
+        features: [
+            { icon: "✨", text: "¡Especial Feriados Traveleros! · Noviembre & Diciembre" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Virginia Spa (con piscinas climatizada y exterior)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "💳", text: "Financiación en 6 cuotas (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>✨ <strong>¡ESPECIAL FERIADOS TRAVELEROS EN VILLA DE MERLO!</strong></p>
+            <p>Respirá el tercer microclima del mundo en San Luis. Paisajes de montaña, relax y confort en Hotel Virginia Spa con piscinas climatizada y exterior y exquisita Media Pensión.</p>
+            <br>
+            <p><strong>SALIDAS Y TARIFAS:</strong></p>
+            <ul>
+                <li>📅 <strong>Feriado Noviembre (Salida 06/11):</strong> 4 Días / 2 Noches — <strong>$249.990</strong> (6 cuotas de $60.665).</li>
+                <li>📅 <strong>Feriado Noviembre (Salida 20/11):</strong> 4 Días / 2 Noches — <strong>$249.990</strong> (6 cuotas de $60.665).</li>
+                <li>📅 <strong>Feriado Diciembre (Salida 04/12):</strong> 5 Días / 3 Noches — <strong>$279.990</strong> (6 cuotas de $67.665).</li>
+            </ul>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus confort ida y vuelta con coordinación permanente.</li>
+                <li>🏨 Alojamiento en Hotel Virginia Spa con piscina climatizada y al aire libre.</li>
+                <li>🍽️ Régimen: Media Pensión.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Salidas confirmadas:</strong> 06/11 ($249.990), 20/11 ($249.990) y 04/12 ($279.990).</p>
+            <p>- Hotel con piscina climatizada, exterior y Media Pensión.</p>
+            <p>- Gastos administrativos: $10.000.</p>
+            <p>- Financiación en 6 cuotas.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "06 de Noviembre (4D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "20 de Noviembre (4D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "04 de Diciembre (5D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
     // === ESPECIAL DÍA DE LA MADRE 4X3 (23_9) ===
     {
         id: "campo-la-herradura-dia-de-la-madre",
