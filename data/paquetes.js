@@ -1,4 +1,68 @@
 const paquetesData = [
+    // === SUPER SALE TRAVELERO · SALTA (9_10) ===
+    {
+        id: "salta-super-sale-travelero",
+        aliases: [
+            "salta-super-sale",
+            "Salta Super Sale Travelero",
+            "Salta Super Sale",
+            "salta-jetsmart-primavera",
+            "Salta JetSMART Primavera",
+            "salta-jetsmart-octubre",
+            "salta-jetsmart",
+            "Salta JetSMART"
+        ],
+        title: "Salta Super Sale Travelero",
+        season: "jetsmart",
+        price: "$449.990",
+        originalPrice: "$659.990",
+        image: "9_10/salta.jpeg",
+        video: "9_10/salta.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/SALTA AÉREO VEND JUNIO 2026.pdf",
+        features: [
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! · Tarifa Exclusiva" },
+            { icon: "✈️", text: "Aéreos ida y vuelta BUE-SLA / SLA-BUE (JetSMART)" },
+            { icon: "🧳", text: "Equipaje Carry On 10kg incluido" },
+            { icon: "🏨", text: "Hotel Inti Raymi (4 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🚐", text: "Transfer In / Out aeropuerto incluido" },
+            { icon: "🙋‍♂️", text: "Coordinación permanente" },
+            { icon: "📅", text: "Salida Confirmada: 13 de Octubre" },
+            { icon: "💳", text: "6 cuotas de $107.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>🔥 <strong>¡SUPER SALE TRAVELERO EN SALTA LA LINDA CON JETSMART!</strong></p>
+            <p>Aprovechá la súper tarifa exclusiva de <strong>$449.990</strong> (Antes <del>$659.990</del>) con salida confirmada el <strong>13 de Octubre</strong> volando directo con <strong>JetSMART</strong>.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ Pasajes aéreos ida y vuelta Buenos Aires / Salta / Buenos Aires con JetSMART.</li>
+                <li>🧳 Equipaje Carry On de 10kg en cabina.</li>
+                <li>🚐 Transfer In / Out (Aeropuerto - Hotel - Aeropuerto).</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Inti Raymi</strong> (4 Días / 3 Noches).</li>
+                <li>🍽️ Régimen con <strong>Media Pensión</strong> incluida.</li>
+                <li>🙋‍♂️ Coordinación permanente TravelAr durante toda la estadía.</li>
+                <li>📅 Salida confirmada: <strong>13 de Octubre</strong>.</li>
+                <li>💳 Financiación: <strong>6 cuotas de $107.331</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Super Sale Travelero:</strong> $449.990 por persona (Antes $659.990 · ¡Ahorro de $210.000!).</p>
+            <p>- Salida confirmada: 13 de Octubre (4 Días / 3 Noches).</p>
+            <p>- Gastos administrativos: $10.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $107.331.</p>
+            <p>- Cupos aéreos estrictamente limitados hasta agotar disponibilidad.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salida en vuelo directo desde Aeroparque / Ezeiza con JetSMART.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "13 de Octubre (4D / 3N)", status: "ÚLTIMOS CUPOS", color: "🟡" }
+        ]
+    },
+
     // === ESPECIAL FERIADOS TRAVELEROS · NOVIEMBRE & DICIEMBRE (7_10) ===
     {
         id: "campo-la-herradura-feriados-nov-dic",
@@ -2105,7 +2169,7 @@ const paquetesData = [
         id: "resumen-travel-sale-jetsmart",
         title: "Resumen Travel Sale JetSMART",
         season: "jetsmart",
-        price: "Desde $499.990",
+        price: "Desde $449.990",
         image: "23_9/resumen_nuevo.jpeg",
         features: [
             { icon: "✈️", text: "Vuelos directos JetSMART + Traslados incluidos" },
@@ -2121,7 +2185,7 @@ const paquetesData = [
             <br>
             <p><strong>DESTINOS Y TARIFAS DESTACADAS:</strong></p>
             <ul>
-                <li>📍 <strong>Salta (4 Días / 3 Noches):</strong> $499.990 (Antes $659.990 · 6 cuotas de $118.998) · Salida 13 Oct</li>
+                <li>📍 <strong>Salta (4 Días / 3 Noches):</strong> $449.990 (¡Super Sale Travelero! Antes $659.990 · 6 cuotas de $107.331) · Salida 13 Oct</li>
                 <li>📍 <strong>Cataratas del Iguazú (4 Días / 3 Noches):</strong> $529.990 (Antes $699.990 · 6 cuotas de $125.998) · Salida 10 Oct (Feriado)</li>
                 <li>📍 <strong>Bariloche (4 Días / 3 Noches):</strong> $599.990 (Antes $799.990 · 6 cuotas de $142.331) · Salida 10 Oct (Feriado)</li>
                 <li>📍 <strong>Ushuaia (5 Días / 4 Noches):</strong> $639.990 (Antes $849.990 · 6 cuotas de $151.665) · Salida 26 Oct</li>
@@ -2249,39 +2313,40 @@ const paquetesData = [
         aliases: ["salta-jetsmart-4x3-travel-sale", "Salta JetSMART 4x3 Travel Sale"],
         title: "Salta JetSMART Primavera",
         season: "jetsmart",
-        price: "$499.990",
+        price: "$449.990",
         originalPrice: "$659.990",
-        image: "29_9/salta.jpeg",
-        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/7c10e094-b113-4306-b6b3-12c7eeee0e7f.MP4",
+        image: "9_10/salta.jpeg",
+        video: "9_10/salta.mp4",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/SALTA AÉREO VEND JUNIO 2026.pdf",
         features: [
-            { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo con JetSMART)" },
+            { icon: "🔥", text: "¡SUPER SALE TRAVELERO! · Tarifa Exclusiva" },
+            { icon: "✈️", text: "Aéreos ida y vuelta (Vuelo directo con JetSMART)" },
             { icon: "🚐", text: "Traslados in / out incluidos" },
             { icon: "🏨", text: "Hotel Inti Raymi (4 Días / 3 Noches)" },
             { icon: "🍽️", text: "Media Pensión incluida" },
             { icon: "🧳", text: "Carry On 10kg incluido" },
             { icon: "📅", text: "Salida: 13 de Octubre" },
-            { icon: "💳", text: "6 cuotas de $118.998 (+ $10.000 Gastos Adm.)" }
+            { icon: "💳", text: "6 cuotas de $107.331 (+ $10.000 Gastos Adm.)" }
         ],
         itinerary: `
-            <p>✈️ <strong>¡VIAJÁ EN PRIMAVERA A SALTA LA LINDA CON JETSMART!</strong></p>
-            <p>Viajá hacia el norte argentino con vuelos directos JetSMART por solo <strong>$499.990</strong> (Antes <del>$659.990</del>).</p>
+            <p>✈️ <strong>¡SUPER SALE TRAVELERO - SALTA CON JETSMART!</strong></p>
+            <p>Viajá hacia el norte argentino con vuelos directos JetSMART por solo <strong>$449.990</strong> (Antes <del>$659.990</del>).</p>
             <br>
             <p><strong>INCLUYE:</strong></p>
             <ul>
-                <li>✈️ Pasajes aéreos con JetSMART + Carry on 10kg.</li>
+                <li>✈️ Pasajes aéreos ida y vuelta con JetSMART + Carry on 10kg.</li>
                 <li>🚐 Traslados aeropuerto / hotel / aeropuerto.</li>
                 <li>🏨 Hotel Inti Raymi (4 Días / 3 Noches).</li>
                 <li>🍽️ Media Pensión incluida.</li>
                 <li>📅 Salida confirmada: 13 de Octubre.</li>
-                <li>💳 Financiación: 6 cuotas de $118.998.</li>
+                <li>💳 Financiación: 6 cuotas de $107.331.</li>
             </ul>
         `,
         importantNotes: `
-            <p>- Tarifa especial promocional: $499.990 por persona (Antes $659.990).</p>
+            <p>- Tarifa especial Super Sale Travelero: $449.990 por persona (Antes $659.990).</p>
             <p>- Salida confirmada: 13 de Octubre (4 Días / 3 Noches).</p>
             <p>- Gastos administrativos: $10.000.</p>
-            <p>- Financiación en 6 cuotas de $118.998.</p>
+            <p>- Financiación en 6 cuotas de $107.331.</p>
             <p>- Cupos aéreos limitados.</p>
         `,
         boardingPoints: `
