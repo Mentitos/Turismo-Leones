@@ -1,4 +1,293 @@
 const paquetesData = [
+    // === VERANO TRAVELERO · PAQUETES AÉREOS JETSMART (13_10) ===
+    {
+        id: "bariloche-jetsmart-verano-travelero",
+        aliases: [
+            "bariloche-jetsmart-verano",
+            "Bariloche JetSMART Verano Travelero",
+            "Bariloche Verano Travelero JetSMART",
+            "bariloche-verano-travelero",
+            "bariloche-jetsmart",
+            "Bariloche JetSMART"
+        ],
+        title: "Bariloche JetSMART Verano Travelero",
+        season: "verano",
+        price: "$899.990",
+        image: "13_10/bariloche.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Bariloche/a9092de1-4c02-4275-8bce-981f7c2bebd8.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/BARILOCHE AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Vuelo con JetSMART" },
+            { icon: "✈️", text: "Pasajes aéreos ida y vuelta (JetSMART)" },
+            { icon: "🧳", text: "Equipaje Carry On 10kg incluido en cabina" },
+            { icon: "🚐", text: "Transfer In / Out aeropuerto incluido" },
+            { icon: "🏨", text: "Hotel Internacional o similar (4 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "Salidas Confirmadas: 22 de Enero & 12 de Febrero" },
+            { icon: "💳", text: "6 cuotas de $213.498 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VIVÍ EL VERANO TRAVELERO EN BARILOCHE CON JETSMART!</strong></p>
+            <p>Disfrutá los paisajes increíbles del sur argentino en plena temporada alta de verano 2026 volando directo con <strong>JetSMART</strong> por <strong>$899.990</strong>.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ Pasajes aéreos ida y vuelta Buenos Aires / Bariloche / Buenos Aires con JetSMART.</li>
+                <li>🧳 Equipaje Carry On de 10kg en cabina.</li>
+                <li>🚐 Traslados aeropuerto / hotel / aeropuerto en destino.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Internacional o similar</strong> (4 Días / 3 Noches).</li>
+                <li>🍽️ Régimen con <strong>Media Pensión</strong> incluida.</li>
+                <li>🙋‍♂️ Asistencia y coordinación TravelAr en destino.</li>
+                <li>📅 Salidas confirmadas: <strong>22 de Enero</strong> y <strong>12 de Febrero</strong>.</li>
+                <li>💳 Financiación disponible: <strong>6 cuotas fijas de $213.498</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $899.990 por persona.</p>
+            <p>- Salidas: 22 de Enero y 12 de Febrero 2026 (4 Días / 3 Noches).</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $213.498.</p>
+            <p>- Cupos aéreos limitados en temporada alta.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Vuelo directo desde Aeroparque Jorge Newbery / Ezeiza con JetSMART.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "22 de Enero (4D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "12 de Febrero (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "cataratas-del-iguazu-jetsmart-verano-travelero",
+        aliases: [
+            "cataratas-iguazu-jetsmart-verano",
+            "Cataratas JetSMART Verano Travelero",
+            "Cataratas del Iguazú JetSMART Verano",
+            "cataratas-verano-jetsmart",
+            "Cataratas Verano JetSMART",
+            "Cataratas del Iguazú Verano JetSMART"
+        ],
+        title: "Cataratas del Iguazú JetSMART Verano Travelero",
+        season: "verano",
+        price: "$829.990",
+        image: "13_10/cataratas_iguazu.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Iguazu/VIDEO-2025-10-24-13-23-55.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/CATARATAS DEL IGUAZÚ AÉREO VEND MAYO_ JUNIO 2026.pdf",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Vuelo con JetSMART" },
+            { icon: "✈️", text: "Pasajes aéreos ida y vuelta (JetSMART)" },
+            { icon: "🧳", text: "Equipaje Carry On 10kg incluido en cabina" },
+            { icon: "🚐", text: "Transfer In / Out aeropuerto incluido" },
+            { icon: "🏨", text: "Hotel El Libertador con Piscina (4 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "Salidas Confirmadas: 12 de Enero & 20 de Febrero" },
+            { icon: "💳", text: "6 cuotas de $197.165 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN CATARATAS DEL IGUAZÚ CON JETSMART!</strong></p>
+            <p>Descubrí la magia de las Cataratas este verano 2026 volando directo con <strong>JetSMART</strong> por <strong>$829.990</strong>, alojándote en el Hotel El Libertador con piscina exterior.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ Pasajes aéreos ida y vuelta Buenos Aires / Iguazú / Buenos Aires con JetSMART.</li>
+                <li>🧳 Equipaje Carry On de 10kg en cabina.</li>
+                <li>🚐 Traslados aeropuerto / hotel / aeropuerto en destino.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel El Libertador</strong> (4 Días / 3 Noches) con piscina exterior.</li>
+                <li>🍽️ Régimen con <strong>Media Pensión</strong> incluida.</li>
+                <li>🙋‍♂️ Coordinación y asistencia permanente TravelAr.</li>
+                <li>📅 Salidas confirmadas: <strong>12 de Enero</strong> y <strong>20 de Febrero</strong>.</li>
+                <li>💳 Financiación disponible: <strong>6 cuotas fijas de $197.165</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $829.990 por persona.</p>
+            <p>- Salidas confirmadas: 12 de Enero y 20 de Febrero 2026.</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $197.165.</p>
+            <p>- No incluye entradas a Parques Nacionales.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salidas aéreas desde Aeroparque / Ezeiza con JetSMART.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "12 de Enero (4D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "20 de Febrero (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mendoza-jetsmart-verano-travelero",
+        aliases: [
+            "mendoza-jetsmart-verano",
+            "Mendoza JetSMART Verano Travelero",
+            "Mendoza Verano Travelero JetSMART",
+            "mendoza-verano-jetsmart",
+            "Mendoza Verano JetSMART"
+        ],
+        title: "Mendoza JetSMART Verano Travelero",
+        season: "verano",
+        price: "$699.990",
+        image: "13_10/mendoza.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Mendoza/VIDEO-2025-11-06-14-05-07.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/MENDOZA AÉREO VEND JUNIO 2026.pdf",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Vuelo con JetSMART" },
+            { icon: "✈️", text: "Pasajes aéreos ida y vuelta (JetSMART)" },
+            { icon: "🧳", text: "Equipaje Carry On 10kg incluido en cabina" },
+            { icon: "🚐", text: "Transfer In / Out aeropuerto incluido" },
+            { icon: "🏨", text: "Hotel Géminis Centro (4 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "📅", text: "Salidas Confirmadas: 24 de Enero & 17 de Febrero" },
+            { icon: "💳", text: "6 cuotas de $166.831 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN MENDOZA CON JETSMART!</strong></p>
+            <p>Viví la tierra del sol y del buen vino este verano 2026 por sólo <strong>$699.990</strong> con vuelo directo de <strong>JetSMART</strong>.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ Pasajes aéreos ida y vuelta Buenos Aires / Mendoza / Buenos Aires con JetSMART.</li>
+                <li>🧳 Equipaje Carry On de 10kg en cabina.</li>
+                <li>🚐 Traslados aeropuerto / hotel / aeropuerto en destino.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Géminis</strong> (4 Días / 3 Noches).</li>
+                <li>☕ Régimen con <strong>Desayuno</strong> incluido.</li>
+                <li>🙋‍♂️ Coordinación y asistencia TravelAr.</li>
+                <li>📅 Salidas confirmadas: <strong>24 de Enero</strong> y <strong>17 de Febrero</strong>.</li>
+                <li>💳 Financiación: <strong>6 cuotas fijas de $166.831</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $699.990 por persona.</p>
+            <p>- Salidas: 24 de Enero y 17 de Febrero 2026.</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas fijas de $166.831.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salidas en vuelos directos con JetSMART desde Aeroparque / Ezeiza.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "24 de Enero (4D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "17 de Febrero (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "salta-jetsmart-verano-travelero",
+        aliases: [
+            "salta-jetsmart-verano",
+            "Salta JetSMART Verano Travelero",
+            "Salta Verano Travelero JetSMART",
+            "salta-verano-jetsmart",
+            "Salta Verano JetSMART"
+        ],
+        title: "Salta JetSMART Verano Travelero",
+        season: "verano",
+        price: "$759.990",
+        image: "13_10/salta.jpeg",
+        video: "9_10/salta.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Mayo-Junio/SALTA AÉREO VEND JUNIO 2026.pdf",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Vuelo con JetSMART" },
+            { icon: "✈️", text: "Pasajes aéreos ida y vuelta (JetSMART)" },
+            { icon: "🧳", text: "Equipaje Carry On 10kg incluido en cabina" },
+            { icon: "🚐", text: "Transfer In / Out aeropuerto incluido" },
+            { icon: "🏨", text: "Hotel Inti Raymi (4 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "Salidas Confirmadas: 20 de Enero & 16 de Febrero" },
+            { icon: "💳", text: "6 cuotas de $180.831 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN SALTA LA LINDA CON JETSMART!</strong></p>
+            <p>Descubrí el norte argentino en verano volando con <strong>JetSMART</strong> por <strong>$759.990</strong> con Media Pensión en Hotel Inti Raymi.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ Pasajes aéreos ida y vuelta Buenos Aires / Salta / Buenos Aires con JetSMART.</li>
+                <li>🧳 Equipaje Carry On de 10kg en cabina.</li>
+                <li>🚐 Traslados aeropuerto / hotel / aeropuerto en destino.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Inti Raymi</strong> (4 Días / 3 Noches).</li>
+                <li>🍽️ Régimen con <strong>Media Pensión</strong> incluida.</li>
+                <li>🙋‍♂️ Coordinación y asistencia permanente TravelAr.</li>
+                <li>📅 Salidas confirmadas: <strong>20 de Enero</strong> y <strong>16 de Febrero</strong>.</li>
+                <li>💳 Financiación: <strong>6 cuotas fijas de $180.831</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $759.990 por persona.</p>
+            <p>- Salidas confirmadas: 20 de Enero y 16 de Febrero 2026.</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $180.831.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salidas aéreas con JetSMART desde Aeroparque / Ezeiza.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "20 de Enero (4D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "16 de Febrero (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "ushuaia-jetsmart-verano-travelero",
+        aliases: [
+            "ushuaia-jetsmart-verano",
+            "Ushuaia JetSMART Verano Travelero",
+            "Ushuaia Verano Travelero JetSMART",
+            "ushuaia-verano-jetsmart",
+            "Ushuaia Verano JetSMART"
+        ],
+        title: "Ushuaia JetSMART Verano Travelero",
+        season: "verano",
+        price: "$899.990",
+        image: "13_10/ushuaia.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en AEREO/Ushuaia/VIDEO-2025-09-27-13-51-23.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en AEREO/Vacaciones de invierno/USHUAIA AÉREO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Vuelo con JetSMART" },
+            { icon: "✈️", text: "Pasajes aéreos ida y vuelta (JetSMART)" },
+            { icon: "🧳", text: "Equipaje Carry On 10kg incluido en cabina" },
+            { icon: "🚐", text: "Transfer In / Out aeropuerto incluido" },
+            { icon: "🏨", text: "Hotel Les Eclaireurs (5 Días / 4 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "📅", text: "Salida Confirmada: 18 de Febrero" },
+            { icon: "💳", text: "6 cuotas de $213.498 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN EL FIN DEL MUNDO CON JETSMART!</strong></p>
+            <p>Conocé Ushuaia en el mejor momento del año para viajar, en pleno verano austral, volando con <strong>JetSMART</strong> por <strong>$899.990</strong> (5 Días / 4 Noches).</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>✈️ Pasajes aéreos ida y vuelta Buenos Aires / Ushuaia / Buenos Aires con JetSMART.</li>
+                <li>🧳 Equipaje Carry On de 10kg en cabina.</li>
+                <li>🚐 Traslados aeropuerto / hotel / aeropuerto en destino.</li>
+                <li>🏨 4 noches de alojamiento en <strong>Hotel Les Eclaireurs</strong> (5 Días / 4 Noches).</li>
+                <li>☕ Régimen con <strong>Desayuno</strong> incluido.</li>
+                <li>🙋‍♂️ Asistencia y coordinación en destino.</li>
+                <li>📅 Salida confirmada: <strong>18 de Febrero</strong>.</li>
+                <li>💳 Financiación: <strong>6 cuotas fijas de $213.498</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $899.990 por persona.</p>
+            <p>- Salida confirmada: 18 de Febrero 2026 (5 Días / 4 Noches).</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $213.498.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Salidas aéreas con JetSMART desde Aeroparque / Ezeiza.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "18 de Febrero (5D / 4N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
     // === SUPER SALE TRAVELERO · SALTA (9_10) ===
     {
         id: "salta-super-sale-travelero",
