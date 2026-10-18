@@ -1,4 +1,410 @@
 const paquetesData = [
+    // === VERANO TRAVELERO · NUEVOS DESTINOS BUS Y FULL DAY (17_10) ===
+    {
+        id: "puerto-madryn-verano-travelero",
+        aliases: [
+            "puerto-madryn-verano",
+            "Puerto Madryn Verano Travelero",
+            "Puerto Madryn Verano",
+            "madryn-verano",
+            "madryn-verano-travelero",
+            "Puerto Madryn",
+            "puerto-madryn"
+        ],
+        title: "Puerto Madryn Verano Travelero",
+        season: "verano",
+        price: "$419.990",
+        image: "17_10/puerto_madryn.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Puerto Madryn/3ac8b515-3c4b-466a-a557-6a9d2506fc62.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/PUERTO MADRYN VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Patagonia Costera" },
+            { icon: "🚌", text: "Bus Ida y Vuelta Semi Cama con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Vida (6 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🌊", text: "Golfo Nuevo, playas patagónicas y fauna marina" },
+            { icon: "📅", text: "Salidas Confirmadas: Enero 18, 21 | Febrero 10, 22" },
+            { icon: "💳", text: "6 cuotas de $101.498 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN PUERTO MADRYN!</strong></p>
+            <p>Descubrí el encanto de la Patagonia atlántica en verano. Playas amplias de aguas calmas, avistaje de fauna marina estival, paisajes costeros y relax por sólo <strong>$419.990</strong>.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta en unidad semi cama de larga distancia con coordinación permanente.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Vida</strong> (6 Días / 3 Noches).</li>
+                <li>☕ Régimen con <strong>Desayuno</strong> incluido.</li>
+                <li>🙋‍♂️ Coordinación y asistencia permanente TravelAr.</li>
+                <li>📅 Salidas confirmadas: <strong>18 y 21 de Enero</strong> | <strong>10 y 22 de Febrero</strong>.</li>
+                <li>💳 Financiación disponible: <strong>6 cuotas de $101.498</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $419.990 por persona.</p>
+            <p>- Salidas confirmadas: Enero 18 y 21; Febrero 10 y 22 de 2026 (6 Días / 3 Noches).</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $101.498.</p>
+            <p>- Excursiones y paseos opcionales se coordinan en destino.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "18 de Enero (6D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "21 de Enero (6D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "10 de Febrero (6D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "22 de Febrero (6D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "federacion-verano-travelero",
+        aliases: [
+            "federacion-verano",
+            "Federación Verano Travelero",
+            "Federacion Verano Travelero",
+            "Federación Verano",
+            "Federacion Verano",
+            "federacion",
+            "Federación"
+        ],
+        title: "Federación Verano Travelero",
+        season: "verano",
+        price: "$299.990",
+        image: "17_10/federacion.jpeg",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/FEDERACION VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Salidas Enero & Febrero" },
+            { icon: "🚌", text: "Bus Ida y Vuelta Semi Cama con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Termas del Este con Piscina (4 Días / 3 Noches)" },
+            { icon: "🌊", text: "Ubicación privilegiada frente al Parque Acuático y Termal" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "📅", text: "Salidas Confirmadas: Enero 19, 29 | Febrero 16, 22" },
+            { icon: "💳", text: "6 cuotas de $73.498 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VIVÍ EL VERANO TRAVELERO EN FEDERACIÓN!</strong></p>
+            <p>Disfrutá del sol, las aguas termales y la diversión del parque acuático en Federación (Entre Ríos) por <strong>$299.990</strong>, alojándote en el <strong>Hotel Termas del Este</strong> con piscina exterior y frente al complejo termal.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Transporte ida y vuelta en bus semi cama confortable con coordinación permanente.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel Termas del Este</strong> (4 Días / 3 Noches) con piscina.</li>
+                <li>📍 Ubicación estratégica frente al Parque Acuático y Termal de Federación.</li>
+                <li>☕ Régimen con <strong>Desayuno</strong> incluido.</li>
+                <li>🙋‍♂️ Coordinación y asistencia TravelAr durante todo el viaje.</li>
+                <li>📅 Salidas confirmadas: <strong>Enero: 19 y 29</strong> | <strong>Febrero: 16 y 22</strong>.</li>
+                <li>💳 Financiación disponible: <strong>6 cuotas fijas de $73.498</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $299.990 por persona.</p>
+            <p>- Salidas confirmadas: Enero 19 y 29; Febrero 16 y 22 de 2026 (4 Días / 3 Noches).</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $73.498.</p>
+            <p>- Cupos limitados para temporada alta de verano.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "19 de Enero (4D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "29 de Enero (4D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "16 de Febrero (4D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "22 de Febrero (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "huerta-grande-verano-travelero",
+        aliases: [
+            "huerta-grande-verano",
+            "Huerta Grande Verano Travelero",
+            "Huerta Grande Verano",
+            "huerta-grande",
+            "Huerta Grande"
+        ],
+        title: "Huerta Grande Verano Travelero",
+        season: "verano",
+        price: "$299.990",
+        image: "17_10/huerta_grande.jpeg",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Sierras de Córdoba" },
+            { icon: "🚌", text: "Bus Ida y Vuelta Semi Cama con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel 11 de Junio con Piscina (5 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "🏊‍♂️", text: "Piscina y amplios espacios verdes en pleno Valle de Punilla" },
+            { icon: "📅", text: "Salidas Confirmadas: Enero 23, 26 | Febrero 10, 13, 16" },
+            { icon: "💳", text: "6 cuotas de $73.498 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN HUERTA GRANDE, CÓRDOBA!</strong></p>
+            <p>Desconectate en las sierras cordobesas, rodeado de naturaleza, ríos y sierras en el hermoso Valle de Punilla por sólo <strong>$299.990</strong> con <strong>Media Pensión</strong> incluida.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Transporte ida y vuelta en unidad semi cama confort con coordinación permanente.</li>
+                <li>🏨 3 noches de alojamiento en <strong>Hotel 11 de Junio</strong> (5 Días / 3 Noches) con piscina.</li>
+                <li>🍽️ Régimen con <strong>Media Pensión</strong> incluida.</li>
+                <li>🙋‍♂️ Coordinación y asistencia permanente TravelAr.</li>
+                <li>📅 Salidas confirmadas: <strong>Enero: 23 y 26</strong> | <strong>Febrero: 10, 13 y 16</strong>.</li>
+                <li>💳 Financiación disponible: <strong>6 cuotas de $73.498</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $299.990 por persona.</p>
+            <p>- Salidas: Enero 23, 26 y Febrero 10, 13, 16 de 2026 (5 Días / 3 Noches).</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $73.498.</p>
+            <p>- Salidas sujetas a disponibilidad de cupos.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "23 de Enero (5D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "26 de Enero (5D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "10 de Febrero (5D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "13 de Febrero (5D / 3N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "16 de Febrero (5D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-bernardo-hotel-carmen-verano",
+        aliases: [
+            "san-bernardo-carmen",
+            "San Bernardo Hotel Carmen",
+            "San Bernardo Verano Travelero Hotel Carmen",
+            "San Bernardo Hotel Carmen Verano Travelero",
+            "san-bernardo-verano-carmen",
+            "San Bernardo Carmen"
+        ],
+        title: "San Bernardo Hotel Carmen Verano Travelero",
+        season: "verano",
+        price: "$319.990",
+        image: "17_10/san_bernardo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Bernardo/425148a7-1c28-44ae-81d5-f4997dcda3d8.mp4",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Costa Atlántica" },
+            { icon: "🚌", text: "Bus Ida y Vuelta Semi Cama con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Carmen (4 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🏖️", text: "Playa, peatonal y verano en San Bernardo a tarifa promocional" },
+            { icon: "📅", text: "Salidas Confirmadas: Enero 21-24" },
+            { icon: "💳", text: "6 cuotas de $78.165 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN SAN BERNARDO!</strong></p>
+            <p>Viví la temporada alta en la costa argentina en <strong>San Bernardo</strong> por sólo <strong>$319.990</strong>, alojándote en el clásico <strong>Hotel Carmen</strong> con desayuno.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta semi cama de confort con coordinación permanente.</li>
+                <li>🏨 3 noches de estadía en <strong>Hotel Carmen</strong> (4 Días / 3 Noches).</li>
+                <li>☕ Régimen con <strong>Desayuno</strong> incluido.</li>
+                <li>🙋‍♂️ Coordinación TravelAr durante todo el viaje.</li>
+                <li>📅 Salida confirmada: <strong>21 al 24 de Enero</strong>.</li>
+                <li>💳 Financiación en <strong>6 cuotas fijas de $78.165</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $319.990 por persona.</p>
+            <p>- Salida confirmada: 21 al 24 de Enero 2026 (4 Días / 3 Noches).</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $78.165.</p>
+            <p>- Cupos limitados.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "21 al 24 de Enero (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "parana-verano-travelero",
+        aliases: [
+            "parana-verano",
+            "Paraná Verano Travelero",
+            "Parana Verano Travelero",
+            "Paraná Verano",
+            "Parana Verano",
+            "parana",
+            "Paraná"
+        ],
+        title: "Paraná Verano Travelero",
+        season: "verano",
+        price: "$249.990",
+        image: "17_10/parana.jpeg",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Escapada a Entre Ríos" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel El Círculo Céntrico (3 Días / 2 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "🌊", text: "Paseos costanera, playas de río y Parque Urquiza" },
+            { icon: "📅", text: "Salidas Confirmadas: Enero 22 | Febrero 12, 26" },
+            { icon: "💳", text: "6 cuotas de $61.831 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN PARANÁ!</strong></p>
+            <p>Una escapada perfecta a orillas del majestuoso Río Paraná. Disfrutá de la costanera, las barrancas del Parque Urquiza y la tranquilidad entrerriana por sólo <strong>$249.990</strong>.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta en unidad semi cama confort con coordinación permanente.</li>
+                <li>🏨 2 noches de alojamiento en <strong>Hotel El Círculo</strong> (3 Días / 2 Noches), ubicación céntrica.</li>
+                <li>☕ Régimen con <strong>Desayuno</strong> incluido.</li>
+                <li>🙋‍♂️ Coordinación y asistencia permanente en destino.</li>
+                <li>📅 Salidas confirmadas: <strong>Enero: 22</strong> | <strong>Febrero: 12 y 26</strong>.</li>
+                <li>💳 Financiación en <strong>6 cuotas fijas de $61.831</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $249.990 por persona.</p>
+            <p>- Salidas: 22 de Enero, 12 y 26 de Febrero 2026 (3 Días / 2 Noches).</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $61.831.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "22 de Enero (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "12 de Febrero (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "26 de Febrero (3D / 2N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "termas-del-guaychu-verano-travelero",
+        aliases: [
+            "termas-del-guaychu-verano",
+            "Termas del Guaychú Verano Travelero",
+            "Termas del Guaychu Verano Travelero",
+            "termas-guaychu-verano",
+            "Termas de Guaychú Verano",
+            "Termas Guaychu Verano",
+            "Termas del Guaychú Verano",
+            "termas-guaychu-verano-travelero"
+        ],
+        title: "Termas del Guaychú Verano Travelero",
+        season: "verano",
+        price: "$109.990",
+        image: "17_10/termas_guaychu.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Escapada Full Day" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🎟️", text: "Entrada general incluida al Complejo Termal" },
+            { icon: "🏊‍♂️", text: "Piscinas termales al aire libre y cubiertas, parque y solárium" },
+            { icon: "📅", text: "Salidas Confirmadas: Enero 10, 17, 31 | Febrero 14, 21, 28" },
+            { icon: "💳", text: "6 cuotas de $29.165 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN TERMAS DEL GUAYCHÚ!</strong></p>
+            <p>Un día entero de relax, piletas y diversión en las termas de Entre Ríos por <strong>$109.990</strong> con <strong>entrada incluida al complejo termal</strong>.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Traslado ida y vuelta en unidad confortable con coordinación permanente.</li>
+                <li>☀️ Modalidad <strong>Full Day</strong> (jornada completa en el complejo).</li>
+                <li>🎟️ <strong>Entrada general incluida</strong> al Complejo Termal de Guaychú.</li>
+                <li>🏊‍♂️ Acceso a piscinas termales, parque arbolado y comodidades del predio.</li>
+                <li>📅 Salidas confirmadas: <strong>Enero: 10, 17 y 31</strong> | <strong>Febrero: 14, 21 y 28</strong>.</li>
+                <li>💳 Financiación disponible: <strong>6 cuotas de $29.165</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $109.990 por persona.</p>
+            <p>- Salidas: Enero 10, 17, 31; Febrero 14, 21, 28 de 2026 (Full Day).</p>
+            <p>- Incluye entrada general al complejo termal.</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $29.165.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "10 de Enero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "17 de Enero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "31 de Enero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "14 de Febrero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "21 de Febrero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "28 de Febrero (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "nandubaysal-verano-travelero",
+        aliases: [
+            "nandubaysal-verano",
+            "ñandubaysal-verano",
+            "Ñandubaysal Verano Travelero",
+            "Nandubaysal Verano Travelero",
+            "ñandubaysal",
+            "nandubaysal",
+            "Ñandubaysal",
+            "Nandubaysal",
+            "ñandubaysal-verano-travelero"
+        ],
+        title: "Ñandubaysal Verano Travelero",
+        season: "verano",
+        price: "$109.990",
+        image: "17_10/nandubaysal.jpeg",
+        video: "17_10/nandubaysal.mp4",
+        features: [
+            { icon: "☀️", text: "¡VERANO TRAVELERO 2026! · Escapada de Playa Full Day" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🎟️", text: "Entrada general incluida al Camping y Balneario" },
+            { icon: "🏖️", text: "Playas de arenas blancas sobre el Río Uruguay y paradores" },
+            { icon: "📅", text: "Salidas Confirmadas: Enero 10, 17, 31 | Febrero 14, 21, 28" },
+            { icon: "💳", text: "6 cuotas de $29.165 (+ $15.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>☀️ <strong>¡VERANO TRAVELERO EN BALNEARIO Y CAMPING ÑANDUBAYSAL!</strong></p>
+            <p>Viví un día de playa caribeña a orillas del Río Uruguay en Gualeguaychú por sólo <strong>$109.990</strong> con <strong>entrada incluida al balneario/camping</strong>. Arenas blancas, vegetación agreste, paradores y atardeceres únicos.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Transporte ida y vuelta en unidad confortable con coordinación permanente.</li>
+                <li>☀️ Modalidad <strong>Full Day</strong> en Balneario Ñandubaysal.</li>
+                <li>🎟️ <strong>Entrada incluida</strong> al camping y predio balneario.</li>
+                <li>🏖️ Disfrute libre de las playas, río y servicios del complejo.</li>
+                <li>📅 Salidas confirmadas: <strong>Enero: 10, 17 y 31</strong> | <strong>Febrero: 14, 21 y 28</strong>.</li>
+                <li>💳 Financiación disponible: <strong>6 cuotas de $29.165</strong>.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Tarifa Verano Travelero:</strong> $109.990 por persona.</p>
+            <p>- Salidas: Enero 10, 17, 31; Febrero 14, 21, 28 de 2026 (Full Day).</p>
+            <p>- Incluye entrada general al balneario / camping Ñandubaysal.</p>
+            <p>- Gastos administrativos: $15.000 por persona.</p>
+            <p>- Financiación: 6 cuotas de $29.165.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y Gran Buenos Aires.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "10 de Enero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "17 de Enero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "31 de Enero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "14 de Febrero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "21 de Febrero (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "28 de Febrero (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
     // === VERANO TRAVELERO · PAQUETES AÉREOS JETSMART (13_10) ===
     {
         id: "bariloche-jetsmart-verano-travelero",
