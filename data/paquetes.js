@@ -1,4 +1,848 @@
 const paquetesData = [
+    // === CYBER MONDAY TRAVELERO 2026 (1_11) · PROMO 3X2 Y TARIFAS ESPECIALES ===
+    {
+        id: "cyber-monday-resumen",
+        aliases: ["cyber-monday", "Cyber Monday", "cyber monday", "cyber-monday-travelero", "Cyber Monday Travelero", "Cyber Monday 2026", "resumen-cyber-monday"],
+        title: "Cyber Monday Travelero 2026",
+        season: "cyber-monday",
+        price: "PROMOS EXCLUSIVAS",
+        image: "1_11/resumen.jpeg",
+        features: [
+            { icon: "⚡", text: "¡CYBER MONDAY TRAVELERO! · ¡VÁLIDO HASTA EL 04 DE NOVIEMBRE!" },
+            { icon: "💥", text: "Promociones 3x2 en destinos seleccionados (Viajan 3 Pagan 2)" },
+            { icon: "✨", text: "Tarifas Especiales Fines de Semana Largos Noviembre y Diciembre" },
+            { icon: "🚌", text: "Bus Confort Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotelería seleccionada con desayuno, media pensión y pensión completa" },
+            { icon: "💳", text: "Financiación hasta en 6 cuotas fijas" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡LLEGÓ EL CYBER MONDAY TRAVELERO A TURISMO LEONES!</strong></p>
+            <p>Aprovechá hasta el <strong>4 de Noviembre</strong> las mejores oportunidades del año para viajar en grupo por Argentina. Promos exclusivas <strong>3x2 (Viajan 3 Pagan 2)</strong> y salidas garantizadas para los fines de semana largos de Noviembre y Diciembre.</p>
+            <br>
+            <p><strong>DESTINOS DESTACADOS:</strong></p>
+            <ul>
+                <li>💥 <strong>Promos 3x2:</strong> Salta, San Rafael, Mendoza, Villa Carlos Paz, Villa de Merlo, Puerto Madryn, San Bernardo, Tandil, Mar del Plata, Mar de Ajó, Santa Teresita, Gualeguaychú, Termas del Guaychú, Campo La Herradura y San Pedro.</li>
+                <li>✨ <strong>Feriados Noviembre & Diciembre:</strong> Mar del Plata, Villa Carlos Paz, Villa de Merlo, Tandil, Mar de Ajó, Gualeguaychú y Termas del Guaychú.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- <strong>Válido únicamente hasta el 4 de Noviembre</strong> o hasta agotar stock promocional.</p>
+            <p>- Cupos limitados por salida.</p>
+            <p>- Financiación en hasta 6 cuotas fijas.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales de Zona Sur a Zona Norte del Gran Buenos Aires y CABA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Cyber Monday (Hasta el 4 de Noviembre)", status: "¡PROMO ACTIVA!", color: "🟢" }
+        ]
+    },
+    {
+        id: "salta-cyber-monday",
+        aliases: ["salta-cyber", "Salta Cyber Monday", "Salta Cyber Monday 3x2"],
+        title: "Salta Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$459.990",
+        image: "1_11/salta.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Salta/5c9dfacf-1f72-46e3-bdbc-6b7a54e24aa7.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SALTA X 4 NTS VEND MARZO A JUNIO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta Semi Cama con Coordinador Permanente" },
+            { icon: "🏨", text: "Hotel Inti Raymi (7 Días / 4 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "Salida Confirmada: Diciembre" },
+            { icon: "💳", text: "6 cuotas de $103.005 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY TRAVELERO EN SALTA LA LINDA - PROMO 3X2!</strong></p>
+            <p>Disfrutá del Norte Argentino con la súper promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por sólo <strong>$459.990</strong> por persona con <strong>Media Pensión</strong> en el Hotel Inti Raymi.</p>
+            <br>
+            <p><strong>INCLUYE:</strong></p>
+            <ul>
+                <li>🚌 Bus ida y vuelta confort con coordinador permanente.</li>
+                <li>🏨 4 noches de alojamiento en <strong>Hotel Inti Raymi</strong> (7 Días / 4 Noches).</li>
+                <li>🍽️ Régimen <strong>Media Pensión</strong>.</li>
+                <li>📅 Salida confirmada en Diciembre.</li>
+                <li>💳 Financiación disponible en 6 cuotas de $103.005.</li>
+            </ul>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $459.990 por persona (Viajan 3 Pagan 2).</p>
+            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+            <p>- Gastos administrativos: $10.000 por persona.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de encuentro en Zona Sur, CABA y Zona Norte.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Salida Diciembre (7D / 4N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-rafael-cyber-monday",
+        aliases: ["san-rafael-cyber", "San Rafael Cyber Monday", "San Rafael Cyber Monday 3x2"],
+        title: "San Rafael Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$359.990",
+        image: "1_11/san_rafael.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Rafael/VIDEO-2025-11-04-13-03-48.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SAN RAFAEL VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Puesta del Sol con Piscina (6 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "Salida Confirmada: Diciembre" },
+            { icon: "💳", text: "6 cuotas de $86.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY TRAVELERO EN SAN RAFAEL - PROMO 3X2!</strong></p>
+            <p>Descubrí el Cañón del Atuel, bodegas y paisajes mendocinos con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por <strong>$359.990</strong> en el Hotel Puesta del Sol con Media Pensión.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $359.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Gastos adm: $10.000.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Salida Diciembre (6D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "puerto-madryn-cyber-monday",
+        aliases: ["puerto-madryn-cyber", "Puerto Madryn Cyber Monday", "Puerto Madryn Cyber Monday 3x2"],
+        title: "Puerto Madryn Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$379.990",
+        image: "1_11/puerto_madryn.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Puerto Madryn/3ac8b515-3c4b-466a-a557-6a9d2506fc62.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/PUERTO MADRYN VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Samay Huasi con Piscina (6 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "📅", text: "Salida Confirmada: Noviembre" },
+            { icon: "💳", text: "6 cuotas disponibles (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN PUERTO MADRYN - PROMO 3X2!</strong></p>
+            <p>Vení a la costa patagónica con la súper promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por sólo <strong>$379.990</strong> con estadía en Hotel Samay Huasi con piscina.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $379.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Salida Noviembre (6D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mendoza-cyber-monday",
+        aliases: ["mendoza-cyber", "Mendoza Cyber Monday", "Mendoza Cyber Monday 3x2"],
+        title: "Mendoza Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$299.990",
+        image: "1_11/mendoza.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mendoza/3ee0ac3c-755c-4fdc-9172-56f1773f6910.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MENDOZA VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Géminis (6 Días / 3 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "📅", text: "Salida Confirmada: Noviembre" },
+            { icon: "💳", text: "6 cuotas de $72.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN MENDOZA - PROMO 3X2!</strong></p>
+            <p>Tierra del sol y del buen vino por sólo <strong>$299.990</strong> con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> en Hotel Géminis.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $299.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Salida Noviembre (6D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-carlos-paz-cyber-monday",
+        aliases: ["carlos-paz-cyber", "Villa Carlos Paz Cyber Monday", "Carlos Paz Cyber Monday 3x2"],
+        title: "Villa Carlos Paz Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$289.990",
+        image: "1_11/villa_carlos_paz_2.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Palmas del Lago (5 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Pensión Completa incluida" },
+            { icon: "📅", text: "Salida Confirmada: 14 de Noviembre" },
+            { icon: "💳", text: "6 cuotas de $69.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN VILLA CARLOS PAZ - PROMO 3X2!</strong></p>
+            <p>Viví las sierras cordobesas con <strong>Pensión Completa</strong> en Hotel Palmas del Lago por <strong>$289.990</strong> con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $289.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "14 de Noviembre (5D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-de-merlo-cyber-monday",
+        aliases: ["merlo-cyber", "Villa de Merlo Cyber Monday", "Merlo Cyber Monday 3x2"],
+        title: "Villa de Merlo Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$269.990",
+        image: "1_11/villa_merlo_2.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/340ccd21-9565-47ea-a02a-6b45ffb3367d.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MERLO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Virginia Spa con Piscina Climatizada (5 Días / 3 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "Salidas: 14 y 28 de Noviembre | 12 y 17 de Diciembre" },
+            { icon: "💳", text: "6 cuotas de $65.331 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN VILLA DE MERLO - PROMO 3X2!</strong></p>
+            <p>El tercer microclima del mundo en el prestigioso <strong>Hotel Virginia Spa</strong> con piscina climatizada y media pensión por <strong>$269.990</strong> con la promo <strong>3x2</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $269.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "14 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "28 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "12 de Diciembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "17 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-bernardo-cyber-monday",
+        aliases: ["san-bernardo-cyber", "San Bernardo Cyber Monday", "San Bernardo Cyber Monday 3x2"],
+        title: "San Bernardo Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$239.990",
+        image: "1_11/san_bernardo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Bernardo/425148a7-1c28-44ae-81d5-f4997dcda3d8.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Majo Frente al Mar (3 Días / 2 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "📅", text: "Salidas Confirmadas: Noviembre & Diciembre" },
+            { icon: "💳", text: "6 cuotas disponibles (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN SAN BERNARDO - PROMO 3X2!</strong></p>
+            <p>Disfrutá del mar y la playa en San Bernardo con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> por sólo <strong>$239.990</strong> en Hotel frente al mar.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $239.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Noviembre y Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "tandil-cyber-monday-3x2",
+        aliases: ["tandil-cyber-3x2", "Tandil Cyber Monday 3x2", "Tandil Cyber Monday"],
+        title: "Tandil Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$219.990",
+        image: "1_11/tandil_3.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/TANDIL VEND FERIADO MAYO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel El Turista (2 Días / 1 Noche)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "Salidas: 14 y 28 de Noviembre | 12 de Diciembre" },
+            { icon: "💳", text: "6 cuotas disponibles (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN TANDIL - PROMO 3X2!</strong></p>
+            <p>Escapada a las sierras de Tandil con Media Pensión en Hotel El Turista por <strong>$219.990</strong> con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $219.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "14 y 28 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "12 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-del-plata-cyber-monday-3x2",
+        aliases: ["mar-del-plata-cyber-3x2", "Mar del Plata Cyber Monday 3x2", "Mardel Cyber Monday 3x2"],
+        title: "Mar del Plata Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$199.990",
+        image: "1_11/mar_del_plata_3.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/MAR DEL PLATA VEND FERIADO MAYO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinador Permanente" },
+            { icon: "🏨", text: "Hotel Riazor (3 Días / 2 Noches)" },
+            { icon: "🍽️", text: "Pensión Completa incluida" },
+            { icon: "📅", text: "Salidas Confirmadas: Diciembre" },
+            { icon: "💳", text: "6 cuotas disponibles (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN LA FELIZ - PROMO 3X2!</strong></p>
+            <p>Disfrutá de Mar del Plata con <strong>Pensión Completa</strong> en el Hotel Riazor por sólo <strong>$199.990</strong> con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $199.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Salida Diciembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-de-ajo-cyber-monday-3x2",
+        aliases: ["mar-de-ajo-cyber-3x2", "Mar de Ajó Cyber Monday 3x2"],
+        title: "Mar de Ajó Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$199.990",
+        image: "1_11/mar_de_ajo_2.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MAR DE AJO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Atlantic (3 Días / 2 Noches)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "Salida Confirmada: Diciembre" },
+            { icon: "💳", text: "6 cuotas de $48.997 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN MAR DE AJÓ - PROMO 3X2!</strong></p>
+            <p>Playa, tranquilidad y Media Pensión en el Hotel Atlantic por <strong>$199.990</strong> con la promo <strong>3x2</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $199.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Salida Diciembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "santa-teresita-cyber-monday-3x2",
+        aliases: ["santa-teresita-cyber-3x2", "Santa Teresita Cyber Monday 3x2"],
+        title: "Santa Teresita Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$189.990",
+        image: "1_11/santa_teresita.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Santa Teresita/d9ed77d3-3006-497f-b8c2-d6df92bc76c9.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SANTA TERESITA VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Turista (3 Días / 2 Noches)" },
+            { icon: "☕", text: "Desayuno incluido" },
+            { icon: "📅", text: "Salida Confirmada: Diciembre" },
+            { icon: "💳", text: "6 cuotas disponibles (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN SANTA TERESITA - PROMO 3X2!</strong></p>
+            <p>Disfrutá del mar en Santa Teresita por <strong>$189.990</strong> con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong> en Hotel Turista con desayuno.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $189.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Salida Diciembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "gualeguaychu-cyber-monday-3x2",
+        aliases: ["gualeguaychu-cyber-3x2", "Gualeguaychú Cyber Monday 3x2"],
+        title: "Gualeguaychú Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "Desde $139.990",
+        image: "1_11/gualeguaychu_3.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/ee3c5736-9583-4565-947c-d11d9ce6e4a6.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHU VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Los Robles (2 Días / 1 Noche)" },
+            { icon: "🍽️", text: "Media Pensión incluida" },
+            { icon: "📅", text: "Salidas: Diciembre (Sábado $139.990 · Viernes $149.990)" },
+            { icon: "💳", text: "6 cuotas disponibles (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN GUALEGUAYCHÚ - PROMO 3X2!</strong></p>
+            <p>Relax, costanera y Media Pensión en Hotel Los Robles por sólo <strong>$139.990</strong> con la promo <strong>3x2</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Promo 3x2: Salida Sábado $139.990 · Salida Viernes $149.990.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Diciembre (Salida Sábado)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Diciembre (Salida Viernes)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "san-pedro-cyber-monday-3x2",
+        aliases: ["san-pedro-cyber", "San Pedro Cyber Monday", "San Pedro Cyber Monday 3x2"],
+        title: "San Pedro Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$109.990",
+        image: "1_11/san_pedro.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Pedro/VIDEO-2025-11-13-12-01-23.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/SAN PEDRO VEND FERIADO MAYO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "☀️", text: "Modalidad Full Day" },
+            { icon: "🥩", text: "Incluye Almuerzo Parrillada Completa" },
+            { icon: "📅", text: "Salidas: 20 de Noviembre | 12 de Diciembre" },
+            { icon: "💳", text: "6 cuotas de $27.998 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN SAN PEDRO - PROMO 3X2!</strong></p>
+            <p>Día de campo y río con <strong>Parrillada Completa incluida</strong> por sólo <strong>$109.990</strong> con la promo <strong>3x2 (Viajan 3 Pagan 2)</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $109.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "20 de Noviembre (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "12 de Diciembre (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "campo-la-herradura-cyber-monday-3x2",
+        aliases: ["campo-la-herradura-cyber", "La Herradura Cyber Monday 3x2", "Campo Herradura Cyber Monday"],
+        title: "Campo La Herradura Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$99.990",
+        image: "1_11/campo_herradura.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/La Herradura/03a7f75d-2038-48dd-b70f-8fca947fe86d.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/LA HERRADURA VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "☀️", text: "Programa Full Day campestre" },
+            { icon: "🥩", text: "Desayuno, Almuerzo con Asado criollo y Merienda campestre" },
+            { icon: "🐎", text: "Cabalgata y actividades del predio incluidas" },
+            { icon: "📅", text: "Salidas Confirmadas: Noviembre & Diciembre" },
+            { icon: "💳", text: "6 cuotas de $25.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN CAMPO LA HERRADURA - PROMO 3X2!</strong></p>
+            <p>Día de campo inolvidable con asado criollo y actividades por sólo <strong>$99.990</strong> con la promo <strong>3x2</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $99.990 por persona.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Noviembre y Diciembre (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "termas-del-guaychu-cyber-monday-3x2",
+        aliases: ["termas-del-guaychu-cyber", "Termas Guaychú Cyber Monday 3x2", "Termas de Guaychú Cyber Monday"],
+        title: "Termas del Guaychú Cyber Monday (3x2)",
+        season: "cyber-monday",
+        price: "$99.990",
+        image: "1_11/termas_gualeguaychu_4.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
+        features: [
+            { icon: "💥", text: "¡CYBER MONDAY 3X2! · Viajan 3 Pagan 2" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🎟️", text: "Entrada General al Complejo Termal incluida" },
+            { icon: "☀️", text: "Modalidad Full Day de relax termal" },
+            { icon: "📅", text: "Salidas: Noviembre & Diciembre (13 y 20 de Diciembre)" },
+            { icon: "💳", text: "6 cuotas de $25.665 (+ $10.000 Gastos Adm.)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN TERMAS DEL GUAYCHÚ - PROMO 3X2!</strong></p>
+            <p>Piscinas termales de relax con entrada incluida al complejo por sólo <strong>$99.990</strong> con la promo <strong>3x2</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Cyber Monday 3x2: $99.990 por persona con entrada incluida.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "13 de Diciembre (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "20 de Diciembre (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-del-plata-cyber-monday-feriados",
+        aliases: ["mar-del-plata-feriados-cyber", "Mar del Plata Cyber Monday Feriados", "Mardel Cyber Monday Feriados"],
+        title: "Mar del Plata Cyber Monday (Feriados)",
+        season: "cyber-monday",
+        price: "$219.990",
+        image: "1_11/mar_del_plata.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/MAR DEL PLATA VEND FERIADO MAYO 2026.pdf",
+        features: [
+            { icon: "⚡", text: "¡CYBER MONDAY! Especial Fines de Semana Largos" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Riazor con Pensión Completa" },
+            { icon: "📅", text: "Feriado Noviembre (21/11 - 3D/2N): $219.990 (6 cuotas $53.665)" },
+            { icon: "📅", text: "Feriado Diciembre (05/12 - 4D/3N): $279.990 (6 cuotas $67.665)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN MAR DEL PLATA - FERIADOS NOVIEMBRE & DICIEMBRE!</strong></p>
+            <p>Disfrutá los fines de semana largos en la costa argentina en el <strong>Hotel Riazor</strong> con <strong>Pensión Completa</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Salida 21 de Noviembre: $219.990 (3D / 2N).</p>
+            <p>- Salida 05 de Diciembre: $279.990 (4D / 3N).</p>
+            <p>- Promoción Cyber Monday válida hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Feriado 21 de Noviembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Feriado 05 de Diciembre (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-carlos-paz-cyber-monday-feriados",
+        aliases: ["carlos-paz-feriados-cyber", "Villa Carlos Paz Cyber Monday Feriados"],
+        title: "Villa Carlos Paz Cyber Monday (Feriados)",
+        season: "cyber-monday",
+        price: "$249.990",
+        image: "1_11/villa_carlos_paz.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa Carlos Paz/5ff7eaf1-b05d-4066-9692-71492a95a83c.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/VILLA CARLOS PAZ VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "⚡", text: "¡CYBER MONDAY! Especial Fines de Semana Largos" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Palmas del Lago con Media Pensión" },
+            { icon: "📅", text: "Feriado Noviembre (4D/2N): $249.990 (6 cuotas $60.665)" },
+            { icon: "📅", text: "Feriado Diciembre (5D/3N): $279.990 (6 cuotas $67.665)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN VILLA CARLOS PAZ - FERIADOS XL!</strong></p>
+            <p>Sierras, lago y relax en <strong>Hotel Palmas del Lago</strong> con Media Pensión para los feriados de Noviembre y Diciembre.</p>
+        `,
+        importantNotes: `
+            <p>- Feriado Noviembre: $249.990 · Feriado Diciembre: $279.990.</p>
+            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Feriado Noviembre (4D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Feriado Diciembre (5D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "villa-de-merlo-cyber-monday-feriados",
+        aliases: ["merlo-feriados-cyber", "Villa de Merlo Cyber Monday Feriados"],
+        title: "Villa de Merlo Cyber Monday (Feriados)",
+        season: "cyber-monday",
+        price: "$249.990",
+        image: "1_11/villa_merlo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Villa de Merlo/340ccd21-9565-47ea-a02a-6b45ffb3367d.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MERLO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "⚡", text: "¡CYBER MONDAY! Especial Fines de Semana Largos" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Virginia Spa con Media Pensión" },
+            { icon: "📅", text: "Feriado Noviembre (4D/2N): $249.990 (6 cuotas $60.665)" },
+            { icon: "📅", text: "Feriado Diciembre (5D/3N): $279.990 (6 cuotas $67.665)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN VILLA DE MERLO - FERIADOS XL!</strong></p>
+            <p>El mejor microclima de San Luis en <strong>Hotel Virginia Spa</strong> con piscina y Media Pensión para los fines de semana largos.</p>
+        `,
+        importantNotes: `
+            <p>- Feriado Noviembre: $249.990 · Feriado Diciembre: $279.990.</p>
+            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Feriado Noviembre (4D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Feriado Diciembre (5D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "tandil-cyber-monday-feriados",
+        aliases: ["tandil-feriados-cyber", "Tandil Cyber Monday Feriados"],
+        title: "Tandil Cyber Monday (Feriados)",
+        season: "cyber-monday",
+        price: "$229.990",
+        image: "1_11/tandil.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Tandil/VIDEO-2025-09-26-13-43-30.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO 25 DE MAYO/TANDIL VEND FERIADO MAYO 2026.pdf",
+        features: [
+            { icon: "⚡", text: "¡CYBER MONDAY! Especial Fines de Semana Largos" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel El Turista con Media Pensión (2 Días / 1 Noche)" },
+            { icon: "📅", text: "Feriado 21 de Noviembre: $229.990 (6 cuotas $55.998)" },
+            { icon: "📅", text: "Feriado 05 de Diciembre: $229.990 (6 cuotas $55.998)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN TANDIL - FERIADOS NOVIEMBRE & DICIEMBRE!</strong></p>
+            <p>Escapada serrana perfecta en Hotel El Turista con Media Pensión incluida.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Feriados: $229.990 por persona (6 cuotas de $55.998).</p>
+            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Feriado 21 de Noviembre", status: "DISPONIBLE", color: "🟢" },
+            { date: "Feriado 05 de Diciembre", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "mar-de-ajo-cyber-monday-feriados",
+        aliases: ["mar-de-ajo-feriados-cyber", "Mar de Ajó Cyber Monday Feriados"],
+        title: "Mar de Ajó Cyber Monday (Feriados)",
+        season: "cyber-monday",
+        price: "$209.990",
+        image: "1_11/mar_de_ajo.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/MAR DE AJO VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "⚡", text: "¡CYBER MONDAY! Especial Fines de Semana Largos" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Atlantic con Media Pensión" },
+            { icon: "📅", text: "Feriado Noviembre (3D/2N): $209.990 (6 cuotas $51.331)" },
+            { icon: "📅", text: "Feriado Diciembre (4D/3N): $249.990 (6 cuotas $60.665)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN MAR DE AJÓ - FERIADOS XL!</strong></p>
+            <p>Playas tranquilas con Media Pensión en Hotel Atlantic para los fines de semana largos.</p>
+        `,
+        importantNotes: `
+            <p>- Feriado Noviembre: $209.990 · Feriado Diciembre: $249.990.</p>
+            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Feriado Noviembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Feriado Diciembre (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "santa-teresita-cyber-monday-feriados",
+        aliases: ["santa-teresita-feriados-cyber", "Santa Teresita Cyber Monday Feriados"],
+        title: "Santa Teresita Cyber Monday (Feriados)",
+        season: "cyber-monday",
+        price: "$189.990",
+        image: "1_11/teresita.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Santa Teresita/d9ed77d3-3006-497f-b8c2-d6df92bc76c9.mp4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/SANTA TERESITA VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "⚡", text: "¡CYBER MONDAY! Especial Fines de Semana Largos" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Turista con Desayuno" },
+            { icon: "📅", text: "Feriado 21 de Noviembre (3D/2N): $189.990 (6 cuotas $46.665)" },
+            { icon: "📅", text: "Feriado 05 de Diciembre (4D/3N): $219.990 (6 cuotas $53.665)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN SANTA TERESITA - FERIADOS XL!</strong></p>
+            <p>Disfrutá del mar en Hotel Turista con desayuno para los feriados de Noviembre y Diciembre.</p>
+        `,
+        importantNotes: `
+            <p>- Feriado Noviembre: $189.990 · Feriado Diciembre: $219.990.</p>
+            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Feriado 21 de Noviembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Feriado 05 de Diciembre (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "gualeguaychu-cyber-monday-feriados",
+        aliases: ["gualeguaychu-feriados-cyber", "Gualeguaychú Cyber Monday Feriados"],
+        title: "Gualeguaychú Cyber Monday (Feriados)",
+        season: "cyber-monday",
+        price: "$179.990",
+        image: "1_11/gualeguaychu.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Gualeguaychu/ee3c5736-9583-4565-947c-d11d9ce6e4a6.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/VACACIONES DE INVIERNO/GUALEGUAYCHU VEND VACACIONES DE INVIERNO 2026.pdf",
+        features: [
+            { icon: "⚡", text: "¡CYBER MONDAY! Especial Fines de Semana Largos" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🏨", text: "Hotel Los Robles con Desayuno" },
+            { icon: "📅", text: "Feriado Noviembre (3D/2N): $179.990 (6 cuotas $44.331)" },
+            { icon: "📅", text: "Feriado Diciembre (4D/3N): $209.990 (6 cuotas $51.331)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN GUALEGUAYCHÚ - FERIADOS XL!</strong></p>
+            <p>Escapada a Entre Ríos con Hotel Los Robles y desayuno para los fines de semana largos.</p>
+        `,
+        importantNotes: `
+            <p>- Feriado Noviembre: $179.990 · Feriado Diciembre: $209.990.</p>
+            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque en CABA y GBA.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Feriado Noviembre (3D / 2N)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Feriado Diciembre (4D / 3N)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+    {
+        id: "termas-del-guaychu-cyber-monday-feriados",
+        aliases: ["termas-del-guaychu-feriados-cyber", "Termas Guaychú Cyber Monday Feriados"],
+        title: "Termas del Guaychú Cyber Monday (Feriados)",
+        season: "cyber-monday",
+        price: "$99.990",
+        image: "1_11/termas_gualeguaychu.jpeg",
+        video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Termas de Guaychu/4e75b42e-ab5d-46b3-a476-ae538638992b.MP4",
+        pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/FERIADO JUNIO/GUAYCHÚ VEND FERIADO JUNIO 2026.pdf",
+        features: [
+            { icon: "⚡", text: "¡CYBER MONDAY! Especial Fines de Semana Largos" },
+            { icon: "🚌", text: "Bus Ida y Vuelta con Coordinación Permanente" },
+            { icon: "🎟️", text: "Entrada General al Complejo Termal incluida" },
+            { icon: "☀️", text: "Modalidad Full Day" },
+            { icon: "📅", text: "Feriado Noviembre: $99.990 (6 cuotas $25.665)" },
+            { icon: "📅", text: "Feriado Diciembre: $99.990 (6 cuotas $25.665)" }
+        ],
+        itinerary: `
+            <p>⚡ <strong>¡CYBER MONDAY EN TERMAS DEL GUAYCHÚ - FERIADOS XL!</strong></p>
+            <p>Full Day de aguas termales y relax en los feriados de Noviembre y Diciembre por sólo <strong>$99.990</strong>.</p>
+        `,
+        importantNotes: `
+            <p>- Tarifa Feriados: $99.990 con entrada incluida.</p>
+            <p>- Válido hasta el 4 de Noviembre.</p>
+        `,
+        boardingPoints: `
+            <ul>
+                <li>Puntos de embarque habituales.</li>
+            </ul>
+        `,
+        availability: [
+            { date: "Feriado Noviembre (Full Day)", status: "DISPONIBLE", color: "🟢" },
+            { date: "Feriado Diciembre (Full Day)", status: "DISPONIBLE", color: "🟢" }
+        ]
+    },
+
     // === VERANO TRAVELERO · NUEVOS DESTINOS BUS Y FULL DAY (17_10) ===
     {
         id: "puerto-madryn-verano-travelero",
