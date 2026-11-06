@@ -8,7 +8,7 @@ const paquetesData = [
         price: "PROMOS EXCLUSIVAS",
         image: "1_11/resumen.jpeg",
         features: [
-            { icon: "⚡", text: "¡CYBER MONDAY TRAVELERO! · ¡VÁLIDO HASTA EL 04 DE NOVIEMBRE!" },
+            { icon: "⚡", text: "¡CYBER MONDAY TRAVELERO! · ¡EXTENDIDO!" },
             { icon: "💥", text: "Promociones 3x2 en destinos seleccionados (Viajan 3 Pagan 2)" },
             { icon: "✨", text: "Tarifas Especiales Fines de Semana Largos Noviembre y Diciembre" },
             { icon: "🚌", text: "Bus Confort Ida y Vuelta con Coordinación Permanente" },
@@ -17,7 +17,7 @@ const paquetesData = [
         ],
         itinerary: `
             <p>⚡ <strong>¡LLEGÓ EL CYBER MONDAY TRAVELERO A TURISMO LEONES!</strong></p>
-            <p>Aprovechá hasta el <strong>4 de Noviembre</strong> las mejores oportunidades del año para viajar en grupo por Argentina. Promos exclusivas <strong>3x2 (Viajan 3 Pagan 2)</strong> y salidas garantizadas para los fines de semana largos de Noviembre y Diciembre.</p>
+            <p>Aprovechá las mejores oportunidades del año para viajar en grupo por Argentina. Promos exclusivas <strong>3x2 (Viajan 3 Pagan 2)</strong> y salidas garantizadas para los fines de semana largos de Noviembre y Diciembre.</p>
             <br>
             <p><strong>DESTINOS DESTACADOS:</strong></p>
             <ul>
@@ -26,7 +26,7 @@ const paquetesData = [
             </ul>
         `,
         importantNotes: `
-            <p>- <strong>Válido únicamente hasta el 4 de Noviembre</strong> o hasta agotar stock promocional.</p>
+            <p>- <strong>¡Cyber Monday extendido!</strong> Válido hasta agotar stock promocional.</p>
             <p>- Cupos limitados por salida.</p>
             <p>- Financiación en hasta 6 cuotas fijas.</p>
         `,
@@ -36,7 +36,7 @@ const paquetesData = [
             </ul>
         `,
         availability: [
-            { date: "Cyber Monday (Hasta el 4 de Noviembre)", status: "¡PROMO ACTIVA!", color: "🟢" }
+            { date: "Cyber Monday Extendido", status: "¡PROMO ACTIVA!", color: "🟢" }
         ]
     },
     {
@@ -71,7 +71,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $459.990 por persona (Viajan 3 Pagan 2).</p>
-            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+            <p>- Promoción válida por tiempo limitado o hasta agotar stock promocional.</p>
             <p>- Gastos administrativos: $10.000 por persona.</p>
         `,
         boardingPoints: `
@@ -106,7 +106,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $359.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
             <p>- Gastos adm: $10.000.</p>
         `,
         boardingPoints: `
@@ -141,7 +141,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $379.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -175,7 +175,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $299.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -209,7 +209,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $289.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -243,7 +243,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $269.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -280,7 +280,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $239.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -314,7 +314,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $219.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -349,7 +349,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $199.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -383,7 +383,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $199.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -417,7 +417,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $189.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -451,7 +451,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Promo 3x2: Salida Sábado $139.990 · Salida Viernes $149.990.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -486,7 +486,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $109.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -522,7 +522,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $99.990 por persona.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -556,7 +556,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Cyber Monday 3x2: $99.990 por persona con entrada incluida.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -591,7 +591,7 @@ const paquetesData = [
         importantNotes: `
             <p>- Salida 21 de Noviembre: $219.990 (3D / 2N).</p>
             <p>- Salida 05 de Diciembre: $279.990 (4D / 3N).</p>
-            <p>- Promoción Cyber Monday válida hasta el 4 de Noviembre.</p>
+            <p>- Promoción Cyber Monday válida por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -625,7 +625,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Feriado Noviembre: $249.990 · Feriado Diciembre: $279.990.</p>
-            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+            <p>- Promoción válida por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -659,7 +659,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Feriado Noviembre: $249.990 · Feriado Diciembre: $279.990.</p>
-            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+            <p>- Promoción válida por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -693,7 +693,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Feriados: $229.990 por persona (6 cuotas de $55.998).</p>
-            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+            <p>- Promoción válida por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -727,7 +727,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Feriado Noviembre: $209.990 · Feriado Diciembre: $249.990.</p>
-            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+            <p>- Promoción válida por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -761,7 +761,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Feriado Noviembre: $189.990 · Feriado Diciembre: $219.990.</p>
-            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+            <p>- Promoción válida por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -795,7 +795,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Feriado Noviembre: $179.990 · Feriado Diciembre: $209.990.</p>
-            <p>- Promoción válida hasta el 4 de Noviembre.</p>
+            <p>- Promoción válida por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
@@ -830,7 +830,7 @@ const paquetesData = [
         `,
         importantNotes: `
             <p>- Tarifa Feriados: $99.990 con entrada incluida.</p>
-            <p>- Válido hasta el 4 de Noviembre.</p>
+            <p>- Válido por tiempo limitado o hasta agotar stock promocional.</p>
         `,
         boardingPoints: `
             <ul>
