@@ -2631,10 +2631,11 @@ const paquetesData = [
     },
     {
         id: "santa-teresita-primavera",
+        aliases: ["santa-teresita-primavera", "Santa Teresita Primavera", "Santa Teresita", "Santa Teresita 4x3", "santa-teresita-4x3", "santa-teresita-18-11"],
         title: "Santa Teresita Primavera",
         season: "primavera",
         price: "$189.990",
-        image: "15_9/santa_teresita.jpeg",
+        image: "18_11/santa_teresita.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Santa Teresita/d9ed77d3-3006-497f-b8c2-d6df92bc76c9.mp4",
         features: [
@@ -2676,10 +2677,11 @@ const paquetesData = [
     },
     {
         id: "mar-de-ajo-primavera-3d-2n",
+        aliases: ["mar-de-ajo-primavera-3d-2n", "mar-de-ajo-primavera", "Mar de Ajó Primavera", "Mar de Ajó Primavera (3D / 2N)", "Mar de Ajó 4x3", "mar-de-ajo-4x3", "mar-de-ajo-18-11"],
         title: "Mar de Ajó Primavera (3D / 2N)",
         season: "primavera",
         price: "$199.990",
-        image: "15_9/mar_de_ajo.jpeg",
+        image: "18_11/mar_de_ajo.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar de Ajo/09099a36-df10-4ba2-9c49-63e818bf3fa2.mp4",
         features: [
@@ -2721,10 +2723,11 @@ const paquetesData = [
     },
     {
         id: "mar-del-plata-primavera-3d-2n",
+        aliases: ["mar-del-plata-primavera-3d-2n", "mar-del-plata-primavera", "Mar del Plata Primavera", "Mar del Plata Primavera (3D / 2N)", "Mar del Plata 4x3", "mar-del-plata-4x3", "mar-del-plata-18-11"],
         title: "Mar del Plata Primavera (3D / 2N)",
         season: "primavera",
         price: "$199.990",
-        image: "15_9/mar_del_plata_2.jpeg",
+        image: "18_11/mar_del_plata.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/MAR DEL PLATA X 2NTS VEND MARZO A JUNIO 2026.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/Mar del Plata/VIDEO-2026-03-18-15-35-35.mp4",
         features: [
@@ -2813,10 +2816,11 @@ const paquetesData = [
     },
     {
         id: "san-bernardo-primavera",
+        aliases: ["san-bernardo-primavera", "San Bernardo Primavera", "San Bernardo", "San Bernardo 4x3", "san-bernardo-4x3", "san-bernardo-18-11"],
         title: "San Bernardo Primavera",
         season: "primavera",
         price: "$239.990",
-        image: "15_9/san_bernardo.jpeg",
+        image: "18_11/san_bernardo.jpeg",
         pdf: "ordenarpdf/ITINERARIOS TRAVELAR/salidas en BUS/ABRIL A JUNIO/SAN BERNARDO VEND X 2 NTS MARZO.pdf",
         video: "ordenarvideos/VIDEOS TRAVELAR/Destinos en BUS/San Bernardo/425148a7-1c28-44ae-81d5-f4997dcda3d8.mp4",
         features: [
